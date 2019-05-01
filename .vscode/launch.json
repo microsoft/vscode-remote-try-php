@@ -5,7 +5,7 @@
             "name": "Launch application",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceFolder}/main.php",
+            "program": "${workspaceFolder}/index.php",
             "cwd": "${workspaceFolder}",
             "port": 9000
         }
