@@ -1,8 +1,19 @@
 # Try Out Development Containers: PHP
 
-This is a sample project to go along with the "Try a dev container" quick start for the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension.
+This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
-**If you are not yet in a development container, [see below](#setting-up-the-development-container).**
+> **Note:** If you're following the quick start, you can jump to the [Things to try](#things-to-try) section. 
+
+## Setting up the development container
+
+Follow these steps to open this sample in a container:
+
+1. If this is your first time using a development container, please follow the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
+
+2. If you're not yet in a development container:
+   - Clone this repository.
+   - Press <kbd>F1</kbd> and select the **Remote-Container: Open Folder in Container...** command.
+   - Select the cloned copy of this folder, wait for the container to start, and try things out!
 
 ## Things to try
 
@@ -26,18 +37,7 @@ Some things to try:
    - Click "Open Browser" in the notification that appears to access the web app on this new port.
    - Look back at the terminal, and you should see the output from your site navigations
    - Edit the text on line 16 in `index.php` and refresh the page to see the changes immediately take affect
-   
-## Setting up the development container
-
-Follow these steps to open this sample in a container:
-
-1. If this is your first time using a development container, please follow the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started) to get set up.
-
-2. If you're not yet in a development container:
-   - Clone this repository.
-   - Press <kbd>F1</kbd> and select the **Remote-Container: Open Folder in Container...** command.
-   - Select the cloned copy of this folder, wait for the container to start, and try things out!
-
+ 
 ## Contributing
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a
