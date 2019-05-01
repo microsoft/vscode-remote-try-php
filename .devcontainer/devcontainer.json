@@ -1,0 +1,9 @@
+
+{
+	"name": "PHP",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+        "felixfbecker.php-debug",
+		"felixfbecker.php-intellisense"
+	]
+}
