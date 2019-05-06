@@ -36,7 +36,7 @@ Some things to try:
    - Select port `8000`.
    - Click "Open Browser" in the notification that appears to access the web app on this new port.
    - Look back at the terminal, and you should see the output from your site navigations
-   - Edit the text on line 16 in `index.php` and refresh the page to see the changes immediately take affect
+   - Edit the text on line 21 in `index.php` and refresh the page to see the changes immediately take affect
  
 ## Contributing
 
