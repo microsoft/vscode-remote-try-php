@@ -5,5 +5,8 @@
 	"extensions": [
         "felixfbecker.php-debug",
 		"felixfbecker.php-intellisense"
-	]
+	],
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	}
 }
