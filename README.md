@@ -29,18 +29,26 @@ Some things to try:
    - Open `index.php`
    - Try adding some code and check out the language features.
 1. **Terminal:** Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\`</kbd> and type `uname` and other Linux commands from the terminal window.
-1. **Build, Run, and Debug:**
+1. **Run and Debug:**
    - Open `index.php`
    - Add a breakpoint (e.g. on line 4).
    - Press <kbd>F5</kbd> to launch the app in the container.
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 1. **Running a server:**
-   - From the terminal, run `php -S localhost:8000`
+   - From the terminal, run `php -S 0.0.0.0:8000`
    - Press <kbd>F1</kbd> and run the **Remote-Containers: Forward Port from Container...** command.
    - Select port `8000`.
    - Click "Open Browser" in the notification that appears to access the web app on this new port.
    - Look back at the terminal, and you should see the output from your site navigations
    - Edit the text on line 21 in `index.php` and refresh the page to see the changes immediately take affect
+1. **Attach debugger to the server:**
+   - Follow the previous steps to start up a PHP server and open a browser on port `8000`
+   - Press <kbd>F1</kbd> and select the **View: Show Debug** command
+   - Pick "Listen for XDebug" from the dropdown
+   - Press <kbd>F5</kbd> to attach the debugger
+   - Add a breakpoint to `index.php` if you haven't already
+   - Reload your browser window
+   - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 
 ## Contributing
 
