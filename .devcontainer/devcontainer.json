@@ -1,5 +1,5 @@
 {
-	"name": "PHP 7",
+	"name": "PHP Sample",
 	"dockerFile": "Dockerfile",
 	
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
