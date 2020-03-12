@@ -41,7 +41,7 @@ Some things to try:
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 1. **Running a server:**
    - From the terminal, run `php -S 0.0.0.0:8000`
-   - Press <kbd>F1</kbd> and run the **Remote-Containers: Forward Port from Container...** command.
+   - Press <kbd>F1</kbd> and run the **Forward a Port** command.
    - Select port `8000`.
    - Click "Open Browser" in the notification that appears to access the web app on this new port.
    - Look back at the terminal, and you should see the output from your site navigations
