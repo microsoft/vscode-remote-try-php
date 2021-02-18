@@ -43,7 +43,7 @@ Some things to try:
 1. **Edit:**
    - Open `index.php`
    - Try adding some code and check out the language features.
-   - Notice that PHP debugging and IntelliSense are already included in the container since the `.devcontainer/devcontainer.json` lists `"felixfbecker.php-debug"` and `"felixfbecker.php-intellisense"` as extensions to install automatically when the container is created.
+   - Notice that PHP debugging and IntelliSense are already included in the container since the `.devcontainer/devcontainer.json` lists `"felixfbecker.php-debug"`, `"bmewburn.vscode-intelephense-client"`, and `"mrmlnc.vscode-apache"` as extensions to install automatically when the container is created.
 1. **Terminal:** Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\`</kbd> and type `uname` and other Linux commands from the terminal window.
 1. **Run and Debug:**
    - Open `index.php`
