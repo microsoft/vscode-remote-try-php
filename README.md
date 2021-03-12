@@ -52,18 +52,18 @@ Some things to try:
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 1. **Running a server:**
    - From the terminal, run `php -S 0.0.0.0:8000`
-   - Press <kbd>F1</kbd> and run the **Forward a Port** command.
-   - Select port `8000`.
-   - Click "Open Browser" in the notification that appears to access the web app on this new port.
-   - Look back at the terminal, and you should see the output from your site navigations
-   - Edit the text on line 21 in `index.php` and refresh the page to see the changes immediately take affect
+   - Click "Open in Browser" in the notification that appears to access the web app on this new port.
+      - You can view an organized table of your forwarded ports in the 'Ports' view, which can be accessed with the command **Ports: Focus on Ports View**.
+      - Notice port 8000 in the 'Ports' view is labeled "My Port." In `devcontainer.json`, you can set `"remote.portsAttributes"`, such as a label for your forwarded ports and the action to be taken when the port is autoforwarded.
+   - Look back at the terminal, and you should see the output from your site navigations.
+   - Edit the text on line 21 in `index.php` and refresh the page to see the changes immediately take effect.
 1. **Attach debugger to the server:**
    - Follow the previous steps to start up a PHP server and open a browser on port `8000`
-   - Press <kbd>F1</kbd> and select the **View: Show Debug** command
-   - Pick "Listen for XDebug" from the dropdown
-   - Press <kbd>F5</kbd> to attach the debugger
-   - Add a breakpoint to `index.php` if you haven't already
-   - Reload your browser window
+   - Press <kbd>F1</kbd> and select the **View: Show Debug** command.
+   - Pick "Listen for XDebug" from the dropdown.
+   - Press <kbd>F5</kbd> to attach the debugger.
+   - Add a breakpoint to `index.php` if you haven't already.
+   - Reload your browser window.
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 
 ## Contributing

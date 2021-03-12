@@ -15,7 +15,13 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"php.validate.executablePath": "/usr/local/bin/php"
+		"php.validate.executablePath": "/usr/local/bin/php",
+		"remote.portsAttributes": {
+			"8000": {
+				"label": "My Port",
+				"onAutoForward": "notify"
+			}
+		}
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
