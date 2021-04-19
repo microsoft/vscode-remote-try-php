@@ -28,8 +28,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [8080],
 
-	// Use 'portsAttributes' to set default properties for specific forwarded ports.
-	// You can use a port number (i.e. 8000), range of numbers, or a regex to match the running process.
+	// Use 'portsAttributes' to set default properties for specific forwarded ports. More info: https://code.visualstudio.com/docs/remote/devcontainerjson-reference.
 	"portsAttributes": {
 		"8000": {
 			"label": "Hello Remote World",
