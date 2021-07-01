@@ -1,4 +1,4 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.159.0/containers/php/.devcontainer/base.Dockerfile
+# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.185.0/containers/php/.devcontainer/base.Dockerfile
 
 # [Choice] PHP version: 8, 8.0, 7, 7.4, 7.3
 ARG VARIANT="7"
