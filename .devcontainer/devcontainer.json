@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.185.0/containers/php
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.0/containers/php
 {
 	"name": "PHP",
 	"build": {
@@ -7,7 +7,6 @@
 		"args": { 
 			// Update VARIANT to pick a PHP version: 8, 8.0, 7, 7.4, 7.3
 			"VARIANT": "7",
-			"INSTALL_NODE": "true",
 			"NODE_VERSION": "lts/*"
 		}
 	},
