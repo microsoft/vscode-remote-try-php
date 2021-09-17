@@ -1,12 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.0/containers/php
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/php
 {
 	"name": "PHP",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": { 
 			// Update VARIANT to pick a PHP version: 8, 8.0, 7, 7.4, 7.3
-			"VARIANT": "7",
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use -bullseye variants on local on arm64/Apple Silicon.
+			"VARIANT": "7-bullseye",
 			"NODE_VERSION": "lts/*"
 		}
 	},
