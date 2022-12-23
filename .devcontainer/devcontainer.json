@@ -1,38 +1,26 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/php
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
 {
 	"name": "PHP",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": { 
-			// Update VARIANT to pick a PHP version: 8, 8.0, 7, 7.4, 7.3
-			// Append -bullseye or -buster to pin to an OS version.
-			// Use -bullseye variants on local on arm64/Apple Silicon.
-			"VARIANT": "7-bullseye",
-			"NODE_VERSION": "lts/*"
-		}
-	},
-		
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/php:0-8.2",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			// Set *default* container specific settings.json values on container create.
-			"settings": { 
-				"php.validate.executablePath": "/usr/local/bin/php"
-			},
-			
-			// Add the IDs of extensions you want installed when the container is created.
+			"settings": {},
 			"extensions": [
-				"felixfbecker.php-debug",
-				"bmewburn.vscode-intelephense-client",
-				"mrmlnc.vscode-apache"
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [8080],
+	// "forwardPorts": [8000],
 
 	// Use 'portsAttributes' to set default properties for specific forwarded ports. More info: https://code.visualstudio.com/docs/remote/devcontainerjson-reference.
 	"portsAttributes": {
@@ -40,16 +28,11 @@
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
 		}
-	},
-
-	// Use 'otherPortsAttributes' to configure any ports that aren't configured using 'portsAttributes'.
-	// "otherPortsAttributes": {
-	// 		"onAutoForward": "silent"
-	// },
+	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
 
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
