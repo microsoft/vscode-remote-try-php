@@ -18,7 +18,7 @@ function sayHello($name) {
 	<body>
 		<?php 
 		
-		sayHello('Ciao Amo');
+		sayHello('Ciao Amo3');
 			
 		phpinfo(); 
 			
