@@ -13,7 +13,7 @@ function sayHello($name) {
 	<body>
 		<?php 
 		
-		sayHello('Tuan Anh');
+		sayHello('toi la tuan anh dep trai');
 			
 		phpinfo(); 
 			
