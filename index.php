@@ -16,12 +16,38 @@ function sayHello($name) {
 		<title>Visual Studio Code Remote :: PHP</title>
 	</head>
 	<body>
-		<?php 
+		<p>Văn bản HTML.</p>
+		<?php
+			echo '<p>Văn bản PHP!</p>'
+		?>
+		<p>Văn bản HTML khác.</p>
+
+		<?php
+			echo '<p>Khối dữ liệu PHP 1.</p>';
+		?>
+		<p>Dữ liệu HTML, <?php echo 'Dữ liệu PHP 2.'; ?></p>
+
+		<?php echo '<b>'; ?>
+			Một ví dụ kết hợp HTML và PHP.
+		<?php echo '<b>'; ?>
+
+		<h1>Tìm sách</h1>
+		<form action="xlTimSach.php" Method="GET">
+			Từ khóa : <input type="text" name="txtTukhoa"/>
+			<input type="submit" value="Tìm"/>
+		</form>
+
+		<!-- <?php 
 		
-		sayHello('Duc Anh');
+		sayHello('World');
 			
 		//phpinfo(); 
 			
 		?>
+
+		<form action="checkLogin.php" method="POST">
+			<a>Username:</a><input>
+			<a>Password:</a><input>
+		</form> -->
 	</body>
 </html>
