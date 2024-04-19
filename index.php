@@ -36,55 +36,25 @@ function sayHello($name) {
         <input type="submit" value="Tìm"/>
         </form>
 		<br><br>
-		<!-- Biến cục bộ -->
+		
 		<?php
-		function Test()
-			{
-			$a=5;
-			echo $a; // phạm vi cục bộ
-			}
-			Test();
-			echo $a;
+    		print("<p>I love PHP1.</p>");
+ 		?>
+ 		<?php
+			$WLang= "<p>I love PHP2.</p>";
+			print $WLang;
+ 		?>
+		<?php
+			print "<p>I love PHP3.</p>";
 		?>
 
-		<br>
-		<!-- Biến toàn cục -->
+
+		<br><br>
 		<?php
-			$a = 1;
-			$b = 2;
-			function Sum1()
-			{
-				global $a, $b;
-				$b = $a + $b;
-			}
-			Sum1();
-			echo $b; 
+			$num1 = 10;
+			$num2 = 20;
+			printf(" %d + %d= %d", $num1, $num2, $num1+$num2);
 		?>
-		<!-- Biến static -->
-		<br>
-		<?php
-			function Test1()
-			{
-				static $a = 0;
-				echo $a;
-				$a++;
-			}
-			Test1(); 
-			Test1();
-			Test1();
-		?>
-		<!-- Biến toàn cục -->
-		<?php
-			$a = 1;
-			$b = 2;
-			function Sum()
-			{
-				global $a, $b;
-				$b = $a + $b;
-			}
-			Sum();
-			echo $b;
-		?>
-		<br>
+
 	</body>
 </html>
