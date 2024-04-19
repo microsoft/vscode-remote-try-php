@@ -7,6 +7,7 @@
 </head>
 <body>
     // test
+    // test 2
     <form method="post">
         <label for="Số lượng">Nhập số lượng:</label>
         <input type="text" name="quantity" id="quantity">
