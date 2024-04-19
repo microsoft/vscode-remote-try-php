@@ -5,9 +5,22 @@
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  *---------------------------------------------------------------------------------------*/
 
-function sayHello($name) {
-	echo "Hello $name!";
+function func($value) {
+	echo "Hello $value";
 }
+
+function func_Local() {
+	$a = 5;
+	echo $a;
+}
+
+function func_test() {
+	static $a = 0;
+	echo "Biến static ";
+	echo "$a<br>";
+	$a++;
+}
+
 
 ?>
 
@@ -17,11 +30,13 @@ function sayHello($name) {
 	</head>
 	<body>
 		<?php 
-		
-		sayHello('remote world');
-			
-		phpinfo(); 
-			
+		$value = 100;
+		// func($value);
+		// func_Local();
+		func_test();
+		func_test();
+		func_test();
+		// phpinfo(); 
 		?>
 	</body>
 </html>
