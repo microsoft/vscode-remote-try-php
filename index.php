@@ -37,17 +37,7 @@ function sayHello($name) {
 			<input type="submit" value="Tìm"/>
 		</form>
 
-		<!-- <?php 
-		
-		sayHello('World');
-			
-		//phpinfo(); 
-			
-		?>
 
-		<form action="checkLogin.php" method="POST">
-			<a>Username:</a><input>
-			<a>Password:</a><input>
-		</form> -->
+		<p>Trần Duy Bim</p>
 	</body>
 </html>
