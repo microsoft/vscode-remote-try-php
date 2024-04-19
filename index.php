@@ -28,10 +28,8 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$a = 1.234;
-		$b = 1.2e3;
-		echo "a: $a<br>";
-		echo "b: $b<br>";
+		$chuoi = 'Chúc mừng năm mới';
+		echo "$chuoi 2024";
 		// phpinfo(); 
 	?>
 	</body>
