@@ -36,8 +36,5 @@ function sayHello($name) {
 			Từ khóa : <input type="text" name="txtTukhoa"/>
 			<input type="submit" value="Tìm"/>
 		</form>
-
-
-		<p>Trần Duy Bim</p>
 	</body>
 </html>
