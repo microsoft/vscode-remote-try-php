@@ -28,11 +28,13 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$a = "123";
-		$b = 123;
+		$a = 123;
+		$b = 124;
 		$kq = "";
-		if ($a==$b)
+		if ($a===$b)
 			$kq = "a bằng b";
+		else
+			$kq = "a không bằng b";
 		echo $kq;
 		// phpinfo(); 
 	?>
