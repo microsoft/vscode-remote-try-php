@@ -28,10 +28,25 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$don_gia = 5000;
-		$so_luong = 100;
-		$thanh_tien = (double)($so_luong*$don_gia);
-		echo $thanh_tien;
+		// cách 1: automatic
+		$var = "100" + 15;
+		echo $var;
+		echo "<br>";
+		$var = "100" + 15.0;
+		echo $var;
+		echo "<br>";
+		$var = 39 . " Steps";
+		echo $var;
+
+		// cách 2: (datatype)
+		echo "<br>";
+		$var2 = "100" + 15;
+		(double) $var2;
+		echo $var2;
+		echo "<br>";
+		// Cách 3: settype($var2, "datatype");
+		settype($var2, "int");
+		echo $var2;
 		// phpinfo(); 
 	?>
 	</body>
