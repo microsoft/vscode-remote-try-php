@@ -36,12 +36,54 @@ function sayHello($name) {
         <input type="submit" value="Tìm"/>
         </form>
 		<br><br>
+		<!-- Biến cục bộ -->
 		<?php
-			define("PI", 3.14);
-			$r=10;
-			$s = PI * pow($r,2);
-			$p = 2*PI * $r;
-			printf("$%.2f", $s);
+		function Test()
+			{
+			$a=5;
+			echo $a; // phạm vi cục bộ
+			}
+			Test();
+			echo $a;
+		?>
+
+		<br>
+		<!-- Biến toàn cục -->
+		<?php
+			$a = 1;
+			$b = 2;
+			function Sum1()
+			{
+				global $a, $b;
+				$b = $a + $b;
+			}
+			Sum1();
+			echo $b; 
+		?>
+		<!-- Biến static -->
+		<br>
+		<?php
+			function Test1()
+			{
+				static $a = 0;
+				echo $a;
+				$a++;
+			}
+			Test1(); 
+			Test1();
+			Test1();
+		?>
+		<!-- Biến toàn cục -->
+		<?php
+			$a = 1;
+			$b = 2;
+			function Sum()
+			{
+				global $a, $b;
+				$b = $a + $b;
+			}
+			Sum();
+			echo $b;
 		?>
 		<br>
 	</body>
