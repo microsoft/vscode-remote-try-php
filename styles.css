@@ -6,3 +6,27 @@
     font-style: italic;
     color: green;
 }
+h1 {
+    color: blue; 
+    /* text-align: center;  */
+}
+
+form {
+    text-align: left;
+    width: 280;
+}
+
+input[type="submit"] {
+    float: right; 
+    margin-top: 10px; 
+}
+
+input[type="password"] {
+    float: right; 
+    width: 175;
+}
+
+input[type="text"] {
+    float: right; 
+    width: 175;
+}
