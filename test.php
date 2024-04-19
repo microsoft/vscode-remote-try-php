@@ -31,8 +31,8 @@
     // $var = 39 . "Steps";
     // echo $var;
 
-    $a = 10;
-    $b = &$a;
-    echo "$a<br>$b";
+    // $a = 10;
+    // $b = &$a;
+    // echo "$a<br>$b";
 
 ?>
