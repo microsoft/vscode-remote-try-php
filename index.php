@@ -28,12 +28,9 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$a = "Hello";
-		$b = "$a world"; //tương đương $b=“Hello world”
-		$c = '$a world'; //$c=‘$a world’ (không thay đổi)
-		echo "a: $a<br>";
-		echo "b: $b<br>";
-		echo "c: $c<br>";
+		// tạo và in một mảng
+		$array = array(1, 2, 3, 4, 5);
+		print_r($array); // in ra chỉ số mảng và các giá trị tương ứng
 		// phpinfo(); 
 	?>
 	</body>
