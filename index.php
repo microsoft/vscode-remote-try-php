@@ -28,8 +28,12 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$chuoi = 'Chúc mừng năm mới';
-		echo "$chuoi 2024";
+		$a = "Hello";
+		$b = "$a world"; //tương đương $b=“Hello world”
+		$c = '$a world'; //$c=‘$a world’ (không thay đổi)
+		echo "a: $a<br>";
+		echo "b: $b<br>";
+		echo "c: $c<br>";
 		// phpinfo(); 
 	?>
 	</body>
