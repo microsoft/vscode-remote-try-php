@@ -1,25 +1,18 @@
-
-<?php
-
-?>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Visual Studio Code Remote :: PHP</title>
-	</head>
-	<body>
-	<?php 
-		$so_luong = $_POST["so_luong"];
-        $don_gia = $_POST["don_gia"];
-        if ($so_luong < 10)
-        {
-            $thanh_tien = $don_gia * $so_luong;
-        } elseif ($so_luong >= 10 and $so_luong <= 20)
-        {
-            $thanh_tien = $don_gia * $so_luong * 0.95;
-        } else {
-            $thanh_tien = $don_gia * $so_luong * 0.9;
-        }
-		// phpinfo(); 
-	?>
-	</body>
+<head>
+    <title>Visual Studio Code Remote :: PHP</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<?php 
+for ($i = 1; $i <= 200; $i++) {
+    if ($i % 2 == 0) {
+        echo "<span class='even'>$i</span><br>"; // Sử dụng thẻ span với class 'even' để áp dụng CSS
+    } else {
+        echo "<span class='evenn'>$i</span><br>";
+    }
+}
+?>
+</body>
 </html>
