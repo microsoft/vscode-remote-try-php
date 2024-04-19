@@ -6,32 +6,6 @@
 		<title>Visual Studio Code Remote :: PHP</title>
 	</head>
 	<body>
-		<!-- <div>
-			<?php
-				$Ngonngu1="PHP";
-				$Ngonngu2="ASP.NET";
-				echo "<p>$Ngonngu1 và $Ngonngu2 là ngôn ngữ WebServer.</p>";
-				print "<p>$Ngonngu1 và $Ngonngu2 là ngôn ngữ WebServer.</p>";
-				printf("%s và %s là ngôn ngữ WebServer",$Ngonngu1,$Ngonngu2);
-			?>
-		</div> -->
-		<!-- <div>
-			<?php
-				$n = 100;
-				$arr1 = array($n);
-				$arr2 = array(1,2,3,4);
-				$arr3 = array();
-				$arr4 = array("hoten" => "Tiến Đức",
-							"quequan" => "Ha Nội",
-							"tuoi" => 22			
-				);
-				print_r($n);
-				print_r($arr1);
-				print_r($arr2);
-				print_r($arr3);
-				print_r($arr4);
-			?>
-		</div> -->
 		<h2>Nhóm 17</h2>
 		<?php
 		for ($i = 1; $i <= 200; $i++) {
@@ -42,5 +16,16 @@
 			}
 		}
 		?>
+		<div>
+			<h1>Đăng nhập hệ thống</h1>
+			<form action="info.php" method="get">
+				<label for="username">Tên đăng nhập : </label>
+				<input type="text" name="username"> <br><br>
+				<label for="password">Mật khẩu:</label>
+				<input type="password" name="password"><br><br>
+				<input type="submit">
+			</form>
+		</div>
+		
 	</body>
 </html>
