@@ -28,14 +28,14 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		define("PI","3.14");
-		$r = 10;
-		$s = PI * pow($r,2);
-		$p = 2 * PI * $r;
-
-		echo "R là : $r<br>";
-		echo "S là : $s<br>";
-		echo "P là : $p";  
+		$a = 1234; // hệ thập phân
+		$b = -123; // số âm hệ thập phân
+		$c = 0123; // hệ bát phân (bắt đầu bằng 0 theo sau là các ký số)
+		$d = 0x1A; // hệ thập lục phân (bắt đầu bằng 0x theo sau là các ký số)
+		echo "a: $a<br>";
+		echo "b: $b<br>";
+		echo "c: $c<br>";
+		echo "d: $d<br>";
 		// phpinfo(); 
 	?>
 	</body>
