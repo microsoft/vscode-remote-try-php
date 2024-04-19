@@ -28,14 +28,10 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$a = 1234; // hệ thập phân
-		$b = -123; // số âm hệ thập phân
-		$c = 0123; // hệ bát phân (bắt đầu bằng 0 theo sau là các ký số)
-		$d = 0x1A; // hệ thập lục phân (bắt đầu bằng 0x theo sau là các ký số)
+		$a = 1.234;
+		$b = 1.2e3;
 		echo "a: $a<br>";
 		echo "b: $b<br>";
-		echo "c: $c<br>";
-		echo "d: $d<br>";
 		// phpinfo(); 
 	?>
 	</body>
