@@ -28,10 +28,7 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$num1 = 10;
-		$num2 = 20;
-		$total = $num1 + $num2;
-		printf("%d + %d = %d", $num1, $num2, $total);
+		printf("$%.2f", 44.5);
 		// phpinfo(); 
 	?>
 	</body>
