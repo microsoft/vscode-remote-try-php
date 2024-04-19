@@ -28,11 +28,10 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		print("<p>Hello World 1.</p>");
-	?>
-	<?php 
-		$WLang = "<p>Hello World 2.</p>";
-		print $WLang;
+		$num1 = 10;
+		$num2 = 20;
+		$total = $num1 + $num2;
+		printf("%d + %d = %d", $num1, $num2, $total);
 		// phpinfo(); 
 	?>
 	</body>
