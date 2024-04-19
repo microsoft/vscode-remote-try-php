@@ -28,14 +28,10 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$a = 123;
-		$b = 124;
-		$kq = "";
-		if ($a===$b)
-			$kq = "a bằng b";
-		else
-			$kq = "a không bằng b";
-		echo $kq;
+		$chuoi_1 = "String 1";
+		$chuoi_2 = " String 2";
+		$chuoi = $chuoi_1 . $chuoi_2; //nối 2 chuỗi
+		echo $chuoi;
 		// phpinfo(); 
 	?>
 	</body>
