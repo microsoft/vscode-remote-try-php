@@ -1,48 +1,27 @@
 <?php
-// Xử lý biểu mẫu tìm kiếm khi được gửi đi
-if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["txtTenTaiKhoan"]) && isset($_GET["txtMatKhau"])) {
-    $username = $_GET["txtTenTaiKhoan"];
-    $password = $_GET["txtMatKhau"];
-
-    // Kiểm tra thông tin đăng nhập
-    if ($username === "admin" && $password === "12345") {
-        $message = "Welcome, admin";
-        $messageStyle = 'style="font-family: Tahoma; color: red;"';
-    } else {
-        $message = "Tên tài khoản hoặc Mật khẩu sai. Vui lòng nhập lại!";
-        $messageStyle = '';
-    }
-
-    $authenticated = true;
-} else {
-    $authenticated = false;
-}
+/*----------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See LICENSE in the project root for license information.
+ *---------------------------------------------------------------------------------------*/
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-</head>
-<body>
-    <h1>ĐĂNG NHẬP</h1>
-
-    <?php if ($authenticated) { ?>
-        <p <?= $messageStyle ?>><?= $message ?></p>
-    <?php } else { ?>
-        <form action="index.php" method="GET">
-            <label for="txtTenTaiKhoan">Nhập tài khoản:</label>
-            <input type="text" id="txtTenTaiKhoan" name="txtTenTaiKhoan">
-            <br>
-            <br>
-            <label for="txtMatKhau">Nhập mật khẩu:</label>
-            <input type="password" id="txtMatKhau" name="txtMatKhau">
-            <br>
-            <br>
-            <input type="submit" value="Đăng nhập">
-        </form>
-    <?php } ?>
-</body>
+<html>
+	<head>
+		<title>Visual Studio Code Remote :: PHP</title>
+	</head>
+	<body>
+	<?php 
+		$so_luong = $_POST["so_luong"];
+        $don_gia = $_POST["don_gia"];
+        if ($so_luong < 10)
+        {
+            $thanh_tien = $don_gia * $so_luong;
+        } elseif ($so_luong > 10 and $so_luong < 20)
+        {
+            $thanh_tien = $don_gia * $so_luong * 0.95;
+        } else {
+            $thanh_tien = $don_gia * $so_luong * 0.9;
+        }
+		// phpinfo(); 
+	?>
+	</body>
 </html>
