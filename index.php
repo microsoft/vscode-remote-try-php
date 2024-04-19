@@ -32,7 +32,7 @@ function sayHello($name) {
 		<?php echo '<b>'; ?>
 
 		<h1>Tìm sách</h1>
-		<form action="xlTimSach.php" Method="GET">
+		<form action="test.php" Method="GET">
 			Từ khóa : <input type="text" name="txtTukhoa"/>
 			<input type="submit" value="Tìm"/>
 		</form>
