@@ -30,20 +30,19 @@ function sayHello($name) {
 		<?php echo '<b>'; ?>
 			Một ví dụ kết hợp HTNL và PHP
 		<?php echo '</b>'; ?>
-
-		<h1>Tìm sách</h1>
-		<form action = "xlTimSach.phd" method="GET">
-			Từ khóa: <input type="text" name="txtTukhoa"/>
-			<input type=submit name=submit value="Tim">
-		</form>
+		<br><br>
+		<form action="xltimsach.php" Method="GET" >
+        Từ khóa : <input type="text" name="txtTukhoa"/>
+        <input type="submit" value="Tìm"/>
+        </form>
+		<br><br>
 		<?php
-			$sTukhoa = $_REQUEST["txtTukhoa"];
-			if (isset($sTukhoa))
-			{
-			print "Từ khóa tìm sách là : $sTukhoa";
-			echo "<br>Kết quả tìm là : ";
-			}
+			define("PI", 3.14);
+			$r=10;
+			$s = PI * pow($r,2);
+			$p = 2*PI * $r;
+			printf("$%.2f", $s);
 		?>
-	</body>
 
+	</body>
 </html>
