@@ -28,10 +28,13 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$chuoi_1 = "String 1";
-		$chuoi_2 = " String 2";
-		$chuoi = $chuoi_1 . $chuoi_2; //nối 2 chuỗi
-		echo $chuoi;
+		// Trong PHP tham chiếu có nghĩa là lấy cùng một giá trị bằng nhiều tên biến khác nhau.
+		// Ký hiệu tham chiếu: &
+		$a = 10;
+		$b = &$a;
+		//take value
+		echo $a; 
+		echo $b;
 		// phpinfo(); 
 	?>
 	</body>
