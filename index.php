@@ -43,6 +43,44 @@ function sayHello($name) {
 			$p = 2*PI * $r;
 			printf("$%.2f", $s);
 		?>
+		<br>
+		<!-- Biến cục bộ -->
+		<?php
+		function Test()
+			{
+			$a=5;
+			echo $a; // phạm vi cục bộ
+			}
+			Test();
+			echo $a;
+		?>
 
+		<br>
+		<!-- Biến toàn cục -->
+		<?php
+			$a = 1;
+			$b = 2;
+			function Sum()
+			{
+				global $a, $b;
+				$b = $a + $b;
+			}
+			Sum();
+			echo $b; 
+		?>
+		<!-- Biến static -->
+		<br>
+		<?php
+			function Test1()
+			{
+				static $a = 0;
+				echo $a;
+				$a++;
+			}
+			Test1(); 
+			Test1(); 
+			Test1(); 
+		?>
+		<a href="cau_truc_re_nhanh.php">Cấu trúc rẽ nhánh</a>
 	</body>
 </html>
