@@ -22,12 +22,17 @@
     //     'tuoi' => 24,
     //     'IQ' => "Rất cao");
 
-    $var = "100" + 15;
-    echo $var;
-    echo "<br>";
-    $var = "100" + 15.0;
-    echo $var;
-    echo "<br>";
-    $var = 39 . "Steps";
-    echo $var;
+    // $var = "100" + 15;
+    // echo $var;
+    // echo "<br>";
+    // $var = "100" + 15.0;
+    // echo $var;
+    // echo "<br>";
+    // $var = 39 . "Steps";
+    // echo $var;
+
+    $a = 10;
+    $b = &$a;
+    echo "$a<br>$b";
+
 ?>
