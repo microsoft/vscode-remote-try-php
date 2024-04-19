@@ -20,8 +20,6 @@ function func_test() {
 	echo "$a<br>";
 	$a++;
 }
-
-
 ?>
 
 <html>
@@ -29,14 +27,13 @@ function func_test() {
 		<title>Visual Studio Code Remote :: PHP</title>
 	</head>
 	<body>
-		<?php 
-		$value = 100;
-		// func($value);
-		// func_Local();
-		func_test();
-		func_test();
-		func_test();
+	<?php 
+		print("<p>Hello World 1.</p>");
+	?>
+	<?php 
+		$WLang = "<p>Hello World 2.</p>";
+		print $WLang;
 		// phpinfo(); 
-		?>
+	?>
 	</body>
 </html>
