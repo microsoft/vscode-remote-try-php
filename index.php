@@ -6,16 +6,6 @@
 		<title>Visual Studio Code Remote :: PHP</title>
 	</head>
 	<body>
-		<h2>BT1</h2>
-		<!-- <?php
-		for ($i = 1; $i <= 200; $i++) {
-			if ($i % 2 == 0) {
-				echo '<span style="color: red; font-weight: bold;">' . $i . '</span> ';
-			} else {
-				echo '<span style="color: blue; font-style: italic;">' . $i . '</span> ';
-			}
-		}
-		?> -->
 		<!-- <div>
 			<?php
 				$Ngonngu1="PHP";
@@ -25,7 +15,7 @@
 				printf("%s và %s là ngôn ngữ WebServer",$Ngonngu1,$Ngonngu2);
 			?>
 		</div> -->
-		<div>
+		<!-- <div>
 			<?php
 				$n = 100;
 				$arr1 = array($n);
@@ -41,7 +31,16 @@
 				print_r($arr3);
 				print_r($arr4);
 			?>
-		</div>
-
+		</div> -->
+		<h2>Nhóm 17</h2>
+		<?php
+		for ($i = 1; $i <= 200; $i++) {
+			if ($i % 2 == 0) {
+				echo '<span style="color: red; font-weight: bold;">' . $i . '</span> ';
+			} else {
+				echo '<span style="color: blue; font-style: italic;">' . $i . '</span> ';
+			}
+		}
+		?>
 	</body>
 </html>
