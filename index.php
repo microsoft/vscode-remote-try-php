@@ -28,7 +28,14 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		printf("$%.2f", 44.5);
+		define("PI","3.14");
+		$r = 10;
+		$s = PI * pow($r,2);
+		$p = 2 * PI * $r;
+
+		echo "R là : $r<br>";
+		echo "S là : $s<br>";
+		echo "P là : $p";  
 		// phpinfo(); 
 	?>
 	</body>
