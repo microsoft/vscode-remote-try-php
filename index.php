@@ -28,30 +28,10 @@ function func_test() {
 	</head>
 	<body>
 	<?php 
-		$n = 100;
-		$arr1 = array($n); // mảng chỉ có một phần tử với biến n
-		echo "arr2: \n";
-		print_r($arr1);
-		echo "<br>";
-		$arr2 = array();
-		for($i = 0; $i < $n; $i++) {
-			$arr2[] = "giá trị " . $i . "<br>";
-		}
-		echo "arr2: \n";
-		print_r($arr2); // mảng có 100 phần tử với n giá trị
-		
-		echo "<br>";
-		$arr3 = array(
-			'hoten' => 'Nguyễn Đức Anh',
-			'quequan' => 'Thanh Hóa',
-			'tuoi' => '21',
-			'IQ' => 'Rất cao'
-		);
-		echo "arr3:\n";
-		print_r($arr3); // mảng kết hợp
-		
-		
-		
+		$don_gia = 5000;
+		$so_luong = 100;
+		$thanh_tien = (double)($so_luong*$don_gia);
+		echo $thanh_tien;
 		// phpinfo(); 
 	?>
 	</body>
