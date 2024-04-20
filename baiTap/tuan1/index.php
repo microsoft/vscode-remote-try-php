@@ -12,7 +12,9 @@
 </head>
 
 <style>
-	
+  body {
+    width: 300px;
+  }
 </style>
 
 <body>
