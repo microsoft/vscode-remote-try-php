@@ -7,8 +7,9 @@
 </head>
 <body>
     <h1 style="color: blue;">Đăng nhập hệ thống</h1>
+
     <form action="result_login.php" method="GET">
-        <label for="txtTenTaiKhoan" style="font-weight: bold;">Nhập tài khoản:</label>
+        <label for="txtTenTaiKhoan">Nhập tài khoản:</label>
         <input type="text" id="txtTenTaiKhoan" name="txtTenTaiKhoan">
         <br>
         <br>
@@ -19,5 +20,4 @@
         <input type="submit" value="Đăng nhập">
     </form>
 </body>
-</html>
 </html>

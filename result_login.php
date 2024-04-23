@@ -11,8 +11,8 @@
         $sPass = $_REQUEST['txtMatKhau'];
     ?>
     <h1 style="color: blue;">Kết quả đăng nhập</h1>
-    <span style="font-weight: bold;">Tài khoản: </span> <span style="color: red; font-weight:bold"><?php echo $sUser?></span>
+    Tài khoản : <span style="color: red;"><?php echo $sUser?></span>
     <br /><br>
-    <span style="font-weight: bold;">Mật khẩu: </span> <span style="color: red; font-weight:bold"><?php echo $sPass?></span>
+    Mật khẩu : <span style="color: red;"><?php echo $sPass?></span>
 </body>
 </html>

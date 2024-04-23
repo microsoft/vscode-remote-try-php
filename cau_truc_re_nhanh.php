@@ -17,7 +17,7 @@
         if(isset($_POST['quantity']) && isset($_POST['price'])) {
             $so_luong = $_POST['quantity'];
             $don_gia = $_POST['price'];
-
+            
             if ($so_luong < 10)
                 $thanh_tien = $so_luong * $don_gia;
             elseif ($so_luong >= 10 && $so_luong <= 20)
