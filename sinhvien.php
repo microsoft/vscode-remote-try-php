@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user ="root";
-$password="1234";
+$password="ducanh12@#";
 $con=mysqli_connect($host,$user,$password);
 
 // Kiểm tra kết nối
