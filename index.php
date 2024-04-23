@@ -1,43 +1,53 @@
-<?php
-// Xử lý biểu mẫu tìm kiếm khi được gửi đi
-    if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["txtTenTaiKhoan"]) && isset($_GET["txtMatKhau"])) {
-        $username = $_GET["txtTenTaiKhoan"];
-        $password = $_GET["txtMatKhau"];
-
-        if ($username === "admin" && $password === "12345") {
-            $message = "Welcome, admin";
-            $messageStyle = 'style="font-family: Tahoma; color: red;"';
-        } else {
-            $message = "Tên tài khoản hoặc Mật khẩu sai. Vui lòng nhập lại!";
-            $messageStyle = '';
-        }
-        $authenticated = true;
-    } else {
-        $authenticated = false;
-    }
-?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Đăng nhập</title>
-    </head>
+    <title>Thông tin Sinh viên</title>
+</head>
 <body>
-    <h1>ĐĂNG NHẬP HỆ THỐNG</h1>
-    <?php if ($authenticated) { ?>
-        <p <?= $messageStyle ?>><?= $message ?></p>
-        <?php } else { ?>
-        <form action="index.php" method="GET">
-        <label for="txtTenTaiKhoan">Tài khoản:</label>
-            <input type="text" id="txtTenTaiKhoan" name="txtTenTaiKhoan">
-            <br>
-            <br>
-            <label for="txtMatKhau">Mật khẩu:</label>
-            <input type="password" id="txtMatKhau" name="txtMatKhau">
-            <br>
-            <br>
-            <input type="submit" value="Đăng nhập">
-        </form>
-    <?php } ?>
+    <?php
+    $host = "localhost";
+    $user = "root";
+    $password = "ducanh12@#";
+    $database = "pka_s";
+    $con = mysqli_connect($host, $user, $password, $database);
+
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit();
+    }
+
+    $query = mysqli_query($con,"SELECT tblsinhvien.MSSV, tblsinhvien.HoTen, tbldangKy.Ky, tbldangky.ChiTietTT 
+                                FROM tblsinhvien
+                                JOIN tbldangky ON tblsinhvien.MSSV = tbldangky.MSSV;
+                                ");
+
+    // Kiểm tra số lượng bản ghi trả về
+    $rowcount = mysqli_num_rows($query);
+
+    if ($rowcount > 0) {
+        echo "<h2>Danh sách Sinh viên đăng ký môn học</h2>";
+        echo "<table border='1'>";
+        echo "<tr><th>MSSV</th><th>Họ và tên</th><th>Kỳ</th><th>Đăng ký</th></tr>";
+
+        // Lặp qua các hàng dữ liệu và hiển thị thông tin
+        while ($row = mysqli_fetch_assoc($query)) {
+            echo "<tr>";
+            echo "<td>" . $row['MSSV'] . "</td>";
+            echo "<td>" . $row['HoTen'] . "</td>";
+            echo "<td>" . $row['Ky'] . "</td>";
+            echo "<td>" . $row['ChiTietTT'] . "</td>";
+            echo "</tr>";
+        }
+
+        echo "</table>";
+    } else {
+        echo "Không có sinh viên nào trong cơ sở dữ liệu.";
+    }
+
+    // Đóng kết nối
+    mysqli_close($con);
+    ?>
 </body>
 </html>
