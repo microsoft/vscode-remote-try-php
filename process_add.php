@@ -1,14 +1,11 @@
 <?php
-// Lấy thông tin kết nối đến MySQL từ biến POST
 $host = "localhost";
 $user = "root";
 $password = "ducanh12@#";
 $database = "pka_s";
 
-// Kết nối đến cơ sở dữ liệu MySQL
 $con = mysqli_connect($host, $user, $password, $database);
 
-// Kiểm tra kết nối
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit();
@@ -20,15 +17,21 @@ $HoTen = mysqli_real_escape_string($con, $_POST['HoTen']);
 $Email = mysqli_real_escape_string($con, $_POST['Email']);
 $Diachi = mysqli_real_escape_string($con, $_POST['Diachi']);
 
-// Chuẩn bị truy vấn INSERT để thêm sinh viên vào bảng tblsinhvien
-$query = "INSERT INTO tblsinhvien (MSSV, HoTen, Email, Diachi) VALUES ('$MSSV', '$HoTen', '$Email', '$Diachi')";
 
-// Thực thi truy vấn INSERT
-if (mysqli_query($con, $query)) {
-    // echo "New student added successfully!";
-    echo "<script>alert('Sinh viên đã được thêm thành công.'); window.location = 'index.php';</script>";
+$check_query = "SELECT * FROM tblsinhvien WHERE MSSV = '$MSSV'";
+$result = mysqli_query($con, $check_query);
+
+if (mysqli_num_rows($result) > 0) {
+    // Nếu tồn tại bản ghi với mã sinh viên đã nhập
+    echo "<script>alert('Mã sinh viên đã tồn tại. Vui lòng nhập mã sinh viên khác.');</script>";
+    echo "<script>history.back();</script>"; 
 } else {
-    echo "Error: " . mysqli_error($con);
+    $insert_query = "INSERT INTO tblsinhvien (MSSV, HoTen, Email, Diachi) VALUES ('$MSSV', '$HoTen', '$Email', '$Diachi')";
+    if (mysqli_query($con, $insert_query)) {
+        echo "<script>alert('Sinh viên đã được thêm thành công.'); window.location = 'index.php';</script>";
+    } else {
+        echo "Error: " . mysqli_error($con);
+    }
 }
 
 // Đóng kết nối MySQL
