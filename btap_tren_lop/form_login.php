@@ -13,7 +13,7 @@
         <input type="text" id="txtTenTaiKhoan" name="txtTenTaiKhoan">
         <br>
         <br>
-        <label for="txtMatKhau">Nhập mật khẩu:</label>
+        <label for="txtMatKhau" style="font-weight: bold">Nhập mật khẩu:</label>
         <input type="password" id="txtMatKhau" name="txtMatKhau">
         <br>
         <br>
