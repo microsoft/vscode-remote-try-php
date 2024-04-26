@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 26, 2024 lúc 04:00 AM
+-- Thời gian đã tạo: Th4 26, 2024 lúc 04:19 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -46,6 +46,7 @@ CREATE TABLE `tblcustomer` (
   `name` varchar(50) DEFAULT NULL,
   `phone` varchar(15) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
+  `password` varchar(50) NOT NULL,
   `address` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
