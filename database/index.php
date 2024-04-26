@@ -27,7 +27,7 @@
     $conn = new mysqli($server, $user, $pass, $database);
     // Kiểm tra kết nối
     if ($conn->connect_error) {
-        die("Kết nối CSDL thất bại: " . $connect->connect_error);
+        die("Kết nối CSDL thất bại: " . $conn->connect_error);
     }
     $sql = "SELECT sinhvien.MSSV, sinhvien.HoTen, monhoc.MaMH, monhoc.TenMH, dangky.Ky
             FROM dangky
