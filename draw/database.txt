@@ -1,0 +1,98 @@
+Table tblCustomer {
+  idCustomer varchar(15) [primary key]
+  idAddress varchar(15) [ref: > tblAddress.idAddress]
+  name varchar(50)
+  phone varchar(15)
+  email varchar(50)
+  password varchar(50)
+}
+
+Table tblHotel {
+  idHotel varchar(15) [primary key]
+  idAddress varchar(15) [ref: > tblAddress.idAddress]
+  name varchar(50)
+}
+
+Table tblVehicle {
+  idVehicle varchar(15) [primary key]
+  name varchar(50)
+  licensePlate varchar(20)
+}
+
+
+
+Table tblTour {
+  idTour varchar(15) [primary key]
+  name varchar(50)
+  startDay date
+  endDay date
+  cost decimal(10, 2)
+  // idLocation varchar(15) [ref: > tblLocation.idLocation]
+  idHotel varchar(15) [ref: > tblHotel.idHotel]
+  idVehicle varchar(15) [ref: > tblVehicle.idVehicle]
+  idTourGuide varchar(15) [ref: > tblTourGuide.idTourGuide]
+}
+
+Table tblAgency {
+  idAgency varchar(15) [primary key]
+  idAddress varchar(15) [ref: > tblAddress.idAddress]
+  name varchar(50)
+  phone varchar(15)
+  idTourGuide varchar(15) [ref: > tblTourGuide.idTourGuide]
+}
+
+Table tblTicket {
+  idTicket varchar(15) [primary key]
+  idTour varchar(15) [ref: > tblTour.idTour]
+  idCustomer varchar(15) [ref: > tblCustomer.idCustomer]
+  idAgency varchar(15) [ref: > tblAgency.idAgency]
+}
+
+Table tblTourGuide {
+  idTourGuide varchar(15) [primary key]
+  idAddress varchar(15) [ref: > tblAddress.idAddress]
+  name varchar(50)
+  phone varchar(50)
+  email varchar(50) 
+  // address varchar(50) 
+}
+
+Table tblRegister {
+  idRegister varchar(15) [primary key] 
+  idCustomer varchar(15) [ref: > tblCustomer.idCustomer]
+  idTour varchar(15) [ref: > tblTour.idTour]
+  quantityTicket int 
+}
+
+Table tblAddress {
+  idAddress varchar(15) [primary key]
+  idCity varchar(15) [ref: > tblCity.idCity]
+  idDistrict varchar(15) [ref: > tblDistrict.idDistrict]
+  idWard varchar(15) [ref: > tblWard.idWard]
+  idDetailAddress varchar(15) [ref: > tblDetailAddress.idDetailAddress]
+
+}
+
+
+Table tblCity {
+  idCity varchar(15) [primary key] 
+  name varchar(50)
+}
+
+Table tblDistrict {
+  idDistrict varchar(15) [primary key]
+  idCity varchar(15) [ref: > tblCity.idCity]
+  name varchar(50) 
+
+}
+
+Table tblWard {
+  idWard varchar(15) [primary key]
+  idDistrict varchar(15) [ref: > tblDistrict.idDistrict]
+  name varchar(50) 
+}
+
+Table tblDetailAddress {
+  idDetailAddress varchar(15) [primary key] 
+  name int(50)
+}
