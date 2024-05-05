@@ -11,31 +11,45 @@
 <table class="student-table">
   <thead>
     <tr>
-      <th>Mssv</th>
+      <th>MSSV</th>
       <th>Họ và Tên</th>
       <th>Kỳ</th>
       <th>Đăng Ký</th>
     </tr>
   </thead>
   <tbody>
-    <?php
-    // Kết nối với cơ sở dữ liệu SQLite
-    $db = new SQLite3('C:\xampp\htdocs\WorkSpace6\vscode-remote-try-php\BaiTap\Week2\database.db');
+  <?php
+      // Thông tin kết nối MySQL
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$database = "mydb"; 
 
-    // Truy vấn dữ liệu từ cơ sở dữ liệu
-    $query = $db->query('SELECT * FROM tblSinhVien');
-    while ($row = $query->fetchArray()) {
-        echo '<tr>';
-        echo '<td>'.$row['Mssv'].'</td>';
-        echo '<td>'.$row['HoTen'].'</td>';
-        echo '<td>'.$row['Ky'].'</td>';
-        echo '<td>'.$row['DangKy'].'</td>';
-        echo '</tr>';
+// Tạo kết nối
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Kiểm tra kết nối
+if ($conn->connect_error) {
+    die("Kết nối không thành công: " . $conn->connect_error);
+}
+
+// Truy vấn dữ liệu từ bảng sinh viên
+$sql = "SELECT * FROM sinhvien"; 
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Hiển thị dữ liệu
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["MSSV"]. "</td><td>" . $row["HoTen"]. "</td><td>" . $row["Ky"]. "</td><td>" . $row["DangKy"]. "</td></tr>";
     }
+} else {
+    echo "0 kết quả";
+}
 
-    // Đóng kết nối với cơ sở dữ liệu
-    $db->close();
-    ?>
+// Đóng kết nối
+$conn->close();
+      ?>
   </tbody>
 </table>
 
