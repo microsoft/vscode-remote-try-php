@@ -32,6 +32,40 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+        .upload-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-btn:hover {
+            background-color: #45a049;
+        }
+    
+        .choose-btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .choose-btn:hover {
+            background-color: #0077a3;
+        }
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .delete-btn:hover {
+            background-color: #cc0000;
+        }
     </style>
 </head>
 <body>
@@ -45,9 +79,10 @@
     }
     ?>
     <form action="../Controller/upload.php" method="post" enctype="multipart/form-data">
-        Select file to upload:
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload File" name="submit">
+        <label for="fileToUpload" class="choose-btn">Choose File</label>
+        <input type="file" name="fileToUpload" id="fileToUpload" class="file-input" style="display: none;" onchange="displayFileName()">
+        <span id="selectedFileName"></span>
+        <input type="submit" value="Upload File" name="submit" class="upload-btn">
     </form>
     <br><br>
     <table id="fileTable">
@@ -57,6 +92,7 @@
                 <th onclick="sortTable(1)">File Type</th>
                 <th onclick="sortTable(2)">Upload Date</th>
                 <th onclick="sortTable(3)">File Size</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -100,6 +136,11 @@
                     }
                 }
             }
+        }
+        function displayFileName() {
+            var fileInput = document.getElementById('fileToUpload');
+            var selectedFileName = document.getElementById('selectedFileName');
+            selectedFileName.innerText = fileInput.files[0].name;
         }
     </script>
 </body>

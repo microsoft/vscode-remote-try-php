@@ -37,6 +37,5 @@
         header("Refresh:2; url=../View/login.html"); 
         exit();
     }
-    
     mysqli_close($con);
 ?>
