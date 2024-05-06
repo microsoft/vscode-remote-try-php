@@ -1,8 +1,8 @@
 <?php
-
+require_once('config.php');
 $host = "localhost";
 $user ="root";
-$password="ducanh12@#";
+$password = "ducanh12@#";
 $con=mysqli_connect($host,$user,$password);
 
 // Kiểm tra kết nối
