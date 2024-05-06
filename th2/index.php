@@ -16,12 +16,10 @@
     <?php
     $uploadDir = "upload/";
 
-    // Kiểm tra sự tồn tại của thư mục upload
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir);
     }
 
-    // Xử lý tải lên tệp tin
     if (isset($_FILES["fileToUpload"])) {
         $targetFile = $uploadDir . basename($_FILES["fileToUpload"]["name"]);
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
@@ -31,19 +29,16 @@
         }
     }
 
-    // Lấy danh sách tệp tin trong thư mục upload
     $files = scandir($uploadDir);
     $files = array_diff($files, array(".", ".."));
 
-    // Kiểm tra xem người dùng đã nhấp vào tiêu đề sắp xếp hay chưa
     $sortOrder = isset($_GET["sort"]) ? $_GET["sort"] : "none";
     if ($sortOrder == "name") {
-        natsort($files); // Sắp xếp theo tên tệp
+        natsort($files); 
     } elseif ($sortOrder == "date") {
-        $files = array_reverse($files); // Sắp xếp theo ngày tải lên (đảo ngược thứ tự)
+        $files = array_reverse($files); 
     }
 
-    // Hiển thị danh sách tệp tin
     if (!empty($files)) {
         echo '<table>';
         echo '<tr>';
