@@ -15,7 +15,7 @@
         </form>
         
         <h2>Uploaded Files</h2>
-        <?php include 'list_files.php'; ?>
+        <?php include 'list_file.php'; ?>
     </div>
 </body>
 </html>
