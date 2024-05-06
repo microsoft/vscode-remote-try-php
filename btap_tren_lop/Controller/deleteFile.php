@@ -1,28 +1,45 @@
 <?php
-// Kiểm tra xem yêu cầu có phải là POST không
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Lấy đường dẫn của file cần xóa từ yêu cầu POST
-    $fileToDelete = $_POST['fileToDelete'];
+    if (isset($_POST['fileToDelete'])) {
+        $fileToDelete = $_POST['fileToDelete'];
+        if (file_exists($fileToDelete)) {
+            if (unlink($fileToDelete)) {
+                require_once('../config.php');
+                $host = "localhost";
+                $user = "root";
+                $password = DB_PASSWORD;
+                $dbname = "fileupload";
+                $conn = new mysqli($host, $user, $password, $dbname);
 
-    // Kiểm tra xem file có tồn tại không
-    if (file_exists($fileToDelete)) {
-        // Xóa file từ ổ đĩa
-        if (unlink($fileToDelete)) {
-            // Xóa file thành công
-            header("Location: ../View/files.php?success=File deleted successfully.");
-            exit();
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+                $fileNameDelete = basename(pathinfo($fileToDelete, PATHINFO_FILENAME));
+  
+                $sql = "DELETE FROM tblfile WHERE name = '$fileNameDelete'";
+
+                if ($conn->query($sql) === TRUE) {
+                    header("Location: ../View/files.php?success=File deleted successfully.");
+                    exit();
+                } else {
+                    header("Location: ../View/files.php?error=Failed to delete file from database.");
+                    exit();
+                }
+
+                $conn->close();
+            } else {
+                header("Location: ../View/files.php?error=Failed to delete file from disk.");
+                exit();
+            }
         } else {
-            // Xóa file thất bại
-            header("Location: ../View/files.php?error=Failed to delete file.");
+            header("Location: ../View/files.php?error=File does not exist.");
             exit();
         }
     } else {
-        // File không tồn tại
-        header("Location: ../View/files.php?error=File does not exist.");
+        header("Location: ../View/files.php?error=Invalid file information.");
         exit();
     }
 } else {
-    // Yêu cầu không hợp lệ
     header("Location: ../View/files.php?error=Invalid request.");
     exit();
 }

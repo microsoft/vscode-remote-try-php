@@ -23,7 +23,7 @@ foreach ($files as $file) {
             
             echo "</tr>";
         } else {
-            // Xử lý tệp tin không tồn tại
+            
             echo "<tr><td colspan='5'>File $file không tồn tại</td></tr>";
         }
     }
