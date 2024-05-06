@@ -22,6 +22,7 @@ if(isset($_GET['success']) && $_GET['success'] == 1) {
         }
         form {
             max-width: 400px;
+            max-height: 800px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
@@ -55,6 +56,12 @@ if(isset($_GET['success']) && $_GET['success'] == 1) {
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
+        .register-button {
+            
+            float: right; /* Đưa nút vào góc phải */
+            
+        }
+
     </style>
 </head>
 <body>
@@ -70,7 +77,12 @@ if(isset($_GET['success']) && $_GET['success'] == 1) {
         <br>
         <br>
         <input type="submit" value="Đăng nhập">
+<<<<<<< HEAD
         <input type="submit" value="Đăng ký">
+=======
+        <br>
+        <a href="form_register.php" class="register-button">Đăng ký</a>
+>>>>>>> 9ac07c21a788ff0318191028d9f29972381e1ccd
     </form>
 </body>
 </html>
