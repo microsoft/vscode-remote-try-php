@@ -5,7 +5,7 @@
         // Xử lý đăng ký
         $host = "localhost";
         $user = "root";
-        $password = "ducanh12@#";
+        $password = DB_PASSWORD;
         $dbname = "sinhvien";
 
         $conn = new mysqli($host, $user, $password, $dbname);
