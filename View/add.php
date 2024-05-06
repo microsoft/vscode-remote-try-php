@@ -8,6 +8,9 @@
         function goToIndex() {
                 window.location.href = 'index.php';
         }
+        window.onload = function() {
+            document.getElementById("name").focus();
+        };
     </script>
     <style>
         body {
@@ -61,14 +64,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>Add New Employee</h2>
-        <form action="process_add.php" method="POST">
-            <input type="text" placeholder="ID" id="idEmployee" name="idEmployee" required>
+        <h2>Register</h2>
+        <form action="process_add" method="POST">
+            <!-- <input type="text" placeholder="ID Customer" id="idCustomer" name="idCustomer" required> -->
             <input type="text" placeholder="Name" id="name" name="name" required>
             <input type="text" placeholder="Phone" id="phone" name="phone" required>
             <input type="email" placeholder="Email" id="email" name="email" required>
-            <input type="text" placeholder="Address" id="address" name="address" required>
-            <input type="submit" value="Add Employee">
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <input type="submit" value="Rgister">
             <input type="submit" value="Cancel" onclick='goToIndex()'>
         </form>
     </div>
