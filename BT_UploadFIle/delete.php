@@ -15,7 +15,7 @@
     // Kết nối CSDL
     $servername = "localhost";
     $username = "root";
-    $password = "123456";
+    $password = "123456789";
     $dbname = "files";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

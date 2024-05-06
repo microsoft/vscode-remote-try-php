@@ -19,7 +19,7 @@
         // Kết nối CSDL
         $servername = "localhost";
         $username = "root";
-        $password = "123456";
+        $password = "123456789";
         $dbname = "files";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -56,7 +56,7 @@
 
             // Kiểm tra xem tệp đã tồn tại chưa
             if (file_exists($target_file)) {
-                echo "Tệp đã tồn tại.";
+                echo '<b style="color: red;">Tệp đã tồn tại.</b>';
                 $uploadOk = 0;
             }
 
@@ -70,7 +70,7 @@
             }
 
             if ($uploadOk == 0) {
-                echo "Tệp của bạn không được tải lên.";
+                echo '<b style="color: red;"> Tệp của bạn không được tải lên.</b>';
             } else {
                 if (move_uploaded_file($_FILES["myfile"]["tmp_name"], $target_file)) {
                     // Lưu thông tin vào CSDL
