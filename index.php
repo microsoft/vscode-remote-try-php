@@ -1,27 +1,34 @@
-<?php
-
-/*----------------------------------------------------------------------------------------
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See LICENSE in the project root for license information.
- *---------------------------------------------------------------------------------------*/
-
-function sayHello($name) {
-	echo "Hello $name!";
-}
-
-?>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Visual Studio Code Remote :: PHP</title>
-	</head>
-	<body>
-		<?php 
-		
-		sayHello('remote world');
-			
-		phpinfo(); 
-			
-		?>
-	</body>
+<head>
+    <title>Calculation using MVC Model</title>
+</head>
+<body>
+    <form id="form" action="controller/CalcController.php" method="post">
+        <h2>Calculation using MVC Model</h2>
+        <table>
+            <tr>
+                <td>NUMBER 1</td>
+                <td><input type="text" name="number1"></td>
+            </tr>
+            <tr>
+                <td>NUMBER 2</td>
+                <td><input type="text" name="number2"></td>
+            </tr>
+            <tr>
+                <td>METHOD</td>
+                <td>
+                    <select name="method_v">
+                        <option value="add">Add</option>
+                        <option value="sub">Sub</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" name="btnSubmit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
