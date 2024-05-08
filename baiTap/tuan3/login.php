@@ -6,6 +6,11 @@
     <title>Đăng nhập</title>
 </head>
 <body>
+  <?php 
+    session_start();
+    if($_SESSION["IsLogin"] == true) 
+      header("Location: home.php");
+  ?>
     <form method="POST" action="validateuser.php">
         <div class="row mb-3"> 
           <label for="inputUsername" class="col-sm-5 col-form-label">Tên đăng nhập:</label>
@@ -26,6 +31,5 @@
           </div>
         </div>
       </form>
-      
 </body>
 </html>
