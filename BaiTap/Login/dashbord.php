@@ -3,7 +3,7 @@ session_start();
 if ($_SESSION["Login"] == false)
     header("location: login.html");
 
-if($_SERVER["REQUEST_METHOD"]== "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
     $_SESSION["Login"] = false;
     header("location: login.html");
 }
