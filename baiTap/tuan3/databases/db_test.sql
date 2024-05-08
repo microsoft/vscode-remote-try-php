@@ -14,6 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
 -- Dumping database structure for db_test
 CREATE DATABASE IF NOT EXISTS `db_test` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `db_test`;
@@ -22,13 +23,14 @@ USE `db_test`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES (1, 'admin', 'f865b53623b121fd34ee5426c792e5c33af8c227');
-
 -- Dumping data for table db_test.users: ~0 rows (approximately)
-DELETE FROM `users`;
+
+INSERT INTO `users` (`id`, `username`, `password`) VALUES (1, 'admin', 'f865b53623b121fd34ee5426c792e5c33af8c227');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

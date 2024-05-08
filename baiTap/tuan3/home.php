@@ -13,6 +13,7 @@
 <body>
   <?php
     include "upload.php";
+    include 'filelist.php';
   ?>
     
     <form method="POST" action="logout.php">
