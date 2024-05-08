@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+  session_start();
+  if($_SESSION["IsLogin"] == true) 
+    header("Location: home.php");
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
 </head>
 <body>
-  <?php 
-    session_start();
-    if($_SESSION["IsLogin"] == true) 
-      header("Location: home.php");
-  ?>
     <form method="POST" action="validateuser.php">
         <div class="row mb-3"> 
           <label for="inputUsername" class="col-sm-5 col-form-label">Tên đăng nhập:</label>
@@ -31,5 +31,10 @@
           </div>
         </div>
       </form>
+      <?php
+        if(isset($_GET['error'])) {
+            echo '<script>alert("' . $_GET['error'] . '");</script>';
+        }
+      ?>
 </body>
 </html>

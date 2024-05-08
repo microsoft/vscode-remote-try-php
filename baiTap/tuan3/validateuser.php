@@ -1,12 +1,12 @@
 <?php
     session_start();
     $_SESSION["IsLogin"] = false;
-
+    
     include('./db_connect.php');
     ob_start();
     ob_end_flush();
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = sha1($_POST['password']);
 
     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = $db->query($query);
@@ -15,6 +15,6 @@
         $_SESSION["IsLogin"] = true;
         header("Location: home.php");
     } else {
-        header("Location: login.php");
+        header("Location: login.php?error=Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng thử lại.");
     }
 ?>

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php 
+    session_start();
+    if($_SESSION["IsLogin"] == false)
+      header('Location: login.php');
+  ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +12,9 @@
 </head>
 <body>
   <?php
-    session_start();
-    if($_SESSION["IsLogin"] == false) 
-      header("Location: login.php");
+    include "upload.php";
   ?>
+    
     <form method="POST" action="logout.php">
         <div class="row">
           <div class="col-sm-2"></div>
