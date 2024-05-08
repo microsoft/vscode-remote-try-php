@@ -12,8 +12,8 @@
 
     if ($result->num_rows > 0) {
         $_SESSION["IsLogin"] = true;
-        header("Location: welcome.htm");
+        header("Location: home.html");
     } else {
-        header("Location: login.htm");
+        header("Location: login.html");
     }
 ?>
