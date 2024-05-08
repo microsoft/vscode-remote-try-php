@@ -19,6 +19,16 @@
 CREATE DATABASE IF NOT EXISTS `db_test` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `db_test`;
 
+-- Dumping structure for table db_test.images
+CREATE TABLE IF NOT EXISTS `images` (
+  `id` int(11) NOT NULL DEFAULT 0,
+  `path` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table db_test.images: ~0 rows (approximately)
+DELETE FROM `images`;
+
 -- Dumping structure for table db_test.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
@@ -29,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table db_test.users: ~0 rows (approximately)
+DELETE FROM `users`;
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES (1, 'admin', 'f865b53623b121fd34ee5426c792e5c33af8c227');
 
