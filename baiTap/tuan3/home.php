@@ -18,7 +18,6 @@
     
     <form method="POST" action="logout.php">
         <div class="row">
-          <div class="col-sm-2"></div>
           <div class="col-sm-5">
             <button type="submit" class="btn btn-primary">Đăng xuất</button>
           </div>

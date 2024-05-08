@@ -21,8 +21,8 @@ USE `db_test`;
 
 -- Dumping structure for table db_test.images
 CREATE TABLE IF NOT EXISTS `images` (
-  `id` int(11) NOT NULL DEFAULT 0,
-  `path` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `path` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -31,7 +31,7 @@ DELETE FROM `images`;
 
 -- Dumping structure for table db_test.users
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
