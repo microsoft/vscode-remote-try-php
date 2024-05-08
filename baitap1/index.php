@@ -20,36 +20,36 @@
   <tbody>
   <?php
       // Thông tin kết nối MySQL
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$database = "myDB"; 
+        $servername = "localhost"; 
+        $username = "root"; 
+        $password = ""; 
+        $database = "myDB"; 
 
-// Tạo kết nối
-$conn = new mysqli($servername, $username, $password, $database);
+        // Tạo kết nối
+        $conn = new mysqli($servername, $username, $password, $database);
 
-// Kiểm tra kết nối
-if ($conn->connect_error) {
-    die("Kết nối không thành công: " . $conn->connect_error);
-}
+        // Kiểm tra kết nối
+        if ($conn->connect_error) {
+            die("Kết nối không thành công: " . $conn->connect_error);
+        }
 
-// Truy vấn dữ liệu từ bảng sinh viên
-$sql = "SELECT * FROM sinhvien"; 
+        // Truy vấn dữ liệu từ bảng sinh viên
+        $sql = "SELECT * FROM sinhvien"; 
 
-$result = $conn->query($sql);
+        $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    // Hiển thị dữ liệu
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["mssv"]. "</td><td>" . $row["hoten"]. "</td><td>" . $row["ky"]. "</td><td>" . $row["dangky"]. "</td></tr>";
-    }
-} else {
-    echo "0 kết quả";
-}
+        if ($result->num_rows > 0) {
+            // Hiển thị dữ liệu
+            while($row = $result->fetch_assoc()) {   // Hàm request tạo yêu cầu đến SQL 
+                echo "<tr><td>" . $row["mssv"]. "</td><td>" . $row["hoten"]. "</td><td>" . $row["ky"]. "</td><td>" . $row["dangky"]. "</td></tr>";
+            }
+        } else {
+            echo "0 kết quả";
+        }
 
-// Đóng kết nối
-$conn->close();
-      ?>
+        // Đóng kết nối
+        $conn->close();
+            ?>
   </tbody>
 </table>
 
