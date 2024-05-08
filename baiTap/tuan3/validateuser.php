@@ -3,7 +3,8 @@
     $_SESSION["IsLogin"] = false;
 
     include('./db_connect.php');
-
+    ob_start();
+    ob_end_flush();
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -12,8 +13,8 @@
 
     if ($result->num_rows > 0) {
         $_SESSION["IsLogin"] = true;
-        header("Location: home.html");
+        header("Location: welcome.htm");
     } else {
-        header("Location: login.html");
+        header("Location: login.htm");
     }
 ?>
