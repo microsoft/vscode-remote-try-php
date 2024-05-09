@@ -24,9 +24,10 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 // Xử lí thông tin đăng nhập
 $sql = "SELECT * FROM tbllogin2 WHERE username='$username'";
 $result = $conn->query($sql);
-$txt_error = "Username và password không hợp lệ";
+// $txt_error = "Username và password không hợp lệ";
 if ($result->num_rows > 0) {  
     $row = $result->fetch_assoc();
+
     // So sánh mật khẩu đã mã hóa
     $hashed_password = $row['pass'];
     if (password_verify($password, $hashed_password)) {
@@ -35,14 +36,12 @@ if ($result->num_rows > 0) {
         header("location: dashbord.php"); // Chuyển hướng đến trang dashboard sau khi đăng nhập thành công
     } else  {
         // Mật khẩu không đúng
-        header("Location: login.html?error=invalid_credentials");
-        if(isset($txt_error) && ($txt_error != "")) {
-            echo $txt_error;
-        }
+        echo "<script>alert('Sai mật khẩu'); window.location='login.html?error=invalid_credentials';</script>"; 
     }
 } else {
     // Tài khoản không tồn tại
-    echo $txt_error;
+    echo "<script>alert('Tài khoản không tồn tại'); window.location='login.html';</script>"; 
+
 }
 
 

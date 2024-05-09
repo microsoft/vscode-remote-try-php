@@ -24,8 +24,11 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $sql = "INSERT INTO tbllogin2 (username, pass, email) VALUES ('$username', '$hashed_password', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Registered successfully";
+    // Đăng ký thành công, chuyển hướng về trang đăng nhập và hiển thị thông báo
+    echo "<script>alert('Registered successfully'); window.location='login.html';</script>";
+
 } else {
+    // Nếu có lỗi, hiển thị thông báo lỗi
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
