@@ -22,5 +22,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <button class="logoutBtn" type="submit">Log out</button>
         </form>
     
+    
 </body>
 </html>

@@ -48,3 +48,30 @@ input[type="submit"]:hover {
   color: red;
   text-align: center;
 }
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
