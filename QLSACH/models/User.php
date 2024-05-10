@@ -8,7 +8,14 @@ class User {
 
     // Hàm kiểm tra đăng nhập
     public function login($username, $password) {
-        // Viết mã kiểm tra đăng nhập ở đây
+        $sql = "SELECT * FROM User WHERE TenUser='$username' AND MatKhau='$password'";
+        $result = $this->conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 ?>

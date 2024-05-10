@@ -8,7 +8,17 @@ class Sach {
 
     // Hàm lấy danh sách sách
     public function getList() {
-        // Viết mã lấy danh sách sách từ cơ sở dữ liệu ở đây
+        $sql = "SELECT * FROM Sach";
+        $result = $this->conn->query($sql);
+
+        $sachList = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $sachList[] = $row;
+            }
+        }
+
+        return $sachList;
     }
 }
 ?>
