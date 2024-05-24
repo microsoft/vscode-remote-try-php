@@ -1,0 +1,114 @@
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal1 {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 274px;
+}
+
+.modal-wrapper.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal h2 {
+    margin: 0 0 10px;
+}
+
+.modal p {
+    margin: 0 0 20px;
+}
+
+.modal button {
+    margin-right: 10px;
+}
+
+/* CSS cho nút Xóa */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+ /* Định nghĩa các kiểu cho bảng */
+ .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Định nghĩa kiểu cho tiêu đề cột */
+.custom-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.custom-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-table td {
+    padding: 10px;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+#messageContainer {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
