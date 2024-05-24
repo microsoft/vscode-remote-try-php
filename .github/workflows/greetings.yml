@@ -1,0 +1,32 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: >
+          🌟 **Xin chào và chào mừng bạn đến với kho lưu trữ của chúng tôi!** 🌟
+
+          Cảm ơn bạn đã tạo vấn đề này. Đội ngũ của chúng tôi sẽ xem xét và phản hồi sớm nhất có thể.
+          Trong thời gian chờ đợi, hãy chắc chắn rằng bạn đã kiểm tra tài liệu và các vấn đề đã được báo cáo trước đó để tránh trùng lặp.
+
+          Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại hỏi. Chúng tôi rất mong nhận được sự đóng góp của bạn!
+
+          Chúc bạn một ngày tuyệt vời! 🚀
+        pr-message: >
+          🎉 **Cảm ơn bạn đã gửi yêu cầu Pull!** 🎉
+
+          Chúng tôi rất vui mừng nhận được sự đóng góp của bạn. Đội ngũ của chúng tôi sẽ xem xét yêu cầu pull của bạn sớm nhất có thể.
+          Trong thời gian chờ đợi, vui lòng đảm bảo rằng mã của bạn tuân theo hướng dẫn của dự án và đã được kiểm tra đầy đủ.
+
+          Nếu bạn có bất kỳ câu hỏi hoặc nhận xét nào, đừng ngần ngại liên hệ với chúng tôi. Chúng tôi rất mong được hợp tác với bạn!
+
+          Chúc bạn một ngày tuyệt vời! 🚀
