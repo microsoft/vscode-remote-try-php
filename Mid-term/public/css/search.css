@@ -1,0 +1,24 @@
+  label {
+    font-weight: bold;
+  }
+  form{
+    margin-left: 20px;
+  }
+  input[type="number"] {
+    padding:9px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
