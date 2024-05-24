@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="administrator" method="upgrade">
+	<name>mod_latest</name>
+	<author>Joomla! Project</author>
+	<creationDate>2004-07</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_LATEST_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\Latest</namespace>
+	<files>
+		<filename module="mod_latest">mod_latest.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_latest.ini</language>
+		<language tag="en-GB">language/en-GB/mod_latest.sys.ini</language>
+	</languages>
+	<help key="Admin_Modules:_Articles_-_Latest" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="count"
+					type="number"
+					label="MOD_LATEST_FIELD_COUNT_LABEL"
+					default="5"
+					filter="integer"
+					min="1"
+					validate="number"
+				/>
+
+				<field
+					name="ordering"
+					type="list"
+					label="MOD_LATEST_FIELD_ORDERING_LABEL"
+					default="c_dsc"
+					validate="options"
+					>
+					<option value="c_dsc">MOD_LATEST_FIELD_VALUE_ORDERING_ADDED</option>
+					<option value="m_dsc">MOD_LATEST_FIELD_VALUE_ORDERING_MODIFIED</option>
+				</field>
+
+				<field
+					name="catid"
+					type="category"
+					label="JCATEGORY"
+					extension="com_content"
+					default=""
+					filter="integer"
+					>
+					<option value="">JOPTION_ANY_CATEGORY</option>
+				</field>
+
+				<field
+					name="user_id"
+					type="list"
+					label="MOD_LATEST_FIELD_AUTHORS_LABEL"
+					default="0"
+					validate="options"
+					>
+					<option value="0">MOD_LATEST_FIELD_VALUE_AUTHORS_ANYONE</option>
+					<option value="by_me">MOD_LATEST_FIELD_VALUE_AUTHORS_BY_ME</option>
+					<option value="not_me">MOD_LATEST_FIELD_VALUE_AUTHORS_NOT_BY_ME</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="automatic_title"
+					type="radio"
+					label="COM_MODULES_FIELD_AUTOMATIC_TITLE_LABEL"
+					layout="joomla.form.field.radio.switcher"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@media screen {
+  html {
+    background: #f4f4f4;
+    min-height: 100%;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+@media screen {
+  body {
+    box-sizing: border-box;
+    background-color: #fff;
+    max-width: 820px;
+    min-height: calc(100vh - 1rem);
+    margin: 1rem auto 0;
+    padding: 4rem 6rem 6rem;
+    box-shadow: 0 0 4px #00000026;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table:not([cellpadding]) th, table:not([cellpadding]) td {
+  padding: .4rem;
+}
+
+table[border]:not([border="0"]):not([style*="border-width"]) th, table[border]:not([border="0"]):not([style*="border-width"]) td {
+  border-width: 1px;
+}
+
+table[border]:not([border="0"]):not([style*="border-style"]) th, table[border]:not([border="0"]):not([style*="border-style"]) td {
+  border-style: solid;
+}
+
+table[border]:not([border="0"]):not([style*="border-color"]) th, table[border]:not([border="0"]):not([style*="border-color"]) td {
+  border-color: #ccc;
+}
+
+figure figcaption {
+  color: #999;
+  text-align: center;
+  margin-top: .25rem;
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+}
+
+.mce-content-body:not([dir="rtl"]) blockquote {
+  border-left: 2px solid #ccc;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.mce-content-body[dir="rtl"] blockquote {
+  border-right: 2px solid #ccc;
+  margin-right: 1.5rem;
+  padding-right: 1rem;
+}

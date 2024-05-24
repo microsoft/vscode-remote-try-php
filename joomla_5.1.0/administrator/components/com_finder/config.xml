@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<help key="Smart_Search:_Options"/>
+	<inlinehelp button="show"/>
+	<fieldset
+		name="search"
+		label="COM_FINDER_FIELDSET_SEARCH_OPTIONS_LABEL"
+		>
+		<field
+			name="word_match"
+			type="list"
+			label="COM_FINDER_CONFIG_WORD_MATCH_LABEL"
+			description="COM_FINDER_CONFIG_WORD_MATCH_DESC"
+			default="exact"
+			>
+			<option value="exact">COM_FINDER_CONFIG_WORD_MATCH_OPTION_EXACT</option>
+			<option value="begin">COM_FINDER_CONFIG_WORD_MATCH_OPTION_BEGIN</option>
+			<option value="fuzzy">COM_FINDER_CONFIG_WORD_MATCH_OPTION_FUZZY</option>
+		</field>
+
+		<field
+			name="show_taxonomy"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_TAXONOMY_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_description"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_DESCRIPTION_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="description_length"
+			type="number"
+			label="COM_FINDER_CONFIG_DESCRIPTION_LENGTH_LABEL"
+			default="255"
+			filter="integer"
+			showon="show_description:1"
+		/>
+
+		<field
+			name="show_image"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_IMAGE_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="image_class"
+			type="text"
+			label="COM_FINDER_CONFIG_IMAGE_CLASS_LABEL"
+			validate="CssIdentifier"
+			showon="show_image:1"
+		/>
+
+		<field
+			name="link_image"
+			type="radio"
+			label="COM_FINDER_CONFIG_LINKED_IMAGE_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			showon="show_image:1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="show_date"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_DATE_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_url"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_URL_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="gather_search_statistics"
+			type="radio"
+			label="COM_FINDER_CONFIG_GATHER_SEARCH_STATISTICS_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="allow_empty_query"
+			type="radio"
+			label="COM_FINDER_CONFIG_ALLOW_EMPTY_QUERY_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="show_autosuggest"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_AUTOSUGGEST_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_suggested_query"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_SUGGESTED_QUERY_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			validate="options"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_explained_query"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_EXPLAINED_QUERY_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			validate="options"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_advanced"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_ADVANCED_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_advanced_tips"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_ADVANCED_TIPS_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			showon="show_advanced:1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="expand_advanced"
+			type="radio"
+			label="COM_FINDER_CONFIG_EXPAND_ADVANCED_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			showon="show_advanced:1"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="show_date_filters"
+			type="radio"
+			label="COM_FINDER_CONFIG_SHOW_DATE_FILTERS_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			showon="show_advanced:1"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="sort_order"
+			type="list"
+			label="COM_FINDER_CONFIG_SORT_ORDER_LABEL"
+			default="relevance"
+			validate="options"
+			>
+			<option value="relevance">COM_FINDER_CONFIG_SORT_OPTION_RELEVANCE</option>
+			<option value="title">COM_FINDER_CONFIG_SORT_OPTION_TITLE</option>
+			<option value="date">COM_FINDER_CONFIG_SORT_OPTION_START_DATE</option>
+			<option value="price">COM_FINDER_CONFIG_SORT_OPTION_LIST_PRICE</option>
+			<option value="sale_price">COM_FINDER_CONFIG_SORT_OPTION_SALES_PRICE</option>
+		</field>
+
+		<field
+			name="sort_direction"
+			type="list"
+			label="COM_FINDER_CONFIG_SORT_DIRECTION_LABEL"
+			default="desc"
+			validate="options"
+			>
+			<option value="desc">COM_FINDER_CONFIG_SORT_OPTION_DESCENDING</option>
+			<option value="asc">COM_FINDER_CONFIG_SORT_OPTION_ASCENDING</option>
+		</field>
+
+		<field
+			name="highlight_terms"
+			type="radio"
+			label="COM_FINDER_CONFIG_HILIGHT_CONTENT_SEARCH_TERMS_LABEL"
+			description="COM_FINDER_CONFIG_HIGHLIGHT_CONTENT_SEARCH_TERMS_DESC"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="opensearch"
+			type="radio"
+			label="COM_FINDER_CONFIG_OPENSEARCH_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="1"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="opensearch_name"
+			type="text"
+			label="COM_FINDER_CONFIG_FIELD_OPENSEARCH_NAME_LABEL"
+			default=""
+			showon="opensearch:1"
+		/>
+
+		<field
+			name="opensearch_description"
+			type="textarea"
+			label="COM_FINDER_CONFIG_FIELD_OPENSEARCH_DESCRIPTION_LABEL"
+			default=""
+			cols="30"
+			rows="2"
+			showon="opensearch:1"
+		/>
+
+	</fieldset>
+
+	<fieldset
+		name="index"
+		label="COM_FINDER_FIELDSET_INDEX_OPTIONS_LABEL"
+		description="COM_FINDER_FIELDSET_INDEX_OPTIONS_DESCRIPTION"
+		>
+
+		<field
+			name="tuplecount"
+			type="list"
+			label="COM_FINDER_CONFIG_TUPLECOUNT_LABEL"
+			default="1"
+			validate="options"
+			>
+			<option value="1">COM_FINDER_CONFIG_TUPLECOUNT_PHRASE_DISABLED</option>
+			<option value="3">COM_FINDER_CONFIG_TUPLECOUNT_PHRASE_ENABLED</option>
+		</field>
+
+		<field
+			name="batch_size"
+			type="list"
+			label="COM_FINDER_CONFIG_BATCH_SIZE_LABEL"
+			default="50"
+			validate="options"
+			>
+			<option value="5">J5</option>
+			<option value="10">J10</option>
+			<option value="25">J25</option>
+			<option value="50">J50</option>
+			<option value="75">J75</option>
+			<option value="100">J100</option>
+			<option value="150">J150</option>
+			<option value="200">J200</option>
+			<option value="250">J250</option>
+			<option value="300">J300</option>
+		</field>
+
+		<field
+			name="title_multiplier"
+			type="number"
+			label="COM_FINDER_CONFIG_TITLE_MULTIPLIER_LABEL"
+			default="1.7"
+			min="0"
+		/>
+
+		<field
+			name="text_multiplier"
+			type="number"
+			label="COM_FINDER_CONFIG_TEXT_MULTIPLIER_LABEL"
+			default="0.7"
+			min="0"
+		/>
+
+		<field
+			name="meta_multiplier"
+			type="number"
+			label="COM_FINDER_CONFIG_META_MULTIPLIER_LABEL"
+			default="1.2"
+			min="0"
+		/>
+
+		<field
+			name="path_multiplier"
+			type="number"
+			label="COM_FINDER_CONFIG_PATH_MULTIPLIER_LABEL"
+			default="2.0"
+			min="0"
+		/>
+
+		<field
+			name="misc_multiplier"
+			type="number"
+			label="COM_FINDER_CONFIG_MISC_MULTIPLIER_LABEL"
+			default="0.3"
+			min="0"
+		/>
+
+		<field
+			name="enable_logging"
+			type="radio"
+			label="COM_FINDER_CONFIG_ENABLE_LOGGING_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="language_default"
+			type="language"
+			label="COM_FINDER_CONFIG_LANGUAGE_DEFAULT_LABEL"
+			description="COM_FINDER_CONFIG_LANGUAGE_DEFAULT_DESC"
+			>
+			<option value="-1">COM_FINDER_CONFIG_LANGUAGE_DEFAULT_DEFAULT_LANGUAGE</option>
+			<option value="">COM_FINDER_CONFIG_LANGUAGE_DEFAULT_NONE</option>
+		</field>
+
+		<field
+			name="filter_commonwords"
+			type="radio"
+			label="COM_FINDER_CONFIG_FILTER_COMMONWORDS_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="filter_numerics"
+			type="radio"
+			label="COM_FINDER_CONFIG_FILTER_NUMERICS_LABEL"
+			layout="joomla.form.field.radio.switcher"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_finder"
+			section="component"
+		/>
+
+	</fieldset>
+</config>

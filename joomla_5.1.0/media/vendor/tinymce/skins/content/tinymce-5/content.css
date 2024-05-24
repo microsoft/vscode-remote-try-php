@@ -1,0 +1,61 @@
+@charset "UTF-8";
+body {
+  margin: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table:not([cellpadding]) th, table:not([cellpadding]) td {
+  padding: .4rem;
+}
+
+table[border]:not([border="0"]):not([style*="border-width"]) th, table[border]:not([border="0"]):not([style*="border-width"]) td {
+  border-width: 1px;
+}
+
+table[border]:not([border="0"]):not([style*="border-style"]) th, table[border]:not([border="0"]):not([style*="border-style"]) td {
+  border-style: solid;
+}
+
+table[border]:not([border="0"]):not([style*="border-color"]) th, table[border]:not([border="0"]):not([style*="border-color"]) td {
+  border-color: #ccc;
+}
+
+figure {
+  margin: 1rem auto;
+  display: table;
+}
+
+figure figcaption {
+  color: #999;
+  text-align: center;
+  margin-top: .25rem;
+  display: block;
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+}
+
+code {
+  background-color: #e8e8e8;
+  border-radius: 3px;
+  padding: .1rem .2rem;
+}
+
+.mce-content-body:not([dir="rtl"]) blockquote {
+  border-left: 2px solid #ccc;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.mce-content-body[dir="rtl"] blockquote {
+  border-right: 2px solid #ccc;
+  margin-right: 1.5rem;
+  padding-right: 1rem;
+}

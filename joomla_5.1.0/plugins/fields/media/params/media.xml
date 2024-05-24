@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field
+				name="directory"
+				type="folderlist"
+				label="PLG_FIELDS_MEDIA_PARAMS_DIRECTORY_LABEL"
+				directory="images"
+				hide_none="true"
+				recursive="true"
+				validate="options"
+			/>
+
+			<field
+				name="preview"
+				type="list"
+				label="PLG_FIELDS_MEDIA_PARAMS_PREVIEW_LABEL"
+				validate="options"
+				>
+				<option value="">COM_FIELDS_FIELD_USE_GLOBAL</option>
+				<option value="true">PLG_FIELDS_MEDIA_PARAMS_PREVIEW_INLINE</option>
+				<option value="false">JNO</option>
+			</field>
+
+			<field
+				name="image_class"
+				type="textarea"
+				label="PLG_FIELDS_MEDIA_PARAMS_IMAGE_CLASS_LABEL"
+				validate="CssIdentifier"
+			/>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+joomla-alert {
+  --jui-alert-min-width: 250px;
+  --jui-alert-padding: .5rem 1.25rem;
+  --jui-alert-margin: 0 0 1rem 0;
+  --jui-alert-border: 1px solid transparent;
+  --jui-alert-border-radius: .25rem;
+  --jui-alert-animation-duration: .5s;
+  --jui-alert-animation-timing-function: ease-in-out;
+  --jui-alert-button-color-dark: #000;
+  --jui-alert-button-color-light: #fff;
+  --jui-alert-success-color: #234423;
+  --jui-alert-success-background-color: #d9e6d9;
+  --jui-alert-success-border-color: #cadcca;
+  --jui-alert-success-link-color: #122212;
+  --jui-alert-info-color: #0c5460;
+  --jui-alert-info-background-color: #d1ecf1;
+  --jui-alert-info-border-color: #bee5eb;
+  --jui-alert-info-link-color: #062c33;
+  --jui-alert-warning-color: #7d5a29;
+  --jui-alert-warning-background-color: #fcefdc;
+  --jui-alert-warning-border-color: #fbe8cd;
+  --jui-alert-warning-link-color: #573e1c;
+  --jui-alert-danger-color: #712b29;
+  --jui-alert-danger-background-color: #f7dddc;
+  --jui-alert-danger-border-color: #f4cfce;
+  --jui-alert-danger-link-color: #4c1d1b;
+  min-width: var(--jui-alert-min-width, 250px);
+  padding: var(--jui-alert-padding, .5rem 1.25rem);
+  margin: var(--jui-alert-margin, 0 0 1rem 0);
+  border: var(--jui-alert-border, 1px solid transparent);
+  border-radius: var(--jui-alert-border-radius, .25rem);
+  -webkit-animation-duration: var(--jui-alert-animation-duration, .5s);
+  animation-duration: var(--jui-alert-animation-duration, .5s);
+  -webkit-animation-timing-function: var(--jui-alert-animation-timing-function, ease-in-out);
+  animation-timing-function: var(--jui-alert-animation-timing-function, ease-in-out);
+  display: block;
+}
+
+joomla-alert .joomla-alert--close {
+  float: right;
+  color: var(--jui-alert-button-color-dark, #000);
+  text-shadow: 0 1px 0 var(--jui-alert-button-color-light, #fff);
+  opacity: .5;
+  background: none;
+  border: 0;
+  padding: .2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  top: -.5rem;
+  right: -1.25rem;
+}
+
+joomla-alert .joomla-alert--close:hover, joomla-alert .joomla-alert--close:focus {
+  color: var(--jui-alert-button-color-dark, #000);
+  cursor: pointer;
+  opacity: .75;
+  text-decoration: none;
+}
+
+joomla-alert[type="success"] {
+  color: var(--jui-alert-success-color, #234423);
+  background-color: var(--jui-alert-success-background-color, #d9e6d9);
+  border-color: var(--jui-alert-success-border-color, #cadcca);
+}
+
+joomla-alert[type="success"] hr {
+  border-top-color: var(--jui-alert-success-border-color, #cadcca);
+}
+
+joomla-alert[type="success"] .alert-link {
+  color: var(--jui-alert-success-link-color, #122212);
+}
+
+joomla-alert[type="info"] {
+  color: var(--jui-alert-info-color, #0c5460);
+  background-color: var(--jui-alert-info-background-color, #d1ecf1);
+  border-color: var(--jui-alert-info-border-color, #bee5eb);
+}
+
+joomla-alert[type="info"] hr {
+  border-top-color: var(--jui-alert-info-border-color, #bee5eb);
+}
+
+joomla-alert[type="info"] .alert-link {
+  color: var(--jui-alert-info-link-color, #062c33);
+}
+
+joomla-alert[type="warning"] {
+  color: var(--jui-alert-warning-color, #7d5a29);
+  background-color: var(--jui-alert-warning-background-color, #fcefdc);
+  border-color: var(--jui-alert-warning-border-color, #fbe8cd);
+}
+
+joomla-alert[type="warning"] hr {
+  border-top-color: var(--jui-alert-warning-border-color, #fbe8cd);
+}
+
+joomla-alert[type="warning"] .alert-link {
+  color: var(--jui-alert-warning-link-color, #573e1c);
+}
+
+joomla-alert[type="danger"] {
+  color: var(--jui-alert-danger-color, #712b29);
+  background-color: var(--jui-alert-danger-background-color, #f7dddc);
+  border-color: var(--jui-alert-danger-border-color, #f4cfce);
+}
+
+joomla-alert[type="danger"] hr {
+  border-top-color: var(--jui-alert-danger-border-color, #f4cfce);
+}
+
+joomla-alert[type="danger"] .alert-link {
+  color: var(--jui-alert-danger-link-color, #4c1d1b);
+}
+
+html[dir="rtl"] joomla-alert .joomla-alert--close, html[dir="rtl"] joomla-alert .joomla-alert-button--close {
+  float: left;
+  left: -1.25rem;
+  right: auto;
+}
+
+@-webkit-keyframes joomla-alert-fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes joomla-alert-fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes joomla-alert-fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes joomla-alert-fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  joomla-alert {
+    -webkit-animation-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
+}

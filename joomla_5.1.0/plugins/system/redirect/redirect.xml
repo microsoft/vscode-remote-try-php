@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_redirect</name>
+	<author>Joomla! Project</author>
+	<creationDate>2009-04</creationDate>
+	<copyright>(C) 2009 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_SYSTEM_REDIRECT_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\System\Redirect</namespace>
+	<files>
+		<folder>form</folder>
+		<folder plugin="redirect">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_system_redirect.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_redirect.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="collect_urls"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_REDIRECT_FIELD_COLLECT_URLS_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JDISABLED</option>
+					<option value="1">JENABLED</option>
+				</field>
+				<field
+					name="includeUrl"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_REDIRECT_FIELD_STORE_FULL_URL_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+					name="exclude_urls"
+					type="subform"
+					label="PLG_SYSTEM_REDIRECT_FIELD_EXCLUDE_URLS_LABEL"
+					multiple="true"
+					formsource="plugins/system/redirect/form/excludes.xml"
+					layout="joomla.form.field.subform.repeatable-table"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body.tox-dialog__disable-scroll {
+  overflow: hidden;
+}
+
+.tox-fullscreen {
+  overscroll-behavior: none;
+  touch-action: pinch-zoom;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tox.tox-tinymce.tox-fullscreen .tox-statusbar__resize-handle {
+  display: none;
+}
+
+.tox.tox-tinymce.tox-fullscreen, .tox-shadowhost.tox-fullscreen {
+  z-index: 1200;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.tox.tox-tinymce.tox-fullscreen {
+  background-color: #0000;
+}
+
+.tox-fullscreen .tox.tox-tinymce-aux, .tox-fullscreen ~ .tox.tox-tinymce-aux {
+  z-index: 1201;
+}

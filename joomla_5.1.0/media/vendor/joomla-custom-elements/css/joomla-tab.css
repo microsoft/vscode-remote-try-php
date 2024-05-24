@@ -1,0 +1,183 @@
+@charset "UTF-8";
+joomla-tab {
+  flex-direction: column;
+  display: flex;
+}
+
+joomla-tab[view="tabs"] > div[role="tablist"] {
+  white-space: nowrap;
+  list-style: outside none none;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  -o-border-image: ;
+  border-image: ;
+  border-radius: .25rem .25rem 0 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: auto hidden;
+  box-shadow: inset 0 1px #fff, 0 2px 3px -3px #00000026, inset 0 -4px #0000000d, 0 0 3px #0000000a;
+}
+
+joomla-tab[view="accordion"] > div[role="tablist"] {
+  display: none;
+}
+
+joomla-tab button[role="tab"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #0d1321;
+  border: unset;
+  background-color: #0000;
+  padding: .75em 1em;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  box-shadow: 1px 0 #0000000d;
+}
+
+joomla-tab button[role="tab"][aria-expanded="true"] {
+  background-color: #00000008;
+  background-image: linear-gradient(#0000, #0000000d 100%);
+  border-left: 0;
+  border-right: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: inset 2px 0 1px -1px #00000014, inset -2px 0 1px -1px #00000014, inset 0 1px #00000005;
+}
+
+joomla-tab button[aria-expanded="true"]:after {
+  content: "";
+  opacity: .8;
+  background-color: #006898;
+  height: 5px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+joomla-tab > joomla-tab-element {
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 0 0 .25rem .25rem;
+  padding: 15px;
+  display: none;
+  position: relative;
+  box-shadow: 0 0 3px #0000000a;
+}
+
+joomla-tab > joomla-tab-element[active] {
+  display: block;
+}
+
+joomla-tab[orientation="vertical"] {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+joomla-tab[orientation="vertical"] > div[role="tablist"] {
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  flex-direction: column;
+  min-width: 30%;
+  height: auto;
+  overflow: hidden;
+}
+
+joomla-tab[orientation="vertical"] > div[role="tablist"] button:last-of-type {
+  border-bottom: 0;
+}
+
+joomla-tab[orientation="vertical"] > div[role="tablist"] button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #0d1321;
+  box-shadow: none;
+  background-color: #0000;
+  border-bottom: 1px solid #ddd;
+  padding: .75em 1em;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+joomla-tab[orientation="vertical"] > div[role="tablist"] button[aria-expanded="true"] {
+  box-shadow: none;
+  background-color: #fff;
+  background-image: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+joomla-tab[orientation="vertical"] > div[role="tablist"] button[aria-expanded="true"]:after {
+  width: 5px;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+}
+
+joomla-tab[orientation="vertical"] > joomla-tab-element {
+  box-shadow: none;
+  border: 0;
+  padding: 15px;
+}
+
+joomla-tab[view="accordion"] {
+  white-space: normal;
+  border-radius: .25rem;
+  flex-direction: column;
+  box-shadow: inset 0 1px #fff, 0 0 3px #0000000a;
+}
+
+joomla-tab[view="accordion"] > button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #0d1321;
+  border: unset;
+  background-color: #f5f5f5;
+  padding: .75em 1em;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  box-shadow: 1px 0 #0000000d;
+}
+
+joomla-tab[view="accordion"] > button[aria-expanded="true"], joomla-tab[view="accordion"] > button:focus {
+  background-color: #00000008;
+  background-image: linear-gradient(#0000, #0000000d 100%);
+}
+
+joomla-tab[view="accordion"] joomla-tab-element {
+  padding: 15px;
+  display: none;
+}
+
+joomla-tab[view="accordion"] joomla-tab-element[active] {
+  border-bottom: 1px solid #ddd;
+  display: block;
+}
+
+joomla-tab[view="accordion"] [active] {
+  background-color: #fff;
+}
+
+joomla-tab[view="accordion"] button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-bottom: 1px solid #ddd;
+}
+
+joomla-tab[view="accordion"] button[aria-expanded="true"]:after {
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

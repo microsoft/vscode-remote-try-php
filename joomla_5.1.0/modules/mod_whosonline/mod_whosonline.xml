@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>mod_whosonline</name>
+	<author>Joomla! Project</author>
+	<creationDate>2004-07</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_WHOSONLINE_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\Whosonline</namespace>
+	<files>
+		<filename module="mod_whosonline">mod_whosonline.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_whosonline.ini</language>
+		<language tag="en-GB">language/en-GB/mod_whosonline.sys.ini</language>
+	</languages>
+	<help key="Site_Modules:_Who%27s_Online" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="showmode"
+					type="list"
+					label="MOD_WHOSONLINE_SHOWMODE_LABEL"
+					default="0"
+					filter="integer"
+					validate="options"
+					>
+					<option value="0">MOD_WHOSONLINE_FIELD_VALUE_NUMBER</option>
+					<option value="1">MOD_WHOSONLINE_FIELD_VALUE_NAMES</option>
+					<option value="2">MOD_WHOSONLINE_FIELD_VALUE_BOTH</option>
+				</field>
+
+				<field
+					name="filter_groups"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="MOD_WHOSONLINE_FIELD_FILTER_GROUPS_LABEL"
+					description="MOD_WHOSONLINE_FIELD_FILTER_GROUPS_DESC"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="0"
+					filter="integer"
+					validate="options"
+					>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

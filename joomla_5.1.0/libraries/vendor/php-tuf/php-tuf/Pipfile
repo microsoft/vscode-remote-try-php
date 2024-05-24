@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+certifi = "==2022.12.7"
+cffi = "==1.15.1"
+chardet = "==5.1.0"
+colorama = "==0.4.6"
+cryptography = "==39.0.1"
+idna = "==3.4"
+iso8601 = "==1.1.0"
+pycparser = "==2.21"
+python-dateutil = "==2.8.2"
+requests = "==2.28.1"
+securesystemslib = "==0.25.0"
+six = "==1.16.0"
+tuf = "==0.19.0"
+urllib3 = "==1.26.13"
+PyNaCl = "==1.5.0"
+flake8 = "*"
+dirhash = "*"
+
+[requires]
+python_version = "3.9"

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_languagefilter</name>
+	<author>Joomla! Project</author>
+	<creationDate>2010-07</creationDate>
+	<copyright>(C) 2010 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_SYSTEM_LANGUAGEFILTER_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\System\LanguageFilter</namespace>
+	<files>
+		<folder plugin="languagefilter">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_system_languagefilter.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_languagefilter.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="detect_browser"
+					type="list"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_DETECT_BROWSER_LABEL"
+					default="0"
+					filter="integer"
+					validate="options"
+					>
+					<option value="0">PLG_SYSTEM_LANGUAGEFILTER_SITE_LANGUAGE</option>
+					<option value="1">PLG_SYSTEM_LANGUAGEFILTER_BROWSER_SETTINGS</option>
+				</field>
+
+				<field
+					name="automatic_change"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_AUTOMATIC_CHANGE_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="item_associations"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_ITEM_ASSOCIATIONS_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="alternate_meta"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_ALTERNATE_META_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="xdefault"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_XDEFAULT_LABEL"
+					default="1"
+					filter="integer"
+					showon="alternate_meta:1"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="xdefault_language"
+					type="contentlanguage"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_XDEFAULT_LANGUAGE_LABEL"
+					default="default"
+					showon="alternate_meta:1[AND]xdefault:1"
+					>
+					<option value="default">PLG_SYSTEM_LANGUAGEFILTER_OPTION_DEFAULT_LANGUAGE</option>
+				</field>
+
+				<field
+					name="remove_default_prefix"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_REMOVE_DEFAULT_PREFIX_LABEL"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="lang_cookie"
+					type="list"
+					label="PLG_SYSTEM_LANGUAGEFILTER_FIELD_COOKIE_LABEL"
+					default="0"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">PLG_SYSTEM_LANGUAGEFILTER_OPTION_YEAR</option>
+					<option value="0">PLG_SYSTEM_LANGUAGEFILTER_OPTION_SESSION</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

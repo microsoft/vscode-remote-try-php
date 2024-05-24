@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="fields" method="upgrade">
+	<name>plg_fields_media</name>
+	<author>Joomla! Project</author>
+	<creationDate>2016-03</creationDate>
+	<copyright>(C) 2016 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.7.0</version>
+	<description>PLG_FIELDS_MEDIA_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Fields\Media</namespace>
+	<files>
+		<folder>params</folder>
+		<folder plugin="media">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_fields_media.ini</language>
+		<language tag="en-GB">language/en-GB/plg_fields_media.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="directory"
+					type="folderlist"
+					label="PLG_FIELDS_MEDIA_PARAMS_DIRECTORY_LABEL"
+					directory="images"
+					hide_none="true"
+					recursive="true"
+				/>
+
+				<field
+					name="preview"
+					type="list"
+					label="PLG_FIELDS_MEDIA_PARAMS_PREVIEW_LABEL"
+					class="list"
+					default="true"
+					validate="options"
+					>
+					<option value="true">PLG_FIELDS_MEDIA_PARAMS_PREVIEW_INLINE</option>
+					<option value="false">JNO</option>
+				</field>
+
+				<field
+					name="image_class"
+					type="textarea"
+					label="PLG_FIELDS_MEDIA_PARAMS_IMAGE_CLASS_LABEL"
+					validate="CssIdentifier"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

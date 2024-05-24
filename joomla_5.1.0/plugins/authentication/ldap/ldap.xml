@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_ldap</name>
+	<author>Joomla! Project</author>
+	<creationDate>2005-11</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_LDAP_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Authentication\Ldap</namespace>
+	<files>
+		<folder plugin="ldap">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_authentication_ldap.ini</language>
+		<language tag="en-GB">language/en-GB/plg_authentication_ldap.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="host"
+					type="text"
+					label="PLG_LDAP_FIELD_HOST_LABEL"
+					required="true"
+				/>
+
+				<field
+					name="port"
+					type="number"
+					label="PLG_LDAP_FIELD_PORT_LABEL"
+					min="1"
+					max="65535"
+					default="389"
+					hint="389"
+					validate="number"
+					filter="integer"
+				/>
+
+				<field
+					name="use_ldapV3"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_LDAP_FIELD_V3_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="encryption"
+					type="list"
+					label="PLG_LDAP_FIELD_ENCRYPTION_LABEL"
+					default="none"
+					validate="options"
+					>
+					<option value="none">PLG_LDAP_FIELD_VALUE_ENCRYPTIONNONE</option>
+					<option value="tls">PLG_LDAP_FIELD_VALUE_ENCRYPTIONTLS</option>
+					<option value="ssl">PLG_LDAP_FIELD_VALUE_ENCRYPTIONSSL</option>
+				</field>
+
+				<field
+					name="ignore_reqcert_tls"
+					type="radio"
+					label="PLG_LDAP_FIELD_IGNORE_REQCERT_TLS_LABEL"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					filter="boolean"
+					showon="encryption!:none"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="cacert"
+					type="text"
+					label="PLG_LDAP_FIELD_CACERT_LABEL"
+					description="PLG_LDAP_FIELD_CACERT_DESC"
+					required="false"
+					showon="encryption!:none[AND]ignore_reqcert_tls:0"
+				/>
+
+				<field
+					name="no_referrals"
+					type="radio"
+					label="PLG_LDAP_FIELD_REFERRALS_LABEL"
+					default="0"
+					filter="integer"
+					layout="joomla.form.field.radio.switcher"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="auth_method"
+					type="list"
+					label="PLG_LDAP_FIELD_AUTHMETHOD_LABEL"
+					default="bind"
+					validate="options"
+					>
+					<option value="search">PLG_LDAP_FIELD_VALUE_BINDSEARCH</option>
+					<option value="bind">PLG_LDAP_FIELD_VALUE_BINDUSER</option>
+				</field>
+
+				<field
+					name="base_dn"
+					type="text"
+					label="PLG_LDAP_FIELD_BASEDN_LABEL"
+					required="true"
+				/>
+
+				<field
+					name="search_string"
+					type="text"
+					label="PLG_LDAP_FIELD_SEARCHSTRING_LABEL"
+					description="PLG_LDAP_FIELD_SEARCHSTRING_DESC"
+					required="true"
+				/>
+
+				<field
+					name="users_dn"
+					type="text"
+					label="PLG_LDAP_FIELD_USERSDN_LABEL"
+					description="PLG_LDAP_FIELD_USERSDN_DESC"
+				/>
+
+				<field
+					name="username"
+					type="text"
+					label="PLG_LDAP_FIELD_USERNAME_LABEL"
+					description="PLG_LDAP_FIELD_USERNAME_DESC"
+				/>
+
+				<field
+					name="password"
+					type="password"
+					label="PLG_LDAP_FIELD_PASSWORD_LABEL"
+					description="PLG_LDAP_FIELD_PASSWORD_DESC"
+				/>
+
+				<field
+					name="ldap_fullname"
+					type="text"
+					label="PLG_LDAP_FIELD_FULLNAME_LABEL"
+					description="PLG_LDAP_FIELD_FULLNAME_DESC"
+					default="fullName"
+				/>
+
+				<field
+					name="ldap_email"
+					type="text"
+					label="PLG_LDAP_FIELD_EMAIL_LABEL"
+					description="PLG_LDAP_FIELD_EMAIL_DESC"
+					default="mail"
+				/>
+
+				<field
+					name="ldap_uid"
+					type="text"
+					label="PLG_LDAP_FIELD_UID_LABEL"
+					description="PLG_LDAP_FIELD_UID_DESC"
+					default="uid"
+				/>
+				<field
+					name="ldap_debug"
+					type="radio"
+					label="PLG_LDAP_FIELD_LDAPDEBUG_LABEL"
+					description="PLG_LDAP_FIELD_LDAPDEBUG_DESC"
+					default="0"
+					filter="integer"
+					layout="joomla.form.field.radio.switcher"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

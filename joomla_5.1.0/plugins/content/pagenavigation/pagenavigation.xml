@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="content" method="upgrade">
+	<name>plg_content_pagenavigation</name>
+	<author>Joomla! Project</author>
+	<creationDate>2006-01</creationDate>
+	<copyright>(C) 2006 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_PAGENAVIGATION_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Content\PageNavigation</namespace>
+	<files>
+		<folder plugin="pagenavigation">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_content_pagenavigation.ini</language>
+		<language tag="en-GB">language/en-GB/plg_content_pagenavigation.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field
+					name="position"
+					type="list"
+					label="PLG_PAGENAVIGATION_FIELD_POSITION_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">PLG_PAGENAVIGATION_FIELD_VALUE_BELOW</option>
+					<option value="0">PLG_PAGENAVIGATION_FIELD_VALUE_ABOVE</option>
+				</field>
+
+				<field
+					name="relative"
+					type="list"
+					label="PLG_PAGENAVIGATION_FIELD_RELATIVE_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">PLG_PAGENAVIGATION_FIELD_VALUE_ARTICLE</option>
+					<option value="0">PLG_PAGENAVIGATION_FIELD_VALUE_TEXT</option>
+				</field>
+
+				<field
+					name="display"
+					type="list"
+					label="PLG_PAGENAVIGATION_FIELD_DISPLAY_LABEL"
+					default="0"
+					filter="integer"
+					validate="options"
+					>
+					<option value="0">PLG_PAGENAVIGATION_FIELD_VALUE_NEXTPREV</option>
+					<option value="1">PLG_PAGENAVIGATION_FIELD_VALUE_TITLE</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
