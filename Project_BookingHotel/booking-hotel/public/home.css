@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url("./assets/image/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #cccccc;
+    height: 1000px;
+}
+
+#header{
+    width: 100%;
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.logo{
+    width: 160px;
+    height: 78px;
+    padding: 20px 0;
+}
+
+.logo img{
+    width: 160px;
+    height: 38px;
+}
+
+.menu {
+
+}
+
+.menu .list-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu .list-menu ul li{
+    position: relative;
+    padding: 25px 30px;
+}
+
+.menu .list-menu>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 51px;
+    color: white;
+}
+
+.login ul{
+    display: flex;
+    list-style: none;
+}
+
+.login ul li{
+    position: relative;
+    padding: 25px 30px;
+}
+
+.login ul li a{
+    color: white;
+}
+
+#container{
+    height: 60px;
+    background-color: black;
+}
