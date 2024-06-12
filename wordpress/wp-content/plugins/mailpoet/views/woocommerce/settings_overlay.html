@@ -1,0 +1,33 @@
+<style>
+  /* Hide WooCommerce section with template styling */
+  #email_template_options-description + .form-table {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  /* Position MailPoet buttons over hidden table */
+  .mailpoet-woocommerce-email-overlay {
+    bottom: 320px;
+    left: 0;
+    max-width: 100%;
+    text-align: left;
+    position: absolute;
+    text-align: center;
+    width: 640px;
+    z-index: 1;
+  }
+</style>
+
+<div class="mailpoet-woocommerce-email-overlay">
+  <a class="button button-primary"
+    href="?page=mailpoet-newsletter-editor&id=<%= woocommerce_template_id %>"
+    data-automation-id="mailpoet_woocommerce_customize"
+  >
+  	<%= _x('Customize with MailPoet', 'Button in WooCommerce settings page') %>
+  </a>
+  <br>
+  <br>
+  <a href="?page=mailpoet-settings#woocommerce" data-automation-id="mailpoet_woocommerce_disable">
+    <%= _x('Disable MailPoet customizer', 'Link from WooCommerce plugin to MailPoet') %>
+  </a>
+</div>

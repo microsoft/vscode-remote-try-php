@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards for Plugins">
+	<description>Generally-applicable sniffs for WordPress plugins</description>
+
+	<arg name="extensions" value="php"/>
+	<file>./admin</file>
+	<file>./catalog</file>
+	<file>./logging</file>
+	<file>./mapi</file>
+	<file>./pixel</file>
+	<file>./phpcs_test</file>
+	<file>./tiktok-for-woocommerce.php</file>
+
+	<!-- Set the minimum WP version -->
+	<config name="minimum_supported_wp_version" value="7.0"/>
+	<config name="testVersion" value="7.4-" />
+
+	<!-- Show progress and sniff codes in all reports -->
+	<arg value="ps"/>
+
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>./tests/*</exclude-pattern>
+
+	<!-- Rules -->
+	<rule ref="WooCommerce-Core" />
+
+	<rule ref="Universal">
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"/>
+		<exclude name="Universal.Classes.DisallowAnonClassParentheses.Found"/>
+		<exclude name="Universal.Classes.RequireFinalClass.NonFinalClassFound"/>
+	</rule>
+
+	<rule ref="PHPCompatibility"/>
+
+	<!-- Set the appropriate text domain. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="tiktok-for-business"/>
+		</properties>
+	</rule>
+
+	<!-- We allow the use of / in hooks -->
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<properties>
+			<property name="additionalWordDelimiters" value="/"/>
+		</properties>
+	</rule>
+
+	<!-- We don't use these functions for purposes of obfuscation -->
+	<rule ref="WordPress.PHP.DiscouragedPHPFunctions">
+		<properties>
+			<property name="exclude" type="array">
+				<element value="obfuscation"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- We'd rather use native functions -->
+	<rule ref="WordPress.WP.AlternativeFunctions">
+		<properties>
+			<property name="exclude" type="array">
+				<element value="json_encode"/>
+				<element value="rand"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

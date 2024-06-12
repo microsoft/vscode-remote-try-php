@@ -1,0 +1,5 @@
+<%= __('Congrats!') %>
+
+<%= __('MailPoet is now sending your emails') %>
+
+<%= __('This email was sent automatically with the MailPoet Sending Service after you activated your key in your MailPoet settings.') %>

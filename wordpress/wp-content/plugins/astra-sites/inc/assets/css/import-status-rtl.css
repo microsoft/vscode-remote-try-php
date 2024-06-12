@@ -1,0 +1,97 @@
+#wpadminbar #astra-sites-import-status-admin-bar {
+	padding-right: 10px;
+	border-right: 1px solid #3d4349;
+	color: #fff;
+}
+
+.astra-sites-import-screen.failed .import-step:before {
+	content: "\f335";
+	color: #f44336;
+}
+
+.astra-sites-import-screen .dashicons-external {
+	font-size: inherit;
+	vertical-align: middle;
+}
+
+#astra-sites-import-status-admin-bar .dashicons {
+	font-family: "dashicons";
+	display: inline-block;
+	line-height: 1;
+	font-weight: 400;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 20px;
+	vertical-align: text-top;
+	text-align: center;
+	transition: color 0.1s ease-in;
+	margin-left: 5px;
+}
+
+#astra-sites-import-status-admin-bar .loading::before {
+	color: #9ea3a8;
+	content: "\f463";
+	display: inline-block;
+	font: normal 20px/1 "dashicons";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+	animation: rotation 2s infinite linear;
+	margin: 5px -2px 0 5px;
+	font-weight: revert;
+}
+
+.astra-sites-import-screen .import-steps {
+	padding: 1.5em 1.5em 1em 1em;
+}
+
+.astra-sites-import-screen .import-step.processing:before {
+	content: "\f463";
+	animation: rotation 2s infinite linear;
+}
+
+.astra-sites-import-screen .import-step:before {
+	color: #9ea3a8;
+	content: "\f139";
+	display: inline-block;
+	font: normal 20px/1 "dashicons";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+	font-weight: revert;
+	margin-left: 3px;
+}
+
+.astra-sites-import-screen .import-step.success::before {
+	content: "\f147";
+	color: #4caf50;
+}
+
+.astra-sites-import-screen .import-step.fail::before {
+	color: #ff5722;
+	content: "\f335";
+}
+
+.astra-sites-import-screen .footer {
+	text-align: right;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.astra-sites-import-screen .content {
+	text-align: right;
+	padding: 2em 5em 4em 5em;
+}
+
+.astra-sites-import-screen .view-site-button .dashicons {
+	font-size: initial;
+	vertical-align: middle;
+}

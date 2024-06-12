@@ -1,0 +1,384 @@
+/* Customizer Scroll CSS */
+.accordion-section-content::-webkit-scrollbar, .wp-full-overlay-sidebar-content::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f1f1f1;
+}
+
+.accordion-section-content::-webkit-scrollbar-thumb, .wp-full-overlay-sidebar-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d8d8d8;
+}
+
+.accordion-section-content::-webkit-scrollbar-track, .wp-full-overlay-sidebar-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+  width: 6px;
+}
+
+.wp-full-overlay-sidebar:after {
+  display: none;
+}
+
+#customize-theme-controls .control-section-ast-section-separator {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  display: block !important;
+}
+
+.customize-control:not(.customize-control-nav_menu_item) {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+.customize-control.customize-control-ast-color, .customize-control.customize-control-ast-color-group, .customize-control-ast-responsive-background, .customize-control-ast-background {
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  flex-wrap: wrap;
+}
+
+.customize-control-ast-responsive-background label {
+  white-space: nowrap;
+}
+
+.customize-control .media-position-setting label.components-text {
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.media-position-setting .astra-popover-tabs .components-tab-panel__tabs {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.customize-control[ID*="-builder-layout-ast-context-tabs"] {
+  margin-top: 0;
+}
+
+[ID*="-builder-layout-ast-context-tabs"] {
+  margin-top: 10px;
+}
+
+.customize-section-title {
+  margin: -12px -24px 0 -24px;
+}
+
+.customize-section-description-container, #customize-controls .customize-info.section-meta, #customize-controls .customize-info {
+  margin-bottom: 0;
+}
+
+#customize-controls #sub-accordion-panel-nav_menus .customize-info {
+  margin-bottom: 15px;
+}
+
+#customize-control-astra-settings-header-transparent-link-heading {
+  margin-top: 15px;
+}
+
+.components-base-control .components-base-control__field {
+  margin-bottom: 0;
+}
+
+.components-base-control .components-base-control__field .components-input-control__backdrop {
+  border-color: #D1D5DB !important;
+}
+
+.customize-control .customize-inside-control-row {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.customize-control-title {
+  display: inline-block;
+  margin-bottom: 16px;
+  vertical-align: middle;
+}
+
+.customize-control-ast-color .customize-control-title, .customize-control-ast-responsive-background .customize-control-title,
+.customize-control-ast-background .customize-control-title, .customize-control-ast-responsive-color .customize-control-title {
+  display: contents;
+}
+
+.customize-control .ast-control-tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--ast-customizer-color-6);
+  cursor: help;
+}
+
+.customize-control .ast-control-tooltip:hover {
+    color: var(--ast-customizer-color-1);
+}
+
+.customize-control.customize-control-ast-toggle-control .ast-control-tooltip {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#customize-control-astra-settings-learndash-distraction-free-learning .ast-control-tooltip {
+    padding-top: 32px;
+}
+
+.customize-control.customize-control-ast-toggle-control.ast-top-dotted-divider .ast-control-tooltip {
+  position: absolute;
+  top: 55%;
+  right: 40px;
+  transform: translateY(0);
+}
+
+.customize-control-ast-selector.customize-control .ast-control-tooltip {
+    top: -3px;
+}
+
+.customize-control.customize-control-ast-toggle-control.ast-top-divider .ast-control-tooltip {
+  top: calc(50% + 15px);
+}
+
+.customize-control.customize-control-ast-toggle-control.ast-bottom-divider .ast-control-tooltip {
+  top: calc(50% - 11px);
+}
+
+.customize-control.customize-control-ast-toggle-control .ast-description-enabled .components-form-toggle {
+  margin-left: 25px;
+}
+
+.customize-control.customize-control-ast-divider .ast-control-tooltip {
+  position: absolute;
+  top: auto;
+  bottom: 3px;
+  right: 0;
+}
+
+.ast-fields-wrap .customize-control .ast-control-tooltip {
+  right: 15px;
+  top: 6px;
+}
+
+.customize-control .ast-sortable-subfields-wrap .ast-control-tooltip {
+    position: absolute !important;
+    top: 40%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.customize-control .ast-sortable-subfields-wrap .customize-control-ast-toggle .ast-control-tooltip {
+	right: 30px;
+	top: 50%;
+}
+.ast-top-dotted-divider .dashicons-editor-help[data-title]:hover ~ .ast-dashicons-custom-tooltip,
+.ast-top-section-divider .dashicons-editor-help[data-title]:hover ~ .ast-dashicons-custom-tooltip {
+    top: 24px;
+}
+
+/* Select2 WP 5.3 compatibility */
+.customize-control .select2-search input[type="text"].select2-search__field {
+  min-height: 17px;
+}
+
+input[type="text"].select2-search__field {
+  line-height: 1;
+  border-radius: 0;
+}
+
+/* CSS for a Description as a Notice. */
+.ast-customizer-notice {
+  margin: 0 -12px;
+  padding: 12px;
+}
+
+/* CSS to show popups without scroll */
+#customize-theme-controls .control-section.open {
+  height: 100%;
+  padding: 12px 24px 25px 24px;
+}
+
+/* Safari Browser specific CSS */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    #customize-control-astra-settings-ast-header-responsive-logo-width .wrapper {
+      display: inline-block;
+      width: 100%;
+    }
+    .dashicons-desktop:before, .dashicons-tablet:before, .dashicons-smartphone:before {
+      color: #000000;
+      opacity: .75;
+    }
+    .ast-reset-btn.components-button svg {
+      padding: 0px;
+      height: 13px;
+    }
+  }
+}
+
+/* Firefox Browser specific CSS */
+@-moz-document url-prefix() {
+  .control-section.open .customize-control:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+/* IE Browser specific CSS */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .control-section.open .customize-control:last-child {
+    padding-bottom: 20px;
+  }
+  #customize-control-astra-settings-blog-archive-image-width .customize-control-title, #customize-control-astra-settings-blog-archive-image-height .customize-control-title, #customize-control-astra-settings-blog-single-post-image-width .customize-control-title, #customize-control-astra-settings-blog-single-post-image-height .customize-control-title {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
+
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h1,
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h2,
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h3,
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h4,
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h5,
+.wp-customizer li:not(.customize-control-sidebar_block_editor) h6 {
+  font-weight: 600;
+}
+
+/* Customizer - widget appender bottom space CSS */
+.block-list-appender {
+  margin-bottom: 20px;
+}
+
+.block-editor-block-inspector .block-editor-block-card {
+  margin-top: 12px;
+}
+
+/* Customizer - builder widget area's block gets round shapes in more-settings tab */
+.components-circular-option-picker__option-wrapper::before {
+  background: unset;
+}
+
+.block-editor-panel-color-gradient-settings .components-circular-option-picker__option-wrapper {
+  position: relative;
+}
+
+/* Hiding this specific control on responsive devices.  */
+.preview-tablet #customize-control-astra-settings-woo-desktop-cart-flyout-width {
+  display: none;
+}
+
+.preview-tablet #customize-control-astra-settings-woo-desktop-cart-flyout-direction {
+  display: none;
+}
+
+.preview-mobile #customize-control-astra-settings-woo-desktop-cart-flyout-width {
+  display: none;
+}
+
+.preview-mobile #customize-control-astra-settings-woo-desktop-cart-flyout-direction {
+  display: none;
+}
+
+#customize-theme-controls .accordion-section-title, #customize-outer-theme-controls .accordion-section-title,
+#customize-controls .control-section.control-section-ast_section .accordion-section-title {
+  border-bottom: 1px solid var(--ast-customizer-color-7);
+}
+
+.wp-core-ui #customize-controls .control-section:hover > .accordion-section-title,
+.wp-core-ui #customize-controls .control-section .accordion-section-title:hover,
+.wp-core-ui #customize-controls .control-section .accordion-section-title:focus,
+.wp-core-ui .customize-panel-back:hover,
+.wp-core-ui .customize-panel-back:focus,
+.wp-core-ui .customize-section-back:hover,
+.wp-core-ui .customize-section-back:focus {
+  border-left-color: var(--ast-customizer-color-1);
+}
+
+/* Toggle Section Control */
+.ast-section-toggle {
+	display: grid;
+    grid-template-columns: 70% 20% 10%;
+    align-items: center;
+    padding: 0 0 0 12px;
+    height: 100%;
+	align-items: center;
+    align-content: center;
+	max-height: 46px;
+}
+
+.ast-section-toggle label {
+	font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ast-section-toggle > label {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: auto;
+    line-height: 50px;
+}
+
+.ast-section-toggle:not(.active) > label {
+  cursor: default;
+}
+
+.customize-control.customize-control-ast-section-toggle {
+    border: 1px dashed var(--ast-customizer-color-1);
+    background: var(--ast-customizer-color-11);
+    cursor: pointer;
+    box-shadow: none !important;
+    line-height: 42px;
+    font-size: 14px;
+    display: inline-grid;
+    align-items: center;
+    height: auto;
+    color: var(--ast-customizer-color-5);
+    position: relative;
+    white-space: nowrap;
+    border-radius: 4px;
+    transition: all 0.2s;
+    padding-top: 0;
+    padding-bottom: 0;
+	margin-top: 24px;
+	margin-bottom: 9px;
+	margin-top: 24px;
+}
+.customize-control.customize-control-ast-section-toggle:hover {
+    background: var(--ast-customizer-color-9);
+    border-style: solid;
+}
+.ast-section-toggle-icon {
+    color: var(--wp-admin-theme-color);
+    cursor: pointer;
+    line-height: 20px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ast-section-toggle-icon span {
+	font-size: 16px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.customize-control-ast-section-toggle {
+  padding-top: 25px;
+  padding-bottom: 16px;
+}
+
+li#customize-control-astra-settings-related-posts-title {
+    margin-top: 32px;
+}
+
+li[ID*="accordion-section-ast-dynamic-single-"].control-section-ast_section,
+li[ID*="accordion-section-ast-dynamic-archive-"].control-section-ast_section,
+li#accordion-section-section-search-page-title.control-section-ast_section,
+li[ID*="accordion-section-ast-sub-section-"].control-section-ast_section {
+  display: none !important;
+}

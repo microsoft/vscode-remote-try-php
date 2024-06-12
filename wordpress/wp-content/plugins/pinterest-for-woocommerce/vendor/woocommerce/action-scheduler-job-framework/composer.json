@@ -1,0 +1,23 @@
+{
+    "name": "woocommerce/action-scheduler-job-framework",
+    "description": "A job framework for Action Scheduler (actionscheduler.org)",
+    "version": "2.0.0",
+    "type": "library",
+    "license": "GNU",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "woocommerce/woocommerce-sniffs": "0.1.0"
+    },
+    "scripts": {
+        "phpcs": [
+            "phpcs -s -p"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Automattic\\WooCommerce\\ActionSchedulerJobFramework\\": "src/"
+        }
+    }
+}

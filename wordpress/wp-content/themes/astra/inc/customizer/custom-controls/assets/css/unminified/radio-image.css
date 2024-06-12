@@ -1,0 +1,159 @@
+.customize-control-ast-row-layout .ast-responsive-btns {
+  position: relative;
+  top: 1px;
+}
+
+.customize-control-ast-radio-image label {
+  position: relative;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.ast-divide-four label {
+	margin-right: 0;
+}
+
+.customize-control-ast-radio-image input {
+  display: none;
+}
+
+.customize-control-ast-radio-image input:checked + label svg {
+  background: var(--ast-customizer-color-1);
+  border-radius: 0;
+  box-shadow: 0 0 3px 0px rgba(0, 133, 186, 0.67);
+}
+
+.customize-control-ast-radio-image input:checked + label svg path  {
+  color: var(--ast-customizer-color-10);
+}
+
+.customize-control-ast-radio-image .modern-layout input:checked + label svg,
+.components-button-group.ahfb-radio-container-control .active-radio.ast-radio-img-svg svg {
+  background-color: var(--ast-customizer-color-1);
+  border-color: transparent;
+  box-shadow: 0px 12px 20px -8px rgba(30, 41, 59, 0.16);
+  border-bottom-color: #f0f0f1;
+}
+
+.ast-divide-four input:checked + label svg {
+	box-shadow: none;
+	color: var(--ast-customizer-color-3);
+}
+
+.customize-control-ast-radio-image input + label .image-clickable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.customize-control-ast-radio-image:not(#customize-control-astra-settings-header-trigger-icon) > .image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.customize-control-ast-radio-image:not(#customize-control-astra-settings-header-trigger-icon) > .modern-layout, .components-button-group.ahfb-radio-container-control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 23px;
+}
+
+.customize-control-ast-radio-image:not(#customize-control-astra-settings-header-trigger-icon) > .ast-divide-four {
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 14px;
+	grid-row-gap: 10px;
+}
+
+.customize-control-ast-radio-image .ast-radio-img-svg svg {
+  width: 75px;
+  height: 50px;
+}
+
+.customize-control-ast-radio-image .modern-layout .ast-radio-img-svg svg,
+.components-button-group.ahfb-radio-container-control .ast-radio-img-svg svg {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(221,224,226,0.5);
+  border: 1px solid var(--ast-customizer-color-7);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ast-divide-four .ast-radio-img-svg svg {
+	color: var(--ast-customizer-color-7);
+	width: 100%;
+	height: 93%;
+}
+
+.ast-divide-four .ast-radio-img-svg svg path {
+  color: var(--ast-customizer-color-8);
+}
+
+/* Image tooltip */
+.image-clickable[data-title]::after {
+  text-transform: none;
+  font-size: .9em;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+
+.image-clickable[data-title]::after {
+  content: attr(data-title);
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: var(--ast-customizer-color-12);
+  color: var(--ast-customizer-color-10);
+  z-index: 9;
+  bottom: calc(100% + 5px);
+  text-align: center;
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+/* Make the tooltips respond to hover */
+.image-clickable[data-title]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+.image-clickable[data-title='']::after {
+  display: none !important;
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+.ast-upgrade-trigger:hover .image-clickable[data-title]::after {
+    display: block;
+}

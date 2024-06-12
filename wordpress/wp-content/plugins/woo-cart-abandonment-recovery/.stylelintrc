@@ -1,0 +1,11 @@
+{
+	"extends": "@wordpress/stylelint-config",
+	"rules": {
+		"function-parentheses-space-inside": "always",
+		"selector-pseudo-class-parentheses-space-inside": "always",
+		"rule-empty-line-before": null,
+		"comment-empty-line-before": null,
+		"selector-class-pattern": null,
+		"no-descending-specificity": null
+	}
+}

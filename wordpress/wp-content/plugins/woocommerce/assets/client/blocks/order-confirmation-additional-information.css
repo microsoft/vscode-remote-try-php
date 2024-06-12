@@ -1,0 +1,1 @@
+@keyframes spinner__animation{0%{animation-timing-function:cubic-bezier(.5856,.0703,.4143,.9297);transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes loading__animation{to{transform:translateX(100%)}}.editor-styles-wrapper .wc-block-order-confirmation-additional-information-placeholder{border:1px solid hsla(0,0%,7%,.11);border-radius:4px;font-style:italic;padding:16px}

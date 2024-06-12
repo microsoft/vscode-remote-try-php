@@ -1,0 +1,14 @@
+@import "~@wordpress/base-styles/colors";
+
+.pfw-url-input-control {
+	color: $gray-700;
+
+	.components-input-control__prefix {
+		display: inline-flex;
+		margin: 6px 0 6px 8px;
+	}
+
+	svg {
+		fill: currentColor;
+	}
+}

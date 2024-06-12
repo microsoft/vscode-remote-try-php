@@ -1,0 +1,11 @@
+.cache
+node_modules
+vendor
+!.*.js
+Gruntfile.js
+admin/assets/min-js/
+*.json
+lib/
+*-rtl*
+.github
+bsf-analytics

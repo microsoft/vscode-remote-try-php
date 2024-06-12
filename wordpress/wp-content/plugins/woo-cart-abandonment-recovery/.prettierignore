@@ -1,0 +1,12 @@
+.cache
+vendor
+node_modules
+admin/assets/min-js/
+*.json
+*.yml
+lib/
+*-rtl*
+.github
+Gruntfile.js
+composer.lock
+bsf-analytics

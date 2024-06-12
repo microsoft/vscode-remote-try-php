@@ -1,0 +1,163 @@
+/* Base */
+.whats-new-rss-flyout {
+	height: 100vh;
+
+	/* Some normal text is not enclosed in p or li */
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #475569;
+	margin-bottom: 5px;
+
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.5em;
+		color: #475569;
+		margin-bottom: 15px;
+	}
+
+	ul,
+	ol {
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
+
+	ul {
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	li {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.5em;
+		color: #475569;
+		margin-bottom: 4px;
+	}
+
+	img {
+		margin-bottom: 15px;
+	}
+
+	p a {
+		color: #1170ff;
+	}
+
+	h2 {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	h3 {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	h5 {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	h6 {
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header {
+		padding: 18px 24px !important;
+		display: flex;
+		align-items: center;
+	}
+
+	.whats-new-rss-flyout-inner-header__title-icon-wrapper h3 {
+		margin: 0;
+	}
+
+	.whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item {
+		padding: 18px 24px;
+	}
+
+	.rss-content-header > p {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 16px;
+		margin-bottom: 0 !important;
+	}
+
+	.rss-content-header h2 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.5em;
+		margin-bottom: 20px;
+	}
+
+	figure {
+		margin-bottom: 16px;
+	}
+
+	iframe {
+		max-width: 100%;
+	}
+
+	.ast-oembed-container {
+		position: relative;
+		padding-top: 56.25%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.wp-has-aspect-ratio iframe {
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.wp-smiley {
+		display: inline-block;
+		margin: 0;
+		min-height: 1em;
+	}
+
+	.whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item.rss-new-post .new-post-badge {
+		background: #ff6c0a;
+		border-radius: 4px;
+		top: 12px;
+		right: 12px;
+		padding: 0 4px;
+		color: #fff;
+	}
+}
+
+.whats-new-rss-trigger-button .whats-new-rss-notification-badge {
+	top: -12px;
+	right: -10px;
+}

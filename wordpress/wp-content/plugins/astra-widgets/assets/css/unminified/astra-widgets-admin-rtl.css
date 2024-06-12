@@ -1,0 +1,290 @@
+/**
+ *	Field - Image Selector
+ */
+.wp-core-ui .next-field-image .next-select-image {
+  padding: 4px 0;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+/**
+ * Repeater
+ */
+.astra-repeater-field {
+    cursor: move;
+    border-bottom: 1px solid #EEEEEE;
+}
+.astra-repeater-field:last-child {
+    border-bottom: none;
+}
+.astra-repeater-field .dashicons {
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
+    color: #c1c1c1;
+}
+.astra-repeater-field .dashicons-admin-page.clone {
+    margin-left: .3em;
+}
+.astra-repeater-container {
+    margin-bottom: 1em;
+}
+.astra-repeater-field label {
+    margin-bottom: .5em;
+    display: inline-block;
+}
+.astra-repeater .markukp p {
+    margin: 1em 0;
+}
+.astra-repeater .add-new {
+    margin-bottom: 1em;
+}
+/*.astra-repeater-field {
+    background: #f6f6f6;
+}
+.astra-repeater-field .markukp {
+    padding: 0 1em .5em 1em;
+}
+*/
+
+.astra-repeater-field .remove,
+.astra-repeater-field .clone {
+    cursor: pointer;
+}
+.astra-repeater-field .actions {
+    padding: 10px;
+    background: #fafafa;
+    text-align: left;
+}
+
+.astra-repeater-field .markukp {
+    display: none;
+}
+.astra-repeater-field .actions .dashicons-move,
+.astra-repeater-field .actions .title {
+    float: right;
+}
+.astra-repeater-field .actions .title {
+  margin-right: .5em;
+}
+.astra-repeater-field .index {
+  display: none;
+}
+.astra-repeater-field span.title:before {
+    font-size: 0.9em;
+    margin-left: 0.5em
+}
+
+/**
+ * Image Field.
+ */
+.astra-field-image .astra-remove-image {
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    top: 0.6em;
+    right: 4em;
+    color: #a00;
+    font-size: 13px;
+    text-decoration: underline;
+    transition: all 0.25s ease;
+}
+.astra-field-image .astra-remove-image:hover {
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    color: #dc3232;
+}
+.astra-field-image-preview {
+    position: relative;
+}
+
+.astra-field-image {
+    -js-display: flex;
+    display: flex;
+}
+
+.astra-field-image-preview img {
+    border-width: 1px 1px 1px 0px;
+    border-color: #bbbbbb;
+    border-style: solid;
+    line-height: 0;
+    box-shadow: 0px 1px 1px #FFF;
+    width: 40px;
+    height: 40px;
+    padding: 5.5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.astra-field-image-preview {
+    background: #f9f9f9;
+    background: -o-linear-gradient(#f9f9f9, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f2f2f2', GradientType=0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    -moz-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    line-height: 10px;
+}
+
+.astra-field-image img {
+    max-width: 100%;
+}
+
+.astra-field-image-title{
+    margin-bottom:1em;
+}
+
+/**
+ * Icon Selector
+ */
+.astra-icons-list-wrap {
+    display: none;
+}
+.astra-selected-icon {
+    display: inline-block;
+}
+.astra-icons-list-wrap .search-icon {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.astra-widget-icons-list .astra-widget-icon {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    cursor: pointer;
+    padding: 1em;
+    box-sizing: content-box;
+    width: 30px;
+    line-height: 1em;
+    font-size: 1em;
+    border: 1px solid #f1f1f1;
+    margin: 0;
+    text-align: center;
+}
+.block-editor-block-list__block .astra-widget-icons-list .astra-widget-icon {
+    width: 20px;
+}
+.astra-widget-icons-list {
+    display: inline-block;
+    margin: 1em 0 0 0;
+    padding: 0;
+    max-height: 250px;
+    overflow: auto;
+}
+.astra-widget-icon-selector {
+    margin: 1em 0;
+}
+/*.astra-widget-icon-selector-actions {
+    margin: 1em 0;
+}*/
+
+/**
+ * Widget Fields
+ */
+.astra-widget-field {
+    margin: 1em 0;
+}
+.astra-widget-field label,
+.astra-widget-field + p label {
+    margin-bottom: .5em;
+    display: block;
+}
+.astra-widget-field .wp-picker-input-wrap label {
+    display: inline-block;
+}
+.astra-widget-field-checkbox label {
+    display: inline-block;
+}
+.astra-widget-field-heading label {
+    font-weight: bold;
+}
+
+.astra-widget-field .wp-picker-input-wrap .wp-picker-clear {
+    min-height: 30px;
+    margin-right: 6px;
+}
+
+/**
+ * Field - Color Picker
+ */
+.astra-widget-field-color .wp-color-result {
+    margin-bottom: 0 !important;
+}
+
+/* Fonts SVG */
+.astra-widget-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.astra-selected-icon svg {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.astra-widget-icon.selected {
+    background: #5897fb;
+}
+
+.astra-widget-icon.selected svg {
+    fill: #fff;
+}
+
+.astra-widget-unit-field .widefat {
+    width: 91%;
+}
+
+.astra-widgets-unit {
+    margin-right: 5px;
+}
+
+.astra-repeater-field .markukp {
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.astra-repeater-sortable .astra-repeater-field {
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+.astra-repeater-field.field-open .actions .toggle-arrow:before {
+    content: "\f142";
+}
+
+.astra-repeater-field .actions .toggle-arrow:before {
+    content: "\f140";
+}
+
+.astra-repeater-field .actions .toggle-arrow {
+    display: inline-block;
+    margin-top: -3px;
+    font-size: 1.6rem;
+    width: 1.6rem;
+    color: #c0c0c0;
+}
+
+.astra-repeater-field title {
+    line-height: 1.4em;
+}
+
+/**
+ * Notice field
+ */
+ .widgets-php .astra-widget-field-notice.notice {
+	display: block !important;
+}
+.astra-widget-field-notice.notice {
+	font-size: 15px;
+}

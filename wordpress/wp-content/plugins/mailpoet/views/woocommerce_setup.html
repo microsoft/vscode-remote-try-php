@@ -1,0 +1,13 @@
+<% extends 'layout.html' %>
+
+<% block content %>
+<script>
+  var mailpoet_logo_url = '<%= cdn_url('welcome-wizard/mailpoet-logo.20200623.png') %>';
+  var wizard_woocommerce_illustration_url = '<%= cdn_url('welcome-wizard/woocommerce.20200623.png') %>';
+  var mailpoet_show_customers_import = <%= json_encode(show_customers_import) %>;
+  var finish_wizard_url = '<%= finish_wizard_url %>';
+</script>
+
+<div id="mailpoet-wizard-container"></div>
+
+<% endblock %>

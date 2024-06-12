@@ -1,0 +1,22 @@
+{{#if model.image.src}}
+    <style type="text/css">
+        .mailpoet_editor_view_{{ viewCid }} {
+            background-color: {{#ifCond model.styles.block.backgroundColor '!=' 'transparent'}}{{  model.styles.block.backgroundColor }}{{else}}#ffffff{{/ifCond}} !important;
+            background-image: url({{ model.image.src }});
+            background-position: center;
+            background-repeat: {{#ifCond model.image.display '==' 'tile'}}repeat{{else}}no-repeat{{/ifCond}};
+            background-size: {{#ifCond model.image.display '==' 'scale'}}cover{{else}}contain{{/ifCond}};
+        }
+        .mailpoet_editor_view_{{ viewCid }} .mailpoet_container { background: transparent; }
+    </style>
+{{else}}
+    {{#ifCond model.styles.block.backgroundColor '!=' 'transparent'}}
+        <style type="text/css">
+            .mailpoet_editor_view_{{ viewCid }} { background-color: {{ model.styles.block.backgroundColor }}; }
+            .mailpoet_editor_view_{{ viewCid }} .mailpoet_container { background-color: {{ model.styles.block.backgroundColor }}; }
+        </style>
+    {{/ifCond}}
+{{/if}}
+
+<div class="mailpoet_container {{#ifCond model.orientation '===' 'horizontal'}}mailpoet_container_horizontal{{/ifCond}}{{#ifCond model.orientation '===' 'vertical'}}mailpoet_container_vertical{{/ifCond}}"></div>
+<div class="mailpoet_tools"></div><div class="mailpoet_block_highlight">

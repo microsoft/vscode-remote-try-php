@@ -1,0 +1,28 @@
+/*!
+ * jQuery BBQ: Back Button & Query Library - v1.2.1 - 2/17/2010
+ * http://benalman.com/projects/jquery-bbq-plugin/
+ *
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+
+/*!
+ * jQuery serializeObject - v0.2 - 1/20/2010
+ * http://benalman.com/projects/jquery-misc-plugins/
+ *
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+
+/*!
+* Parsley.js
+* Version 2.9.2 - built Tue, Dec 10th 2019, 6:18 pm
+* http://parsleyjs.org
+* Guillaume Potier - <guillaume@wisembly.com>
+* Marc-Andre Lafortune - <petroselinum@marc-andre.ca>
+* MIT Licensed
+*/
+
+/*! js-cookie v3.0.5 | MIT */

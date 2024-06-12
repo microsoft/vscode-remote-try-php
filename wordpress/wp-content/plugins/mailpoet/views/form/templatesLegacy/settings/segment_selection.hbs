@@ -1,0 +1,130 @@
+<ul id="mailpoet_segment_selection" class="clearfix"></ul>
+
+<div id="mailpoet_segment_available_container">
+  <h3><%= __('Select the list that you want to add:') %></h3>
+
+  <select class="mailpoet_segment_available"></select>
+
+  <a href="javascript:;" class="mailpoet_segment_add"><span><%= __('Add') %></span></a>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    <% autoescape false %>
+      var selected_segments = {{#if params.values}}{{{ json_encode params.values }}}
+        {{else}}[]{{/if}};
+    <% endautoescape %>
+
+    $(function() {
+      mailpoet_segment_available_render();
+      mailpoet_segment_selection_render();
+
+      setInputNames();
+
+      // add segment
+      $('.mailpoet_segment_add').on('click', function() {
+        // add currently selected segment to the selection
+        var selected_segment = $('.mailpoet_segment_available :selected');
+
+        // add segment to selection
+        selected_segments.push({
+          id: selected_segment.val(),
+          name: selected_segment.text(),
+          is_checked: 0
+        });
+
+        // remove segment from available segments
+        selected_segment.remove();
+
+        // render selection
+        mailpoet_segment_selection_render();
+
+        setInputNames();
+      });
+
+      // remove segment
+      $('#mailpoet_segment_selection').on('click', '.remove', function(e) {
+        if($('#mailpoet_segment_selection').children().length === 1) {
+          return e.preventDefault();
+        }
+        var element = $(this).parents('li');
+        // remove currently selected segment to the selection
+        var selected_segment = parseInt(element.data('segment'), 10);
+
+        // remove segment from selection
+        selected_segments = selected_segments.filter(function(segment) {
+          return (parseInt(segment.id, 10) !== selected_segment);
+        });
+
+        // remove element
+        element.remove();
+
+        // render available segment
+        mailpoet_segment_available_render();
+
+        setInputNames();
+      });
+    });
+
+    function setupSortableSegments() {
+      // make segment selection sortable
+      Sortable.create('mailpoet_segment_selection', {
+        handles: $$('#mailpoet_segment_selection .handle'),
+         onChange: function(item) {
+          setInputNames();
+        }
+      });
+    }
+
+    function mailpoet_segment_available_render() {
+      // clear available segments
+      $('.mailpoet_segment_available').html('');
+
+      var selected_segment_ids = selected_segments.map(function(segment) {
+        return segment.id;
+      });
+
+      // display available segments
+      $.each(mailpoet_segments, function(i, segment) {
+        if($.inArray(segment.id, selected_segment_ids) < 0) {
+          $('.mailpoet_segment_available').append(
+            '<option value="'+segment.id+'">'+segment.name+'</option>'
+          );
+        }
+      });
+      mailpoet_segment_available_toggle();
+    }
+
+    function mailpoet_segment_selection_render() {
+      // segment item template
+      var template = Handlebars.compile(
+        $('#field_settings_segment_selection_item').html()
+      );
+
+      // update view
+      $('#mailpoet_segment_selection').html(
+        template({ segments: selected_segments })
+      );
+
+      mailpoet_segment_available_toggle();
+    }
+
+    function mailpoet_segment_available_toggle() {
+      // toggle visibility of available segments
+      if($('.mailpoet_segment_available option').length === 0) {
+        $('#mailpoet_segment_available_container').hide();
+      } else {
+        $('#mailpoet_segment_available_container').show();
+      }
+    }
+
+    function setInputNames() {
+      $('#mailpoet_segment_selection li').each(function(index, item) {
+        $(item).find('.mailpoet_is_checked').attr('name', 'params[values]['+index+'][is_checked]');
+        $(item).find('.mailpoet_segment_id').attr('name', 'params[values]['+index+'][id]');
+        $(item).find('.mailpoet_segment_name').attr('name', 'params[values]['+index+'][name]');
+      });
+      setupSortableSegments();
+    }
+  });
+<{{!}}/script>

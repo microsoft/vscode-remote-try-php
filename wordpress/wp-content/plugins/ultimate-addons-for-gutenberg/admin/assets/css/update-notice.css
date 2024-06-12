@@ -1,0 +1,36 @@
+.uagb-plugin-update-notification {
+	margin-bottom: 10px;
+	max-width: 1000px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.uagb-plugin-update-notification__separator {
+	margin: 15px -12px;
+}
+.uagb-plugin-update-notification__icon {
+	font-size: 17px;
+	margin-right: 9px;
+	margin-left: 2px;
+}
+.uagb-plugin-update-notification__title {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.uagb-plugin-update-notification + p {
+	display: none;
+}
+
+.notice-success .uagb-plugin-update-notification__separator {
+	border: 1px solid #46b450;
+}
+.notice-success .uagb-plugin-update-notification__icon {
+	color: #79ba49;
+}
+
+.notice-warning .uagb-plugin-update-notification__separator {
+	border: 1px solid #ffb900;
+}
+.notice-warning .uagb-plugin-update-notification__icon {
+	color: #f56e28;
+}

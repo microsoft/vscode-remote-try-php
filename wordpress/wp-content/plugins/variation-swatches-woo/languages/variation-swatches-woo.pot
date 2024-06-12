@@ -1,0 +1,930 @@
+# Copyright (C) 2024 CartFlows
+# This file is distributed under the GPL v2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Variation Swatches for WooCommerce 1.0.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/variation-swatches-woo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-28T07:55:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: variation-swatches-woo\n"
+
+#. Plugin Name of the plugin
+msgid "Variation Swatches for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:26
+msgid "Provides super easy shopping experience by displaying beautiful variation swatches on WooCommerce shop and product page."
+msgstr ""
+
+#. Author of the plugin
+msgid "CartFlows"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://cartflows.com/"
+msgstr ""
+
+#: admin-core/admin-menu.php:62
+#: admin/attributes-config.php:250
+#: plugin-loader.php:198
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/Header.js:11
+msgid "Settings"
+msgstr ""
+
+#: admin-core/admin-menu.php:63
+#: admin/attributes-config.php:250
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/Header.js:31
+msgid "Variation Swatches"
+msgstr ""
+
+#: admin-core/admin-menu.php:151
+#: admin/product-config.php:71
+#: admin/product-config.php:96
+#: admin/product-config.php:144
+msgid "Invalid user."
+msgstr ""
+
+#: admin-core/admin-menu.php:171
+msgid "No valid setting keys found."
+msgstr ""
+
+#: admin-core/admin-menu.php:182
+msgid "Settings saved successfully."
+msgstr ""
+
+#: admin-core/admin-menu.php:185
+msgid "Failed to save settings."
+msgstr ""
+
+#: admin/attributes-config.php:80
+msgid "Select"
+msgstr ""
+
+#: admin/attributes-config.php:81
+#: admin/templates.php:67
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:213
+msgid "Label"
+msgstr ""
+
+#: admin/attributes-config.php:82
+#: admin/templates.php:68
+#: admin/templates.php:396
+#: admin/term-meta-config.php:138
+msgid "Color"
+msgstr ""
+
+#: admin/attributes-config.php:83
+#: admin/templates.php:69
+#: admin/templates.php:406
+#: admin/term-meta-config.php:144
+msgid "Image"
+msgstr ""
+
+#: admin/attributes-config.php:113
+msgid "Preview"
+msgstr ""
+
+#: admin/attributes-config.php:169
+#: admin/templates.php:228
+#: admin/templates.php:295
+msgid "Default"
+msgstr ""
+
+#: admin/attributes-config.php:170
+msgid "Square"
+msgstr ""
+
+#: admin/attributes-config.php:171
+msgid "Rounded Corner"
+msgstr ""
+
+#: admin/attributes-config.php:172
+msgid "Circle"
+msgstr ""
+
+#: admin/attributes-config.php:176
+msgid "Custom"
+msgstr ""
+
+#: admin/attributes-config.php:183
+#: admin/attributes-config.php:252
+msgid "Shape"
+msgstr ""
+
+#: admin/attributes-config.php:194
+#: admin/attributes-config.php:261
+msgid "Default setting is applied from settings page."
+msgstr ""
+
+#: admin/attributes-config.php:195
+#: admin/attributes-config.php:262
+msgid "Swatch will appear as Square."
+msgstr ""
+
+#: admin/attributes-config.php:196
+#: admin/attributes-config.php:263
+msgid "Swatch will appear as Square with slight curvature at border of 3px."
+msgstr ""
+
+#: admin/attributes-config.php:197
+#: admin/attributes-config.php:264
+msgid "Swatch will appear as Circle"
+msgstr ""
+
+#: admin/attributes-config.php:198
+#: admin/attributes-config.php:265
+msgid "Create custom Swatch shape by choosing different height and width"
+msgstr ""
+
+#: admin/attributes-config.php:203
+#: admin/attributes-config.php:268
+msgid "Size (Optional)"
+msgstr ""
+
+#: admin/attributes-config.php:207
+msgid "Control the size of this particular attribute. Default size  is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:212
+#: admin/attributes-config.php:230
+#: admin/attributes-config.php:273
+msgid "Height (Optional)"
+msgstr ""
+
+#: admin/attributes-config.php:216
+msgid "Control the height of this particular attribute. Default height  is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:221
+#: admin/attributes-config.php:239
+#: admin/attributes-config.php:278
+msgid "Width (Optional)"
+msgstr ""
+
+#: admin/attributes-config.php:225
+msgid "Control the width of this particular attribute. Default width  is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:234
+msgid "Control the height of this particular attribute. Default height  is 30px"
+msgstr ""
+
+#: admin/attributes-config.php:243
+msgid "Control the width of this particular attribute. Default width  is 30px"
+msgstr ""
+
+#: admin/attributes-config.php:270
+msgid "Control the size of this particular attribute. Default size is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:275
+msgid "Control the height of this particular attribute. Default height is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:280
+msgid "Control the width of this particular attribute. Default width is 24px"
+msgstr ""
+
+#: admin/attributes-config.php:338
+msgid "Swatches Settings"
+msgstr ""
+
+#: admin/attributes-config.php:339
+msgid "Choose how this attribute should appear in frontend."
+msgstr ""
+
+#: admin/product-config.php:67
+#: admin/product-config.php:91
+#: admin/product-config.php:139
+msgid "Invalid product id."
+msgstr ""
+
+#: admin/product-config.php:76
+#: admin/product-config.php:101
+msgid "Product type is not variable."
+msgstr ""
+
+#: admin/product-config.php:119
+msgid "Swatches setting have been reset."
+msgstr ""
+
+#: admin/product-config.php:119
+#: admin/product-config.php:152
+#: admin/product-config.php:160
+msgid "Settings saved."
+msgstr ""
+
+#: admin/product-config.php:120
+#: admin/templates.php:147
+msgid "No visible attribute found."
+msgstr ""
+
+#: admin/product-config.php:187
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:16
+msgid "Swatches"
+msgstr ""
+
+#: admin/product-config.php:222
+msgid "Please save this product to enable custom settings for Variation Swatches."
+msgstr ""
+
+#: admin/product-config.php:252
+#: admin/term-meta-config.php:218
+msgid "Select a image to upload"
+msgstr ""
+
+#: admin/product-config.php:256
+#: admin/term-meta-config.php:222
+msgid "Use this image"
+msgstr ""
+
+#: admin/templates.php:160
+msgid "Save"
+msgstr ""
+
+#: admin/templates.php:161
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/fields/ColorPicker.js:108
+msgid "Reset"
+msgstr ""
+
+#: admin/templates.php:163
+msgid "Swatches Global Settings"
+msgstr ""
+
+#: admin/templates.php:224
+msgid "Catalog Mode Attribute"
+msgstr ""
+
+#: admin/templates.php:293
+msgid "Attribute Type"
+msgstr ""
+
+#: admin/templates.php:386
+msgid "Label Text"
+msgstr ""
+
+#: admin/templates.php:410
+#: admin/term-meta-config.php:178
+msgid "Variation swatches image preview"
+msgstr ""
+
+#: admin/templates.php:414
+#: admin/term-meta-config.php:181
+msgid "Upload image"
+msgstr ""
+
+#: admin/templates.php:415
+#: admin/term-meta-config.php:182
+msgid "Remove image"
+msgstr ""
+
+#: admin/term-meta-config.php:139
+msgid "Choose a color"
+msgstr ""
+
+#: admin/term-meta-config.php:145
+msgid "Choose an image"
+msgstr ""
+
+#. translators: %1$1s, %3$3s: Html Tag, %2$2s: Extra attribute count
+#: inc/swatches.php:379
+msgid "%1$1s %2$2s More %3$3s"
+msgstr ""
+
+#: inc/swatches.php:467
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: inc/swatches.php:490
+msgid "Clear"
+msgstr ""
+
+#: inc/swatches.php:528
+msgid "Selected variant is unavailable."
+msgstr ""
+
+#: inc/swatches.php:684
+msgid "Add to Cart"
+msgstr ""
+
+#. translators: %s: Product title
+#: inc/swatches.php:722
+msgid "\"%1$s\" has been added to your cart. %2$s"
+msgstr ""
+
+#: inc/swatches.php:724
+msgid "View Cart"
+msgstr ""
+
+#: plugin-loader.php:125
+msgid "Activate WooCommerce"
+msgstr ""
+
+#: plugin-loader.php:141
+msgid "Install WooCommerce"
+msgstr ""
+
+#. translators: 1$-2$: opening and closing <strong> tags, 3$-4$: link tags, takes to woocommerce plugin on wp.org, 5$-6$: opening and closing link tags, leads to plugins.php in admin.
+#: plugin-loader.php:146
+msgid "%1$sVariation Swatches for WooCommerce is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for Variation Swatches for WooCommerce to work. Please %5$s%6$s%7$s"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/Notification.js:44
+msgid "Successfully saved!"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/Header.js:7
+msgid "Welcome"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/Header.js:15
+msgid "How To"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/Header.js:63
+msgid "Notification"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:12
+msgid "Enable for Product page"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:16
+msgid "Enable swatches for product page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:24
+msgid "Enable for Shop page"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:25
+msgid "Enable swatches for shop / archieve page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:33
+msgid "Auto convert dropdown to label"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GeneralSettings.js:37
+msgid "Automatically convert dropdown to labels."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/fields/ColorPicker.js:101
+msgid "Select Color"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:19
+#: admin-core/assets/src/components/tabs/ShopStyling.js:163
+msgid "Swatch minimum width"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:23
+#: admin-core/assets/src/components/tabs/ShopStyling.js:167
+msgid "Minimum width of swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:27
+#: admin-core/assets/src/components/tabs/ShopStyling.js:171
+msgid "Default width: 24px"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:35
+#: admin-core/assets/src/components/tabs/ShopStyling.js:179
+msgid "Swatch minimum height"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:39
+#: admin-core/assets/src/components/tabs/ShopStyling.js:183
+msgid "Minimum height of swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:43
+#: admin-core/assets/src/components/tabs/ShopStyling.js:187
+msgid "Default height: 24px"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:51
+#: admin-core/assets/src/components/tabs/ShopStyling.js:195
+msgid "Swatch border radius"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:55
+#: admin-core/assets/src/components/tabs/ShopStyling.js:199
+msgid "Add border radius for swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:59
+msgid "Default: 3px"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:64
+#: admin-core/assets/src/components/tabs/ShopStyling.js:211
+msgid "Swatch border width"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:68
+#: admin-core/assets/src/components/tabs/ShopStyling.js:215
+msgid "Add border width for swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:72
+#: admin-core/assets/src/components/tabs/ShopStyling.js:219
+msgid "Default: 1px solid"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:80
+#: admin-core/assets/src/components/tabs/ShopStyling.js:227
+msgid "Font size"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:81
+msgid "Set font size for label swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:85
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:190
+#: admin-core/assets/src/components/tabs/ShopStyling.js:235
+msgid "Default: 12px"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:90
+msgid "Border color"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:91
+msgid "Choose color for swatch border."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:100
+#: admin-core/assets/src/components/tabs/ShopStyling.js:243
+msgid "Disabled attribute effect"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:104
+#: admin-core/assets/src/components/tabs/ShopStyling.js:247
+msgid "How to display disabled attributes."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:113
+#: admin-core/assets/src/components/tabs/ShopStyling.js:256
+msgid "Blur with cross"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:120
+#: admin-core/assets/src/components/tabs/ShopStyling.js:263
+msgid "Blur"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:124
+#: admin-core/assets/src/components/tabs/ShopStyling.js:270
+msgid "Hide"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:129
+msgid "Disable out of stock"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:133
+msgid "Disable out of stock attribute terms."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:142
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:145
+msgid "Tooltip"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:146
+msgid "Display label over swatches as tooltip."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:156
+#: admin-core/assets/src/components/tabs/StyleOptions.js:12
+msgid "Tooltip background color"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:160
+#: admin-core/assets/src/components/tabs/StyleOptions.js:16
+msgid "Choose color for tooltip background."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:169
+#: admin-core/assets/src/components/tabs/StyleOptions.js:25
+msgid "Tooltip font color"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:173
+#: admin-core/assets/src/components/tabs/StyleOptions.js:26
+msgid "Choose color for tooltip font."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:182
+msgid "Tooltip font size"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:186
+msgid "Set tooltip font size."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:199
+#: admin-core/assets/src/components/tabs/StyleOptions.js:35
+msgid "Image preview on tooltip"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:203
+#: admin-core/assets/src/components/tabs/StyleOptions.js:39
+msgid "Image preview will be shown in tooltip if this option is enabled, This setting works only for image type swatches."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:215
+msgid "Label position"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:216
+msgid "Display options for swatches label."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:225
+msgid "None"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:229
+msgid "Stacked"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:233
+msgid "Inline"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:238
+msgid "Label font size"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:239
+msgid "Set font size for swatches label, Keep it 0 or blank to get default value from theme."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:243
+msgid "Default: inherit"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:249
+msgid "Widgets"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:252
+msgid "Filters"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/GlobalStyling.js:253
+msgid "Enable swatches for WooCommerce filters."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:19
+msgid "General"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:22
+msgid "Swatch alignment"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:23
+msgid "Swatch alignment on shop page. Keep your swatches left center or right aligned."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:32
+msgid "Left"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:36
+msgid "Center"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:40
+msgid "Right"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:45
+msgid "Swatch position"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:46
+msgid "Select position where to display swatches on shop page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:55
+msgid "Before Title"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:62
+msgid "After Title"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:66
+msgid "Before Price"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:73
+msgid "After Price"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:78
+msgid "Show swatches label"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:82
+msgid "Display swatch label on shop page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:90
+msgid "Attributes Limit"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:91
+msgid "Number of attributes to display on shop page. Keep it 0 or blank to load all attributes."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:100
+msgid "Catalog"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:103
+msgid "Enable catalog mode"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:107
+msgid "Show single attribute on shop page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:117
+msgid "Choose catalog attribute"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:121
+msgid "Only selected attribute will appear on shop page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:130
+msgid "First attribute"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:142
+msgid "More customizations"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:148
+msgid "Override global settings"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:152
+msgid "Override global settings for shop page. Below settings are applicable only on shop page."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:203
+msgid "Default: 24px"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/ShopStyling.js:231
+msgid "Set font size for label swatches"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:20
+msgid "Welcome to Variation Swatches!"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:52
+msgid "Knowledge Base"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:58
+msgid "Learn everything you need to know about the Variation Swatches plugin with our comprehensive documentation."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:69
+msgid "Browse Now →"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:81
+msgid "Get 5-star Support"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:87
+msgid "Need some help? Our awesome support team is here to help you with any question you have."
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:98
+msgid "Get Support →"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:110
+msgid "Join the Community"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:116
+msgid "Got a question about the plugin, want to share your awesome project or just say hi? Join our wonderful community!"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/path/Welcome.js:127
+msgid "Join Now →"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/HowTo.js:14
+msgid "How to create attributes variations"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/HowTo.js:22
+msgid "To create attributes click on Products > "
+msgstr ""
+
+#: admin-core/assets/build/settings.js:1
+#: admin-core/assets/src/components/tabs/HowTo.js:32
+msgid "Attributes"
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:2
+#: admin-core/assets/src/components/tabs/HowTo.js:43
+msgid "Enter name, select type, shape and size of attribute and click on %1$sAdd attribute%2$s button."
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:3
+#: admin-core/assets/src/components/tabs/HowTo.js:56
+msgid "To Edit an existing attribute locate attribute in attributes table click on edit link below the name of attribute select desired parameter and click on %1$sUpdate%2$s button."
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:3
+#: admin-core/assets/src/components/tabs/HowTo.js:69
+msgid "How to configure terms of an attribute"
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:4
+#: admin-core/assets/src/components/tabs/HowTo.js:80
+msgid "Once attribute is created, add terms to attribute. To do so click on the link %1$sConfigure terms%2$s in attributes table "
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:5
+#: admin-core/assets/src/components/tabs/HowTo.js:93
+msgid "Adding new term is similar to adding an attribute, On the basis attribute type field will appear to either select a image or to choose color for the term. Choose appropriate option and click on %1$sAdd new {attribute-name}%2$s button "
+msgstr ""
+
+#. translators: %1$s: bold tag start, %2$s: bold tag end.
+#: admin-core/assets/build/settings.js:5
+#: admin-core/assets/src/components/tabs/HowTo.js:106
+msgid "How to create variations from attributes"
+msgstr ""
+
+#. translators: %1$s: anchor tag start, %2$s: anchor tag end.
+#: admin-core/assets/build/settings.js:6
+#: admin-core/assets/src/components/tabs/HowTo.js:117
+msgid "Refer this %1$sWooCommerce documentation%2$s on how to create Variable product"
+msgstr ""
+
+#. translators: %1$s: anchor tag start, %2$s: anchor tag end.
+#: admin-core/assets/build/settings.js:6
+#: admin-core/assets/src/components/tabs/HowTo.js:130
+msgid "How to apply different swatch settings on shop page"
+msgstr ""
+
+#. translators: %1$s: anchor tag start, %2$s: anchor tag end.
+#: admin-core/assets/build/settings.js:7
+#: admin-core/assets/src/components/tabs/HowTo.js:141
+msgid "To apply different swatch settings click on %1$sShop Page Styling%2$s menu"
+msgstr ""
+
+#. translators: %1$s: anchor tag start, %2$s: anchor tag end.
+#: admin-core/assets/build/settings.js:8
+#: admin-core/assets/src/components/tabs/HowTo.js:154
+msgid "Under the %1$sMore Customizations%2$s tab enable %1$sOverride global settings%2$s option"
+msgstr ""
+
+#. translators: %1$s: anchor tag start, %2$s: anchor tag end.
+#: admin-core/assets/build/settings.js:8
+#: admin-core/assets/src/components/tabs/HowTo.js:164
+msgid "Select the appropriate value to get desired swatch style on shop page"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:8
+#: admin-core/assets/src/components/Container.js:77
+msgid "General Settings"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:8
+#: admin-core/assets/src/components/Container.js:84
+msgid "Global Styling"
+msgstr ""
+
+#: admin-core/assets/build/settings.js:8
+#: admin-core/assets/src/components/Container.js:91
+msgid "Shop Page Styling"
+msgstr ""

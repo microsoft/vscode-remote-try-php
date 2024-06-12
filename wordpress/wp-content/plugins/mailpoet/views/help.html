@@ -1,0 +1,85 @@
+<% extends 'layout.html' %>
+
+<% block content %>
+
+<div id="mailpoet_help">
+
+  <script type="text/javascript">
+    var systemInfoData = <%= json_encode(systemInfoData) %>;
+    var systemStatusData = <%= json_encode(systemStatusData) %>;
+    var actionSchedulerData = <%= json_encode(actionSchedulerData) %>;
+  </script>
+
+  <div id="help_container"></div>
+
+</div>
+
+  <%= localize({
+    'tabKnowledgeBaseTitle': __('Knowledge Base'),
+    'tabSystemInfoTitle': __('System Info'),
+    'tabSystemStatusTitle': __('System Status'),
+    'tabYourPrivacyTitle': __('Your Privacy'),
+    'systemStatusIntroCron': __('For the plugin to work, it must be able to establish connection with the task scheduler.'),
+    'systemStatusIntroCronMSS': __('For the plugin to work, it must be able to establish connection with the task scheduler and the key activation/MailPoet Sending Service.'),
+    'systemStatusCronTitle': __('Task Scheduler'),
+    'systemStatusMSSTitle': __('Connection to the MailPoet Sending Service'),
+    'systemStatusConnectionSuccessful': __('Connection successful.'),
+    'systemStatusConnectionUnsuccessful': __('Connection unsuccessful.'),
+    'systemStatusCronConnectionUnsuccessfulInfo': __('Please consult our [link]knowledge base article[/link] for troubleshooting tips.'),
+    'systemStatusMSSConnectionUnsuccessfulInfo': __('Please contact our technical support for assistance.'),
+    'systemStatusMSSConnectionCanConnect': __('Your installation can connect to our sending service.'),
+    'systemStatusMSSConnectionCanNotConnect': __('Currently, your installation can not reach the sending service. If you want to use our service please consult our [link]knowledge base article[/link] for troubleshooting tips.'),
+    'knowledgeBaseIntro': __('Click on one of these categories below to find more information:'),
+    'knowledgeBaseButton': __('Visit our Knowledge Base for more articles'),
+    'systemInfoIntro': __('The information below is useful when you need to get in touch with our support. Just copy all the text below and paste it into a message to us.'),
+    'systemInfoDataError': __('Sorry, there was an error, please try again later.'),
+    'copyToClipboard': __('Copy to clipboard'),
+    'copyToClipboardSuccess': __('Copied to clipboard.'),
+    'copyToClipboardFailure': __('Could not copy to clipboard.'),
+    'systemStatusCronStatusTitle': __('Cron'),
+    'systemStatusQueueTitle': __('Sending Queue'),
+    'yourPrivacyContent1': __('MailPoet respects your privacy. We don’t track any information about your website or yourself without your explicit consent.'),
+    'yourPrivacyContent2': __('Third-party services used within the plugin may track information such as your email & IP address.'),
+    'yourPrivacyContent3': __('If you send with MailPoet, we track data that is used to ensure that the service works correctly.'),
+    'yourPrivacyButton': __('Read our Privacy Notice'),
+    'lastUpdated': _x('Last updated', 'A label in a status table e.g. Last updated: 2018-10-18 18:50'),
+    'lastRunStarted': _x('Last run started', 'A label in a status table e.g. Last run started: 2018-10-18 18:50'),
+    'lastRunCompleted': _x('Last run completed', 'A label in a status table e.g. Last run completed: 2018-10-18 18:50'),
+    'lastSeenError': _x('Last seen error', 'A label in a status table e.g. Last seen error: Process timeout'),
+    'lastSeenErrorDate': _x('Last seen error date', 'A label in a status table e.g. Last seen error date: 2018-10-18 18:50'),
+    'unknown': _x('unknown', 'An unknown state is a status table e.g. Last run started: unknown'),
+    'accessible': _x('Accessible', 'A label in a status table e.g. Accessible: yes'),
+    'status': __('Status'),
+    'yes': __('yes'),
+    'no': __('no'),
+    'none': _x('none', 'An empty state is a status table e.g. Error: none'),
+    'running': _x('running', 'A state of a process.'),
+    'paused': _x('paused', 'A state of a process.'),
+    'cronWaiting': _x('waiting for the next run', 'A state of a process.'),
+    'startedAt': _x('Started at', 'A label in a status table e.g. Started at: 2018-10-18 18:50'),
+    'sentEmails': _x('Sent emails', 'A label in a status table e.g. Sent emails: 50'),
+    'retryAttempt': _x('Retry attempt', 'A label in a status table e.g. Retry attempt: 2'),
+    'retryAt': _x('Retry at', 'A label in a status table e.g. Retry at: 2018-10-18 18:50'),
+    'error': _x('Error', 'A label in a status table e.g. Error: missing data'),
+    'totalCompletedTasks': __('Total completed tasks'),
+    'totalScheduledTasks': __('Total scheduled tasks'),
+    'totalRunningTasks': __('Total running tasks'),
+    'totalPausedTasks': __('Total paused tasks'),
+    'scheduledTasks': __('Scheduled tasks'),
+    'runningTasks': __('Running tasks'),
+    'completedTasks': __('Completed tasks'),
+    'type': _x('Type', 'Table column heading for task type.'),
+    'email': __('Email'),
+    'priority': _x('Priority', 'Table column heading for task priority (number).' ),
+    'scheduledAt': __('Scheduled At'),
+    'updatedAt': __('Updated At'),
+    'nothingToShow': __('Nothing to show.'),
+    'preview': _x('Preview', 'Text of a link to email preview page.'),
+    'actionSchedulerStatus': __('WP Cron / Action Scheduler Status'),
+    'version': __('Version'),
+    'storage': __('Storage type'),
+    'latestActionSchedulerTrigger': _x('Next trigger run', 'Label for the next date and time of background job trigger run.'),
+    'latestActionSchedulerCompletedTrigger': _x('Last trigger run', 'Label for the last date and time of background job trigger run.'),
+    'latestActionSchedulerCompletedRun': _x('Last worker run', 'Label for the last date and time of background job worker run.'),
+  }) %>
+<% endblock %>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<access component="com_postinstall">
-	<section name="component">
-		<action name="core.manage" title="JACTION_MANAGE" />
-		<action name="core.edit.state" title="JACTION_EDITSTATE" />
-	</section>
-</access>

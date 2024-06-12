@@ -1,0 +1,422 @@
+.wcf-ca-ibox {
+	clear: both;
+	margin-bottom: 25px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wcf-ca-ibox-title {
+	background-color: #fff;
+	border-image: none;
+	border-width: 3px 0 0;
+	color: inherit;
+	margin-bottom: 0;
+	padding: 14px 15px 7px;
+	min-height: 48px;
+}
+
+.wcf-ca-ibox-content {
+	background-color: #fff;
+	color: inherit;
+	padding: 15px 20px 20px 20px;
+	border-color: #d7dadc;
+	border-image: none;
+	border-style: solid solid none;
+	border-width: 1px 0;
+}
+
+.wcf-ca-raw {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.wcf-ca-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grid-container > div {
+	background-color: rgba( 255, 255, 255, 0.8 );
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+.wcf-ca-center-msg {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.wcf-ca-switch {
+	cursor: pointer;
+	text-indent: -999em;
+	display: block;
+	width: 38px;
+	height: 22px;
+	border-radius: 30px;
+	border: none;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	box-shadow: inset 0 0 0 0 transparent;
+}
+.wcf-ca-switch:focus {
+	outline: none;
+}
+.wcf-ca-switch::before {
+	border-radius: 50%;
+	background: #fff;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	top: 2px;
+	right: 2px;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+	box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.3 );
+}
+.wcf-ca-switch[wcf-ca-template-switch="on"] {
+	box-shadow: inset 0 0 0 11px #008000;
+}
+.wcf-ca-switch[wcf-ca-template-switch="on"]::before {
+	-webkit-transform: translateX( -16px );
+	transform: translateX( -16px );
+}
+.wcf-ca-switch[wcf-ca-template-switch="off"] {
+	background: #ccc;
+}
+.wcf-ca-switch.wcap-loading {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.wcf-ca-trigger-input {
+	height: 28px;
+	width: 40%;
+	margin-left: 10px;
+}
+
+.wcf-ca-report-btn {
+	padding: 15px 0 15px 0;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+.wcf-ca-email-inputs {
+	width: 25%;
+}
+
+.wcf-ca-coupon-inputs {
+	width: 10%;
+	vertical-align: middle;
+}
+
+.wcf-ca-filter-input {
+	height: 28px;
+	width: 7em;
+	margin: 0;
+	text-align: center;
+}
+
+.wcf-ca-left-report-field-group {
+	flex: 1;
+	margin-top: 0;
+}
+.wcf-ca-right-report-field-group {
+	flex: 1;
+	text-align: left;
+}
+.wcf-search-orders {
+	display: inline-block;
+}
+.wcf_export_orders {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-right: 5px;
+}
+
+.wcf-ca-report-table-row {
+	color: #636363;
+	border: 1px solid #e5e5e5;
+}
+
+/* Newly Added for the modification of the User Order detail window UI */
+
+/* Column Classes */
+
+.wcf-ca-column-one {
+	width: 100%;
+}
+
+.wcf-ca-column-two,
+.wcf-ca-user-address {
+	width: 50%;
+}
+
+.wcf-pull-left {
+	float: right;
+}
+.wcf-ca-email-data,
+.wcf-ca-user-detail {
+	border-radius: 3px;
+	padding: 20px 25px;
+	min-height: 330px;
+	max-height: 420px;
+	width: 100%;
+	overflow: auto;
+}
+
+.wcf-ca-user-detail {
+	max-height: 100%;
+}
+
+.wcf-ca-user-order {
+	border-radius: 3px;
+	padding: 25px 25px 30px 25px;
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+}
+
+/* Column Classes */
+
+/* Section classes */
+
+.wcf-ca-margin-right {
+	margin-left: 13px;
+}
+.wcf-ca-margin-left {
+	margin-right: 13px;
+}
+
+.wcf-ca-column {
+	background-color: #fff;
+	border-radius: 3px;
+	display: flex;
+}
+
+/* Section Classes */
+
+.wcf-ca-right-report-field-group .back-button {
+	height: auto;
+	padding: 3px 5px 3px 10px;
+}
+
+.wcf-ca-left-report-field-group .back-button .dashicons {
+	vertical-align: middle;
+}
+
+.wcf-ca-panel {
+	cursor: default;
+	/*background-color: #fff;*/
+	border-radius: 5px;
+	display: flex;
+	padding: 0;
+	margin: 10px 0 25px;
+}
+
+.wcf-table {
+	border: none;
+	text-align: right;
+	width: 100%;
+}
+.wcf-table tr,
+.wcf-table tr th,
+.wcf-table tr td {
+	border: none;
+}
+
+.wcf-table tr th a,
+.wcf-table tr td a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.wcf-table tr th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+.wcf-table tr td {
+	border-bottom: 1px solid #ddd;
+	line-height: 1.42857143;
+	vertical-align: top;
+	position: relative;
+}
+
+.wcf-ca-panel h2 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1.2;
+	text-shadow: -1px 1px 1px #fff;
+	padding: 10px 0 15px;
+	margin: 0;
+}
+
+.wcf-ca-user-order table {
+	width: 100%;
+}
+
+.wcf-ca-user-order table thead th {
+	text-align: center;
+	padding: 1em 3em;
+	font-weight: 400;
+	color: #999;
+	/*background: #f8f8f8;*/
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.wcf-ca-user-order table thead th:first-of-type {
+	padding-right: 3.6em;
+	text-align: right;
+}
+
+.wcf-ca-user-order table tbody tr td {
+	text-align: center;
+	padding: 1em 3em;
+	vertical-align: middle;
+}
+
+.wcf-ca-user-order table tbody tr td:first-of-type {
+	text-align: right;
+	/*width: 38px;*/
+	padding-right: 3em;
+}
+
+.wcf-ca-user-order table tbody tr#wcf-ca-discount td:first-of-type,
+.wcf-ca-user-order table tbody tr#wcf-ca-other td:first-of-type,
+.wcf-ca-user-order table tbody tr#wcf-ca-shipping td:first-of-type,
+.wcf-ca-user-order table tbody tr#wcf-ca-cart-total td:first-of-type {
+	text-align: left;
+	font-weight: 600;
+	width: 82%;
+}
+.wcf-ca-user-order table tbody tr#wcf-ca-discount td {
+	border-top: 1px solid #ccc;
+}
+
+.wcf-ca-tooltip-text.display_tool_tip {
+	display: block;
+}
+
+.wcf-ca-tooltip-text::before {
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid #444;
+	bottom: auto;
+	content: " ";
+	font-size: 0;
+	right: 25px;
+	line-height: 0;
+	margin-right: -5px;
+	position: absolute;
+	top: -10px;
+	width: 0;
+}
+
+.wcf-ca-tooltip-text {
+	background: #444;
+	border-radius: 3px;
+	color: #fff;
+	height: auto;
+	right: 0;
+	margin-top: 10px;
+	max-width: 150px;
+	position: absolute;
+	padding: 6px 10px;
+	width: 100%;
+	display: none;
+	z-index: 10000;
+}
+/* Newly Added for the modification of the User Order detail window UI */
+
+.wcf-ca-tags {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.wcf-ca-tags li {
+	float: right;
+}
+
+.wcf-ca-tag {
+	background-color: #f16334;
+	border-radius: 0 3px 3px 0;
+	color: #fff;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 23px 0 20px;
+	position: relative;
+	margin: 0 0 0 5px;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+}
+
+.wcf-ca-tag::before {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba( 0, 0, 0, 0.25 );
+	content: "";
+	height: 6px;
+	right: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+}
+
+.wcf-ca-tag::after {
+	background: #fff;
+	border-bottom: 13px solid transparent;
+	border-right: 10px solid #f16334;
+	border-top: 13px solid transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.wcf-ca-tag:hover {
+	background-color: #f16334;
+	color: #fff;
+}
+
+.wcf-ca-tag:hover::after {
+	border-right-color: #f16334;
+}
+
+.wcf-sub-heading {
+	font-weight: 400;
+}
+
+.wcf-ca-spinner {
+	float: unset;
+}
+
+.wcf-ca-response-msg {
+	vertical-align: sub;
+	line-height: 28px;
+	margin-right: 10px;
+	font-weight: 700;
+}
+
+.wcf-ca-export-icon {
+	line-height: 1.8;
+	font-size: 17px;
+}

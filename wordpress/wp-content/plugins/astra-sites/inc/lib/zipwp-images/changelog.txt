@@ -1,0 +1,17 @@
+v1.0.5 - 05-June-2024
+- Improvement: Added compatibility for WP Gallery Block.
+
+v1.0.4 - 29-May-2024
+- New: Added option to clear the applied filters.
+
+v1.0.3 - 27-May-2024
+- Fix: Fixed trailing slash issue for image API.
+
+v1.0.2 - 24-May-2024
+- New: Added filter for tab title.
+
+v1.0.1 - 23-May-2024
+- New: Updated Image search API namespace.
+
+v1.0.0 - 22-May-2024
+- Initial release

@@ -1,0 +1,38 @@
+<div id="step_data_manipulation" class="mailpoet_hidden">
+  <div class="inside">
+
+    <!-- New segment template -->
+    <script id="new_segment_template" type="text/x-handlebars-template">
+      <p>
+        <label><%= __('Name') %>:</label>
+        <br/>
+        <div class="mailpoet-form-input">
+          <input id="new_segment_name" type="text" name="name" />
+        </div>
+      </p>
+      <p class="mailpoet_validation_error" data-error="segment_name_required">
+        <%= __('Please specify a name.') %>
+      </p>
+      <p class="mailpoet_validation_error" data-error="segment_name_not_unique">
+        <%= __('Another record already exists. Please specify a different "%1$s".')|format('name') %>
+      </p>
+      <p>
+        <label><%= __('Description') %>:</label>
+        <br/>
+        <div class="mailpoet-form-textarea">
+          <textarea id="new_segment_description" cols="40" rows="3" name="description"></textarea>
+        </div>
+      </p>
+
+      <p class="mailpoet_align_right">
+        <input type="submit" value="<%= __('Cancel') %>" id="new_segment_cancel" class="mailpoet-button button-secondary"/>
+        <input type="submit" value="<%= __('Done') %>" id="new_segment_process" class="mailpoet-button button-primary"/>
+      </p>
+
+      </form>
+    </script>
+
+    <!-- New custom field logic -->
+    <% include 'form/custom_fields_legacy.html' %>
+  </div>
+</div>

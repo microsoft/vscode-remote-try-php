@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpackWcBlocksStylingJsonp=self.webpackChunkwebpackWcBlocksStylingJsonp||[]).push([[2027],{40902:(c,e,s)=>{s.r(e),s.d(e,{default:()=>t});var a=s(99196),l=s(91),n=s.n(l),k=s(49619);s(34288);const t=({children:c,className:e=""})=>(0,a.createElement)(k.Z,{className:n()("wc-block-cart__sidebar",e)},c)}}]);

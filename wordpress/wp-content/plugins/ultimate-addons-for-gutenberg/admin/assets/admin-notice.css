@@ -1,0 +1,39 @@
+.astra-notice .notice-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	justify-content: left;
+	align-items: center;
+}
+
+#uagb-admin-rating .notice-container {
+	display: flex;
+}
+
+.astra-notice .notice-content {
+	margin-left: 15px;
+}
+
+.astra-notice .notice-image img {
+	max-width: 70px;
+}
+
+.uagb-review-notice-container {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.uagb-review-notice-container .dashicons {
+	font-size: 1.4em;
+	padding-left: 10px;
+}
+
+.uagb-review-notice-container a {
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+.uagb-review-notice-container .dashicons:first-child {
+	padding-left: 0;
+}

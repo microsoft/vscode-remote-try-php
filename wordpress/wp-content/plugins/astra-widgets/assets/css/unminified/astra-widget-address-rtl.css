@@ -1,0 +1,29 @@
+.widget-address-field .address-icons {
+  vertical-align: middle;
+}
+.widget-address-field .address-icons {
+    vertical-align: middle;
+    max-width: 15px;
+    width: 100%;
+}
+
+.widget-address-inline .widget-address-field {
+  -js-display: inline-flex;
+  display: inline-flex;
+}
+
+.astra-widget-address address {
+	margin: 0;
+}
+.widget-address-field {
+    -js-display: flex;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.widget-address-field .address-meta{
+  margin-right: 5px;
+}
+.widget-address.widget-address-inline .widget-address-field {
+  margin-left:5px;
+}

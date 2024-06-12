@@ -1,0 +1,269 @@
+v2.2.3 - 06-June-2024
+- Fix: Resolved Console error for undefined images.
+
+v2.2.2 - 20-May-2024
+- Fix: Fixed design library was displaying empty on subfolder sites.
+
+v2.2.1 - 02-May-2024
+- Improvement: Better error message handling.
+- Improvement: Blocked everything after clicking on the continue button.
+- Fix: Removed the hotlinking of websitedemos link after import.
+
+v2.2.0 - 26-April-2024
+- Improvement: Revamped AI onboarding with language compatibility.
+- Improvement: User Interface Enhancements & tweaks.
+- Fix: JSON file names renamed correctly.
+
+v2.1.28 - 12-April-2024
+- Fix: Resolved line-height issue for blocks.
+
+v2.1.27 - 9-April-2024
+- Fix: Design library button not showing sometime.
+
+v2.1.26 - 9-April-2024
+- Fix: Fixed Media library not working.
+
+v2.1.25 - 8-April-2024
+- Fix: Custom permission fix for search category API.
+- Fix: Fixed an issue where the Personalisation of the library was failing.
+
+v2.1.24 - 5-April-2024
+- Fix: Improved parsing mechanism for social media icons to ensure error-free processing.
+
+v2.1.23 - 5-April-2024
+- Fix: Pre-selected images were not displaying.
+
+v2.1.22 - 4-April-2024
+- Improvement: Updated image replacement mechanisms to enhance compatibility with the ZipWP.
+
+v2.1.21 - 3 April-2024
+- New: Added business type selection option in onboarding.
+- Improvement: Using a ZipWP constant instead of a URL to facilitate easy overriding from the WordPress configuration.
+- Improvement: Automatically prefill business details for sites created through ZipWP.
+- Improvement: Moved JSON folder from plugin directory to WP upload folder to address memory issues.
+
+v2.1.20 - 1-April-2024
+- Improvement: Added Compatibility for Rank Match SEO plugin.
+
+v2.1.19 - 29-March-2024
+- Improvement: Updated the way to call REST API.
+
+v2.1.18 - 14-March-2024
+- Improvement: Added a filter to bypass the auth for non authenticated users to be able to import Templates
+
+v2.1.17 - 11-March-2024
+- Fix: Fixed broken patterns and pages caused by missing Spectra Plugin.
+
+v2.1.16 - 07-March-2024
+- Fix: Resolved an issue where the AI description won't get generated on WordPress.com sites.
+
+v2.1.15 - 01-March-2024
+- Improvement: Rename Template kits to Design Library and updated UI.
+
+v2.1.14 - 20-February-2024
+- Fix: Changed the button position and fixed console errors.
+
+v2.1.13 - 12-February-2024
+- Fix: Resolved an issue where the Template Kit button was not visible due to console error.
+
+v2.1.12 - 07-February-2024
+- Fix: Resolved an issue where the Template Kit button was not visible.
+
+v2.1.11 - 30-January-2024
+- Improvement: Moved the Template Kits button to the left of the post header center element.
+
+v2.1.10 - 29-January-2024
+- Fix: Resolved premium pages import issue in the kits section.
+
+v2.1.9 - 08-January-2024
+- Fix: Reverted capabilities check from manage_options to edit_post.
+
+v2.1.8 - 08-January-2024
+- Improvement: Show three dots loading indicator when regenerating content for a specific category.
+- Improvement: Prevent unnecessary re-render to improve performance and UX.
+- Improvement: Improved access control by transitioning from 'edit_post' to 'manage_options' for enhanced user capabilities. 
+- Fix: Google map location/address not getting updated.
+- Fix: Not showing loading skeleton while regenerating content.
+- Fix: 503 Error by removing kits data from the localize variable.
+
+v2.1.7 - 04-January-2024
+- Fix: Extra check added for checking wpforms-lite plugin.
+
+v2.1.6 - 03-January-2024
+- Fix: Spelling "organization" changed to "organisation".
+
+v2.1.5 - 03-January-2024
+- Fix: Tightened the plugin security while importing.
+
+v2.1.4 - 02-January-2024
+- Fix: Suggested items were not showing on the empty search results screen.
+
+v2.1.3 - 02-January-2024
+- Fix: Showing invalid message on the toaster while generating content.
+
+v2.1.2 - 02-January-2024
+- Improvement: Enhanced user experience and streamlined workflow.
+
+v2.1.1 - 30-December-2023
+- Fix: Resolved conflict with Gravity Forms plugin by transitioning from localization to using API for patterns and pages data.
+
+v2.1.0 - 27-December-2023
+- New: Added site templates kits.
+- Fix: Customizer color palette was getting applied in non-adaptive mode.
+- Fix: Templates looks broken if Spectra activated while importing template.  
+
+v2.0.19 - 22-December-2023
+- New: Added "Revoke Access" button for seamless ZipAI authentication revocation.
+- Fix: Resolved issue of patterns/pages importing at last index instead of selected insertion point.
+- Fix: Resolved the need for two refreshes to reflect changes in Manage AI feature options.
+
+v2.0.18 - 20-December-2023
+- Fix: ZipAI authentication screen is visible even ZipAI Copilot module is disabled. 
+
+v2.0.17 - 19-December-2023
+- Improvement: Downloading the selected images in onboarding to media.
+- Improvement: Added compatibility for the ZipAI Manage AI feature option.
+- Improvement: User Interface Enhancements & tweaks.
+- Improvement: Updating Disable AI option value based on Non-Adaptive mode option.
+- Fix: Updating Non-Adaptive mode option was not getting enabled after reloading the page. 
+
+v2.0.16 - 15-December-2023
+- Improvement: Added RTL compatibility to the new Template Kits library.
+- Fix: Generate Content with AI button was not showing if already authorised.
+
+v2.0.15 - 13-December-2023
+- Improvement: Added conditional logo for onboarding screen.
+
+v2.0.14 - 13-December-2023
+- New: Introduced Non-Adaptive mode option.
+- Improvement: Improved pattern and page preview UI.
+
+v2.0.13 - 07-December-2023
+- Improvement: Showing Server Traffic Surge toaster.
+- Improvement: Updated the flat rates for Pages and Patterns library from 3000 to 5000.
+
+v2.0.12 - 05-December-2023
+- Improvement: Added no credit notice in AI onoarding.
+- Improvement: Removed Generate Content button if showing welcome scrren.
+- Fix: Removed unwanted parameters from URL while passing the success_url for checkout process fir credits purchase.
+
+v2.0.11 - 04-December-2023
+- New: Introduced 'ast_block_templates_authorization_url_param' filter for authorization url parameters.
+
+v2.0.10 - 04-December-2023
+- Fix: Removed URL parameter after redirection.
+
+v2.0.9 - 04-December-2023
+- Synchronised the pattern/page library.
+
+v2.0.8 - 04-December-2023
+Improvement: Compatibility with ZipAI authorization.
+- Fix: Removed Header and Footer from the preview.
+- Fix: Redirction URL not working after authorization.
+
+v2.0.4 - 27-November-2023
+- Fix: Success url parameter was missing for some credit purchase url.
+
+v2.0.3 - 27-November-2023
+- Fix: Fixed conditional logo for the library.
+- Fix: Displaying the default content and toaster error after updating content.
+
+v2.0.2 - 24-November-2023
+- Fix: Fixed an issue where the library won't load when integrated with Premium Starter Templates.
+
+v2.0.0 - 24-November-2023
+- New: AI based templates
+
+v1.3.3 - 07-Sept-2023
+- Fix: Temporary remove Template Kit support to Full Site Editor.
+
+v1.3.2 - 11-July-2023
+- Improvement: Added Template Kit support to Full Site Editor.
+
+v1.3.1 - 14-June-2023
+- Fix: WP Forms won't get imported due to regression in v1.3.0
+
+v1.3.0 - 13-June-2023
+- Improvement: Now we refresh the page and save the content if the required plugins for the template kit are missing.
+- Improvement: Tightened the security of the plugin.
+
+v1.2.1 - 19-May-2023
+- Fix: Discarded the incorrect null.js generated for the library, instead added main.js.
+
+v1.2.0 - 18-May-2023
+- Improvement: Added Premium Block Editor Templates.
+
+v1.1.11 - 20-February-2023
+- Improvement: Sync library.
+
+v1.1.10 - 30-January-2023
+- Improvement: Capability updated for active plugin.
+
+v1.1.9 - 25-January-2023
+- Improvement: Hardened the security.
+
+v1.1.8 - 19-January-2023
+- Improvement: Added extra checks while block templates import.
+
+v1.1.7 - 01-September-2022
+- Fix: Install and Activate Spectra for light category patterns only.
+
+v1.1.6 - 22-Auguest-2022
+- Improvement: Install Spectra while importing Block Patterns and Wireframe Pattern.
+
+v1.1.3 - 19-May-2022
+- Improvement: Renamed button text and logo to template kits and spectra logo.
+
+v1.1.2 - 08-March-2022
+- Improvement: CSS tweaks for spectra button.
+
+v1.1.1 - 14-February-2022
+- Fix: Undefined error for WP_CLI
+
+v1.1.0 - 4-October-2021
+- New: Wireframe blocks for Gutenberg - [Doc](https://wpastra.com/docs/starter-templates-wireframe-blocks/)
+
+v1.0.11 - 17-September-2021
+- Improvement: Added site URL while importing the demo for analytics.
+
+v1.0.10 - 12-August-2021
+- Improvement: Rectified the condition to load the scripts in other screens.
+- Fix: Starter template button not visible when gutenberg plugin is activated.
+
+v1.0.9 - 2-August-2021
+- Improvement: Rectified the condition to load the scripts in customizer screen.
+
+v1.0.8 - 22-June-2021
+- Improvement: Avoided to load the scripts in customizer screen.
+
+v1.0.7 - 13-June-2021
+- Improvement: Compatibility to WordPress 5.8.
+- Improvement: Added support for dark and light support for block patterns with improved sidebar UI.
+- Improvement: Added a filter `ast_block_templates_disable_auto_sync` to disable auto sync feature.
+- Fix: Handle the white label support.
+
+v1.0.6 - 24-May-2021
+- Improvement: Added auto sync feature.
+- Fix: Starter Templates popup opens by default on every page load on Gutenberg pages.
+
+v1.0.5 - 21-May-2021
+- Improvement: Added the dark and light filter support for blocks.
+
+v1.0.4 - 14-May-2021
+- Fix: Added the dynamic category support for multisites.
+
+v1.0.3 - 10-May-2021
+- Improvement: Added the dynamic category support.
+
+v1.0.2 - 09-March-2021
+- Improvement: Added a helper function to set the default assets
+
+v1.0.1 - 09-March-2021
+- Improvement: Used `version.json` instead of `package.json` to manage the dependency.
+- Improvement: Added the suggestion link.
+- Improvement: Added filter to disable the Gutenberg Templates.
+- Fix: Block pattern category filter keep showing all category.
+- Fix: Avoided dynamic json file names for importing.
+
+v1.0.0 - 17-February-2021
+- Initial Commit

@@ -1,0 +1,2081 @@
+.ast-header-settings-modal .components-modal__header svg {
+    width: 30px;
+    height: 30px;
+}
+.ast-sidebar-container .ast-sidebar-layout-meta-wrap .components-input-control__container .components-select-control__input {
+	padding: 3px 24px 3px 8px;
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 3px;
+}
+.ast-sidebar-layout-meta-wrap .components-toggle-control label {
+	font-size : 14px;
+}
+.ast-sidebar-layout-meta-wrap .components-toggle-control {
+	margin-bottom: 15px;
+}
+.ast-radio-image-controller .customize-control-title {
+	font-weight: 500;
+}
+.ast-sidebar-layout-meta-wrap {
+	margin-bottom: 13px;
+}
+.ast-meta-settings-divider:before {
+    width: auto;
+    margin: 1px -16px;
+}
+.ast-meta-settings-divider {
+	padding-top: 10px;
+}
+.ast-meta-settings-divider:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #e2e4e7;
+}
+.ast-meta-settings-title:not([data-type='ast-first']) {
+	padding-top: 4px;
+}
+.ast-meta-settings-title {
+	font-size: 13px;
+	font-weight: 700;
+}
+.ast-radio-image-controller input {
+	display: none;
+}
+.ast-radio-image-controller input:checked + label svg {
+    color: var(--wp-admin-theme-color);
+	background: var(--wp-admin-theme-color);
+	border-color: transparent;
+	box-shadow: 0 12px 20px -8px rgb(30 41 59 / 16%);
+	border-bottom-color: #f0f0f1;
+	border-radius: 4px;
+	opacity: 1;
+}
+.ast-radio-image-controller > .options-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 23px;
+}
+.ast-radio-image-controller .ast-radio-img-svg svg {
+    color: #A0AEC0;
+    width: 100%;
+    height: auto;
+	background: rgba(221,224,226,.5);
+	border: 1px solid var(--ast-customizer-color-7);
+	border-radius: 4px;
+    transition: all 0.2s;
+	transition: 0.06s all;
+}
+
+.ast-radio-image-controller label {
+    position: relative;
+    display: inline-block;
+}
+.ast-radio-image-controller input + label .image-clickable {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+div#astra_settings_meta_box {
+    padding: 0;
+	overflow: hidden;
+}
+.components-panel__body .components-base-control__field {
+    padding: 5px 0 0;
+}
+.ast-meta-selector-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.ast-meta-selector-wrapper .ast-selector-inner-wrap {
+    flex: 1 1 auto;
+    display: flex;
+}
+.ast-selector-inner-wrap .components-button {
+    white-space: nowrap;
+    background: rgba(255,255,255,0);
+    color: rgba(0, 0, 0, 0.966);
+    text-decoration: none;
+    text-shadow: none;
+    outline: unset;
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: unset;
+    transition: none;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+.ast-selector-inner-wrap .components-button.is-primary {
+    color: #ffffff;
+    background: #007cba;
+}
+.ast-meta-selector-controller .ast-selector-inner-wrap:first-child .components-button {
+    border-radius: 2px 0px 0px 2px;
+}
+.ast-meta-selector-controller .ast-selector-inner-wrap:not(:first-child) .components-button {
+    margin-left: -1px;
+}
+.ast-meta-selector-controller .ast-selector-inner-wrap:not(:first-child):not(:last-child) .components-button {
+    border-right: none;
+}
+.ast-meta-selector-controller .ast-selector-inner-wrap:last-child .components-button {
+    border-radius: 0px 2px 2px 0px;
+}
+.ast-meta-selector-controller .ast-selector-inner-wrap .components-button:focus:not(:disabled) {
+    box-shadow: none;
+}
+.ast-meta-settings-content .components-toggle-control .components-base-control__field,
+.ast-sidebar-container .components-toggle-control .components-base-control__field,
+.ast-meta-settings-content .components-toggle-control .components-base-control__field .components-flex,
+.ast-sidebar-container .components-toggle-control .components-base-control__field .components-flex {
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin-bottom: 0;
+}
+.ast-custom-layout-panel .components-button {
+	padding-right: 15px;
+}
+.ast-title-container {
+	-js-display: flex;
+	display: flex;
+	flex-grow: 1;
+}
+/**
+ * Popup content compat CSS.
+ */
+.ast-header-settings-modal {
+    min-width: auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 2px;
+    max-height: 600px;
+    top: 45%;box-shadow: 0px 10px 36px -10px rgb(0 0 0 / 25%);
+}
+.components-modal__icon-container {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.ast-header-settings-modal .components-modal__content {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.ast-header-settings-modal .components-modal__content::before {
+    margin-bottom: 0;
+}
+.ast-header-settings-modal .components-modal__header {
+    padding-left: 24px;
+    padding-right: 0;
+    border-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 0px 6px 8px -3px rgb(0 0 0 / 5%), 0px 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.ast-meta-settings-content {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+.ast-meta-settings-hook-table.widefat {
+    border-width: 0;
+}
+.ast-meta-settings-hook-table:last-of-type {
+    border-bottom-width: 0;
+}
+.ast-extra-spacing .ast-border {
+    border-right: 1px solid #E1E1E1;
+}
+.ast-extra-spacing-bottom td {
+    border-bottom: 1px solid #E1E1E1;
+}
+td.ast-advanced-hook-row-heading {
+    border-right: 1px solid #E1E1E1;
+    padding: 12px 20px 12px 25px;
+    width: 25%;
+    vertical-align: middle;
+}
+.ast-meta-settings-hook-table .ast-advanced-hook-row-content {
+    padding: 12px 20px 12px 25px;
+    position: relative;
+    width: 75%;
+}
+.ast-time-duration .ast-advanced-hook-row td {
+    border-bottom: 0;
+}
+
+.ast-cl-footer-container {
+    position: sticky;
+    bottom: 0;
+    border-radius: 0px 0px 2px 2px;
+    background: #FFF;
+    z-index: 9;
+    box-shadow: 0px -6px 8px -3px rgb(0 0 0 / 5%), 0px -4px 6px -2px rgb(0 0 0 / 5%);
+}
+.ast-button-container {
+    -js-display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 14px 24px;
+}
+.ast-cl-popup-notice {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.ast-button-container button.button {
+    min-height: 35px;
+    background-color: #FFF;
+}
+.ast-cl-popup-notice .dashicons {
+    font-size: 22px;
+    color: #1F2937;
+    margin-right: 10px;
+}
+.components-modal__header .components-button svg {
+    width: 35px;
+    height: 35px;
+}
+.ast-header-settings-modal .components-modal__header-heading-container {
+	justify-content: initial;
+}
+.components-modal__header .components-button {
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    left: auto;
+}
+.components-button:focus:not(:disabled) {
+    box-shadow: none;
+    outline: 1.5px solid transparent;
+}
+.ast-advanced-hook-row-content section {
+    max-width: 250px;
+}
+.ast-advanced-hook-row-content .components-toggle-control:not(:last-child) {
+	margin-bottom: 20px;
+}
+.ast-meta-image-tooltip {
+	position: absolute;
+	z-index: 200;
+	width: auto;
+	height: 26px;
+	padding: 0 6px;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: initial;
+	text-transform: initial;
+	-webkit-font-smoothing: antialiased;
+	-webkit-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	border-radius: 2px;
+	pointer-events: none;
+	color: #fff;
+	background: #1e1e1e;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transform: translate3d(0px, -30px, 0px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: inherit;
+    left: 50%;
+    top: -38%;
+    transform: translateX(-50%);
+}
+.ast-radio-img-svg:hover .ast-meta-image-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ast-pro-upgrade-cta-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+p.ast-upgrade-description {
+    margin-top: 15px;
+	margin-bottom: 15px;
+}
+a.ast-pro-upgrade-link {
+    color: #0284C7;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid #0284C7;
+    border-radius: 2px;
+}
+
+.ast-sub-section-title {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#ast-label-container-style {
+    margin-top: 16px;
+}
+
+#ast-label-sidebar-style {
+    margin-top: 16px;
+}
+
+/** Responsive Background CSS **/
+
+.customize-control-ast-responsive-background {
+    position: relative;
+    margin-bottom: -5px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .customize-control-ast-responsive-background .background-container h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555d66;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment h4,
+  .customize-control-ast-responsive-background .background-color h4,
+  .customize-control-ast-responsive-background .background-position h4,
+  .customize-control-ast-responsive-background .background-repeat h4,
+  .customize-control-ast-responsive-background .background-size h4 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .customize-control-ast-responsive-background .background-color {
+    margin-bottom: 12px;
+  }
+
+  .customize-control-ast-responsive-background .background-repeat {
+    margin: 15px 0 15px 0;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment .buttonset,
+  .customize-control-ast-responsive-background .background-size .buttonset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment .buttonset .switch-label,
+  .customize-control-ast-responsive-background .background-size .buttonset .switch-label {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #555;
+    padding: 2px 4px;
+    margin-right: 15px;
+    text-align: center;
+    flex-grow: 1;
+    transition: background-color 140ms linear;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment .buttonset .switch-label:last-child,
+  .customize-control-ast-responsive-background .background-size .buttonset .switch-label:last-child {
+    margin-right: 0;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment .buttonset .switch-input:checked + .switch-label,
+  .customize-control-ast-responsive-background .background-size .buttonset .switch-input:checked + .switch-label {
+    background-color: #f5f5f5;
+    color: #565e67;
+  }
+
+  .customize-control-ast-responsive-background .background-attachment .buttonset .switch-input[checked="checked"] + .switch-label,
+  .customize-control-ast-responsive-background .background-size .buttonset .switch-input[checked="checked"] + .switch-label {
+    background-color: #f5f5f5;
+    color: #565e67;
+  }
+
+  .customize-control-ast-responsive-background .ast-bg-img-remove.components-button.is-link {
+    width: 100%;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    box-shadow: unset;
+    padding: 9px 0;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .customize-control-ast-responsive-background .ast-bg-img-remove.components-button.is-destructive:hover:not(:disabled) {
+    color: #a02222;
+    box-shadow: unset;
+    border-color: #a02222;
+  }
+
+  .customize-control-ast-responsive-background .more-settings {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+    float: none;
+    text-decoration: none;
+  }
+
+  .customize-control-ast-responsive-background .more-settings:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .customize-control-ast-responsive-background .arrow-icon {
+    margin-left: 5px;
+  }
+
+  .customize-control-ast-responsive-background .background-container {
+    display: none;
+  }
+
+  .customize-control-ast-responsive-background .background-container.active {
+    display: block;
+  }
+
+  .customize-control-ast-responsive-background .wp-picker-container {
+    display: block;
+  }
+
+  .customize-control-ast-responsive-background .wp-picker-container .wp-picker-clear {
+    margin-left: 4px;
+    min-height: 30px;
+  }
+
+  .customize-control-ast-responsive-background .customize-control-content .astra-color-picker-wrap {
+    width: 300px;
+  }
+
+  .customize-control-ast-responsive-background .customize-control-content .components-color-picker__saturation-color,
+  .customize-control-ast-responsive-background .customize-control-content .components-color-picker__saturation-white {
+    border-radius: unset;
+  }
+
+  .customize-control-ast-responsive-background .ast-color-btn-clear-wrap {
+    right: 84px;
+  }
+
+  /**
+   * BG Media Button.
+   */
+  /**
+  * Gradient field
+  */
+  .components-color-picker__inputs-toggle-wrapper .components-color-picker__inputs-toggle {
+    vertical-align: middle;
+    height: 32px;
+  }
+
+  .astra-popover-tabs .components-button.upload-button.button-add-media {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #555d66;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    box-shadow: unset;
+    padding: 9px 0;
+    line-height: 1.6;
+  }
+
+  .astra-popover-tabs .components-button.upload-button.button-add-media:hover {
+    color: #555d66;
+    box-sizing: border-box;
+    box-shadow: unset;
+    border-color: #0185ba;
+  }
+
+  .astra-popover-tabs [ID*="-gradient-view"] {
+    padding: 0 15px 15px 15px;
+  }
+
+  .astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear {
+    flex: unset;
+    box-shadow: unset;
+    width: auto;
+    padding: 0 5px;
+  }
+
+  .astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:hover {
+    box-shadow: unset;
+  }
+
+  .astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:active {
+    box-shadow: unset;
+  }
+
+  .astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:focus {
+    box-shadow: unset;
+  }
+
+  .astra-popover-tabs #tab-panel-0-image-view > div {
+    text-align: center;
+  }
+
+  .astra-popover-tabs #tab-panel-0-image-view > div .media-position-setting {
+    text-align: left;
+  }
+
+  .media-position-setting > .components-base-control {
+      margin-bottom: 15px;
+  }
+
+  .media-position-setting [CLASS*="-Item-LabelWrapper"] {
+      margin-bottom: 5px;
+  }
+
+  .astra-popover-color .components-circular-option-picker {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .astra-popover-color .components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .astra-popover-color .components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+      width: 50px;
+    }
+  }
+
+  .astra-popover-color [ID*="-color-view"] .components-circular-option-picker {
+    width: auto;
+  }
+
+  .astra-popover-color .ast-color-palette {
+    width: auto;
+    padding: 16px 0px 0px 14px;
+  }
+
+  .astra-popover-color .ast-color-palette .components-circular-option-picker__option {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+
+  .astra-popover-color .ast-color-palette .components-button.is-pressed:focus:not(:disabled) {
+      box-shadow: none;
+      border: none;
+  }
+
+  .astra-popover-color .components-custom-gradient-picker {
+    margin-top: 0;
+  }
+
+  .astra-popover-color .components-custom-gradient-picker__gradient-bar {
+    box-sizing: border-box;
+    opacity: 1;
+  }
+
+  .astra-popover-color .components-custom-gradient-picker__type-picker .components-base-control__label {
+    display: block;
+  }
+
+  .components-custom-gradient-picker .components-base-control__label {
+    padding-top: 10px;
+    font-size: 12px;
+    display: block;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+  }
+
+  [ID*="-gradient-view"] .components-toolbar.components-custom-gradient-picker__toolbar .components-button.has-icon {
+    border: none;
+  }
+
+  .media-position-setting.hide-settings {
+    display: none;
+  }
+
+  .media-position-setting .astra-popover-tabs [ID*="-gradient-view"] {
+      padding: 0 0 15px 0;
+  }
+
+  .ast-field-settings-modal .customize-control-content .color-button-wrap {
+    right: 30px;
+    top: 0;
+  }
+
+  .ast-field-settings-modal .ast-responsive-btns {
+    position: absolute;
+    right: 14px;
+    top: 4px;
+  }
+
+  .ast-field-settings-modal .customize-control-content .astra-color-picker-wrap {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .ast-field-settings-modal .customize-control-content .ast-color-btn-reset-wrap {
+    right: 65px;
+    top: 7px;
+  }
+
+  .ast-field-settings-modal .customize-control-content .ast-color-btn-clear-wrap {
+    right: 91px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-background.customize-control:first-child {
+    margin-top: 28px;
+  }
+  .customize-control-ast-responsive-background .ast-color-btn-reset-wrap,
+  .customize-control-ast-responsive-color .ast-color-btn-reset-wrap {
+    display: inline-block;
+    line-height: 1;
+    top: 4.5px;
+  }
+  .customize-control-ast-responsive-background .ast-responsive-btns,
+  .customize-control-ast-responsive-color .ast-responsive-btns {
+    position: relative;
+    top: 0.1em;
+    left: 0.2em;
+  }
+
+  /** Responsive Color CSS **/
+
+  .customize-control-ast-responsive-color .customize-control-content .ast-color-picker-alpha {
+    display: none;
+  }
+
+  .customize-control-ast-responsive-color .customize-control-content {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .customize-control-ast-responsive-color .customize-control-content .ast-color-picker-alpha .astra-color-picker-wrap .components-color-picker__saturation-black {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .customize-control-ast-responsive-color .customize-control-content .ast-color-picker-alpha .astra-color-picker-wrap .components-color-picker__saturation-color,
+  .customize-control-ast-responsive-color .customize-control-content .ast-color-picker-alpha .astra-color-picker-wrap .components-color-picker__saturation-white {
+    border-radius: 3px;
+  }
+
+  .customize-control-ast-responsive-color .customize-control-content .ast-color-picker-alpha.active {
+    display: block;
+  }
+
+  .customize-control-ast-responsive-color .customize-control-content .components-color-picker__saturation-color,
+  .customize-control-ast-responsive-color .customize-control-content .components-color-picker__saturation-white {
+    border-radius: unset;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .customize-control-content .color-button-wrap {
+    right: 30px;
+    top: -3px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .customize-control-content .astra-color-picker-wrap {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .customize-control-content .customize-control-title {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .ast-responsive-btns {
+    right: 7px;
+    top: 1px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color.customize-control:first-child {
+    margin-top: 28px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .ast-clear-btn-inside-picker.components-button {
+    margin: 5px 20px 20px 10px;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-responsive-color .ast-color-btn-reset-wrap {
+    top: 3.5px;
+  }
+
+  @supports (-moz-appearance: none) {
+    .ast-field-settings-modal .customize-control-ast-responsive-color .ast-color-btn-reset-wrap {
+      top: 5.5px;
+      right: 65px;
+    }
+    .ast-field-settings-modal .customize-control-ast-responsive-color .customize-control-content .color-button-wrap {
+      right: 27px;
+      top: -2px;
+    }
+  }
+
+  /** Color CSS **/
+
+   /** Remove Button Color */
+
+.astra-control-field.astra-color-control {
+    display: flex;
+}
+
+.astra-control-field {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.astra-control-field.astra-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.astra-control-field .customize-control-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+}
+.customize-control-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.astra-globe-dashicon {
+    color: #ffffff;
+    background: rgba(0,0,0,0.4);
+    border-radius: 100%;
+    border: 0.1px solid rgba(0,0,0,0.1);
+    opacity: 0.78;
+}
+
+.components-button.astra-color-icon-indicate .component-color-indicator.astra-advanced-color-indicate {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0;
+	background: inherit;
+}
+
+.astra-advanced-color-indicate.component-color-indicator {
+	border: none;
+}
+
+.astra-color-icon-indicate.components-button {
+    height: auto;
+    position: relative;
+    transform: scale(1);
+    transition: none;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+	background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+
+/** Color */
+.astra-popover-color .components-popover__content .components-focal-point-picker-wrapper {
+    box-sizing: border-box;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container input[type="number"].components-text-control__input {
+    min-height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 50px;
+    font-weight: normal;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control {
+    flex: 1;
+    margin-bottom: 0;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control .components-base-control__label {
+    margin-bottom: 0;
+    margin-right: 0.2em;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control__field {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control:last-child .components-base-control__field {
+    justify-content: flex-end;
+}
+.astra-popover-color .components-popover__content .actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.astra-popover-color .components-popover__content .actions .button {
+    flex: 1;
+    margin-top: 10px;
+}
+.astra-background-picker-wrap .astra-popover-color .components-popover__content {
+    min-width: 300px;
+    min-height: 340px;
+    max-height: 60vh;
+}
+.color-button-wrap {
+	display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1);
+    transition: transform .1s ease;
+    height: 28px;
+    width: 28px;
+}
+.components-button.astra-color-icon-indicate .astra-advanced-color-indicate:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.components-button.astra-background-icon-indicate {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    border: 1px solid #dadada;
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+.components-button.astra-background-icon-indicate .component-color-indicator.astra-advanced-color-indicate {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    border: 0;
+    top: 0;
+}
+.components-button.astra-background-icon-indicate > svg.dashicon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.components-button.astra-background-icon-indicate > svg.dashicon path {
+    transform: translate(1px, 1px);
+}
+.components-button.astra-background-icon-indicate img.astra-background-image-preview {
+    display: flex;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+}
+.components-button.astra-background-icon-indicate:hover {
+    box-shadow: none !important;
+}
+.astra-control-field.astra-color-control {
+    display: flex;
+}
+.astra-control-field.astra-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.components-popover.astra-popover-color .components-popover__content {
+    padding: 15px 15px 0px;
+    box-sizing: initial;
+    background: #fff;
+    border: unset;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+.customize-control-ast-color.customize-control > * {
+    display: inline;
+}
+.components-popover.astra-popover-color .components-popover__content .sketch-picker {
+    padding: 0 0 5px !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+.components-popover.astra-popover-color .components-popover__content .attachment-media-view {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap:hover {
+    transform: scale(1.1) !important;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item {
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item .dashicon {
+    display: none;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active {
+    box-shadow: 0 0 0 8px inset !important;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active .dashicon {
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active .dashicon path {
+    transform: translate(1px, 1px);
+}
+.components-button.astra-color-icon-indicate > .dashicon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+    background: rgb(85 93 101);
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.astra-popover-color {
+	margin: 5px -5px 0;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 1px 16px -4px rgba(30, 41, 59, 0.16);
+}
+
+.astra-popover-color .components-h-stack.ast-color-palette {
+    padding: 14px 5px;
+}
+
+.customize-control-ast-responsive-background .astra-popover-color .components-h-stack.ast-color-palette,
+.customize-control-ast-color-group .astra-popover-color .astra-background-tabs .components-h-stack.ast-color-palette {
+    padding: 0 5px 14px;
+}
+
+.astra-popover-color .components-h-stack .components-button {
+    flex: inherit;
+}
+
+.astra-popover-color .components-h-stack .components-circular-option-picker__option-wrapper{
+    margin-right: 0;
+}
+
+.astra-popover-color .components-color-picker .react-colorful__hue,
+.astra-popover-color .components-color-picker .react-colorful__alpha {
+    width: 90%;
+}
+
+.ast-field-settings-modal .astra-popover-color {
+    margin-left: 0px;
+	border: 1px solid #dedede;
+}
+.ast-field-settings-modal .astra-popover-color .components-tab-panel__tabs {
+	padding: 8px;
+}
+.components-color-picker__saturation-black {
+	border-radius: 4px 4px 0 0;
+}
+.components-color-picker__saturation-color {
+	border-radius: 3px;
+}
+.components-color-picker__saturation-white {
+	border-radius: 3px;
+}
+.astra-color-picker-wrap {
+    position: absolute;
+    z-index: 2;
+	top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	display: none;
+}
+
+.astra-color-picker-wrap .astra-popover-color .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .react-colorful {
+    width: 100%;
+}
+
+.astra-popover-color .components-custom-gradient-picker{
+    z-index: 1;
+}
+.astra-popover-color .components-custom-gradient-picker__ui-line{
+    z-index: -1;
+}
+
+.astra-color-picker-wrap.picker-open{
+	display: block;
+}
+.ast-field-settings-modal .astra-color-picker-wrap {
+    position: relative;
+	top: 10px;
+}
+.ast-color-palette .components-circular-option-picker__option-wrapper {
+    margin-right: 6px;
+    position: relative;
+	height: 25px;
+    width: 25px;
+}
+/* Clear Button CSS */
+.ast-color-btn-clear-wrap {
+	position: absolute;
+    top: 1.5px;
+    right: 65px;
+}
+.ast-color-btn-clear-wrap .astra-color-clear-button.components-button {
+	padding: 10px 3px;
+	width: 20px;
+	height: 20px;
+}
+.ast-clear-btn-inside-picker.components-button,
+.ast-reset-btn-inside-picker.components-button,
+.astra-popover-tabs .ast-clear-btn-inside-picker.components-button {
+	margin: 5px 20px 20px 15px;
+	padding: 0 8px;
+	border: 1px solid #ccc;
+	box-shadow: none;
+}
+.ast-clear-btn-inside-picker.components-button:hover, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:hover,
+.ast-clear-btn-inside-picker.components-button:focus, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:focus,
+.ast-clear-btn-inside-picker.components-button:active, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:active,
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:active {
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.ast-clear-btn-inside-picker {
+	padding: 0 8px;
+}
+/* Reset Button CSS */
+.ast-color-btn-reset-wrap {
+	position: absolute;
+    right: 36px;
+    top: 6px;
+}
+.ast-color-btn-reset-wrap .ast-reset-btn.components-button, .ast-resp-slider-reset-wrap .ast-reset-btn.components-button {
+	color: #006BA1;
+	height: 20px;
+	width: 20px;
+	padding: 4px;
+	background: transparent;
+	box-shadow: none !important;
+	cursor: pointer;
+}
+.astra-color-clear-button.components-button:focus:not(:disabled) {
+	outline: unset;
+	border: none;
+}
+.ast-color-btn-reset-wrap .ast-reset-btn.components-button:hover, .ast-color-btn-reset-wrap .ast-reset-btn.components-button:focus,
+.ast-resp-slider-reset-wrap .ast-reset-btn.components-button:hover, .ast-resp-slider-reset-wrap .ast-reset-btn.components-button:focus {
+	box-shadow: none;
+	border: none;
+	background: transparent;
+}
+.astra-color-clear-button.components-button.is-secondary:hover:not(:disabled),
+.astra-color-clear-button.components-button:focus:not(:disabled) {
+	box-shadow: 0 0 black;
+	padding: 1.5px;
+	border: none;
+}
+.astra-color-clear-button.components-button.is-secondary:disabled, .ast-reset-btn.components-button.is-secondary:disabled span {
+    color: var(--ast-customizer-color-6);
+}
+/** Inside Setting group popup - Colors */
+.ast-field-settings-modal .color-button-wrap {
+    right: 16px;
+}
+.ast-field-settings-modal .ast-color-btn-reset-wrap {
+    right: 59px;
+	top: 6px;
+}
+.ast-field-settings-modal .ast-color-btn-clear-wrap {
+    right: 78px;
+}
+.ast-field-settings-modal .customize-control-ast-color.customize-control,
+.ast-field-settings-modal .customize-control-ast-color.customize-control:first-child {
+    margin-top: 25px;
+}
+.astra-color-picker-wrap .components-color-picker__inputs-wrapper {
+	min-width: unset;
+}
+/** Gradient Color Picker */
+.customize-control .ast-gradient-color-picker input[type="number"] {
+	width: 100%;
+}
+.ast-gradient-color-picker .components-select-control.components-custom-gradient-picker__type-picker {
+    align-items: center;
+    flex-direction: inherit;
+}
+.astra-color-picker-wrap .components-popover__content {
+    width: max-content;
+}
+
+.astra-color-picker-wrap .components-custom-gradient-picker__inserter .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .ast-gradient-ui .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .ast-gradient-ui .react-colorful {
+    width: 216px;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-select-control.components-custom-gradient-picker__type-picker {
+    flex-direction: column;
+    align-items: start;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-angle-picker-control {
+    margin-bottom: 0;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-custom-gradient-picker__remove-control-point {
+    padding: 0 16px 16px 16px;
+    border: 0;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-custom-gradient-picker__remove-control-point:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/** Gradient Color Picker -> RGBA & HSLA range fields */
+.customize-control .ast-gradient-color-picker .is-alpha-enabled .components-base-control__field [type="number"] {
+    width: 100%;
+}
+/** Modal Color Picker - Group Param */
+.ast-field-settings-modal .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+	width: 24px;
+    height: 24px;
+}
+.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option-wrapper {
+	height: 25px;
+	width: 25px;
+}
+.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+	left: 2.5px;
+	top: 0px;
+	width: 20px;
+}
+.ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+	left: 0;
+	top: 0;
+	mix-blend-mode: difference;
+}
+.astra-popover-color .components-circular-option-picker .components-circular-option-picker__swatches {
+    gap: 4px;
+	justify-content: center;
+}
+.astra-popover-color .components-circular-option-picker__option-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.customize-control-ast-color + .customize-control-ast-color {
+    margin-top: 30px;
+}
+
+@supports (-moz-appearance:none) {
+	@media (max-width: 1845px) {
+		.ast-color-palette .components-circular-option-picker__option-wrapper {
+			margin-right: 5px;
+		}
+		.ast-field-settings-modal .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+			width: 21px;
+			height: 21px;
+		}
+		.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option-wrapper {
+			height: 20px;
+			width: 20px;
+		}
+		.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+			left: 3px;
+			top: -2px;
+			width: 15px;
+		}
+	}
+}
+
+.astra-color-icon-indicate.components-button:focus:not(:disabled) {
+    box-shadow: unset;
+    outline: unset;
+}
+.astra-color-icon-indicate.components-button:hover {
+    transform: scale(1.05);
+}
+
+.ast-top-divider.customize-control-ast-color .ast-divider-title + .ast-control-wrap,
+.ast-top-divider.customize-control-ast-color-group .ast-divider-title + .ast-control-wrap {
+    margin-top: 25px;
+    display: inline-flex;
+    width: 100%;
+    min-height: 22px;
+}
+
+
+.ast-top-divider.customize-control-ast-toggle-control .ast-divider-title + .ast-togglecontrol-wrapper,
+.ast-bottom-divider.customize-control-ast-toggle-control .ast-divider-title + .ast-togglecontrol-wrapper,
+.ast-top-divider.customize-control-ast-responsive-toggle-control .ast-divider-title + .ast-responsive-toggle-control-wrapper,
+.ast-top-divider.customize-control-ast-responsive-color .ast-divider-title + .ast-control-wrap,
+.ast-top-divider.customize-control-ast-slider .ast-divider-title + .ast-slider-wrap,
+.customize-control-ast-color-group .ast-divider-title + .ast-control-wrap {
+    margin-top: 25px;
+}
+
+.ast-top-divider.customize-control-ast-color-group .ast-control-wrap {
+    display: inline-flex;
+    width: 100%;
+}
+
+.ast-top-divider .ast-divider-title + .ast-control-wrap .ast-color-btn-reset-wrap {
+    top: 67px;
+}
+
+.ast-top-divider .ast-divider-title + .ast-control-wrap .color-button-wrap {
+    top: 61px;
+}
+
+.ast-top-divider.customize-control-ast-responsive-color .ast-divider-title + .ast-control-wrap .ast-responsive-btns {
+    top: 70px;
+}
+.ast-color-palette.components-circular-option-picker .components-circular-option-picker__swatches{
+    width: 100%;
+}
+
+/** Popover Structure CSS **/
+
+.ast-adv-toggle-icon {
+    right: 2px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 4px;
+    color: var(--ast-customizer-color-8);
+    background: var(--ast-customizer-color-9);
+    cursor: pointer;
+  }
+
+  .ast-adv-toggle-icon:hover {
+    color: var(--ast-customizer-color-1);
+  }
+
+  .ast-adv-toggle-icon:before {
+    content: "\f464";
+  }
+
+  .ast-adv-toggle-icon.open:before {
+    content: "\f158";
+  }
+
+  .ast-field-settings-modal {
+    position: absolute;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    background-color: #fff;
+  }
+
+  .customize-control-ast-color-palette .ast-field-settings-modal {
+      z-index: 11;
+  }
+
+  .ast-field-settings-modal .customize-control-ast-divider:first-child {
+    margin-top: 15px;
+  }
+
+  .ast-field-settings-wrap {
+    width: 100%;
+  }
+
+  .ast-group-tabs, .ast-tab-content {
+    position: relative;
+  }
+
+  .ast-group-list {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .ast-group-list:before, .ast-group-list:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+  }
+
+  /* Tab anchor color */
+  .ui-tabs-anchor {
+    float: left;
+    padding: .5em 0.5em;
+    color: #555d66;
+    text-decoration: none;
+  }
+
+  .ui-state-active .ui-tabs-anchor {
+    color: #ffffff;
+  }
+
+  .ui-tabs-anchor:hover {
+    color: #555d66;
+  }
+
+  .ui-state-active .ui-tabs-anchor:hover {
+    color: #ffffff;
+  }
+
+  .ast-group-tabs .ui-widget-content {
+    overflow: hidden;
+    /*padding-top: 15px;*/
+  }
+
+  .ast-group-tabs .ui-widget-content.iris-slider-offset, .ast-group-tabs .ui-widget-content.iris-slider-offset-alpha {
+    overflow: inherit;
+  }
+
+  .ast-fields-wrap {
+    overflow: hidden;
+  }
+
+  .ast-field-settings-wrap {
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+    background-color: #fff;
+  }
+
+  .ast-field-settings-wrap .ast-field-settings-modal {
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ast-field-settings-modal::before {
+    content: '';
+    position: absolute;
+    top: -17px;
+    right: 8px;
+    border: 9px solid transparent;
+    border-bottom-color: #fff;
+    pointer-events: none;
+  }
+
+  .ast-group-tabs .ui-tabs-nav {
+    display: flex;
+    padding: 15px 15px 0 15px;
+  }
+
+  .ast-group-tabs .ui-tabs-nav .ui-corner-top {
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: 0 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    transition: background-color 140ms linear;
+  }
+
+  .ast-group-tabs .ui-tabs-nav .ui-corner-top:first-child {
+    border-radius: 3px 0px 0px 3px;
+  }
+
+  .ast-group-tabs .ui-tabs-nav .ui-corner-top:last-child {
+    border-radius: 0px 3px 3px 0px;
+  }
+
+  .ast-group-tabs .ui-tabs-nav .ui-corner-top .ui-tabs-anchor {
+    width: 100%;
+    text-align: center;
+    padding: 2px 4px;
+    padding-left: 0;
+    padding-right: 0;
+    outline: none;
+  }
+
+  .ast-group-tabs ul.ast-group-list .ui-corner-top .ui-tabs-anchor:focus {
+    box-shadow: none;
+  }
+
+  .ast-group-tabs .ui-tabs-nav {
+    border: none;
+  }
+
+  .ast-group-tabs ul.ast-group-list .ui-corner-top.ui-state-active {
+    background-color: #0185BA;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .ast-group-tabs .ui-tabs-nav {
+    overflow: visible;
+  }
+
+  .ast-group-tabs ul.ast-group-list .ui-corner-top:not(:first-child) {
+    border-left-width: 0;
+  }
+
+  /* Buttons */
+  .wp-core-ui .ast-field-settings-modal .background-image-upload .button {
+    font-size: 11px;
+  }
+
+  /* Popup params padding */
+  .ast-field-settings-modal .customize-control {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .ast-control-wrap .ast-color-picker-alpha {
+      margin-left: -5px;
+      margin-right: -5px;
+  }
+
+  .ast-field-settings-modal .customize-control:first-child {
+    margin-top: 16px;
+  }
+
+  .ast-field-settings-modal .ui-tabs-nav .customize-control:first-child {
+    margin-top: 0;
+  }
+
+  .ast-field-settings-modal .customize-control:last-child {
+    padding-bottom: 16px;
+  }
+
+  .customize-control-ast-settings-group {
+    line-height: 27px;
+  }
+
+  .customize-control-ast-settings-group .customize-control-title {
+    margin-bottom: 0;
+  }
+
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-title {
+    margin-bottom: 10px;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-responsive-slider .ast-responsive-units,
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-responsive-slider .ast-range-unit,
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-slider .ast-range-unit,
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-slider .ast-range-unit {
+    top: 6px;
+  }
+
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-responsive-slider .ast-resp-slider-reset-wrap,
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-slider .ast-resp-slider-reset-wrap {
+    top: 3px;
+  }
+
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-slider .ast-responsive-slider-btns,
+  .customize-control-ast-settings-group .ast-field-settings-modal .customize-control-ast-responsive-slider .ast-responsive-slider-btns {
+    top: 2px;
+  }
+
+  .ast-field-settings-modal .customize-control {
+    margin-top: 2px;
+  }
+
+  #customize-control-headings-font-extras.ast-sub-top-dotted-divider {
+    margin-top: 12px;
+  }
+
+  /**
+   * Popover Tab Structure.
+   */
+  .astra-popover-tabs {
+    position: relative;
+    top: 5px;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs {
+    display: flex;
+    padding: 15px;
+    border: none;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs .components-tab-panel__tabs-item {
+    color: #555d66;
+    font-size: 13px;
+    font-weight: 400;
+    height: 35px;
+    transition: unset;
+    padding: 2px 4px;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs .components-tab-panel__tabs-item:active {
+    box-shadow: unset;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs .components-tab-panel__tabs-item:focus {
+    box-shadow: unset;
+  }
+
+  .astra-popover-tabs [ID*="-image-view"] {
+    padding: 15px;
+    border: none;
+  }
+
+  .astra-popover-tabs .components-button {
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: 0 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    transition: background-color 140ms linear;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs-item:first-child {
+    border-radius: 3px 0px 0px 3px;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs-item:last-child {
+    border-radius: 0px 3px 3px 0px;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs-item:not(:first-child) {
+    border-left-width: 0;
+  }
+
+  .astra-popover-tabs .components-tab-panel__tabs-item.active-tab {
+    background-color: #0185BA;
+    color: #ffffff;
+  }
+
+  .astra-popover-tabs.astra-media-tab .components-tab-panel__tabs,
+  .astra-popover-tabs.astra-media-tab .components-tab-panel__tab-content {
+    padding: 0;
+  }
+
+  .astra-popover-tabs.astra-media-tab .components-tab-panel__tabs-item.active-tab {
+    border-color: var(--ast-customizer-color-3);
+    background: var(--ast-customizer-color-1);
+  }
+
+  .astra-popover-tabs.astra-media-tab .components-tab-panel__tab-content .ast-social-icon-picker-label {
+    text-align: left;
+  }
+
+  .astra-media-tab .astra-media-image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .astra-media-tab .ast-media-btn {
+    display: block;
+    width: 100%;
+    border: 1px dashed var(--ast-customizer-color-7);
+    box-sizing: border-box;
+    box-shadow: unset;
+    padding: 9px 0;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+
+  .astra-media-tab .ast-danger-btn {
+    color: var(--ast-customizer-color-14);
+    margin-top: 10px;
+  }
+
+  .astra-media-tab .ast-media-btn:hover {
+    border-color: var(--ast-customizer-color-3);
+  }
+
+  .astra-media-tab .ast-danger-btn:hover {
+    border-color: var(--ast-customizer-color-14);
+  }
+
+  .components-base-control.ast-text-control-input {
+    margin-bottom: 16px;
+  }
+
+  .ast-payments-text-control-input .components-base-control__label {
+    text-transform: none;
+    color: #334155;
+    font-size: 13px;
+  }
+
+  .components-base-control.ast-payments-text-control-input {
+    margin-bottom: 20px;
+  }
+
+  .components-base-control.ast-text-control-input input {
+    border-color: var(--ast-customizer-color-7);
+    color: var(--ast-customizer-color-5);
+  }
+
+  .astra-popover-color .astra-popover-tabs .components-tab-panel__tabs button.components-tab-panel__tabs-item.active-tab:not(.is-primary):not(.is-tertiary):not(.is-link):hover {
+    color: #fff;
+  }
+
+  .components-popover.astra-popover-color .components-popover__content {
+    min-width: 310px;
+    max-height: 60vh;
+    padding: 0;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .ast-field-settings-modal .components-popover.astra-popover-color .components-popover__content {
+    min-width: 320px;
+    min-height: 325px;
+  }
+
+  .ast-field-settings-modal .background-wrapper .components-popover.astra-popover-color .components-popover__content {
+    min-height: 385px;
+  }
+
+  .ast-field-settings-modal .components-angle-picker-control .components-flex__block {
+    min-width: auto;
+  }
+
+  .customize-control-ast-settings-group .customize-control-ast-slider .wrapper .ast-resp-slider-reset-wrap,
+  .customize-control-ast-settings-group .customize-control-ast-responsive-slider .wrapper .ast-resp-slider-reset-wrap {
+    margin-top: 0;
+  }
+
+  /*
+   * Divider compatibility CSS for setting group.
+   */
+  .ast-top-divider.customize-control-ast-settings-group .ast-toggle-desc-wrap .ast-adv-toggle-icon {
+      top: 23px;
+  }
+
+  /**
+   * Responsive slider control inside settings-group, case: body-font, headings-font.
+   */
+   .ast-fields-wrap .customize-control-ast-responsive-slider .ast-slider-wrap > label,
+   .ast-fields-wrap .customize-control-ast-selector .ast-slider-wrap > label {
+      display: inline-block;
+  }
+
+  /** Color Pallete CSS **/
+
+  #customize-control-astra-color-palettes .ast-color-palette-wrap > div {
+	margin-bottom: 8px;
+	position: relative;
+}
+
+#customize-control-astra-color-palettes .color-button-wrap {
+	display: unset;
+	position: relative;
+	right: unset;
+	top: unset;
+	vertical-align: sub;
+	z-index: 10;
+}
+
+#customize-control-astra-color-palettes .astra-color-picker-wrap {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	width: 100%;
+	display: none;
+	margin-top: 10px;
+}
+
+#customize-control-astra-color-palettes .astra-color-picker-wrap.picker-open{
+	display: block;
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-label {
+	width: 65%;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-label input {
+	background: none;
+	border: none;
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-label input:focus {
+	border: 1px solid black;
+	outline: none;
+	box-shadow: none;
+	background: white;
+}
+
+.ast-color-palette-wrapper .ast-single-palette-wrap {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	align-items: center;
+	position: relative;
+	gap: 2px;
+}
+
+.ast-single-palette-wrap
+	.components-button.astra-color-icon-indicate
+	.component-color-indicator.astra-advanced-color-indicate {
+	width: 25px;
+	height: 25px;
+}
+
+#customize-control-astra-color-palettes
+	.ast-color-palette-wrapper
+	.ast-color-picker-wrap:first-child {
+	margin-left: 0;
+}
+
+#customize-control-astra-color-palettes
+	.ast-color-palette-wrapper
+	.ast-color-picker-wrap {
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#customize-control-astra-color-palettes .ast-reset-btn:disabled {
+	opacity: 0.6;
+}
+
+#customize-control-astra-color-palettes .ast-single-color-container {
+	width: 25%;
+	height: 48px;
+	display: inline-block;
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-wrap > section {
+    text-align: center;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+    transition: all 0.2s;
+	box-shadow: 0 0 0 1px #ddd;
+}
+
+.ast-color-palette-container {
+	width: 100%;
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	column-gap: 16px;
+	row-gap: 16px;
+}
+
+#customize-control-astra-color-palettes .ast-field-settings-modal {
+	display: none;
+	padding: 16px;
+}
+.ast-color-palette-wrap {
+    transition: all 0.2s;
+}
+.ast-color-palette-wrap.active {
+    box-shadow: 0px 12px 20px -8px rgb(30 41 59 / 16%);
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-wrapper {
+	clear: both;
+}
+
+#customize-controls .customize-section-title.is-in-view.is-sticky {
+    z-index: 99;
+}
+
+#customize-control-astra-color-palettes .ast-palette-selection-wrapper {
+	overflow: hidden;
+	padding: 2px;
+}
+
+@media (min-width: 1800px) {
+	#customize-control-astra-color-palettes .astra-color-picker-wrap {
+		width: auto;
+	}
+}
+
+#customize-control-astra-color-palettes .ast-color-palette-wrap.active > section {
+    box-shadow: 0 0 0 1px #334155;
+}
+.ast-palette-label-wrap{
+    text-align: center;
+	color: #9CA3AF;
+	overflow: hidden;
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
+	font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.ast-color-palette-wrap.active .ast-palette-label-wrap {
+    color: #334155;
+}
+
+#customize-control-astra-color-palettes .ast-field-settings-modal {
+    margin-top: -35px;
+}
+
+.astra-advanced-color-indicate .global-color{
+	display: none;
+}
+
+.color-button-wrap.has-global-palette-color .astra-advanced-color-indicate .global-color{
+    color: #fff;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.color-button-wrap.has-global-palette-color .astra-advanced-color-indicate .global-color svg{
+    width: 10px;
+    height: 10px;
+    transform: scale(1.5);
+}
+
+#customize-control-astra-color-palettes .ast-adv-toggle-icon {
+	top: -5px;
+}
+
+.ast-color-picker-custom-tooltip {
+	position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ast-color-picker-custom-tooltip[data-title]::after {
+	content: attr(data-title);
+    min-width: 3em;
+    max-width: 10em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: 0.3ch;
+    box-shadow: 0 1em 2em -0.5em rgb(0 0 0 / 35%);
+    background: var(--ast-customizer-color-12);
+    color: var(--ast-customizer-color-10);
+    z-index: 1000;
+    bottom: calc(100% + 5px);
+    text-align: center;
+    animation: tooltips-vert .3s ease-out forwards;
+	text-transform: none;
+    font-size: .9em;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%,-0.5em);
+}
+
+.ast-color-picker-custom-tooltip-wrapper {
+	position: relative;
+}
+
+.ast-color-picker-wrap:hover + .ast-color-picker-custom-tooltip-wrapper .ast-color-picker-custom-tooltip[data-title]::after{
+	display: flex;
+	white-space: break-spaces;
+	inline-size: max-content;
+}
+
+.ast-color-palette .components-popover.components-tooltip {
+    position: relative !important;
+    left: 5px !important;
+    top: -35px !important;
+    transform: unset !important;
+}
+.customize-control .components-tooltip {
+    z-index: 8 !important;
+}
+.ast-color-palette .components-popover .components-popover__content {
+    bottom: calc(100% + 5px);
+    animation: tooltips-vert .3s ease-out forwards;
+    left: 50%;
+    transform: translate(-50%,-0.5em);
+}
+
+/** Responsive CSS **/
+
+.ast-responsive-btns {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: top;
+  }
+
+  .ast-responsive-btns > li {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .ast-responsive-btns > li.active {
+    display: inline-block;
+  }
+
+  .ast-responsive-btns button[type="button"] {
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .ast-responsive-btns button[type="button"] > i {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+  }
+
+  .input-wrapper.ast-responsive-wrapper {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: flex-start;
+    flex: 0 1;
+    width: 100%;
+  }
+
+
+/** Tooltip CSS **/
+
+.ast-dashicons-custom-tooltip {
+  position: absolute;
+  left: 8px;
+  top: 20px;
+  width: 150px;
+  z-index: 999;
+	padding: 8px 8px;
+	font-size: 12px;
+	font-weight: normal;
+	border-radius: 2px;
+	color: #fff;
+	background: #1e1e1e;
+	transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transform: translate3d(0px, -30px, 0px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  line-height: 1.5em;
+  text-align: center;
+  visibility: hidden;
+}
+
+.dashicons-editor-help {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(156, 163, 175);
+  position: relative;
+  left: 6px;
+  top: 2.5px;
+}
+
+.dashicons-editor-help:hover ~ .ast-dashicons-custom-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/** Custom CSS for Page Background **/
+
+.astra-popover-tabs img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.customize-control .ast-reset-btn .dashicons-image-rotate {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    position: relative;
+    top: 0.1em;
+    left: 0.5em;
+}
+
+.ast-bg-control-left {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0.6em;
+  max-height: 19.5px;
+}
+
+#customize-control-astra-settings-content-bg-obj-responsive .ast-bg-control-left {
+  width: 57%;
+}
+
+#customize-control-astra-settings-content-bg-obj-responsive {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.ast-show-help-text-container {
+  position: relative;
+}
+
+.customize-control-ast-responsive-background .more-settings .message, .customize-control-ast-background .more-settings .message {
+  margin-right: 5px;
+}
+
+.customize-control .media-position-setting label.components-text {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.components-base-control .components-base-control__field .components-input-control__backdrop {
+  border-color: #D1D5DB !important;
+}
+
+@media (min-width: 782px) {
+    div#astra-theme-layout\:theme-meta-panel .components-panel__header+.interface-complementary-area-header {
+        margin-bottom: -2px;
+    }
+}

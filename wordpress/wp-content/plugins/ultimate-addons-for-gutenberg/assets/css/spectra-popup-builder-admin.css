@@ -1,0 +1,102 @@
+/* This file contains the styles used in the Popup Builder Admin Page */
+
+
+/* Page Styling ---------------------- Start */
+
+/* Background of the Popup Builder Admin Page */
+#wpwrap,
+.striped > tbody > :nth-child(odd) {
+	background-color: #f8fafc;
+}
+
+/* Page Styling ------------------------ End */
+
+/* Toggle Styling -------------------- Start */
+
+/* Toggle Styling */
+.spectra-popup-builder__switch {
+	position: relative;
+	width: 42px;
+	height: 22px;
+	padding: 2px;
+	margin: inherit;
+	cursor: pointer;
+	border: none;
+	border-radius: 100px;
+	box-sizing: border-box;
+	background: #64748b;
+	opacity: 0.7;
+	transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Toggle Disabled Styling */
+.spectra-popup-builder__switch.spectra-popup-builder__switch--disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	background: #e2e8f0;
+}
+
+/* Toggle Dot Styling */
+.spectra-popup-builder__switch > span {
+	pointer-events: none;
+	-js-display: flex;
+	display: flex;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 #0000000f, 0 1px 3px 0 #0000001a;
+	border-radius: inherit;
+	transform: translate(2px, 1px);
+	transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Toggle Dot Styling - RTL */
+.spectra-popup-builder__switch.is-rtl-toggle > span {
+	transform: translate(-2px, 1px);
+}
+
+/* Toggle Active Styling */
+.spectra-popup-builder__switch.spectra-popup-builder__switch--active {
+	background: #007cba;
+	opacity: 1;
+}
+
+/* Toggle Active Dot Styling */
+.spectra-popup-builder__switch.spectra-popup-builder__switch--active span {
+	transform: translate(20px, 1px);
+}
+
+/* Toggle Active Dot Styling - RTL */
+.spectra-popup-builder__switch.spectra-popup-builder__switch--active.is-rtl-toggle span {
+	transform: translate(-20px, 1px);
+}
+
+/* Toggle Styling ---------------------- End */
+
+/* Columns Styling ------------------- Start */
+
+/* Style for all the Headings in the Admin Table */
+/* stylelint-disable selector-id-pattern */
+.post-type-spectra-popup .wp-list-table #spectra_popup_type,
+.post-type-spectra-popup .wp-list-table #author,
+.post-type-spectra-popup .wp-list-table #spectra_popup_toggle {
+	width: 150px;
+}
+
+.post-type-spectra-popup .wp-list-table #spectra_popup_trigger {
+	width: 200px;
+}
+/* stylelint-enable selector-id-pattern */
+
+/* Style for the Switch Column and Row in the Admin Table */
+th.column-spectra_popup_toggle,
+td.column-spectra_popup_toggle {
+	text-align: center;
+}
+
+/* Style for the Switch Element in the Admin Table */
+td.spectra_popup_toggle.column-spectra_popup_toggle .spectra-popup-builder__switch {
+	margin: 0 auto;
+}
+
+/* Columns Styling --------------------- End */

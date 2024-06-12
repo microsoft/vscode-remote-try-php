@@ -1,0 +1,617 @@
+ /** Remove Button Color */
+
+.astra-control-field.astra-color-control {
+    display: flex;
+}
+
+.astra-control-field {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.astra-control-field.astra-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.astra-control-field .customize-control-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+}
+.customize-control-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.astra-globe-dashicon {
+    color: #ffffff;
+    background: rgba(0,0,0,0.4);
+    border-radius: 100%;
+    border: 0.1px solid rgba(0,0,0,0.1);
+    opacity: 0.78;
+}
+
+.components-button.astra-color-icon-indicate .component-color-indicator.astra-advanced-color-indicate {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0;
+	background: inherit;
+}
+.component-color-indicator {
+    width: 25px;
+    height: 16px;
+    display: inline-block;
+}
+
+.astra-advanced-color-indicate.component-color-indicator {
+	border: none;
+}
+
+.astra-color-icon-indicate.components-button {
+    height: auto;
+    position: relative;
+    transform: scale(1);
+    transition: none;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, transparent 75%, #ddd 0), linear-gradient(45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+	background-position: 100% 0, 100% 5px, 5px -5px, -5px 0;
+}
+
+/** Color */
+.astra-popover-color .components-popover__content .components-focal-point-picker-wrapper {
+    box-sizing: border-box;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container input[type="number"].components-text-control__input {
+    min-height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 50px;
+    font-weight: normal;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control {
+    flex: 1;
+    margin-bottom: 0;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control .components-base-control__label {
+    margin-bottom: 0;
+    margin-left: 0.2em;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control__field {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.astra-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control:last-child .components-base-control__field {
+    justify-content: flex-end;
+}
+.astra-popover-color .components-popover__content .actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.astra-popover-color .components-popover__content .actions .button {
+    flex: 1;
+    margin-top: 10px;
+}
+.astra-background-picker-wrap .astra-popover-color .components-popover__content {
+    min-width: 300px;
+    min-height: 340px;
+    max-height: 60vh;
+}
+.color-button-wrap {
+	display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(1);
+    transition: transform .1s ease;
+    height: 28px;
+    width: 28px;
+}
+.components-button.astra-color-icon-indicate .astra-advanced-color-indicate:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.components-button.astra-background-icon-indicate {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, transparent 75%, #ddd 0), linear-gradient(45deg, transparent 75%, #ddd 0);
+    border: 1px solid #dadada;
+    background-size: 10px 10px;
+    background-position: 100% 0, 100% 5px, 5px -5px, -5px 0;
+}
+.components-button.astra-background-icon-indicate .component-color-indicator.astra-advanced-color-indicate {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    border: 0;
+    top: 0;
+}
+.components-button.astra-background-icon-indicate > svg.dashicon {
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    top: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.components-button.astra-background-icon-indicate > svg.dashicon path {
+    transform: translate(-1px, 1px);
+}
+.components-button.astra-background-icon-indicate img.astra-background-image-preview {
+    display: flex;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+}
+.components-button.astra-background-icon-indicate:hover {
+    box-shadow: none !important;
+}
+.astra-control-field.astra-color-control {
+    display: flex;
+}
+.astra-control-field.astra-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.components-popover.astra-popover-color .components-popover__content {
+    padding: 15px 15px 0px;
+    box-sizing: initial;
+    background: #fff;
+    border: unset;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+.customize-control-ast-color.customize-control > * {
+    display: inline;
+}
+.components-popover.astra-popover-color .components-popover__content .sketch-picker {
+    padding: 0 0 5px !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+.components-popover.astra-popover-color .components-popover__content .attachment-media-view {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap:hover {
+    transform: scale(1.1) !important;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item {
+    background-image: linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, transparent 75%, #ddd 0), linear-gradient(45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+    background-position: 100% 0, 100% 5px, 5px -5px, -5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item .dashicon {
+    display: none;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active {
+    box-shadow: 0 0 0 8px inset !important;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active .dashicon {
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.astra-swatches-wrap .astra-swatche-item-wrap .astra-swatch-item.swatch-active .dashicon path {
+    transform: translate(-1px, 1px);
+}
+.components-button.astra-color-icon-indicate > .dashicon {
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    top: 50%;
+    color: white;
+    background: rgb(85 93 101);
+    border-radius: 4px;
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.astra-popover-color {
+	margin: 5px -5px 0;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 8px 16px -4px rgba(30, 41, 59, 0.16);
+}
+
+.astra-popover-color .components-h-stack.ast-color-palette {
+    padding: 14px 5px;
+}
+
+.customize-control-ast-responsive-background .astra-popover-color .components-h-stack.ast-color-palette,
+.customize-control-ast-color-group .astra-popover-color .astra-background-tabs .components-h-stack.ast-color-palette {
+    padding: 0 5px 14px;
+}
+
+.astra-popover-color .components-h-stack .components-button {
+    flex: inherit;
+}
+
+.astra-popover-color .components-circular-option-picker__option:focus::after{
+    width: auto;
+    height: auto;
+}
+
+.astra-popover-color .components-h-stack .components-circular-option-picker__option-wrapper{
+    margin-left: 0;
+}
+
+.astra-popover-color .components-color-picker .react-colorful__hue,
+.astra-popover-color .components-color-picker .react-colorful__alpha {
+    width: 90%;
+}
+
+.ast-field-settings-modal .astra-popover-color {
+    margin-right: 0px;
+	border: 1px solid #dedede;
+}
+.ast-field-settings-modal .astra-popover-color .components-tab-panel__tabs {
+	padding: 8px;
+}
+.components-color-picker__saturation-black {
+	border-radius: 4px 4px 0 0;
+}
+.components-color-picker__saturation-color {
+	border-radius: 3px;
+}
+.components-color-picker__saturation-white {
+	border-radius: 3px;
+}
+.astra-color-picker-wrap {
+    position: absolute;
+    z-index: 2;
+	top: 30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+	display: none;
+}
+
+.astra-color-picker-wrap .astra-popover-color .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .react-colorful {
+    width: 100%;
+}
+
+.astra-popover-color .components-custom-gradient-picker{
+    z-index: 1;
+}
+.astra-popover-color .components-custom-gradient-picker__ui-line{
+    z-index: -1;
+}
+
+.astra-color-picker-wrap.picker-open{
+	display: block;
+}
+.ast-field-settings-modal .astra-color-picker-wrap {
+    position: relative;
+	top: 10px;
+}
+.ast-color-palette .components-circular-option-picker__option-wrapper {
+    margin-left: 6px;
+    position: relative;
+	height: 25px;
+    width: 25px;
+}
+/* Clear Button CSS */
+.ast-color-btn-clear-wrap {
+	position: absolute;
+    top: 1.5px;
+    left: 65px;
+}
+.ast-color-btn-clear-wrap .astra-color-clear-button.components-button {
+	padding: 10px 3px;
+	width: 20px;
+	height: 20px;
+}
+.ast-clear-btn-inside-picker.components-button,
+.ast-reset-btn-inside-picker.components-button,
+.astra-popover-tabs .ast-clear-btn-inside-picker.components-button {
+	margin: 5px 15px 20px 20px;
+	padding: 0 8px;
+	border: 1px solid #ccc;
+	box-shadow: none;
+}
+.ast-clear-btn-inside-picker.components-button:hover, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:hover,
+.ast-clear-btn-inside-picker.components-button:focus, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:focus,
+.ast-clear-btn-inside-picker.components-button:active, .astra-popover-tabs .ast-clear-btn-inside-picker.components-button:active,
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:active {
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.ast-clear-btn-inside-picker {
+	padding: 0 8px;
+}
+/* Reset Button CSS */
+.ast-color-btn-reset-wrap {
+	position: absolute;
+    left: 36px;
+    top: 6px;
+}
+.ast-color-btn-reset-wrap .ast-reset-btn.components-button, .ast-resp-slider-reset-wrap .ast-reset-btn.components-button {
+	color: #006BA1;
+	height: 20px;
+	width: 20px;
+	padding: 4px;
+	background: transparent;
+	box-shadow: none !important;
+	cursor: pointer;
+}
+.astra-color-clear-button.components-button:focus:not(:disabled) {
+	outline: unset;
+	border: none;
+}
+.ast-color-btn-reset-wrap .ast-reset-btn.components-button:hover, .ast-color-btn-reset-wrap .ast-reset-btn.components-button:focus,
+.ast-resp-slider-reset-wrap .ast-reset-btn.components-button:hover, .ast-resp-slider-reset-wrap .ast-reset-btn.components-button:focus {
+	box-shadow: none;
+	border: none;
+	background: transparent;
+}
+.astra-color-clear-button.components-button.is-secondary:hover:not(:disabled),
+.astra-color-clear-button.components-button:focus:not(:disabled) {
+	box-shadow: 0 0 black;
+	padding: 1.5px;
+	border: none;
+}
+.astra-color-clear-button.components-button.is-secondary:disabled, .ast-reset-btn.components-button.is-secondary:disabled span {
+    color: var(--ast-customizer-color-6);
+}
+/** Inside Setting group popup - Colors */
+.ast-field-settings-modal .color-button-wrap {
+    left: 16px;
+}
+.ast-field-settings-modal .ast-color-btn-reset-wrap {
+    left: 59px;
+	top: 6px;
+}
+.ast-field-settings-modal .ast-color-btn-clear-wrap {
+    left: 78px;
+}
+.astra-color-picker-wrap .components-color-picker__inputs-wrapper {
+	min-width: unset;
+}
+/** Gradient Color Picker */
+.customize-control .ast-gradient-color-picker input[type="number"] {
+	width: 100%;
+}
+.ast-gradient-color-picker .components-select-control.components-custom-gradient-picker__type-picker {
+    align-items: center;
+    flex-direction: inherit;
+}
+.astra-color-picker-wrap .components-popover__content {
+    width: max-content;
+}
+
+.astra-color-picker-wrap .components-custom-gradient-picker__inserter .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .ast-gradient-ui .components-color-picker,
+.astra-color-picker-wrap .astra-popover-color .ast-gradient-ui .react-colorful {
+    width: 216px;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-select-control.components-custom-gradient-picker__type-picker {
+    flex-direction: column;
+    align-items: start;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-angle-picker-control {
+    margin-bottom: 0;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-custom-gradient-picker__remove-control-point {
+    padding: 0 16px 16px 16px;
+    border: 0;
+}
+
+.astra-color-picker-wrap .ast-gradient-ui .components-custom-gradient-picker__remove-control-point:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/** Gradient Color Picker -> RGBA & HSLA range fields */
+.customize-control .ast-gradient-color-picker .is-alpha-enabled .components-base-control__field [type="number"] {
+    width: 100%;
+}
+/** Modal Color Picker - Group Param */
+.ast-field-settings-modal .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+	width: 24px;
+    height: 24px;
+}
+.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option-wrapper {
+	height: 25px;
+	width: 25px;
+}
+.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+	right: 2.5px;
+	top: 0px;
+	width: 20px;
+}
+.ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+	right: 0;
+	top: 0;
+	mix-blend-mode: difference;
+}
+.astra-popover-color .components-circular-option-picker .components-circular-option-picker__swatches {
+    gap: 4px;
+	justify-content: center;
+}
+.astra-popover-color .components-circular-option-picker__option-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.customize-control-ast-color + .customize-control-ast-color {
+    margin-top: 30px;
+}
+.astra-popover-tabs [data-wp-component="Flex"], .astra-popover-color [data-wp-component="Flex"] {
+    padding-right: 8px;
+}
+.astra-popover-tabs .ast-clear-btn-inside-picker.components-button, .astra-popover-color .ast-clear-btn-inside-picker.components-button {
+    margin-right: 8px;
+    margin-top: 0px;
+}
+@media (max-width: 1845px) {
+    /** Responsive Devices - Compatibility CSS */
+    .ast-color-palette .components-circular-option-picker__option-wrapper {
+        height: 22px;
+        width: 22px;
+    }
+	.astra-background-tabs .ast-color-palette .components-circular-option-picker__option-wrapper {
+        height: 20px;
+        width: 20px;
+    }
+    .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+        width: 20px;
+        top: -2px;
+    }
+    .astra-popover-color .ast-color-palette.components-circular-option-picker {
+        width: auto;
+        padding: 16px 8px 0px 0px;
+    }
+    .astra-typography-control .typography-button-wrap > button.components-button.astra-typography-preview-indicate {
+        padding: 0 2px;
+    }
+    .astra-typography-control .typography-button-wrap > button.components-button {
+        padding: 0 4px;
+	}
+	/** Modal Popup */
+	.ast-fields-wrap .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+        width: auto;
+        height: auto;
+	}
+	.ast-fields-wrap .ast-color-palette .components-circular-option-picker__option-wrapper {
+		height: 20px;
+		width: 20px;
+	}
+	.ast-fields-wrap .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+		right: 1px;
+		top: -2px;
+		width: 18px;
+	}
+    .astra-popover-color .components-circular-option-picker__option[aria-pressed=true]+svg, .components-circular-option-picker__option[aria-selected=true]+svg {
+        width: 22px;
+        height: 22px;
+        right: 0;
+        top: 0;
+        mix-blend-mode: difference;
+    }
+	.ast-color-palette .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+        width: 24px;
+        height: 24px;
+    }
+	.astra-background-tabs .components-circular-option-picker__option[aria-selected=true]+svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+@supports (-moz-appearance:none) {
+	@media (max-width: 1845px) {
+		.ast-color-palette .components-circular-option-picker__option-wrapper {
+			margin-left: 5px;
+		}
+		.ast-field-settings-modal .components-circular-option-picker__option-wrapper .components-circular-option-picker__option:focus::after {
+			width: 21px;
+			height: 21px;
+		}
+		.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option-wrapper {
+			height: 20px;
+			width: 20px;
+		}
+		.ast-field-settings-modal .ast-color-palette .components-circular-option-picker__option.is-pressed + svg {
+			right: 3px;
+			top: -2px;
+			width: 15px;
+		}
+	}
+}
+
+.astra-color-icon-indicate.components-button:focus:not(:disabled) {
+    box-shadow: unset;
+    outline: unset;
+}
+.astra-color-icon-indicate.components-button:hover {
+    transform: scale(1.05);
+}
+
+.ast-top-divider.customize-control-ast-color .ast-divider-title + .ast-control-wrap,
+.ast-top-divider.customize-control-ast-color-group .ast-divider-title + .ast-control-wrap {
+    margin-top: 25px;
+    display: inline-flex;
+    width: 100%;
+    min-height: 22px;
+}
+
+
+.ast-top-divider.customize-control-ast-toggle-control .ast-divider-title + .ast-togglecontrol-wrapper,
+.ast-bottom-divider.customize-control-ast-toggle-control .ast-divider-title + .ast-togglecontrol-wrapper,
+.ast-top-divider.customize-control-ast-responsive-toggle-control .ast-divider-title + .ast-responsive-toggle-control-wrapper,
+.ast-top-divider.customize-control-ast-responsive-color .ast-divider-title + .ast-control-wrap,
+.ast-top-divider.customize-control-ast-slider .ast-divider-title + .ast-slider-wrap,
+.customize-control-ast-color-group .ast-divider-title + .ast-control-wrap {
+    margin-top: 25px;
+}
+
+.ast-top-divider.customize-control-ast-color-group .ast-control-wrap {
+    display: inline-flex;
+    width: 100%;
+}
+
+.ast-top-divider .ast-divider-title + .ast-control-wrap .ast-color-btn-reset-wrap {
+    top: 67px;
+}
+
+.ast-top-divider .ast-divider-title + .ast-control-wrap .color-button-wrap {
+    top: 61px;
+}
+
+.ast-top-divider.customize-control-ast-responsive-color .ast-divider-title + .ast-control-wrap .ast-responsive-btns {
+    top: 70px;
+}
+.ast-color-palette.components-circular-option-picker .components-circular-option-picker__swatches{
+    width: 100%;
+}
+
+/* Instead of updating above CSS, handled this control's edge case separately. */
+li#customize-control-astra-settings-transparent-content-section-text-color-responsive .ast-control-wrap .ast-responsive-btns {
+    top: 2px;
+}

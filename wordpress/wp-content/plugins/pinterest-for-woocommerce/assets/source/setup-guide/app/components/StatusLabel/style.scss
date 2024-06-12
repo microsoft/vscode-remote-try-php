@@ -1,0 +1,34 @@
+@import "~@wordpress/base-styles/_variables";
+
+.pfw-status-label {
+	display: inline-flex;
+	align-items: center;
+	height: $button-size;
+
+	&--status-pending {
+		color: var(--wp-admin-theme-color);
+	}
+
+	&--status-success {
+		color: #23a713;
+	}
+
+	.dashicon {
+		width: 1em;
+		height: 1em;
+		margin-right: $grid-unit-05;
+		font-size: 24px;
+	}
+
+	.woocommerce-spinner {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		margin-right: $grid-unit-10;
+
+		&__circle {
+			stroke: currentColor;
+			stroke-width: 8px;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+<div class="mailpoet_tools_slider">
+	{{#if tools.layerSelector}}
+		<a href="javascript:;" class="mailpoet_tool mailpoet_newsletter_layer_selector mailpoet_ignore_drag" title="<%= __('Switch editing layer') %>">
+    		<%= source('newsletter/templates/svg/block-tools/settings.svg') %>
+		</a>
+	{{/if}}
+	{{#if tools.settings}}
+		<a href="javascript:;" data-automation-id="settings_tool" class="mailpoet_tool mailpoet_edit_block mailpoet_ignore_drag" title="<%= __('Edit settings') %>">
+			<%= source('newsletter/templates/svg/block-tools/settings.svg') %>
+		</a>
+	{{/if}}
+	{{#if tools.delete}}
+		<div class="mailpoet_delete_block mailpoet_ignore_drag">
+			<a href="javascript:;" class="mailpoet_tool mailpoet_delete_block_activate" title="<%= __('Delete') %>">
+				<%= source('newsletter/templates/svg/block-tools/trash.svg') %>
+			</a>
+			<a href="javascript:;" class="mailpoet_delete_block_cancel" title="<%= __('Cancel deletion') %>">
+				<%= __('Cancel') %>
+			</a>
+			<a href="javascript:;" class="mailpoet_delete_block_confirm" title="<%= __('Confirm deletion') %>">
+				<%= __('Delete') %>
+			</a>
+		</div>
+	{{/if}}
+	{{#if tools.duplicate}}
+		<a href="javascript:;" data-automation-id="duplicate_tool" class="mailpoet_tool mailpoet_duplicate_block" title="<%= __('Duplicate') %>">
+			<%= source('newsletter/templates/svg/block-tools/duplicate.svg') %>
+		</a>
+	{{/if}}
+	{{#if tools.move}}
+		<a href="javascript:;" class="mailpoet_tool mailpoet_move_block" title="<%= __('Drag to move') %>">
+  			<%= source('newsletter/templates/svg/block-tools/move.svg') %>
+		</a>
+	{{/if}}
+</div>

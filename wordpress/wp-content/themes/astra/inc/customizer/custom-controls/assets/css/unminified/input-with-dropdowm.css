@@ -1,0 +1,41 @@
+.customize-control-ast-input-with-dropdown .ast-input-with-dropdown-wrapper {
+    position: relative;
+}
+
+.customize-control-ast-input-with-dropdown .components-dropdown-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.customize-control-ast-input-with-dropdown .components-dropdown-menu .components-dropdown-menu__toggle{
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    background-color: var(--wp-admin-theme-color);
+    color: #fff;
+}
+
+.customize-control-ast-input-with-dropdown .components-dropdown-menu .components-dropdown-menu__toggle:not(:disabled):not([aria-disabled="true"]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):not(.components-color-picker__saturation-pointer):hover {
+    color: #fff;
+}
+
+.customize-control-ast-input-with-dropdown .components-button:focus:not(:disabled) {
+    box-shadow: none;
+    outline: none;
+}
+
+.customize-control-ast-input-with-dropdown .components-popover__content {
+    min-width: 170px;
+}
+
+.customize-control-ast-input-with-dropdown .components-popover__content .components-button:not(:disabled):not([aria-disabled="true"]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):not(.components-color-picker__saturation-pointer):hover {
+    color: var(--wp-admin-theme-color);
+}
+
+.customize-control-ast-input-with-dropdown .ast-input-with-dropdown-wrapper input.components-text-control__input {
+    padding-right: 40px;
+    max-height: 30px;
+    min-height: 30px;
+    border-color: #ddd;
+}

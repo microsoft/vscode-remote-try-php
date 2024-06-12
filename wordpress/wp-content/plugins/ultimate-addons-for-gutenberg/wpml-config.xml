@@ -1,0 +1,157 @@
+
+<wpml-config>
+	<gutenberg-blocks>
+		<gutenberg-block type="uagb/advanced-heading" translate="1">
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//div/div[@class="uagb-heading-text"]</xpath>
+			<xpath>//div/p[@class="uagb-desc-text"]</xpath>
+			<key name="customUrl" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/post-masonry" translate="1">
+			<key name="headingTitle" />
+			<key name="ctaText" />
+			<key name="paginationType" />
+			<key name="buttonText" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/post-grid" translate="1">
+			<key name="headingTitle" />
+			<key name="ctaText" />
+			<key name="postPagination" />
+			<key name="paginationPrevText" />
+			<key name="paginationNextText" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/post-timeline" translate="1">
+			<key name="headingTitle" />
+			<key name="readMoreText" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/post-carousel" translate="1">
+			<key name="headingTitle" />
+			<key name="ctaText" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/section" translate="0"/>
+		<gutenberg-block type="uagb/buttons" translate="0"/>
+		<gutenberg-block type="uagb/icon-list" translate="0"/>
+		<gutenberg-block type="uagb/columns" translate="0"/>
+		<gutenberg-block type="uagb/column" translate="0"/>
+		<gutenberg-block type="uagb/social-share" translate="0"/>
+		<gutenberg-block type="uagb/social-share-child" translate="0"/>
+		<gutenberg-block type="uagb/google-map" translate="0"/>
+		<gutenberg-block type="uagb/info-box" translate="1">
+			<xpath>//span[@class="uagb-ifb-title-prefix"]</xpath>
+			<xpath type="link">//a/@href</xpath>
+			<xpath>//a/span</xpath>
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//p[@class="uagb-ifb-desc"]</xpath>
+			<key name="ctaText" />
+			<key name="ctaType" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/testimonial" translate="1">
+			<xpath>//div[@class="uagb-tm__desc"]</xpath>
+			<xpath>//span[@class="uagb-tm__author-name"]</xpath>
+			<xpath>//span[@class="uagb-tm__company"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/team" translate="1">
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//span[@class="uagb-team__prefix"]</xpath>
+			<xpath>//p[@class="uagb-team__desc"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/icon-list-child" translate="1">
+			<xpath>//span[@class="uagb-icon-list__label"]</xpath>
+			<xpath>//div[contains(@class, "wp-block-uagb-icon-list-child")]/a/@href</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/tabs" translate="1">
+			<xpath>//div/ul/li/a</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/tabs-child" translate="1">
+			<key name="tabHeaders" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/restaurant-menu" translate="1">
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//div[@class="uagb-rm__desc"]</xpath>
+			<xpath>//span[@class="uagb-rm__price"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/content-timeline" translate="1">
+			<xpath>//div[@class="uagb-timeline__date-new"]/div</xpath>
+			<xpath>//div[@class="uagb-timeline__inner-date-new"]</xpath>
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//p[@class="uagb-timeline-desc-content"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/call-to-action" translate="1">
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//p[@class="uagb-cta__desc"]</xpath>
+			<xpath>//*[@class="uagb-cta__buttons"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/blockquote" translate="1">
+			<xpath>//div[@class="uagb-blockquote__content"]</xpath>
+			<xpath>//cite[@class="uagb-blockquote__author"]</xpath>
+			<key name="iconView" />
+			<key name="iconLabel" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/marketing-button" translate="1">
+		    <xpath type="link">//a/@href</xpath>
+			<xpath>//a[@class="uagb-marketing-btn__link"]/@href</xpath>
+			<xpath>//*[@class="uagb-marketing-btn__title"]</xpath>
+			<xpath>//p[@class="uagb-marketing-btn__prefix"]</xpath>
+			<xpath>//div//a</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/table-of-contents" translate="1">
+			<key name="headingTitle" />
+			<xpath>//div/ul/li/a</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/buttons-child" translate="1">
+		    <xpath type="link">//a/@href</xpath>
+			<xpath>//div[@class="uagb-button__link"]</xpath>
+            <xpath>//a[@class="uagb-button__link"]/@href</xpath>
+            <xpath>//*[@class="uagb-button__link"]</xpath>
+			<xpath>//*[@class="uagb-button__wrapper"]</xpath>
+			<xpath>//div//a</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/image" translate="1">
+			<xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//figcaption[@class="uagb-image-caption"]</xpath>
+			<xpath>//figure/figcaption</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/taxonomy-list" translate="1">
+			<key name="headingTitle" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/modal" translate="1">
+			<key name="triggerText" />
+			<key name="buttonText" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/counter" translate="1">
+			<xpath>//*[@class="uagb-counter-block-prefix"]</xpath>
+			<xpath>//*[@class="uagb-counter-block-suffix"]</xpath>
+			<xpath>//div[@class="wp-block-uagb-counter__title"]</xpath>
+			<key name="numberPrefix" />
+			<key name="numberSuffix" />
+			<key name="heading" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/image-gallery" translate="1">
+			<key name="paginateButtonText" />
+			<key name="imageDefaultCaption" />
+			<xpath>//div[@class="spectra-image-gallery__media-thumbnail-caption"]</xpath>
+			<xpath>//div[@class="spectra-image-gallery__control-lightbox--caption"]</xpath>
+			<xpath>//div[@class="spectra-image-gallery__control-lightbox--count"]</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/countdown" translate="1">
+			<key name="labelDays" />
+			<key name="labelHours" />
+			<key name="labelMinutes" />
+			<key name="labelSeconds" />
+		</gutenberg-block>
+		<gutenberg-block type="uagb/container" translate="0"></gutenberg-block>
+		<gutenberg-block type="uagb/how-to" translate="1">
+		    <xpath>//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]</xpath>
+			<xpath>//p[@class="uagb-howto-desc-text"]</xpath>
+			<key name="headingTitle"/>
+			<key name="headingDesc"/>
+			<xpath>//div/p/span</xpath>
+		</gutenberg-block>
+		<gutenberg-block type="uagb/forms" translate="1">
+		    <key name="submitButtonText"/>
+			<xpath>//button/div</xpath>
+			<xpath>//div[@class="wp-block-button__link"]</xpath>
+			<xpath>//div/div[@class="uagb-forms-main-submit-button-text"]</xpath>
+		</gutenberg-block>
+	</gutenberg-blocks>
+</wpml-config>
