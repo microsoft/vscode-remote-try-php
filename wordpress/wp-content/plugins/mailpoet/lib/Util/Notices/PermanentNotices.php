@@ -52,6 +52,9 @@ class PermanentNotices {
   /** @var DisabledMailFunctionNotice */
   private $disabledMailFunctionNotice;
 
+  /** @var DisabledWPCronNotice */
+  private $disabledWPCronNotice;
+
   /** @var PendingApprovalNotice */
   private $pendingApprovalNotice;
 
@@ -86,6 +89,7 @@ class PermanentNotices {
     $this->changedTrackingNotice = new ChangedTrackingNotice($wp);
     $this->deprecatedFilterNotice = new DeprecatedFilterNotice($wp);
     $this->disabledMailFunctionNotice = new DisabledMailFunctionNotice($wp, $settings, $subscribersFeature, $mailerFactory);
+    $this->disabledWPCronNotice = new DisabledWPCronNotice($wp, $settings);
     $this->pendingApprovalNotice = new PendingApprovalNotice($settings);
     $this->woocommerceVersionWarning = new WooCommerceVersionWarning($wp);
     $this->premiumFeaturesAvailableNotice = new PremiumFeaturesAvailableNotice($subscribersFeature, $serviceChecker, $wp);
@@ -137,6 +141,9 @@ class PermanentNotices {
     $this->disabledMailFunctionNotice->init(
       Menu::isOnMailPoetAdminPage($excludeSetupWizard)
     );
+    $this->disabledWPCronNotice->init(
+      Menu::isOnMailPoetAdminPage($excludeSetupWizard)
+    );
     $this->pendingApprovalNotice->init(
       Menu::isOnMailPoetAdminPage($excludeSetupWizard)
     );
@@ -179,6 +186,9 @@ class PermanentNotices {
         break;
       case (ChangedTrackingNotice::OPTION_NAME):
         $this->changedTrackingNotice->disable();
+        break;
+      case (DisabledWPCronNotice::OPTION_NAME):
+        $this->disabledWPCronNotice->disable();
         break;
       case (DeprecatedFilterNotice::OPTION_NAME):
         $this->deprecatedFilterNotice->disable();

@@ -5,7 +5,7 @@ Tags: gutenberg, blocks, gutenberg blocks, editor, block
 Requires at least: 5.6
 Requires PHP: 7.4
 Tested up to: 6.5
-Stable tag: 2.13.4
+Stable tag: 2.13.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -215,6 +215,13 @@ Our external packages use [Rating Star Component](https://github.com/n49/react-s
 
 == Changelog ==
 
+= 2.13.5 - Wednesday, 12th June 2024 =
+* Improvement: FAQ - Implemented the server-side rendering approach for this block.
+* Fix: Container - Resolved an issue wherein the Image block would not display as expected in nested containers.
+* Fix: Taxonomy List - Handled the "Taxonomy Not Available." message on the front-end when using categories from the "Create And Assign Categories For Pages" plugin.
+* Fix: Testimonial - Resolved an issue wherein the image height would not work as intended.
+* Fix: Global - Resolved an issue wherein Custom CSS would not display on editor reload.
+
 = 2.13.4 - Thursday, 6th June 2024 =
 * Feature: Quick Action Bar - Easily rearrange blocks in the Quick Action Bar for a personalized workflow.
 * Improvement: Info Box - Added an option to set the alt attribute of the image.
@@ -244,12 +251,6 @@ Our external packages use [Rating Star Component](https://github.com/n49/react-s
 * Fix: Buttons - Resolved an issue wherein the overall button alignment would not work as intended in responsive devices.
 * Fix: Forms - Resolved an issue wherein the submit button would not work as intended when full width is selected.
 * Fix: Modal - Resolved an issue wherein modal does not work as expected for responsive devices.
-
-= 2.13.1 - Friday, 3rd May 2024 =
-* Security Fix: Hardened the security of the plugin. Props: Ngô Thiên An (ancorn_).
-* Improvement: Core - Updated asset URL generation logic to prevent caching issues.
-* Improvement: Buttons - Improved the accessibility for better user interaction.
-* Fix: Global - Resolved an issue wherein the sidebar block border not displayed.
 
 The full changelog is available [here](https://wpspectra.com/whats-new/).
 

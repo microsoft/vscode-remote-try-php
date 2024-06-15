@@ -5,7 +5,7 @@ Tags: Elementor,Templates,Gutenberg,Block Editor,Astra Starter Sites
 Requires at least: 4.4
 Requires PHP: 7.4
 Tested up to: 6.5
-Stable tag: 4.3.2
+Stable tag: 4.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -246,6 +246,15 @@ Once your website is generated, you have complete control over its content and l
 6. Use the power of AI with a single click to write copy, proofread, translate content into different languages. Adjust content length and tone seamlessly for maximum appeal.
 
 == Changelog ==
+
+v4.3.3 - 12-June-2024
+- Improvement: AI Builder - Error Boundary Screen in case of unexpected errors.
+- Improvement: AI Builder - Removed phone validations to match this phone format - Ex: +1 (888) SIXT-CAR (749-8227)
+- Improvement: ZipWP Images - Updated preview screen for better UX.
+- Fix: AI Builder - Better handling of console errors due to missing URLs in Image object from ZipWP images API.
+- Fix: Design Kit - Fixed a console error in Gutenberg Templates library due to missing URLs for author and engine for placeholder images.
+- Fix: Resolved PHP 8.2 deprecated notice related to the creation of dynamic properties.
+- Fix: ZipWP Images - "Select" of media library was not showing in the customiser preview.
 
 v4.3.2 - 11-June-2024
 - Fix: Fixed an issue where the search functionality in the Elementor editor was not working.

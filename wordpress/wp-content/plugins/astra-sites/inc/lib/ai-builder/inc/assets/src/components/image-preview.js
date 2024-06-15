@@ -97,8 +97,10 @@ const ImagePreview = ( {
 					rel="noreferrer"
 				>
 					by { image.author_name } via{ ' ' }
-					{ image.engine.charAt( 0 ).toUpperCase() +
-						image.engine.slice( 1 ) }
+					{ image.engine
+						? image.engine.charAt( 0 ).toUpperCase() +
+						  image.engine.slice( 1 )
+						: 'Default' }
 				</a>
 			) }
 		</motion.div>

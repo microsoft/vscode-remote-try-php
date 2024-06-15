@@ -213,6 +213,7 @@ class PageRenderer {
       }, $this->tagRepository->findAll()),
       'display_docsbot_widget' => $this->displayDocsBotWidget(),
       'is_woocommerce_subscriptions_active' => $this->wooCommerceSubscriptionsHelper->isWooCommerceSubscriptionsActive(),
+      'cron_trigger_method' => $this->settings->get('cron_trigger.method'),
     ];
 
     if (!$defaults['premium_plugin_active']) {

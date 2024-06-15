@@ -71,6 +71,7 @@
   var mailpoet_mail_function_enabled = '<%= mail_function_enabled %>';
   var mailpoet_admin_plugins_url = '<%= admin_plugins_url %>';
   var mailpoet_is_dotcom = <%= json_encode(is_dotcom()) %>;
+  var mailpoet_cron_trigger_method = <%= json_encode(cron_trigger_method) %>;
 
   var mailpoet_site_name = '<%= site_name %>';
   var mailpoet_site_url = "<%= site_url %>";
@@ -155,7 +156,15 @@
 
   'allSendingPausedHeader': __('All sending is currently paused!'),
   'allSendingPausedBody': __('Your [link]API key[/link] to send with MailPoet is invalid.'),
+  'allSendingPausedPremiumValidBody': __('You are not allowed to use the MailPoet sending service with your current API key. Kindly upgrate to a [link]MailPoet sending plan[/link] or switch your [link]sending method[/link].'),
   'allSendingPausedLink': __('Purchase a key'),
+  'allSendingPausedPremiumValidLink': __('Upgrade the plan'),
+
+  'cronPingErrorHeader': __('There is an issue with the MailPoet task scheduler'),
+  'systemStatusConnectionSuccessful': __('Connection successful.'),
+  'systemStatusConnectionUnsuccessful': __('Connection unsuccessful.'),
+  'systemStatusCronConnectionUnsuccessfulInfo': __('Please consult our [link]knowledge base article[/link] for troubleshooting tips.'),
+  'systemStatusIntroCron': __('For the plugin to work, it must be able to establish connection with the task scheduler.'),
 
   'transactionalEmailNoticeTitle': __('Good news! MailPoet can now send your website’s emails too'),
   'transactionalEmailNoticeBody': __('All of your WordPress and WooCommerce emails are sent with your hosting company, unless you have an SMTP plugin. Would you like such emails to be delivered with MailPoet’s active sending method for better deliverability?'),

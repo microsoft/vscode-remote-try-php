@@ -291,7 +291,7 @@ if ( ! class_exists( 'UAGB_Helper' ) ) {
 			}
 
 			$icons_chunks = apply_filters( 'uagb_icons_chunks', $icons_chunks );
-			
+
 			if ( ! is_array( $icons_chunks ) || empty( $icons_chunks ) ) {
 				$icons_chunks = array();
 			}
@@ -304,7 +304,7 @@ if ( ! class_exists( 'UAGB_Helper' ) ) {
 		 * Generate SVG.
 		 *
 		 * @since 1.8.1
-		 * @param  array $icon Decoded fontawesome json file data.
+		 * @param  string $icon Decoded fontawesome json file data.
 		 */
 		public static function render_svg_html( $icon ) {
 			$icon = sanitize_text_field( esc_attr( $icon ) );

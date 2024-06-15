@@ -248,8 +248,8 @@ class WooCommerce {
     if ($collation1 === $collation2) {
       return false;
     }
-    list($charset1) = explode('_', $collation1);
-    list($charset2) = explode('_', $collation2);
+    [$charset1] = explode('_', $collation1);
+    [$charset2] = explode('_', $collation2);
 
     return $charset1 === $charset2;
   }
@@ -567,7 +567,7 @@ class WooCommerce {
 
     if ($this->woocommerceHelper->isWooCommerceCustomOrdersTableEnabled()) {
       $ordersTable = $this->woocommerceHelper->getOrdersTableName();
-      $guestCustomersSubQuery = "SELECT DISTINCT billing_email AS email FROM `{$ordersTable}` WHERE type = 'shop_order'";
+      $guestCustomersSubQuery = "SELECT DISTINCT billing_email AS email FROM `{$ordersTable}` WHERE type = 'shop_order' AND billing_email IS NOT NULL AND billing_email != ''";
     } else {
       $guestCustomersSubQuery = "SELECT DISTINCT wppm.meta_value AS email FROM {$wpdb->postmeta} wppm
         JOIN {$wpdb->posts} wpp ON wppm.post_id = wpp.ID

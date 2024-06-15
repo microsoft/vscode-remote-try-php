@@ -34,7 +34,7 @@ class API {
   public const ERROR_MESSAGE_INVALID_FROM = 'The email address is not authorized';
   public const ERROR_MESSAGE_PENDING_APPROVAL = 'Key is valid, but not approved yet; you can send only to authorized email addresses at the moment';
   public const ERROR_MESSAGE_DMRAC = "Email violates Sender Domain's DMARC policy. Please set up sender authentication.";
-  public const ERROR_MESSAGE_BULK_EMAIL_FORBIDDEN = 'Bulk email are forbidden for the sender address';
+  public const ERROR_MESSAGE_BULK_EMAIL_FORBIDDEN = 'Please update the plugin and add/update your sender domain (refer to https://account.mailpoet.com/sender_domains)';
   // Bridge message from https://github.com/mailpoet/services-bridge/blob/master/extensions/authentication/basic_strategy.rb
   public const ERROR_MESSAGE_UNAUTHORIZED = 'No valid API key provided';
   public const ERROR_MESSAGE_INSUFFICIENT_PRIVILEGES = 'Insufficient privileges';

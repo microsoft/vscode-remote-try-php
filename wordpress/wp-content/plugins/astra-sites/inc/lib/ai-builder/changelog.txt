@@ -1,3 +1,14 @@
+v1.0.42 - 11-June-2024
+- Fix: Resolved PHP 8.2 deprecated notice related to the creation of dynamic properties.
+
+v1.0.41 - 10-June-2024
+- Improvement: Error Boundary Screen in case of unexpected errors.
+- Improvement: Removed phone validations to match this phone format - Ex: +1 (888) SIXT-CAR (749-8227)
+- Fix: Better handling of console errors due to missing URLs in Image object from ZipWP images API.
+
+v1.0.40 - 07-June-2024
+- Fix: Fixed a console error in Gutenberg Templates library due to missing URLs for author and engine for placeholder images.
+
 v1.0.39 - 06-June-2024
 - Fix: Fixed an error when using the Spectra One theme and Starter Templates to import websites with ZipAI.
 

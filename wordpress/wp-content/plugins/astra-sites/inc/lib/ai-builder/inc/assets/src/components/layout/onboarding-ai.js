@@ -19,6 +19,7 @@ import AiBuilderExitButton from '../ai-builder-exit-button';
 import { AnimatePresence } from 'framer-motion';
 import { useNavigateSteps, steps, useValidateStep } from '../../router';
 import { Toaster } from 'react-hot-toast';
+import ErrorBoundary from '../../pages/error-boundary';
 
 const { logoUrlDark } = aiBuilderVars;
 
@@ -299,22 +300,25 @@ const OnboardingAI = () => {
 					id="sp-onboarding-content-wrapper"
 					className="flex-1 overflow-x-hidden h-screen bg-zip-app-light-bg"
 				>
-					<div className="h-full w-full relative flex">
-						<div
-							className={ twMerge(
-								`w-full max-h-full flex flex-col flex-auto items-center`,
-								steps[ currentStep ]?.layoutConfig?.hideSidebar
-									? ''
-									: 'px-5 pt-5 md:px-10 md:pt-10 lg:px-14 lg:pt-12 xl:px-20 xl:pt-12',
-								'',
-								steps[ currentStep ]?.layoutConfig
-									?.contentClassName
-							) }
-						>
-							{ /* Renders page content */ }
-							<Outlet />
+					<ErrorBoundary>
+						<div className="h-full w-full relative flex">
+							<div
+								className={ twMerge(
+									`w-full max-h-full flex flex-col flex-auto items-center`,
+									steps[ currentStep ]?.layoutConfig
+										?.hideSidebar
+										? ''
+										: 'px-5 pt-5 md:px-10 md:pt-10 lg:px-14 lg:pt-12 xl:px-20 xl:pt-12',
+									'',
+									steps[ currentStep ]?.layoutConfig
+										?.contentClassName
+								) }
+							>
+								{ /* Renders page content */ }
+								<Outlet />
+							</div>
 						</div>
-					</div>
+					</ErrorBoundary>
 				</main>
 				<LimitExceedModal />
 				<ContinueProgressModal />

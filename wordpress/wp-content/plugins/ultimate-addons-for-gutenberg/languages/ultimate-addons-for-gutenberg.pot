@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Spectra plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra 2.13.4\n"
+"Project-Id-Version: Spectra 2.13.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ultimate-addons-for-gutenberg\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-06T03:33:34+00:00\n"
+"POT-Creation-Date: 2024-06-11T03:57:24+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: ultimate-addons-for-gutenberg\n"
@@ -133,6 +133,20 @@ msgstr ""
 #. translators: %1$s: Opening Strong Tag, %2$s: Closing Strong Tag, %3$s Anchor Tag with Star Symbol Codes.
 #: admin-core/inc/admin-menu.php:501
 msgid "Enjoyed %1$sSpectra%2$s? Please leave us a %3$s rating. We really appreciate your support!"
+msgstr ""
+
+#: blocks-config/faq/class-uagb-faq.php:1118
+#: blocks-config/faq/class-uagb-faq.php:1145
+#: dist/blocks.js:3
+#: dist/blocks.js:19
+msgid "What is FAQ?"
+msgstr ""
+
+#: blocks-config/faq/class-uagb-faq.php:1122
+#: blocks-config/faq/class-uagb-faq.php:1149
+#: dist/blocks.js:3
+#: dist/blocks.js:19
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 msgstr ""
 
 #: blocks-config/forms/class-uagb-forms.php:320
@@ -9739,14 +9753,6 @@ msgid "So to get started, you will just need to drag-n-drop the How-to Schema bl
 msgstr ""
 
 #: dist/blocks.js:3
-msgid "What is FAQ?"
-msgstr ""
-
-#: dist/blocks.js:3
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-msgstr ""
-
-#: dist/blocks.js:3
 #: dist/blocks.js:19
 msgid "Notice Title"
 msgstr ""
@@ -12845,6 +12851,14 @@ msgid "Form Padding"
 msgstr ""
 
 #: dist/blocks.js:19
+msgid "Forms"
+msgstr ""
+
+#: dist/blocks.js:19
+msgid "Select a form layout to start with."
+msgstr ""
+
+#: dist/blocks.js:19
 msgid "Simple Contact Form"
 msgstr ""
 
@@ -12906,14 +12920,6 @@ msgstr ""
 
 #: dist/blocks.js:19
 msgid "Enter your subject"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Forms"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Select a form layout to start with."
 msgstr ""
 
 #: dist/blocks.js:19
@@ -13791,18 +13797,6 @@ msgid "Upload images to enable settings"
 msgstr ""
 
 #: dist/blocks.js:19
-msgid "Lightbox"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Open Image"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Custom URL (Spectra Pro)"
-msgstr ""
-
-#: dist/blocks.js:19
 msgid "Update Gallery"
 msgstr ""
 
@@ -13812,6 +13806,14 @@ msgstr ""
 
 #: dist/blocks.js:19
 msgid "Click Event"
+msgstr ""
+
+#: dist/blocks.js:19
+msgid "Lightbox"
+msgstr ""
+
+#: dist/blocks.js:19
+msgid "Open Image"
 msgstr ""
 
 #: dist/blocks.js:19
@@ -14191,18 +14193,6 @@ msgstr ""
 
 #: dist/blocks.js:19
 msgid "marketing button"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Custom Class (Spectra Pro)"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Custom ID (Spectra Pro)"
-msgstr ""
-
-#: dist/blocks.js:19
-msgid "Automatic (Spectra Pro)"
 msgstr ""
 
 #: dist/blocks.js:19
@@ -16063,14 +16053,6 @@ msgstr ""
 
 #: dist/blocks.js:23
 msgid "No results found."
-msgstr ""
-
-#: dist/blocks.js:23
-msgid "Add blocks to Quick Action Bar"
-msgstr ""
-
-#: dist/blocks.js:23
-msgid "Re-arrange block inside Quick Action Bar"
 msgstr ""
 
 #: dist/blocks.js:23

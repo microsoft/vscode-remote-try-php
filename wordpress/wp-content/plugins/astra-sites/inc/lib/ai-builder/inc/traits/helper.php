@@ -65,17 +65,23 @@ class Helper {
 		return array(
 			array(
 				'auther_name'   => 'Placeholder',
+				'auther_url'    => '#',
 				'id'            => 'placeholder-landscape',
 				'orientation'   => 'landscape',
 				'optimized_url' => 'https://websitedemos.net/wp-content/uploads/2024/02/placeholder-landscape.png',
 				'url'           => 'https://websitedemos.net/wp-content/uploads/2024/02/placeholder-landscape.png',
+				'engine'        => 'placeholder',
+				'engine_url'    => '#',
 			),
 			array(
 				'auther_name'   => 'Placeholder',
+				'auther_url'    => '#',
 				'id'            => 'placeholder-portrait',
 				'orientation'   => 'portrait',
 				'optimized_url' => 'https://websitedemos.net/wp-content/uploads/2024/02/placeholder-portrait.png',
 				'url'           => 'https://websitedemos.net/wp-content/uploads/2024/02/placeholder-portrait.png',
+				'engine'        => 'placeholder',
+				'engine_url'    => '#',
 			),
 		);
 	}

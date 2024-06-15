@@ -638,7 +638,7 @@ if ( ! class_exists( 'UAGB_Taxonomy_List' ) ) {
 		public function display_terms_recursive( $term, $taxonomy_type, $showCount, $seperatorStyle, $title_tag, $show_hierarchy ) {
 			if ( $term instanceof WP_Term ) {
 				$child_link = $this->get_link_of_individual_categories( $term->slug, $taxonomy_type );
-				echo sprintf( 
+				echo sprintf(
 					'<li class="uagb-tax-list"><%s class="uagb-tax-link-wrap"><a class="uagb-tax-link" href="%s">%s</a> %s</%s><div class="uagb-tax-separator"></div></li>',
 					esc_html( $title_tag ),
 					esc_url( $child_link ),
@@ -804,7 +804,7 @@ if ( ! class_exists( 'UAGB_Taxonomy_List' ) ) {
 				'hide_empty' => ! $attributes['showEmptyTaxonomy'],
 			);
 
-			if ( $taxonomyType && 'page' !== $postType ) {
+			if ( $taxonomyType ) {
 				$new_categories_list = get_terms( $taxonomyType, $args );
 			}
 
@@ -821,7 +821,8 @@ if ( ! class_exists( 'UAGB_Taxonomy_List' ) ) {
 				</div>
 
 			<?php
-				return ob_get_clean();
+
+			return ob_get_clean();
 		}
 	}
 

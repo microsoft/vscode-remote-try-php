@@ -87,21 +87,22 @@ class Zipwp_Images_Script {
 		$data = apply_filters(
 			'zipwp_images_vars',
 			array(
-				'ajaxurl'             => esc_url( admin_url( 'admin-ajax.php' ) ),
-				'asyncurl'            => esc_url( admin_url( 'async-upload.php' ) ),
-				'is_bb_active'        => ( class_exists( 'FLBuilderModel' ) ),
-				'is_brizy_active'     => ( class_exists( 'Brizy_Editor_Post' ) ),
-				'is_elementor_active' => ( did_action( 'elementor/loaded' ) ),
-				'is_elementor_editor' => ( did_action( 'elementor/loaded' ) ) && class_exists( '\Elementor\Plugin' ) ? \Elementor\Plugin::instance()->editor->is_edit_mode() : false,
-				'is_bb_editor'        => ( class_exists( '\FLBuilderModel' ) ) ? ( \FLBuilderModel::is_builder_active() ) : false,
-				'is_brizy_editor'     => ( class_exists( 'Brizy_Editor_Post' ) ) ? ( isset( $_GET['brizy-edit'] ) || isset( $_GET['brizy-edit-iframe'] ) ) : false, // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Fetching GET parameter, no nonce associated with this action.
-				'saved_images'        => get_option( 'zipwp-images-saved-images', array() ),
-				'title'               => apply_filters( 'zipwp_images_tab_title', __( 'ZipWP Images', 'zipwp-images', 'astra-sites' ) ),
-				'search_placeholder'  => __( 'Search - Ex: flowers', 'zipwp-images', 'astra-sites' ),
-				'downloading'         => __( 'Downloading...', 'zipwp-images', 'astra-sites' ),
-				'validating'          => __( 'Validating...', 'zipwp-images', 'astra-sites' ),
-				'_ajax_nonce'         => wp_create_nonce( 'zipwp-images' ),
-				'rest_api_nonce'      => ( current_user_can( 'manage_options' ) ) ? wp_create_nonce( 'wp_rest' ) : '',
+				'ajaxurl'              => esc_url( admin_url( 'admin-ajax.php' ) ),
+				'asyncurl'             => esc_url( admin_url( 'async-upload.php' ) ),
+				'is_customize_preview' => is_customize_preview(),
+				'is_bb_active'         => ( class_exists( 'FLBuilderModel' ) ),
+				'is_brizy_active'      => ( class_exists( 'Brizy_Editor_Post' ) ),
+				'is_elementor_active'  => ( did_action( 'elementor/loaded' ) ),
+				'is_elementor_editor'  => ( did_action( 'elementor/loaded' ) ) && class_exists( '\Elementor\Plugin' ) ? \Elementor\Plugin::instance()->editor->is_edit_mode() : false,
+				'is_bb_editor'         => ( class_exists( '\FLBuilderModel' ) ) ? ( \FLBuilderModel::is_builder_active() ) : false,
+				'is_brizy_editor'      => ( class_exists( 'Brizy_Editor_Post' ) ) ? ( isset( $_GET['brizy-edit'] ) || isset( $_GET['brizy-edit-iframe'] ) ) : false, // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Fetching GET parameter, no nonce associated with this action.
+				'saved_images'         => get_option( 'zipwp-images-saved-images', array() ),
+				'title'                => apply_filters( 'zipwp_images_tab_title', __( 'ZipWP Images', 'zipwp-images', 'astra-sites' ) ),
+				'search_placeholder'   => __( 'Search - Ex: flowers', 'zipwp-images', 'astra-sites' ),
+				'downloading'          => __( 'Downloading...', 'zipwp-images', 'astra-sites' ),
+				'validating'           => __( 'Validating...', 'zipwp-images', 'astra-sites' ),
+				'_ajax_nonce'          => wp_create_nonce( 'zipwp-images' ),
+				'rest_api_nonce'       => ( current_user_can( 'manage_options' ) ) ? wp_create_nonce( 'wp_rest' ) : '',
 			)
 		);
 

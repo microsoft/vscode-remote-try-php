@@ -38,6 +38,8 @@ class Throttling {
         $subscriptionCount = $this->subscriberIPsRepository->getCountByIPAndCreatedAtAfterTimeInSeconds($subscriberIp, $subscriptionLimitWindow);
         if ($subscriptionCount > 0) {
           $timeout = $subscriptionLimitBase * pow(2, $subscriptionCount - 1);
+          // Cap timeout and avoid float numbers
+          $timeout = min($timeout, $subscriptionLimitWindow);
           $existingUser = $this->subscriberIPsRepository->findOneByIPAndCreatedAtAfterTimeInSeconds($subscriberIp, $timeout);
           if (!empty($existingUser)) {
             return $timeout;

@@ -11,6 +11,7 @@ final class Error {
   const UNAUTHORIZED = 'unauthorized';
   const FORBIDDEN = 'forbidden';
   const NOT_FOUND = 'not_found';
+  const REINSTALL_PLUGIN = 'reinstall_plugin';
 
   private function __construct() {
 

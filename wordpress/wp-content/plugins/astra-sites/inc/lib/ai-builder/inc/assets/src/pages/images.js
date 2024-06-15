@@ -473,7 +473,10 @@ const Images = () => {
 
 	const getUploadedImages = ( imagesArray = [] ) => {
 		return imagesArray.filter( ( image ) =>
-			IMAGE_ENGINES.some( ( engine ) => engine !== image.engine )
+			IMAGE_ENGINES.some(
+				( engine ) =>
+					engine !== image.engine && image.engine !== 'placeholder'
+			)
 		);
 	};
 

@@ -3,7 +3,7 @@ Contributors: mailpoet, woocommerce, automattic
 Tags: email, email marketing, post notification, woocommerce emails, email automation, newsletter, newsletter builder, newsletter subscribers
 Requires at least: 6.4
 Tested up to: 6.5
-Stable tag: 4.51.1
+Stable tag: 4.51.2
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -227,6 +227,17 @@ Check our [Knowledge Base](https://kb.mailpoet.com) or contact us through our [s
 6. WooCommerce emails
 
 == Changelog ==
+
+= 4.51.2 - 2024-06-11 =
+* Added: an error message when ping is not working;
+* Added: a notice when switching to Creator plan with MailPoet Sending Service active;
+* Added: an error message when cron is disabled;
+* Added: an error message for invalid API endpoints;
+* Improved: an error message when sending through MailPoet Sending Service on a Creator plan;
+* Improved: an error message when sending a campaign from an unauthorized sender domain;
+* Changed: Twitter to X in email editor social icons block;
+* Fixed: potential error when throttling subscriptions signups;
+* Fixed: WooCommerce customers sync breaks when there is an order without a customer.
 
 = 4.51.1 - 2024-06-03 =
 * Updated: composer dependencies;

@@ -1,3 +1,9 @@
+v2.2.3 - 06-June-2024
+- Fix: Resolved Console error for undefined images.
+
+v2.2.2 - 20-May-2024
+- Fix: Fixed design library was displaying empty on subfolder sites.
+
 v2.2.1 - 02-May-2024
 - Improvement: Better error message handling.
 - Improvement: Blocked everything after clicking on the continue button.

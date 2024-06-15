@@ -23,6 +23,28 @@ class AjaxInit {
 	use Instance;
 
 	/**
+	 * Ajax Instance
+	 *
+	 * @access private
+	 * @var object Class object.
+	 * @since 1.0.42
+	 */
+	private static $ajax_instance = null;
+
+	/**
+	 * Initiator
+	 *
+	 * @since 1.0.42
+	 * @return object initialized object of class.
+	 */
+	public static function get_instance() {
+		if ( null === self::$ajax_instance ) {
+			self::$ajax_instance = new self();
+		}
+		return self::$ajax_instance;
+	}
+
+	/**
 	 * Constructor
 	 *
 	 * @since 1.0.0
@@ -54,8 +76,7 @@ class AjaxInit {
 		);
 
 		foreach ( $controllers as $controller ) {
-			$this->$controller = $controller::Instance();
-			$this->$controller->register_ajax_events();
+			$controller::get_instance()->register_ajax_events();
 		}
 	}
 }

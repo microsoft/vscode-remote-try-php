@@ -13,9 +13,8 @@ import { useNavigateSteps } from '../router';
 import { z as zod } from 'zod';
 import Heading from '../components/heading';
 
-const PHONE_VALIDATION_REGEX = /^\+?[0-9()\s-]{6,20}$/,
-	EMAIL_VALIDATION_REGEX =
-		/^[a-z0-9!'#$%&*+\/=?^_`{|}~-]+(?:\.[a-z0-9!'#$%&*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-zA-Z]{2,}$/i;
+const EMAIL_VALIDATION_REGEX =
+	/^[a-z0-9!'#$%&*+\/=?^_`{|}~-]+(?:\.[a-z0-9!'#$%&*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-zA-Z]{2,}$/i;
 
 const mapSocialUrl = ( list ) => {
 	return list.map( ( item ) => {
@@ -61,18 +60,6 @@ const BusinessContact = () => {
 					{
 						message: __(
 							'Please enter a valid email',
-							'ai-builder'
-						),
-					}
-				),
-			phone: zod
-				.string()
-				.refine(
-					( value ) =>
-						value === '' || PHONE_VALIDATION_REGEX.test( value ),
-					{
-						message: __(
-							'Please enter a valid phone number',
 							'ai-builder'
 						),
 					}
@@ -191,15 +178,6 @@ const BusinessContact = () => {
 						placeholder={ __( 'Your phone number', 'ai-builder' ) }
 						register={ register }
 						error={ errors.phone }
-						validations={ {
-							pattern: {
-								value: PHONE_VALIDATION_REGEX,
-								message: __(
-									'Please enter a valid phone number',
-									'ai-builder'
-								),
-							},
-						} }
 						height="[48px]"
 					/>
 				</div>
