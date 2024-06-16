@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url("./assets/image/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #cccccc;
+    /* height: 1000px; */
+}
+
+#header{
+    width: 100%;
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.logo{
+    width: 160px;
+    height: 78px;
+    padding: 20px 0;
+}
+
+.logo img{
+    width: 160px;
+    height: 38px;
+}
+
+/*Container-login  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    width: 960px;
+    height: 570px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.container-left{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.container-left-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-image: url("./assets/image/login.jpg");
+    background-size: cover;
+    background-position: center top -60px;
+}
+
+.container-right{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.container-right-h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.container-right-p1{
+    text-align: center;
+}
+
+.container-right-btn1 {
+    display: block;
+    margin: 0 auto; /* Đảm bảo nút ở giữa theo chiều ngang */
+    text-align: center; /* Căn chính giữa nội dung của nút */
+    width: 340px; /* Đặt chiều rộng của nút */
+    padding: 7px 20px; /* Thêm padding cho nút */
+    background-color: #fff; /* Màu nền của nút */
+    color: black; /* Màu chữ của nút */
+    border: 1px solid #ccc ; /* Loại bỏ viền của nút */
+    border-radius: 24px; /* Bo tròn các góc của nút */
+    cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+    margin-top: 20px;
+}
+
+.btn-gg{
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.container-right-input-name{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    border: 1px solid #ccc;
+    height: 32px;
+    border-radius: 24px;
+    text-align: left; /* Căn chính giữa nội dung của nút */
+    padding-left: 12px;
+    margin-top: 50px;
+}
+
+.container-right-input-email{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    border: 1px solid #ccc;
+    height: 32px;
+    border-radius: 24px;
+    text-align: left; /* Căn chính giữa nội dung của nút */
+    padding-left: 12px;
+}
+
+.container-right-input-pw{
+    display: inline-block;
+    width: 170px;
+    border: 1px solid #ccc;
+    height: 32px;
+    border-radius: 24px;
+    text-align: left; /* Căn chính giữa nội dung của nút */
+    padding-left: 12px;
+    margin-left: 58px;
+}
+
+.container-right-input-confirm{
+    display: inline-block;
+    width: 170px;
+    border: 1px solid #ccc;
+    height: 32px;
+    border-radius: 24px;
+    text-align: left; /* Căn chính giữa nội dung của nút */
+    padding-left: 12px;
+}
+
+.container-right-p2{
+    margin-top: 20px;
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+.container-right-p2 > i {
+    margin-right: 4px;
+}
+
+.container-right-btn2{
+    display: block;
+    margin: 0 auto; /* Đảm bảo nút ở giữa theo chiều ngang */
+    text-align: center; /* Căn chính giữa nội dung của nút */
+    width: 340px; /* Đặt chiều rộng của nút */
+    padding: 7px 20px; /* Thêm padding cho nút */
+    background-color: black; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: 1px solid #ccc ; /* Loại bỏ viền của nút */
+    border-radius: 24px; /* Bo tròn các góc của nút */
+    cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+    margin-top: 20px;
+    
+}
+
+.container-right-p3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.container-right-p3 > a {
+    color: #DA7D2F;
+}
