@@ -1,8 +1,0 @@
-.cache
-node_modules
-lib/
-vendor
-admin/assets/min-css/
-*-rtl*
-.github
-bsf-analytics

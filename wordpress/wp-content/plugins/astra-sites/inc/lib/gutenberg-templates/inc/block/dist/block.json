@@ -1,8 +1,0 @@
-{
-  "apiVersion": 3,
-  "title": "Spectra AI",
-  "name": "gutenberg-templates/spectra-ai",
-  "category": "layout",
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css"
-}

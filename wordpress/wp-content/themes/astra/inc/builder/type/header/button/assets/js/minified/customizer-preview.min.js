@@ -1,1 +1,0 @@
-jQuery,astra_builder_button_css("header",AstraBuilderButtonData.component_limit);

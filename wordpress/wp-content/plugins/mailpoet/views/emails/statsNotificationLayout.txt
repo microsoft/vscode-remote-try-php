@@ -1,5 +1,0 @@
-<% block content %><% endblock %>
-
-<%= __('How to improve my open rate?') %> https://www.mailpoet.com/how-to-improve-open-rates/
-<%= __('And my click rate?') %> https://www.mailpoet.com/how-to-improve-click-rates/
-<%= __('Disable these emails') %> <%= linkSettings %>

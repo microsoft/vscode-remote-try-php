@@ -1,8 +1,0 @@
-.customize-control-ast-customizer-link .customizer-link {
-  font-style: italic;
-  text-decoration: none;
-}
-
-.customize-control-ast-customizer-link:empty {
-  display:none;
-}

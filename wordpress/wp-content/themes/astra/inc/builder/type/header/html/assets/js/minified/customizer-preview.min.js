@@ -1,1 +1,0 @@
-jQuery,astra_builder_html_css("header",AstraBuilderHTMLData.component_limit);
