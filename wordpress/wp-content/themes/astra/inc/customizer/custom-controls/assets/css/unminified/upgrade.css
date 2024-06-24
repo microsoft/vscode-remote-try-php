@@ -1,0 +1,125 @@
+.ast-upgrade-pro-wrap .ast-upgrade-trigger, .ast-upgrade-pro-wrap .ast-upgrade-pro-innerwrap {
+	width: 100%;
+    -js-display: inline-flex;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+	overflow: hidden;
+    justify-content: center;
+}
+.ast-upgrade-pro-wrap .ast-upgrade-cta {
+	position: absolute;
+    top: auto;
+    left: auto;
+	width: auto;
+    height: 28px;
+    border-radius: 4px;
+    padding: 0 8px 0 5px;
+    font-size: 1em;
+    line-height: 1em;
+    display: inline-flex;
+    color: var(--ast-customizer-color-1);
+    background: var(--ast-customizer-color-9);
+    border: 1px solid var(--ast-customizer-color-1);
+    align-items: center;
+    align-content: center;
+    white-space: nowrap;
+}
+a.ast-upgrade-trigger:focus, a.ast-upgrade-trigger:active {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.ast-upgrade-pro-wrap .ast-upgrade-section-title {
+    margin-left: 8px;
+}
+.ast-upgrade-pro-wrap .ast-upgrade-pro-innerwrap > svg {
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+}
+.ast-upgrade-pro-wrap .ast-upgrade-cta svg {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/** Radio image upgrade CSS */
+.customize-control-ast-radio-image .ast-pro-option > *:not(.image-clickable) {
+    opacity: 0.4;
+}
+.ast-radio-img-svg.ast-pro-option .image-clickable::before {
+	display: inline-flex;
+    position: absolute;
+    top: 36%;
+    left: 41%;
+    content: '';
+    background-size: 1.5em 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+	border: 1px solid var(--ast-customizer-color-1);
+	background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5002 7.2001H11.7002V4.8001C11.7002 3.0401 10.2602 1.6001 8.5002 1.6001C6.7402 1.6001 5.3002 3.0401 5.3002 4.8001V7.2001H4.5002C4.1002 7.2001 3.7002 7.6001 3.7002 8.0001V13.6001C3.7002 14.0001 4.1002 14.4001 4.5002 14.4001H12.5002C12.9002 14.4001 13.3002 14.0001 13.3002 13.6001V8.0001C13.3002 7.6001 12.9002 7.2001 12.5002 7.2001ZM9.3002 12.8001H7.7002L8.0202 11.0401C7.6202 10.8801 7.3002 10.4001 7.3002 10.0001C7.3002 9.3601 7.8602 8.8001 8.5002 8.8001C9.1402 8.8001 9.7002 9.3601 9.7002 10.0001C9.7002 10.4801 9.4602 10.8801 8.9802 11.0401L9.3002 12.8001ZM10.1002 7.2001H6.9002V4.8001C6.9002 3.9201 7.6202 3.2001 8.5002 3.2001C9.3802 3.2001 10.1002 3.9201 10.1002 4.8001V7.2001Z' fill='%230284C7'/%3E%3C/svg%3E");
+}
+
+.ast-upgrade-list-wrapper {
+    text-align: center;
+}
+.ast-upgrade-list-wrapper .ast-brand-logo {
+    margin: 0;
+}
+.ast-upgrade-list-wrapper svg {
+    width: 32px;
+    height: 32px;
+}
+.ast-upgrade-list-items {
+    margin-bottom: 1.8em;
+}
+.ast-upgrade-list-wrapper .ast-upgrade-list-section-title {
+	margin: 0.5em auto 1.8em;
+    max-width: 240px;
+}
+.ast-pro-upgrade-item svg {
+    vertical-align: middle;
+    margin-right: 5px;
+    fill: var(--ast-customizer-color-1);
+}
+.ast-pro-upgrade-item span {
+    display: inline;
+}
+.ast-upgrade-list-description {
+    margin: 5px 0 0 20px;
+}
+.ast-upgrade-list-title {
+    font-weight: 600;
+}
+.ahfb-header-builder-active li#customize-control-astra-settings-builder-header:not(.ast-pro-available),
+.ahfb-header-builder-active li#customize-control-astra-settings-builder-header:not(.ast-pro-available) *,
+.ahfb-footer-builder-active li#customize-control-astra-settings-builder-footer:not(.ast-pro-available),
+.ahfb-footer-builder-active li#customize-control-astra-settings-builder-footer:not(.ast-pro-available) * {
+    color: var(--ast-customizer-color-9);
+    background: var(--ast-customizer-color-1);
+}
+.customize-control .button.ahfb-builder-section-shortcut {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.ast-customize-control-title a.ast-builder-upgrade-link {
+    background: var(--ast-customizer-color-9) !important;
+    color: var(--ast-customizer-color-1) !important;
+    box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.16);
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: 3px 10px 5px;
+    text-decoration: none;
+	vertical-align: top;
+}
+.ast-pro-upgrade-item p {
+    margin: 1.25em 0;
+    line-height: 1;
+}
+li#customize-control-astra-settings-header-builder-pro-items .ast-upgrade-pro-wrap,
+li#customize-control-astra-settings-footer-builder-pro-items .ast-upgrade-pro-wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+}

@@ -1,0 +1,37 @@
+.ast-responsive-btns {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.ast-responsive-btns > li {
+  margin-bottom: 0;
+  display: none;
+}
+
+.ast-responsive-btns > li.active {
+  display: inline-block;
+}
+
+.ast-responsive-btns button[type="button"] {
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.ast-responsive-btns button[type="button"] > i {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+.input-wrapper.ast-responsive-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 0;
+  align-items: flex-start;
+  flex: 0 1;
+  width: 100%;
+}

@@ -1,0 +1,250 @@
+.customize-control-ast-sortable .sortable {
+  cursor: default;
+}
+
+.customize-control-ast-sortable .sortable .dashicons-visibility {
+  cursor: pointer;
+}
+
+.customize-control-ast-sortable .sortable .ast-sortable-item, .customize-control-ast-sortable .sortable .ast-sortable-subcontrols {
+  padding: 1px 12px 1px 3px;
+  border: 1px solid #D1D5DB;
+  color: #334155;
+  background: #ffffff;
+  cursor: move;
+  font-size: 14px;
+  line-height: 38px;
+  margin: 0 0 10px;
+  border-radius: 4px;
+}
+.customize-control-ast-sortable .sortable .ast-sortable-subcontrols {
+    border: none;
+	padding: 0 0 0 9px;
+    border-top: 1px solid #d1d5db;
+    border-radius: 0 0 3px 3px;
+}
+.customize-control-ast-sortable .sortable div:last-child {
+  margin: 0;
+}
+
+.customize-control-ast-sortable .sortable div > .dashicons {
+  float: left;
+  position: relative;
+  font-size: 16px;
+  padding: 9px;
+  line-height: 20px;
+  border-right: none;
+}
+
+.customize-control-ast-sortable .sortable div.invisible {
+  opacity: 0.6;
+  visibility: visible;
+}
+
+.customize-control-ast-sortable .sortable div.invisible .dashicons.visibility:after {
+  opacity: 1;
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 2px;
+  top: 18px;
+  right: 11px;
+  background: #656565;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 0px 1px #fff;
+  transition: opacity 0.2s ease;
+}
+
+/**
+ * Expansion specific new raw CSS.
+ */
+.ast-sortable-item.invisible,
+.ast-sortable-item:hover {
+	opacity: .8;
+}
+.ast-sortable-item.show:hover {
+  opacity: 1;
+}
+.ast-sortable-item .dashicons-arrow-down-alt2, .ast-sortable-item .dashicons-remove {
+    margin-left: -6px;
+}
+.ast-sortable-item .dashicons-admin-page, .ast-sortable-item .dashicons-arrow-down-alt2, .ast-sortable-item .dashicons-remove {
+    cursor: pointer;
+}
+.ast-sortable-subcontrols {
+	display: none;
+	padding: 12px 0;
+    border-top: 1px solid #d1d5db;
+}
+.show .ast-sortable-subcontrols {
+	display: block;
+}
+.ast-sortable-subfields-wrap .customize-control {
+	box-sizing: border-box;
+    position: relative;
+}
+/**
+ * ast-list-icons inside sortable compatibility CSS.
+ */
+.ast-sortable-item.show i.ast-accordion {
+	transform: rotate(-180deg);
+	border-right: none;border-left: none;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .components-button {
+    padding: 6px 8px;
+	height: 40px;
+	background: white;
+}
+
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .components-button:focus {
+    box-shadow: none;
+}
+
+.customize-control-ast-list-icons .ahfb-sorter-item-panel-header .ahfb-sorter-title {
+	padding-left: 20px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.customize-control-ast-list-icons span.feature-label {
+    max-width: 100px;
+    text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 18px;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .dashicons-admin-page {
+    color: #556068;
+}
+
+.customize-control-ast-sortable .ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-item-panel-header {
+    border: 1px solid #ddd;
+	border-right: 0;
+    border-bottom: 0;
+	overflow: hidden;
+}
+
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-visiblity svg,
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-visiblity .ast-media-image-preview {
+    height: 14px;
+    width: 14px;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-visiblity span {
+    display: flex;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-visiblity svg {
+    height: 16px;
+    width: 16px;
+	fill: #556068;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ast-sorter-item-expand {
+	border-right: none;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-visiblity {
+	border-left: none;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .ahfb-sorter-item {
+	border: 1px solid #ddd;
+    border-top: 0;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .rfipdropdown {
+    width: 225px !important;
+    right: -10px;
+	box-shadow: 0 5px 15px rgb(0 0 0 / 22%), 0 0px 5px rgb(0 0 0 / 30%);
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .rfipdropdown--open {
+    height: 285px;
+    overflow: hidden;
+    position: absolute;
+}
+.ast-sortable-item .ahfb-sorter-item-panel-content {
+    border-top: 1px solid #ddd;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .rfipdropdown--open .rfipicons__ibox:hover>* {
+    transform: scale(1.3) !important;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-list-icons .rfipdropdown--open .rfipicons__ibox {
+    height: 32px !important;
+}
+.ast-sortable-subfields-wrap .ast-color-btn-reset-wrap {
+    top: 0;
+}
+.customize-control-ast-sortable .ast-sortable-subfields-wrap .customize-control-title {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-color .ast-control-wrap .astra-popover-color {
+    margin-right: -10px;
+    margin-left: 10px;
+    width: calc(100% + 15px);
+}
+
+.customize-control-ast-sortable .ast-sortable-subfields-wrap .ast-responsive-btns {
+    top: 7px;
+}
+
+.ast-sortable-subfields-wrap .ast-fields-wrap {
+	padding-bottom: 16px;
+}
+.customize-control-content {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ast-sortable-subfields-wrap .ast-fields-wrap {
+    overflow: inherit;
+}
+
+.ast-sortable-subfields-wrap .customize-control{
+    float: none;
+}
+
+/**
+ * Hide clone & accordion dashicons for invisible items.
+ */
+.ast-sortable-item.invisible > .dashicons-admin-page, .ast-sortable-item.invisible > .ast-accordion, .ast-sortable-item.invisible > .dashicons-remove {
+    display: none;
+}
+.ast-sortable-item.invisible .ast-sortable-subcontrols {
+    display: none;
+}
+.ast-sortable-item .ahfb-sorter-item .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+.ast-sortable-item .ahfb-sorter-item .ahfb-sorter-item-expand:before {
+	right: 7px;
+    width: 17px;
+}
+.ast-sortable-item .components-button.item-is-hidden:not(.visibility-item), .ahfb-sorter-item:first-child .ahfb-sorter-item-remove {
+    display: none;
+}
+.customize-control-ast-sortable .sortable .rfip .rfipbtn__button {
+    margin-right: auto;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-responsive-slider .ast-responsive-slider-btns {
+    top: -2px;
+}
+
+/**
+ * Dynamic featured-image section compat.
+ */
+.ast-sortable-item .customize-control-ast-color .ast-color-btn-reset-wrap {
+    top: 12px;
+}
+.ast-sortable-item .customize-control-ast-color .color-button-wrap {
+    top: 8px;
+}
+.ast-sortable-item .customize-control-ast-color .astra-color-picker-wrap {
+    position: relative;
+    top: 8px;
+}
+.ast-sortable-subfields-wrap .customize-control-ast-description {
+    line-height: 1;
+}
+
+.customize-control-ast-list-icons .ahfb-sorter-item-panel-header .dashicons-admin-page {
+    margin-left: 0;
+}

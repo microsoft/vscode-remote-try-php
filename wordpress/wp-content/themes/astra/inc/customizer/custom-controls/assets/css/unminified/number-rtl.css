@@ -1,0 +1,78 @@
+.customize-control-ast-number .ast-number-single{
+    display: flex;
+    border: 1px solid #D1D5DB;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 96px;
+}
+
+.customize-control-ast-number .components-input-control__container, .customize-control-ast-number .components-input-control__input {
+    text-align: center;
+}
+
+.customize-control-ast-number .ast-number-single .dashicon.dashicons  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #676879;
+    font-size: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.customize-control-ast-number .components-input-control__backdrop {
+    border: 0 !important;
+}
+
+.customize-control-ast-number .ast-number-single input[type=number]::-webkit-inner-spin-button,
+.customize-control-ast-number .ast-number-single input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.customize-control-ast-number .ast-control-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-control-ast-number .ast-title-wrapper {
+    width: 50%;
+}
+
+.customize-control-ast-number .ast-number-single {
+    display: none
+}
+
+.customize-control-ast-number .ast-number-single.active {
+    display: flex;
+}
+
+.customize-control-ast-number .ast-responsive-btns {
+    margin-right: 0.5em;
+}
+
+/* Hide spin buttons for WebKit (Chrome, Safari) */
+.customize-control-ast-number input[type="number"]::-webkit-inner-spin-button,
+.customize-control-ast-number input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; /* Adjust as needed */
+}
+
+/* Hide spin buttons for Firefox */
+.customize-control-ast-number input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+}
+
+/* Hide spin buttons for Edge & IE */
+.customize-control-ast-number input[type="number"]::-webkit-outer-spin-button,
+.customize-control-ast-number input[type="number"]::-webkit-inner-spin-button,
+.customize-control-ast-number input[type="number"]::-ms-clear,
+.customize-control-ast-number input[type="number"]::-ms-reveal {
+  display: none;
+}
+

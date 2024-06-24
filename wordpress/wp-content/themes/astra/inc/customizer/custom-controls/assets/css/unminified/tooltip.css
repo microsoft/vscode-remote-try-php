@@ -1,0 +1,72 @@
+.dashicons-editor-help[data-title]{
+	z-index: 1;
+}
+
+.ast-dashicons-custom-tooltip {
+	display: none;
+	opacity: 0;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ast-dashicons-custom-tooltip[data-title]::after {
+	content: attr(data-title);
+    min-width: 3em;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: 0.3ch;
+    box-shadow: 0 1em 2em -0.5em rgb(0 0 0 / 35%);
+    background: var(--ast-customizer-color-12);
+    color: var(--ast-customizer-color-10);
+    z-index: 3;
+    bottom: calc(100% + 5px);
+    text-align: center;
+    animation: tooltips-vert .3s ease-out forwards;
+	text-transform: none;
+    font-size: .9em;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%,-0.5em);
+}
+
+.dashicons-editor-help[data-title]:hover ~ .ast-dashicons-custom-tooltip {
+	display: block;
+	opacity: 100;
+}
+
+.dashicons-editor-help[data-title]:hover ~ .ast-dashicons-custom-tooltip[data-title]::after{
+	display: flex;
+	white-space: break-spaces;
+	inline-size: max-content;
+}
+.ast-top-dotted-divider .ast-control-tooltip.dashicons-editor-help {
+    top: 22px;
+}
+.customize-control.ast-bottom-dotted-divider.customize-control-ast-toggle-control .ast-control-tooltip {
+    top: 8px;
+}
+.customize-control.customize-control-ast-select.ast-top-dotted-divider .ast-control-tooltip {
+    top: 36px;
+}
+.customize-control-ast-sortable .customize-control-ast-selector .dashicons.ast-control-tooltip {
+    top: 18%;
+    padding: 0;
+    font-size: 20px;
+}
+.customize-control.customize-control-ast-color i.ast-control-tooltip {
+    top: 5px;
+    right: 60px;
+}
