@@ -1,0 +1,1 @@
+jQuery((function(t){const o=t(".contact-form input.jp-contact-form-date"),n=o.attr("data-format")||"yy-mm-dd";o.datepicker({dateFormat:n,constrainInput:!1,showOptions:{direction:"down"}})}));

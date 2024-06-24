@@ -1,0 +1,75 @@
+<div class="mailpoet_save_wrapper {{ wrapperClass }}">
+{{#if isWoocommerceTransactional}}
+    <div class="mailpoet_save_button_group">
+        <input type="button" name="save" value="<%= __('Save') %>" class="button button-primary mailpoet_save_button" />
+    </div>
+    <div class="clearfix"></div>
+    <div class="mailpoet_editor_messages">
+        <div class="mailpoet_save_error"></div>
+        <div class="mailpoet_editor_last_saved">
+            &nbsp;
+            <span class="mailpoet_autosaved_message mailpoet_hidden"><%= __('Autosaved') %></span>
+            <span class="mailpoet_autosaved_at mailpoet_hidden"></span>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mailpoet_save_woocommerce_customizer_disabled{{#if woocommerceCustomizerEnabled}} mailpoet_hidden{{/if}}">
+      <div class="mailpoet_save_woocommerce_error"><%= __('The usage of this email template for your WooCommerce emails is not yet activated.') %></div>
+      <input type="button" name="activate_wc_customizer" value="<%= __('Activate now') %>" class="button button-primary mailpoet_save_activate_wc_customizer_button" style="margin-top: 17px">
+    </div>
+{{else if isAutomationEmail}}
+    <input type="button" name="preview" class="button mailpoet_show_preview mailpoet_hidden" value="<%= __('Preview') %>" />
+    <input type="button" name="save" value="<%= __('Save') %>" class="button button-primary mailpoet_save_go_to_automation mailpoet_hidden" />
+{{else if isConfirmationEmailTemplate}}
+  <div class="mailpoet_editor_confirmation_email_section">
+    <div class="mailpoet_save_button_group">
+      <input type="button" name="preview" value="<%= __('Preview') %>" class="button mailpoet_show_preview" />
+      <input type="button" name="save" value="<%= __('Save') %>" class="button button-primary mailpoet_save_button" />
+    </div>
+    <div class="clearfix"></div>
+    <div class="mailpoet_editor_messages_confirmation_email">
+      <div class="mailpoet_save_error"></div>
+      <div class="mailpoet_editor_last_saved">
+        &nbsp;
+        <span class="mailpoet_autosaved_message mailpoet_hidden"><%= __('Autosaved') %></span>
+        <span class="mailpoet_autosaved_at"></span>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mailpoet_save_confirmation_email_disabled{{#if confirmationEmailCustomizerEnabled}} mailpoet_hidden{{/if}}">
+      <div class="mailpoet_save_woocommerce_error"><%= __('The usage of this email template for your Confirmation emails is not yet activated.') %></div>
+      <input type="button" name="activate_confirmation_email_customizer" value="<%= __('Activate now') %>" class="button button-primary mailpoet_save_activate_confirmation_email_customizer_button" style="margin-top: 17px">
+    </div>
+  </div>
+{{else}}
+    <input type="button" name="preview" class="button mailpoet_show_preview" value="<%= __('Preview') %>" />
+    <input type="button" name="next" value="<%= __('Next') %>" class="button button-primary mailpoet_save_next" />
+    <div class="mailpoet_button_group mailpoet_save_button_group">
+        <input type="button" name="save" value="<%= __('Save') %>" class="button button-primary mailpoet_save_button" /><button class="button button-primary mailpoet_save_show_options" data-automation-id="newsletter_save_options_toggle" ><span class="dashicons mailpoet_save_show_options_icon"></span></button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mailpoet_editor_messages">
+        <div class="mailpoet_save_error"></div>
+        <div class="mailpoet_editor_last_saved">
+            &nbsp;
+            <span class="mailpoet_autosaved_message mailpoet_hidden"><%= __('Autosaved') %></span>
+            <span class="mailpoet_autosaved_at mailpoet_hidden"></span>
+        </div>
+    </div>
+    <ul class="mailpoet_save_options mailpoet_hidden">
+        <li class="mailpoet_save_option"><a href="javascript:;" class="mailpoet_save_template" data-automation-id="newsletter_save_as_template_option"><%= __('Save as new template') %></a></li>
+        <li class="mailpoet_save_option"><a href="javascript:;" class="mailpoet_save_export"><%= __('Export as template') %></a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <div class="mailpoet_save_as_template_container mailpoet_hidden">
+        <p><b class="mailpoet_save_as_template_title"><%= __('Save as new template') %></b></p>
+        <p><input type="text" name="template_name" value="" placeholder="<%= __('Insert template name') %>" class="mailpoet_input mailpoet_save_as_template_name" /></p>
+        <p><input type="button" name="save_as_template" value="<%= __('Save as new template') %>" class="button button-primary mailpoet_button_full mailpoet_save_as_template" data-automation-id="newsletter_save_as_template_button" /></p>
+    </div>
+    <div class="mailpoet_export_template_container mailpoet_hidden">
+        <p><b class="mailpoet_export_template_title"><%= __('Export template') %></b></p>
+        <p><input type="text" name="export_template_name" value="" placeholder="<%= __('Template name') %>" class="mailpoet_input mailpoet_export_template_name" /></p>
+        <p><input type="button" name="export_template" value="<%= __('Export template') %>" class="button button-primary mailpoet_button_full mailpoet_export_template" /></p>
+    </div>
+{{/if}}
+</div>

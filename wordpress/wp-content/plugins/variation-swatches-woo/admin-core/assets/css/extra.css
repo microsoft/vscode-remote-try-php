@@ -1,0 +1,15 @@
+/* Add image in submenu. */
+.wp-submenu-wrap a[href="admin.php?page=cfvsw_settings"] {
+	position: relative;
+}
+.wp-submenu-wrap a[href="admin.php?page=cfvsw_settings"]::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	position: absolute;
+	background-image: url( ../images/cfl-gray.png );
+	background-size: cover;
+	top: 7px;
+	margin-left: 4px;
+}

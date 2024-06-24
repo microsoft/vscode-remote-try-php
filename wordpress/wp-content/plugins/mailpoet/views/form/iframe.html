@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <%= language_attributes | raw %>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <%= language_attributes | raw %>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html <%= language_attributes | raw %>>
+<script>
+  var additionalHeight = 10,
+    attemptsToAdjust = 3,
+    delayToAdjust = 400,
+    intervalHandle;
+
+  var sendSize = function() {
+    if(!attemptsToAdjust && intervalHandle !== undefined) {
+      window.clearInterval(intervalHandle)
+      return;
+    }
+    window.top.postMessage({MailPoetIframeHeight: document.body.scrollHeight + additionalHeight + 'px'}, '*');
+    attemptsToAdjust--;
+  };
+
+  window.addEventListener('load', function () {
+    sendSize();
+    if(!window.MutationObserver) {
+      intervalHandle = setInterval(sendSize, delayToAdjust);
+      return;
+    }
+
+    var observer = new MutationObserver(sendSize);
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+</script>
+
+<!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow">
+    <title><%= __('MailPoet Subscription Form') %></title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        color: rgb(40, 48, 61);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: left;
+      }
+    </style>
+    <% set allowedHtml = {'link': {'href': [], 'rel': []}} %>
+    <%= fonts_link | wpKses(allowedHtml) %>
+    <link rel="stylesheet" type="text/css" href="<%= mailpoet_public_css_url %>" />
+    <%= scripts | raw %>
+  </head>
+  <body>
+    <%= form | raw %>
+    <script type="text/javascript">
+      var MailPoetForm = <%= json_encode(mailpoet_form) %>;
+    </script>
+  </body>
+</html>

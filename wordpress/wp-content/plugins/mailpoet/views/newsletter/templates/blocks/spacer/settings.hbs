@@ -1,0 +1,11 @@
+<h3><%= __('Spacer') %></h3>
+<div class="mailpoet_form_field">
+    <div class="mailpoet_form_field_input_option">
+        <input type="text" name="background-color" class="mailpoet_field_spacer_background_color mailpoet_color" value="{{ model.styles.block.backgroundColor }}" />
+    </div>
+    <div class="mailpoet_form_field_title mailpoet_form_field_title_inline"><%= __('Background') %></div>
+</div>
+
+<div class="mailpoet_form_field">
+    <input type="button" class="button button-primary mailpoet_done_editing" data-automation-id="spacer_done_button" value="<%= __('Done') | escape('html_attr') %>" />
+</div>

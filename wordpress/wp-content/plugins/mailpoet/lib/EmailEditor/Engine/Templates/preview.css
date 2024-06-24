@@ -1,0 +1,24 @@
+/*
+ * This file contains additional CSS for template previews.
+ * It is loaded in the iframe that displays the preview in select modal.
+ */
+
+/*
+ * Alignment CSS - In theme CSS these are prefixed by a layout class
+ * Alignment rules are copied from the CSS generated from theme from class .wp-site-blocks
+ */
+.block-editor-block-preview__content-iframe .aligncenter {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-editor-block-preview__content-iframe .alignleft {
+  float: left;
+  margin-right: 2em;
+}
+
+.block-editor-block-preview__content-iframe .alignright {
+  float: right;
+  margin-left: 2em;
+}

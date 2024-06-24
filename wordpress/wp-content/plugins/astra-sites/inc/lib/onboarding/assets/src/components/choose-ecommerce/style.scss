@@ -1,0 +1,59 @@
+.customizer-ecommerce-selection {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 10px;
+	label.ist-customizer-heading {
+		position: relative;
+		border-color: var( --st-color-accent );
+		background: var( --st-background-primary );
+		border: 1px solid var( --st-border-color );
+		box-sizing: border-box;
+		border-radius: var( --st-border-radius-4 );
+		display: flex;
+		align-items: center;
+		padding: 15px;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		justify-content: space-between;
+		.ist-image-section {
+			display: flex;
+			gap: 5px;
+			align-items: center;
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+	.stc-tooltip {
+		position: unset;
+		path {
+			fill: #6b7280 !important;
+		}
+		.stc-tooltip-content {
+			top: 85%;
+			line-height: inherit;
+			min-width: 200px;
+		}
+	}
+
+	@media ( max-width: 992px ) {
+		font-size: 12px;
+		img {
+			width: 16px;
+		}
+		svg {
+			width: 12px;
+		}
+	}
+	@media ( max-width: 768px ) {
+		font-size: 10px;
+		input[type="radio"] {
+			width: 1rem;
+			height: 1rem;
+			&:checked:before {
+				margin: 0.1rem;
+			}
+		}
+	}
+}

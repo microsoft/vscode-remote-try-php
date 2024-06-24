@@ -1,0 +1,72 @@
+<?php
+namespace MailPoetVendor\Doctrine\Persistence\Mapping\Driver;
+if (!defined('ABSPATH')) exit;
+use MailPoetVendor\Doctrine\Persistence\Mapping\ClassMetadata;
+use MailPoetVendor\Doctrine\Persistence\Mapping\MappingException;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use ReflectionClass;
+use function array_merge;
+use function array_unique;
+use function get_declared_classes;
+use function in_array;
+use function is_dir;
+use function method_exists;
+use function realpath;
+class StaticPHPDriver implements MappingDriver
+{
+ private $paths = [];
+ private $classNames;
+ public function __construct($paths)
+ {
+ $this->addPaths((array) $paths);
+ }
+ public function addPaths(array $paths)
+ {
+ $this->paths = array_unique(array_merge($this->paths, $paths));
+ }
+ public function loadMetadataForClass($className, ClassMetadata $metadata)
+ {
+ $className::loadMetadata($metadata);
+ }
+ public function getAllClassNames()
+ {
+ if ($this->classNames !== null) {
+ return $this->classNames;
+ }
+ if (!$this->paths) {
+ throw MappingException::pathRequiredForDriver(static::class);
+ }
+ $classes = [];
+ $includedFiles = [];
+ foreach ($this->paths as $path) {
+ if (!is_dir($path)) {
+ throw MappingException::fileMappingDriversRequireConfiguredDirectoryPath($path);
+ }
+ $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::LEAVES_ONLY);
+ foreach ($iterator as $file) {
+ if ($file->getBasename('.php') === $file->getBasename()) {
+ continue;
+ }
+ $sourceFile = realpath($file->getPathName());
+ require_once $sourceFile;
+ $includedFiles[] = $sourceFile;
+ }
+ }
+ $declared = get_declared_classes();
+ foreach ($declared as $className) {
+ $rc = new ReflectionClass($className);
+ $sourceFile = $rc->getFileName();
+ if (!in_array($sourceFile, $includedFiles) || $this->isTransient($className)) {
+ continue;
+ }
+ $classes[] = $className;
+ }
+ $this->classNames = $classes;
+ return $classes;
+ }
+ public function isTransient($className)
+ {
+ return !method_exists($className, 'loadMetadata');
+ }
+}

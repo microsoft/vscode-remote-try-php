@@ -1,0 +1,199 @@
+<div class="mailpoet_form_field">
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_display_type" class="mailpoet_products_display_type" value="titleOnly" {{#ifCond model.displayType '==' 'titleOnly'}}CHECKED{{/ifCond}}/>
+            <%= __('Title only') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_display_type" class="mailpoet_products_display_type" value="excerpt" {{#ifCond model.displayType '==' 'excerpt'}}CHECKED{{/ifCond}}/>
+            <%= __('Title and a short description') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_display_type" class="mailpoet_products_display_type" value="full" {{#ifCond model.displayType '==' 'full'}}CHECKED{{/ifCond}} />
+            <%= __('Title and description') %>
+        </label>
+    </div>
+</div>
+
+<hr class="mailpoet_separator" />
+
+<div class="mailpoet_form_field">
+    <div class="mailpoet_form_field_title"><%= __('Title Format') %></div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_format" class="mailpoet_products_title_format" value="h1" {{#ifCond model.titleFormat '==' 'h1'}}CHECKED{{/ifCond}}/>
+            <%= __('Heading 1') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_format" class="mailpoet_products_title_format" value="h2" {{#ifCond model.titleFormat '==' 'h2'}}CHECKED{{/ifCond}}/>
+            <%= __('Heading 2') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_format" class="mailpoet_products_title_format" value="h3" {{#ifCond model.titleFormat '==' 'h3'}}CHECKED{{/ifCond}}/>
+            <%= __('Heading 3') %>
+        </label>
+    </div>
+</div>
+
+<div class="mailpoet_form_field">
+    <div class="mailpoet_form_field_title"><%= __('Title Alignment') %></div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_alignment" class="mailpoet_products_title_alignment" value="left" {{#ifCond model.titleAlignment '==' 'left'}}CHECKED{{/ifCond}} />
+            <%= __('Left') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_alignment" class="mailpoet_products_title_alignment" value="center" {{#ifCond model.titleAlignment '==' 'center'}}CHECKED{{/ifCond}} />
+            <%= __('Center') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_alignment" class="mailpoet_products_title_alignment" value="right" {{#ifCond model.titleAlignment '==' 'right'}}CHECKED{{/ifCond}} />
+            <%= __('Right') %>
+        </label>
+    </div>
+</div>
+
+<div class="mailpoet_form_field">
+    <div class="mailpoet_form_field_title"><%= _x('Make the product title into a link', 'Display the product title into a link') %></div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_as_links" class="mailpoet_products_title_as_links" value="true" {{#if model.titleIsLink}}CHECKED{{/if}}/>
+            <%= __('Yes') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_as_links" class="mailpoet_products_title_as_links" value="false" {{#unless model.titleIsLink}}CHECKED{{/unless}}/>
+            <%= __('No') %>
+        </label>
+    </div>
+</div>
+
+<hr class="mailpoet_separator" />
+
+<div class="mailpoet_form_field mailpoet_products_title_position {{#ifCond model.displayType '===' 'titleOnly'}}mailpoet_hidden{{/ifCond}}">
+    <div class="mailpoet_form_field_title"><%= _x('Product title position', 'Setting in the email designer to position an ecommerce product title') %></div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_position" class="mailpoet_products_title_position" value="abovePost" {{#ifCond model.titlePosition '!=' 'aboveExcerpt'}}CHECKED{{/ifCond}}/>
+            <%= _x('Above the product', 'Display the product title above the product block') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_products_title_position" class="mailpoet_products_title_position" value="aboveExcerpt" {{#ifCond model.titlePosition '==' 'aboveExcerpt'}}CHECKED{{/ifCond}}/>
+            <%= _x('Above the product description', 'Display the product title above the product description') %>
+        </label>
+    </div>
+</div>
+
+<hr class="mailpoet_separator mailpoet_products_title_position_separator {{#ifCond model.displayType '===' 'titleOnly'}}mailpoet_hidden{{/ifCond}}" />
+
+<div> <!-- empty div for better git diff -->
+    <div class="mailpoet_form_field mailpoet_products_featured_image_position_container">
+        <div class="mailpoet_form_field_title"><%= __('Product image position') %></div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_featured_image_position" class="mailpoet_products_featured_image_position" value="centered" {{#ifCond model.featuredImagePosition '==' 'centered' }}CHECKED{{/ifCond}}/>
+                <%= __('Centered') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_featured_image_position" class="mailpoet_products_featured_image_position" value="left" {{#ifCond model.featuredImagePosition '==' 'left' }}CHECKED{{/ifCond}}/>
+                <%= __('Left') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_featured_image_position" class="mailpoet_products_featured_image_position" value="right" {{#ifCond model.featuredImagePosition '==' 'right' }}CHECKED{{/ifCond}}/>
+                <%= __('Right') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_featured_image_position" class="mailpoet_products_featured_image_position" value="alternate" {{#ifCond model.featuredImagePosition '==' 'alternate' }}CHECKED{{/ifCond}}/>
+                <%= __('Alternate') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_featured_image_position" class="mailpoet_products_featured_image_position" value="none" {{#ifCond model.featuredImagePosition '==' 'none' }}CHECKED{{/ifCond}}/>
+                <%= __('None') %>
+            </label>
+        </div>
+    </div>
+
+    <div class="mailpoet_form_field mailpoet_products_image_full_width_option {{#ifCond model.displayType '==' 'titleOnly'}}mailpoet_hidden{{/ifCond}}">
+        <div class="mailpoet_form_field_title"><%= __('Image width') %></div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="imageFullWidth" class="mailpoet_products_image_full_width" value="true" {{#if model.imageFullWidth}}CHECKED{{/if}}/>
+                <%= __('Full width') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="imageFullWidth" class="mailpoet_products_image_full_width" value="false" {{#unless model.imageFullWidth}}CHECKED{{/unless}}/>
+                <%= __('Padded') %>
+            </label>
+        </div>
+    </div>
+
+    <hr class="mailpoet_separator" />
+
+    <div class="mailpoet_form_field">
+        <div class="mailpoet_form_field_title"><%= __('Price') %></div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_price_position" class="mailpoet_products_price_position" value="below" {{#ifCond model.pricePosition '==' 'below'}}CHECKED{{/ifCond}} />
+                <%= __('Below text') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_price_position" class="mailpoet_products_price_position" value="above" {{#ifCond model.pricePosition '==' 'above'}}CHECKED{{/ifCond}} />
+                <%= __('Above text') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_price_position" class="mailpoet_products_price_position" value="hidden" {{#ifCond model.pricePosition '==' 'hidden'}}CHECKED{{/ifCond}} />
+                <%= __('No') %>
+            </label>
+        </div>
+    </div>
+
+    <hr class="mailpoet_separator" />
+
+    <div class="mailpoet_form_field">
+        <div class="mailpoet_form_field_title mailpoet_form_field_title_small mailpoet_form_field_title_inline"><%= __('Show divider between products') %></div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_show_divider" class="mailpoet_products_show_divider" value="true" {{#if model.showDivider}}CHECKED{{/if}}/>
+                <%= __('Yes') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_radio_option">
+            <label>
+                <input type="radio" name="mailpoet_products_show_divider"class="mailpoet_products_show_divider" value="false" {{#unless model.showDivider}}CHECKED{{/unless}}/>
+                <%= __('No') %>
+            </label>
+        </div>
+        <div class="mailpoet_form_field_input_option">
+            <a href="javascript:;" class="mailpoet_products_select_divider"><%= __('Select divider') %></a>
+        </div>
+    </div>
+</div>

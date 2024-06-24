@@ -1,0 +1,2070 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to static method get_instance\\(\\) on an unknown class BSF_Analytics_Loader\\.$#"
+			count: 1
+			path: astra-sites.php
+
+		-
+			message: "#^Function astra_sites_php_version_notice\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: astra-sites.php
+
+		-
+			message: "#^Function astra_sites_setup\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:is_white_labeled\\(\\)\\.$#"
+			count: 3
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Cannot access property \\$id on WP_Screen\\|null\\.$#"
+			count: 2
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Method Astra_Sites_Admin\\:\\:admin_assets\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Method Astra_Sites_Admin\\:\\:change_quick_links\\(\\) has parameter \\$links with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Method Astra_Sites_Admin\\:\\:change_quick_links\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Method Astra_Sites_Admin\\:\\:custom_upgrade_cta\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Parameter \\#3 \\$deps of function wp_enqueue_style expects array\\<string\\>, string given\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Static property Astra_Sites_Admin\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: classes/class-astra-sites-admin.php
+
+		-
+			message: "#^Call to static method generate_random_string\\(\\) on an unknown class Elementor\\\\Utils\\.$#"
+			count: 3
+			path: inc/classes/class-astra-sites-elementor-images.php
+
+		-
+			message: "#^Method Astra_Sites_Elementor_Images\\:\\:get_attachment_data\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-images.php
+
+		-
+			message: "#^Method Astra_Sites_Elementor_Images\\:\\:get_attachment_data\\(\\) has parameter \\$image with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-images.php
+
+		-
+			message: "#^Parameter \\#1 \\$attachment_id of function wp_get_attachment_url expects int, array given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-images.php
+
+		-
+			message: "#^Static property Astra_Sites_Elementor_Images\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-images.php
+
+		-
+			message: "#^Access to static property \\$instance on an unknown class Elementor\\\\Plugin\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Call to an undefined method Elementor\\\\TemplateLibrary\\\\Astra_Sites_Elementor_Pages\\:\\:process_export_import_content\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Method Elementor\\\\TemplateLibrary\\\\Astra_Sites_Elementor_Pages\\:\\:import\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Method Elementor\\\\TemplateLibrary\\\\Astra_Sites_Elementor_Pages\\:\\:import\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|false given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-elementor-pages.php
+
+		-
+			message: "#^Method Astra_Sites_Error_Handler\\:\\:exception_handler\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Method Astra_Sites_Error_Handler\\:\\:shutdown_handler\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Method Astra_Sites_Error_Handler\\:\\:start_error_handler\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Method Astra_Sites_Error_Handler\\:\\:stop_error_handler\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method Astra_Sites_Importer_Log\\:\\:add\\(\\) expects string, array\\<string, int\\|string\\> given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Static property Astra_Sites_Error_Handler\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between true and array will always evaluate to false\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-error-handler.php
+
+		-
+			message: "#^Argument of an invalid type array\\<string\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_name\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:is_white_labeled\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:log_dir\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Constant WP_MEMORY_LIMIT not found\\.$#"
+			count: 3
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:add\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:add_log_file_url\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:get_log_file\\(\\) should return string but returns object\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:get_php_max_input_vars\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:get_php_max_post_size\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:has_file_read_write\\(\\) should return null but empty return statement found\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:has_file_read_write\\(\\) should return null but return statement is missing\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:log_dir\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:set_log_file\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Method Astra_Sites_Importer_Log\\:\\:start\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Static property Astra_Sites_Importer_Log\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Static property Astra_Sites_Importer_Log\\:\\:\\$log_file \\(object\\) does not accept string\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer-log.php
+
+		-
+			message: "#^Call to function is_int\\(\\) with string will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Call to static method delete_asset_cache_for_all_posts\\(\\) on an unknown class FLBuilderModel\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Call to static method refresh_assets\\(\\) on an unknown class Astra_Minify\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Cannot access property \\$status on array\\<string, array\\<int\\|string, int\\|string\\|WP_Http_Cookie\\>\\|string\\|WP_HTTP_Requests_Response\\|WpOrg\\\\Requests\\\\Utility\\\\CaseInsensitiveDictionary\\|null\\>\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:change_flow_status\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:change_flow_status\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:clear_related_cache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:delete_related_transient\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:disable_default_woo_pages_creation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:get_single_demo\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:get_single_demo\\(\\) should return array but returns WP_Error\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:plugin_install_clear_directory\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:plugin_install_clear_directory\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Method Astra_Sites_Importer\\:\\:set_timeout_for_images\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Parameter \\#1 \\$id of function astra_sites_get_wp_forms_url expects int, int\\|string given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, WP_Error given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Static property Astra_Sites_Importer\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Unreachable statement \\- code above always terminates\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-importer.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_name\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_instance\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_page_builder_image\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_page_builder_image\\(\\) should return array but returns string\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_page_builders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_settings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_sites_by_page_builder\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:get_view_actions\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:update_settings\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Method Astra_Sites_Page\\:\\:update_settings\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Parameter \\#2 \\$count of function translate_nooped_plural expects int, float given\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Parameter \\#2 \\$version2 of function version_compare expects string, float given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Property Astra_Sites_Page\\:\\:\\$instance has unknown class instance as its type\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Property Astra_Sites_Page\\:\\:\\$view_actions type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Static property Astra_Sites_Page\\:\\:\\$instance \\(instance\\) does not accept Astra_Sites_Page\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Static property Astra_Sites_Page\\:\\:\\$instance \\(instance\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-page.php
+
+		-
+			message: "#^Call to static method get_white_label\\(\\) on an unknown class Astra_Ext_White_Label_Markup\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Call to static method get_whitelabel_string\\(\\) on an unknown class Astra_Ext_White_Label_Markup\\.$#"
+			count: 10
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Callback expects 3 parameters, \\$accepted_args is set to 4\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:add_white_label_form\\(\\) has parameter \\$settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:add_white_label_name\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:add_white_label_name\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:get_white_label_name\\(\\) should return string but returns null\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:is_white_labeled\\(\\) should return string but returns false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:is_white_labeled\\(\\) should return string but returns true\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:plugin_links\\(\\) has parameter \\$plugin_data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:plugin_links\\(\\) has parameter \\$plugin_meta with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:plugin_links\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:plugins_page\\(\\) has parameter \\$plugins with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:plugins_page\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:settings\\(\\) has parameter \\$settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:settings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Method Astra_Sites_White_Label\\:\\:update_admin_menu_position\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Property Astra_Sites_White_Label\\:\\:\\$branding type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Property Astra_Sites_White_Label\\:\\:\\$settings is unused\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Property Astra_Sites_White_Label\\:\\:\\$settings type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Static property Astra_Sites_White_Label\\:\\:\\$branding is unused\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Static property Astra_Sites_White_Label\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between null and string will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-white-label.php
+
+		-
+			message: "#^Binary operation \"\\.\" between 'astra\\-sites\\-term\\-' and array results in an error\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Binary operation \"\\.\" between string and array results in an error\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:delete_imported_posts\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:delete_imported_terms\\(\\)\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:display_items\\(\\)\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_single_demo\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_cartflows\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_wpforms\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:process_batch\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:start_process\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to function is_wp_error\\(\\) with array will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Call to static method bsf_is_active_license\\(\\) on an unknown class BSF_License_Manager\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Default value of the parameter \\#1 \\$term_slug \\(string\\) of method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) is incompatible with type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Default value of the parameter \\#3 \\$force \\(false\\) of method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) is incompatible with type string\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:batch\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:batch\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:batch\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_formatter\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_posts\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_posts\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_site_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_sites\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_sites\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_sites\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_term_ids\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_term_ids\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) has parameter \\$term_slug with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import_customizer_settings\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import_customizer_settings\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import_wxr\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:import_wxr\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:init\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:list_sites\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:list_sites\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:list_sites\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:page_builder\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:page_builder\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:page_builder\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:real_mime_types\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:real_mime_types\\(\\) has parameter \\$defaults with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:reset\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:reset\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:sync\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Method Astra_Sites_WP_CLI\\:\\:sync\\(\\) has parameter \\$assoc_args with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^PHPDoc tag @return has invalid value \\(\\$array            Term response\\.\\)\\: Unexpected token \"\\$array\", expected type at offset 234$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Parameter \\#1 \\$message of static method WP_CLI\\:\\:line\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Parameter \\#1 \\$term_slug of method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) expects array, string given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Parameter \\#2 \\$fields of class WP_CLI\\\\Formatter constructor expects array\\|null, string given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Parameter \\#2 \\$fields of method Astra_Sites_WP_CLI\\:\\:get_formatter\\(\\) expects string, array\\<int, string\\> given\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Parameter \\#3 \\$force of method Astra_Sites_WP_CLI\\:\\:get_terms\\(\\) expects string, true given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Property Astra_Sites_WP_CLI\\:\\:\\$current_site_data type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^is_wp_error\\(array\\) will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites-wp-cli.php
+
+		-
+			message: "#^Action callback returns array but should not return anything\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_attachment_data\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_option\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_link\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_name\\(\\)\\.$#"
+			count: 3
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:is_white_labeled\\(\\)\\.$#"
+			count: 4
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:start_error_handler\\(\\)\\.$#"
+			count: 3
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:stop_error_handler\\(\\)\\.$#"
+			count: 3
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to function is_callable\\(\\) with '\\\\\\\\SureCart\\\\\\\\Models…' will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to static method bsf_is_active_license\\(\\) on an unknown class BSF_License_Manager\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Call to static method get\\(\\) on an unknown class SureCart\\\\Models\\\\ApiToken\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Constant ASTRA_PRO_SITES_DIR not found\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Function astra_get_palette_colors not found\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:action_links\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:add_auth_url_param\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:add_auth_url_param\\(\\) has parameter \\$url_param with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:add_to_favorite\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:after_plugin_activate\\(\\) has parameter \\$enabled_extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:after_plugin_activate\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:api_request\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:create_image\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:create_image_from_url\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:create_template\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:elementor_api_request\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:elementor_flush_request\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:elementor_process_import_for_page\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:enable_zip_ai_copilot\\(\\) has parameter \\$modules with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:enable_zip_ai_copilot\\(\\) should return bool but returns array\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_all_blocks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_all_sites\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_compatibilities\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_cta_link\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_cta_links\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_default_ai_categories\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_default_page_builders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_local_vars\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_page_builders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_required_plugins_data\\(\\) has parameter \\$required_plugins with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_required_plugins_data\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_required_plugins_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_reset_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:get_wp_upload_url\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:import_post_meta\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:import_template_meta\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:includes\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:load_textdomain\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:php_error_message\\(\\) has parameter \\$error with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:popup_styles\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:push_to_import_analytics\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:register_widget_scripts\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:search_images\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:search_push\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:set_api_url\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:update_analytics\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:update_subscription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:wp_slash_after_xml_import\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:wp_slash_after_xml_import\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Method Astra_Sites\\:\\:wp_slash_after_xml_import\\(\\) has parameter \\$postdata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Offset 'message' on array\\{type\\: int, message\\: string, file\\: string, line\\: int\\} in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Offset 'url' on array\\{path\\: string, url\\: string, subdir\\: string, basedir\\: string, baseurl\\: string, error\\: string\\|false\\} in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: """
+				#^PHPDoc tag @var has invalid value \\(\\$get_locale The locale to use\\.
+				Uses get_user_locale\\(\\)` in WordPress 4\\.7 or greater,
+				otherwise uses `get_locale\\(\\)`\\.\\)\\: Unexpected token "\\$get_locale", expected type at offset 54$#
+			"""
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function stripslashes expects string, array given\\.$#"
+			count: 2
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Parameter \\#2 \\$status_code of function wp_send_json_error expects int\\|null, string given\\.$#"
+			count: 4
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Parameter \\#3 \\$deps of function wp_enqueue_style expects array\\<string\\>, string given\\.$#"
+			count: 4
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Parameter \\#3 \\$photo_id of method Astra_Sites\\:\\:create_image_from_url\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|false given\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Property Astra_Sites\\:\\:\\$ajax type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Property Astra_Sites\\:\\:\\$local_vars type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Property Astra_Sites\\:\\:\\$wp_upload_url \\(array\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Property Astra_Sites\\:\\:\\$wp_upload_url type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Static property Astra_Sites\\:\\:\\$instance \\(Astra_Sites\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between false and mixed will always evaluate to false\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Undefined variable\\: \\$surecart_store_exist$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Variable \\$rendered_title in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Variable \\$surecart_store_exist in isset\\(\\) is never defined\\.$#"
+			count: 1
+			path: inc/classes/class-astra-sites.php
+
+		-
+			message: "#^Access to an undefined property WP_Error\\|WP_Term\\:\\:\\$term_id\\.$#"
+			count: 2
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$ID\\.$#"
+			count: 4
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_page_by_title\\(\\)\\.$#"
+			count: 2
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import\\(\\)\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Call to static method refresh_assets\\(\\) on an unknown class Astra_Minify\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Call to static method update_admin_settings_option\\(\\) on an unknown class Astra_Admin_Helper\\.$#"
+			count: 3
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Default value of the parameter \\#1 \\$post_id \\(string\\) of method Astra_Sites_Compatibility_Astra_Pro\\:\\:update_header_mapping\\(\\) is incompatible with type int\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Default value of the parameter \\#1 \\$post_id \\(string\\) of method Astra_Sites_Compatibility_Astra_Pro\\:\\:update_location_rules\\(\\) is incompatible with type int\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Default value of the parameter \\#2 \\$demo_api_uri \\(string\\) of method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_custom_404\\(\\) is incompatible with type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Default value of the parameter \\#2 \\$demo_api_uri \\(string\\) of method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_enabled_extension\\(\\) is incompatible with type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:astra_pro\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:get_header_mapping\\(\\) has parameter \\$headers_data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:get_header_mapping\\(\\) has parameter \\$headers_old with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:get_header_mapping\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:get_location_mappings\\(\\) has parameter \\$location with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:get_location_mappings\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_custom_404\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_custom_404\\(\\) has parameter \\$demo_api_uri with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_custom_404\\(\\) has parameter \\$demo_data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_enabled_extension\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_enabled_extension\\(\\) has parameter \\$demo_api_uri with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:import_enabled_extension\\(\\) has parameter \\$demo_data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:start_post_mapping\\(\\) should return null but empty return statement found\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:start_post_mapping\\(\\) should return null but return statement is missing\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:update_header_mapping\\(\\) has parameter \\$mapping with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_Astra_Pro\\:\\:update_location_rules\\(\\) has parameter \\$mapping with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_Astra_Pro\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/astra-pro/class-astra-sites-compatibility-astra-pro.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_BB\\:\\:bb_activated\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/beaver-builder/class-astra-sites-compatibility-bb.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_BB\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/beaver-builder/class-astra-sites-compatibility-bb.php
+
+		-
+			message: "#^Callback expects 1 parameter, \\$accepted_args is set to 2\\.$#"
+			count: 1
+			path: inc/classes/compatibility/checkout-plugins-stripe-woo/class-astra-sites-checkout-plugins-stripe-woo.php
+
+		-
+			message: "#^Static property Astra_Sites_Checkout_Plugins_Stripe_WOO\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/checkout-plugins-stripe-woo/class-astra-sites-checkout-plugins-stripe-woo.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/class-astra-sites-compatibility.php
+
+		-
+			message: "#^Access to static property \\$instance on an unknown class Elementor\\\\Plugin\\.$#"
+			count: 3
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Function remove_filter invoked with 4 parameters, 2\\-3 required\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:disable_attachment_metadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:force_delete_kit\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:init\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:on_wp_import_post_meta\\(\\) has parameter \\$post_meta with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:on_wp_import_post_meta\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:on_wxr_importer_pre_process_post_meta\\(\\) has parameter \\$post_meta with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Method AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:on_wxr_importer_pre_process_post_meta\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Static property AstraSites\\\\Elementor\\\\Astra_Sites_Compatibility_Elementor\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/elementor/class-astra-sites-compatibility-elementor.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_LearnDash\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/learndash/class-astra-sites-compatibility-learndash.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$ID\\.$#"
+			count: 4
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$post_title\\.$#"
+			count: 1
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_page_by_title\\(\\)\\.$#"
+			count: 2
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_SFWD_LMS\\:\\:process_landing_pages_mapping\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_SFWD_LMS\\:\\:set_post_types\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_SFWD_LMS\\:\\:set_post_types\\(\\) has parameter \\$post_types with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_SFWD_LMS\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/sfwd-lms/class-astra-sites-compatibility-sfwd-lms.php
+
+		-
+			message: "#^Callback expects 0 parameters, \\$accepted_args is set to 2\\.$#"
+			count: 1
+			path: inc/classes/compatibility/uabb/class-astra-sites-compatibility-uabb.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_UABB\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/uabb/class-astra-sites-compatibility-uabb.php
+
+		-
+			message: "#^Call to static method create_events\\(\\) on an unknown class Automattic\\\\WooCommerce\\\\Admin\\\\Install\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Call to static method create_tables\\(\\) on an unknown class Automattic\\\\WooCommerce\\\\Admin\\\\Install\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Call to static method install\\(\\) on an unknown class WC_Install\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Callback expects 1 parameter, \\$accepted_args is set to 2\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Default value of the parameter \\#1 \\$demo_data \\(array\\) of method Astra_Sites_Compatibility_WooCommerce\\:\\:add_attributes\\(\\) is incompatible with type string\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Default value of the parameter \\#2 \\$demo_api_uri \\(string\\) of method Astra_Sites_Compatibility_WooCommerce\\:\\:add_attributes\\(\\) is incompatible with type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Function wc_get_attribute_taxonomies not found\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Function wc_sanitize_taxonomy_name not found\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Function wc_update_product_lookup_tables_is_running not found\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_WooCommerce\\:\\:add_attributes\\(\\) has parameter \\$demo_api_uri with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_WooCommerce\\:\\:woocommerce_product_attributes_registration\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Method Astra_Sites_Compatibility_WooCommerce\\:\\:woocommerce_product_attributes_registration\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Offset 'astra\\-site\\-options…' on string in isset\\(\\) does not exist\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Static property Astra_Sites_Compatibility_WooCommerce\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Variable \\$attributes in empty\\(\\) always exists and is always falsy\\.$#"
+			count: 1
+			path: inc/classes/compatibility/woocommerce/class-astra-sites-compatibility-woocommerce.php
+
+		-
+			message: "#^Function astra_sites_empty_post_excerpt\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/classes/functions.php
+
+		-
+			message: "#^Function astra_sites_get_reset_form_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/functions.php
+
+		-
+			message: "#^Function astra_sites_get_reset_term_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/classes/functions.php
+
+		-
+			message: "#^Function astra_sites_get_suggestion_link\\(\\) has invalid return type suggestion\\.$#"
+			count: 1
+			path: inc/classes/functions.php
+
+		-
+			message: "#^Function astra_sites_is_valid_image\\(\\) should return bool but returns int\\|false\\.$#"
+			count: 1
+			path: inc/classes/functions.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$type\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Call to static method delete_asset_cache_for_all_posts\\(\\) on an unknown class FLBuilderModel\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Call to static method get_attachment_data\\(\\) on an unknown class FLBuilderPhoto\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Call to static method get_post_types\\(\\) on an unknown class FLBuilderModel\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing_Beaver_Builder\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-beaver-builder.php
+
+		-
+			message: "#^Call to static method get\\(\\) on an unknown class Brizy_Editor_Post\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Call to static method instance\\(\\) on an unknown class Brizy_Editor_Storage_Common\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Constant BRIZY_EDITOR_VERSION not found\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Constant BRIZY_VERSION not found\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing_Brizy\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-brizy.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import\\(\\)\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-customizer.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing_Customizer\\:\\:images_download\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-customizer.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing_Customizer\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-customizer.php
+
+		-
+			message: "#^Access to static property \\$instance on an unknown class Elementor\\\\Plugin\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php
+
+		-
+			message: "#^Call to an undefined method Elementor\\\\TemplateLibrary\\\\Astra_Sites_Batch_Processing_Elementor\\:\\:process_export_import_content\\(\\)\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method Astra_Sites_Importer_Log\\:\\:add\\(\\) expects string, string\\|false given\\.$#"
+			count: 4
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php
+
+		-
+			message: "#^Parameter \\#1 \\$feature of static method Astra_Sites_Batch_Processing\\:\\:get_post_types_supporting\\(\\) expects int, string given\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing_Importer\\:\\:import_sites\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-importer.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing_Importer\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-importer.php
+
+		-
+			message: "#^Argument of an invalid type object supplied for foreach, only iterables are supported\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-widgets.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import\\(\\)\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-widgets.php
+
+		-
+			message: "#^Property Astra_Sites_Batch_Processing_Widgets\\:\\:\\$wpforms_ids_mapping \\(object\\) in empty\\(\\) is not falsy\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-widgets.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing_Widgets\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing-widgets.php
+
+		-
+			message: "#^Access to static property \\$instance on an unknown class Elementor\\\\Plugin\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_name\\(\\)\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_all_categories\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_all_categories_and_tags\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_block_categories\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_blocks\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_page_builders\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import_sites\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:push_to_queue\\(\\)\\.$#"
+			count: 9
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:save\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:update_latest_checksums\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_pages\\(\\) has parameter \\$post_types with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_pages\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_pages\\(\\) should return array but returns null\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_post_types_supporting\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_total_blocks_requests\\(\\) should return int but return statement is missing\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:get_total_requests\\(\\) should return int but return statement is missing\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:includes\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:set_last_export_checksums\\(\\) should return string but returns object\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:skip_image\\(\\) has parameter \\$attachment with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Sites_Batch_Processing\\:\\:sync_batch_complete\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Parameter \\#2 \\$status_code of function wp_send_json_error expects int\\|null, string given\\.$#"
+			count: 6
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Property Astra_Sites_Batch_Processing\\:\\:\\$last_export_checksums \\(object\\) in empty\\(\\) is not falsy\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Static property Astra_Sites_Batch_Processing\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Unreachable statement \\- code above always terminates\\.$#"
+			count: 1
+			path: inc/importers/batch-processing/class-astra-sites-batch-processing.php
+
+		-
+			message: "#^Method Astra_Customizer_Import\\:\\:import\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/class-astra-customizer-import.php
+
+		-
+			message: "#^Method Astra_Customizer_Import\\:\\:import\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-customizer-import.php
+
+		-
+			message: "#^Static property Astra_Customizer_Import\\:\\:\\$instance \\(Astra_Customizer_Import\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-customizer-import.php
+
+		-
+			message: "#^Access to an undefined property WP_Error\\|WP_Term\\:\\:\\$term_id\\.$#"
+			count: 2
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$ID\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:import\\(\\)\\.$#"
+			count: 2
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Method Astra_Site_Options_Import\\:\\:set_nav_menu_locations\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Method Astra_Site_Options_Import\\:\\:set_nav_menu_locations\\(\\) has parameter \\$nav_menu_locations with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Method Astra_Site_Options_Import\\:\\:set_woocommerce_product_cat\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Method Astra_Site_Options_Import\\:\\:set_woocommerce_product_cat\\(\\) has parameter \\$cats with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Property WP_Post\\:\\:\\$ID \\(int\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Static property Astra_Site_Options_Import\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Variable \\$cats in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Variable \\$nav_menu_locations in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Variable \\$options in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-site-options-import.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$ID\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$slug\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$term_id\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Argument of an invalid type object supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Argument of an invalid type stdClass supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Cannot access property \\$height on array\\.$#"
+			count: 2
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Cannot access property \\$width on array\\.$#"
+			count: 2
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:add_svg_image_support\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:add_svg_image_support\\(\\) has parameter \\$meta with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:add_svg_image_support\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:extract_segregated_urls\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:get_client_ip\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:get_svg_dimensions\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:get_svg_dimensions\\(\\) should return array but returns object\\{width\\: string, height\\: string\\}&stdClass\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:sideload_image\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:sideload_image\\(\\) should return array but returns WP_Error\\.$#"
+			count: 2
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Sites_Helper\\:\\:sideload_image\\(\\) should return array but returns stdClass\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Parameter \\#1 \\$svg of static method Astra_Sites_Helper\\:\\:get_svg_dimensions\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Static property Astra_Sites_Helper\\:\\:\\$instance \\(object\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Variable \\$nav_menus in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-sites-helper.php
+
+		-
+			message: "#^Method Astra_Widget_Importer\\:\\:import_widgets_data\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Method Astra_Widget_Importer\\:\\:wie_available_widgets\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Negated boolean expression is always true\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Possibly invalid array key type \\(array\\<int, string\\>\\|string\\|null\\)\\.$#"
+			count: 6
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Result of \\|\\| is always false\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Static property Astra_Widget_Importer\\:\\:\\$instance \\(Astra_Widget_Importer\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Variable \\$data in empty\\(\\) always exists and is not falsy\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Variable \\$widget_message might not be defined\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Variable \\$widget_message_type might not be defined\\.$#"
+			count: 1
+			path: inc/importers/class-astra-widget-importer.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:get_white_label_name\\(\\)\\.$#"
+			count: 4
+			path: inc/includes/templates.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:is_white_labeled\\(\\)\\.$#"
+			count: 1
+			path: inc/includes/templates.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of function esc_url expects string, suggestion given\\.$#"
+			count: 4
+			path: inc/includes/templates.php
+
+		-
+			message: "#^Call to static method branding_key_to_constant\\(\\) on an unknown class Astra_Ext_White_Label_Markup\\.$#"
+			count: 2
+			path: inc/includes/white-label.php
+
+		-
+			message: "#^Call to static method get_whitelabel_string\\(\\) on an unknown class Astra_Ext_White_Label_Markup\\.$#"
+			count: 2
+			path: inc/includes/white-label.php
+
+		-
+			message: "#^Variable \\$plugin_name might not be defined\\.$#"
+			count: 2
+			path: inc/includes/white-label.php

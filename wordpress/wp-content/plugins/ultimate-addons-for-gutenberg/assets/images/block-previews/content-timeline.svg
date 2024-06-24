@@ -1,0 +1,22 @@
+<svg width="126" height="111" viewBox="0 0 126 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect x="0.5" y="0.5" width="124.157" height="109.336" rx="4.5" stroke="#E4EBF0"/>
+	<rect x="61" y="22" width="2" height="69" fill="#E4EBF0"/>
+	<circle r="4.5" transform="matrix(-1 0 0 1 62.5 24.5)" fill="#E4EBF0"/>
+	<circle r="4.5" transform="matrix(-1 0 0 1 62.5 54.5)" fill="#E4EBF0"/>
+	<circle r="4.5" transform="matrix(-1 0 0 1 62.5 86.5)" fill="#E4EBF0"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M13 11C11.8954 11 11 11.8954 11 13V36C11 37.1046 11.8954 38 13 38H49C50.1046 38 51 37.1046 51 36V27.3868L56 24.5L51 21.6132V13C51 11.8954 50.1046 11 49 11H13Z" fill="#C8D0D7"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M13 73C11.8954 73 11 73.8954 11 75V98C11 99.1046 11.8954 100 13 100H49C50.1046 100 51 99.1046 51 98V89.3867L56 86.5L51 83.6132V75C51 73.8954 50.1046 73 49 73H13Z" fill="#C8D0D7"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M76 41C74.8954 41 74 41.8954 74 43V51.6133L69 54.5L74 57.3867V66C74 67.1046 74.8954 68 76 68H112C113.105 68 114 67.1046 114 66V43C114 41.8954 113.105 41 112 41H76Z" fill="#C8D0D7"/>
+	<rect x="17" y="18" width="20" height="3" fill="#E4EBF0"/>
+	<rect x="17" y="80" width="20" height="3" fill="#E4EBF0"/>
+	<rect x="82" y="48" width="20" height="3" fill="#E4EBF0"/>
+	<rect x="17" y="31" width="21" height="1" fill="#E4EBF0"/>
+	<rect x="17" y="93" width="21" height="1" fill="#E4EBF0"/>
+	<rect x="82" y="61" width="21" height="1" fill="#E4EBF0"/>
+	<rect x="17" y="29" width="27" height="1" fill="#E4EBF0"/>
+	<rect x="17" y="91" width="27" height="1" fill="#E4EBF0"/>
+	<rect x="82" y="59" width="27" height="1" fill="#E4EBF0"/>
+	<rect x="17" y="27" width="27" height="1" fill="#E4EBF0"/>
+	<rect x="17" y="89" width="27" height="1" fill="#E4EBF0"/>
+	<rect x="82" y="57" width="27" height="1" fill="#E4EBF0"/>
+</svg>

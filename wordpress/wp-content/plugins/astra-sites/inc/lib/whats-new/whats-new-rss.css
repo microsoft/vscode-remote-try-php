@@ -1,0 +1,255 @@
+/**
+ * === Whats New RSS ===
+ *
+ * Version: 1.0.3
+ * Generated on: 14th May, 2024
+ * Documentation: https://github.com/brainstormforce/whats-new-rss/blob/master/README.md
+ */
+
+.whats-new-rss-is-active {
+	overflow: hidden;
+}
+
+.whats-new-rss-trigger-button {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: auto;
+	padding: 5px;
+	cursor: pointer;
+}
+.whats-new-rss-trigger-button .whats-new-rss-notification-badge {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+	width: 20px;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	color: #fff;
+	background: red;
+	transition: transform 0.2s ease-in-out;
+}
+.whats-new-rss-trigger-button .whats-new-rss-notification-badge.is-multi-feed {
+	top: -2px;
+	right: -2px;
+	font-size: 0px;
+	width: 10px;
+	height: 10px;
+}
+.whats-new-rss-trigger-button .whats-new-rss-notification-badge.hide {
+	display: none;
+}
+.whats-new-rss-trigger-button:hover .whats-new-rss-notification-badge {
+	transform: scale( 1.2 );
+}
+
+.whats-new-rss-flyout {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 30%;
+	background: #ffffff;
+	box-shadow: -4px 0 8px rgba( 0, 0, 0, 0.1 );
+	transition: transform 0.3s ease-in-out;
+	z-index: 99999;
+}
+.whats-new-rss-flyout .hidden {
+	display: none;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-inner-header__loading-icon {
+	display: none;
+}
+.whats-new-rss-flyout.is-loading .whats-new-rss-flyout-inner-header__loading-icon {
+	display: block;
+	margin: auto;
+}
+.whats-new-rss-flyout.is-loading .whats-new-rss-flyout-inner-header__loading-icon svg {
+	display: block;
+	background: transparent;
+	width: 25px;
+	height: 25px;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #ffffff;
+	z-index: 9999;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 30px;
+	border-bottom: 1px solid #ccc;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header button {
+	background: none;
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: #94a3b8;
+	transition: transform 0.2s ease-in-out;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header button:hover,
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header button:focus {
+	transform: scale( 1.5 );
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-header .whats-new-rss-flyout-inner-header__title-icon-wrapper {
+	display: flex;
+	gap: 10px;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav {
+	display: flex;
+	padding: 0px 30px;
+	border-bottom: 1px solid #cccccc;
+	gap: 2em;
+	overflow: auto;
+	white-space: nowrap;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav button {
+	position: relative;
+	background: none;
+	color: inherit;
+	padding: 15px 0px;
+	border-bottom: 2px solid transparent;
+	border-radius: 0;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav button:hover,
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav button:focus {
+	border-color: inherit;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav button.selected {
+	border-color: #5d5d5d;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-multi-feed-nav button .new-notification-count {
+	position: absolute;
+	top: 0px;
+	right: -10px;
+	width: 20px;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	color: #fff;
+	background: red;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content {
+	flex: 1;
+	overflow-y: auto;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .skeleton-container {
+	margin: 30px;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item {
+	border-bottom: 1px solid #d8dfe9;
+	padding: 15px 30px;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item.skeleton-row {
+	height: 25vh;
+	margin: 40px 0;
+	background: linear-gradient( 90deg, #eee 25%, #ddd 50%, #eee 75% );
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item.rss-new-post {
+	position: relative;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item.rss-new-post .new-post-badge {
+	background: #ff3d3d;
+	border-radius: 5px;
+	position: absolute;
+	right: 45px;
+	padding: 0 5px;
+	color: #fff;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item .rss-content-header p {
+	color: #94a3b8;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item img {
+	box-sizing: border-box;
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-flyout-inner-content .whats-new-rss-flyout-inner-content-item video {
+	vertical-align: middle;
+	width: 100%;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details {
+	line-height: 20px;
+	font-size: 0.9em;
+	margin: 10px 0;
+	background: #f9fafb;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details summary {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 20px 15px;
+	height: 1em;
+	line-height: 20px;
+	font-weight: 800;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details summary::after {
+	content: "⌃";
+	font-size: 20px;
+	transform: rotateX( 180deg );
+	font-weight: 800;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details summary .text-see-more {
+	display: block;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details summary .text-see-less {
+	display: none;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details[open] summary {
+	border-bottom: 1px solid #e2e8f0;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details[open] summary::after {
+	transform: rotateX( 45deg );
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details[open] summary .text-see-more {
+	display: none;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details[open] summary .text-see-less {
+	display: block;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details .sub-version-item {
+	position: relative;
+	padding: 1em;
+	border-bottom: 1px solid #e2e8f0;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details .sub-version-item .sub-version-header {
+	display: flex;
+	justify-content: space-between;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-contents .whats-new-rss-sub-version-details .sub-version-item .sub-version-content {
+	margin-top: 1em;
+}
+.whats-new-rss-flyout .whats-new-rss-flyout-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba( 0, 0, 0, 0.5 );
+}
+.whats-new-rss-flyout.closed {
+	transform: translateX( 100% );
+}

@@ -1,0 +1,36 @@
+/* stylelint-disable selector-id-pattern */
+
+/* Clear to evenly position the next list items after the separator */
+#toplevel_page_spectra .wp-submenu li {
+	clear: both;
+}
+
+/* Add the separator after the first item in the Spectra Settings Submenu */
+#toplevel_page_spectra .wp-submenu li.wp-first-item::after {
+	content: "";
+	border-bottom: 1px solid rgb(255 255 255 / 0.2);
+	display: block;
+	float: left;
+	margin: 8px 0;
+	width: 100%;
+}
+
+/* Add the separator after the second last item in the Spectra Settings Submenu */
+#toplevel_page_spectra .wp-submenu li:nth-last-child(2)::after {
+	content: "";
+	border-bottom: 1px solid rgb(255 255 255 / 0.2);
+	display: block;
+	float: left;
+	margin: 8px 0;
+	width: 100%;
+}
+
+/* Add negative margins to the top separator if this is not the current submenu */
+#toplevel_page_spectra.wp-not-current-submenu .wp-submenu li.wp-first-item::after {
+	margin: 8px -3px;
+}
+
+/* Add negative margins to the bottom separator if this is not the current submenu */
+#toplevel_page_spectra.wp-not-current-submenu .wp-submenu li:nth-last-child(2)::after {
+	margin: 8px -3px;
+}

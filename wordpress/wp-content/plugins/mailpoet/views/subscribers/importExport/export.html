@@ -1,0 +1,98 @@
+<% extends 'layout.html' %>
+
+<% block content %>
+<div id="mailpoet_subscribers_export" class="wrap">
+  <h1 class="mailpoet-h1 mailpoet-title">
+    <span><%= __('Export') %></span>
+    <a class="mailpoet-button button button-secondary button-small" href="?page=mailpoet-subscribers#/"><%= __('Back to Subscribers') %></a>
+  </h1>
+  <% if segments is empty %>
+  <div class="error">
+    <p><%= __("Yikes! Couldn't find any subscribers") %></p>
+  </div>
+  <% endif %>
+  <div id="mailpoet-export" class="mailpoet-tab-content">
+    <!-- Template data -->
+  </div>
+</div>
+<script id="mailpoet_subscribers_export_template" type="text/x-handlebars-template">
+  <div id="export_result_notice" class="updated mailpoet_hidden">
+    <!-- Result message -->
+  </div>
+  <div class="mailpoet-settings-grid">
+    <% if not segments is empty %>
+      <div class="mailpoet-settings-label">
+        <label for="export_lists">
+          <%= __('Pick one or multiple lists') %>
+        </label>
+      </div>
+      <div class="mailpoet-settings-inputs">
+        <div class="mailpoet-form-select mailpoet-form-input">
+          <select id="export_lists" data-placeholder="<%= _x('Select', 'Verb') %>" multiple="multiple"></select>
+        </div>
+      </div>
+    <% endif %>
+
+    <div class="mailpoet-settings-label">
+      <label for="export_columns">
+        <%= __('List of fields to export') %>
+        <p class="description">
+          <a href="https://kb.mailpoet.com/article/245-what-is-global-status" target="_blank">
+            <%= _x('Read about the Global status.', 'Link to a documentation page in the knowledge base about what is the subscriber global status') %>
+          </a>
+        </p>
+      </label>
+    </div>
+    <div class="mailpoet-settings-inputs">
+      <div class="mailpoet-form-select mailpoet-form-input">
+        <select id="export_columns" data-placeholder="<%= _x('Select', 'Verb') %>" multiple="multiple"></select>
+      </div>
+    </div>
+
+    <div class="mailpoet-settings-label">
+      <%= __('Format') %>
+    </div>
+    <div class="mailpoet-settings-inputs">
+      <div class="mailpoet-settings-inputs-row">
+        <label class="mailpoet-form-radio">
+          <input type="radio" name="option_format" id="export-format-csv" value="csv" checked>
+          <span class="mailpoet-form-radio-control"></span>
+        </label>
+        <label for="export-format-csv"><%= __('CSV file') %></label>
+      </div>
+      <div class="mailpoet-settings-inputs-row<%if not zipExtensionLoaded %> mailpoet-disabled<%endif%>">
+        <label class="mailpoet-form-radio">
+          <input type="radio" name="option_format" id="export-format-xlsx" value="xlsx"<%if not zipExtensionLoaded %> disabled<%endif%>>
+          <span class="mailpoet-form-radio-control"></span>
+        </label>
+        <label for="export-format-xlsx"><%= __('Excel file') %></label>
+      </div>
+      <%if not zipExtensionLoaded %>
+        <div class="inline notice notice-warning">
+          <p><%= __('ZIP extension is required to create Excel files. Please refer to the [link]official PHP ZIP installation guide[/link] or contact your hosting provider’s technical support for instructions on how to install and load the ZIP extension.' | replaceLinkTags('http://php.net/manual/en/zip.installation.php')) %></p>
+        </div>
+      <%endif%>
+    </div>
+
+    <div class="mailpoet-settings-save">
+        <a href="javascript:;" class="mailpoet-button mailpoet-disabled button-primary" id="mailpoet-export-button">
+          <%= __('Export') %>
+        </a>
+    </div>
+  </div>
+</script>
+
+<script type="text/javascript">
+  var
+    segments = JSON.parse("<%=segments|escape('js')%>"),
+    subscriberFieldsSelect2 = JSON.parse("<%=subscriberFieldsSelect2|escape('js')%>"),
+    exportData = {
+     segments: segments.length || null
+    };
+</script>
+
+<%= localize({
+'serverError': __('Server error:'),
+'exportMessage': __('%1$s subscribers were exported. Get the exported file [link]here[/link].')
+}) %>
+<% endblock %>

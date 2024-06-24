@@ -1,0 +1,25 @@
+table.wp-list-table .column-preview {
+	width: 80px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+table.wp-list-table td.column-preview .cfvsw-preview {
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-weight: 700;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.cfvsw-image-preview {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+table.wp-list-table tbody td.column-handle {
+	vertical-align: inherit !important;
+}

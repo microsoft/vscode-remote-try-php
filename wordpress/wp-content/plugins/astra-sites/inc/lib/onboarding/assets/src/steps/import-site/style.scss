@@ -1,0 +1,165 @@
+.website-import-subtitle {
+	margin-bottom: 35px;
+	color: #3b3f5c;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 22px;
+}
+
+.website-import-subtitle svg {
+	vertical-align: bottom;
+	margin-left: 10px;
+}
+
+.step-import-site.st-step {
+	h1 {
+		text-align: left;
+	}
+	button {
+		width: 100%;
+		margin-top: 25px;
+	}
+}
+
+.ist-import-progress-info-text {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	grid-gap: 10px;
+}
+
+.ist-import-progress,
+.ist-import-error {
+	margin-top: 25px;
+	.ist-import-progress-bar-wrap {
+		position: relative;
+	}
+	.import-progress-gap {
+		span {
+			background: var( --st-background-primary );
+			height: 6px;
+			position: absolute;
+			width: 10px;
+			top: -1px;
+			&:nth-child( 1 ) {
+				left: calc( 25% - 10px );
+			}
+			&:nth-child( 2 ) {
+				left: calc( 50% - 10px );
+			}
+			&:nth-child( 3 ) {
+				left: calc( 75% - 10px );
+			}
+		}
+	}
+	.ist-import-progress-bar-bg {
+		height: 4px;
+		background: var( --st-color-light-gray );
+		width: 100%;
+		position: relative;
+		.ist-import-progress-bar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: var( --st-color-accent );
+			transition: all 1s;
+			width: 0%;
+			height: 100%;
+			&.import-1 {
+				width: 25%;
+			}
+			&.import-2 {
+				width: 50%;
+			}
+			&.import-3 {
+				width: 75%;
+			}
+			&.import-4 {
+				width: 100%;
+			}
+			&.import-done {
+				background: #38c172;
+			}
+		}
+	}
+	.ist-import-progress-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+.ist-import-error {
+	.ist-import-error-box {
+		overflow-y: scroll;
+	}
+	.ist-import-progress-bar-bg {
+		width: 100%;
+		margin-bottom: 15px;
+		.ist-import-progress-bar {
+			background: var( --st-border-color );
+		}
+	}
+}
+
+.import-done-congrats {
+	display: flex;
+	align-items: center;
+	span {
+		margin-left: 17px;
+	}
+}
+
+.import-done-section {
+	margin-top: 60px;
+	.tweet-import-success {
+		.tweet-text {
+			background: #ffffff;
+			border: 1px solid rgba( 34, 101, 235, 0.1 );
+			border-radius: 4px;
+			padding: 14px 21px 14px 21px;
+		}
+		.twitter-btn-wrap {
+			display: flex;
+			align-items: center;
+			gap: 7px;
+			right: 30px;
+			position: absolute;
+			margin-top: 8px;
+			text-decoration: none;
+		}
+	}
+
+	.import-done-text {
+		margin-top: 60px;
+		.import-done-counter {
+			text-align: left;
+		}
+		.import-done-button {
+			margin-top: 25px;
+			margin-bottom: 15px;
+		}
+		.view-dashboard-link {
+			text-decoration: none;
+		}
+	}
+}
+
+.ist-import-done-inner,
+.import-done-counter,
+.import-done-section {
+	display: none;
+}
+.import-done {
+	.import-status-string,
+	.ist-import-text-inner {
+		display: none;
+	}
+	.import-done-counter,
+	.ist-import-done-inner,
+	.import-done-section {
+		display: block;
+	}
+}

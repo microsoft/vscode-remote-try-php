@@ -1,0 +1,24 @@
+<div class="mailpoet_settings_products_selection_controls">
+    <div class="mailpoet_product_selection_filter_row">
+        <input type="text" name="" class="mailpoet_input mailpoet_input_full mailpoet_products_search_term" value="{{model.search}}" placeholder="<%= __('Search...') %>" />
+    </div>
+    <div class="mailpoet_product_selection_filter_row">
+        <select class="mailpoet_select mailpoet_input_full mailpoet_products_post_status">
+            <option value="publish" {{#ifCond model.postStatus '==' 'publish'}}SELECTED{{/ifCond}}><%= __('Published') %></option>
+            <option value="pending" {{#ifCond model.postStatus '==' 'pending'}}SELECTED{{/ifCond}}><%= __('Pending Review') %></option>
+            <option value="draft" {{#ifCond model.postStatus '==' 'draft'}}SELECTED{{/ifCond}}><%= __('Draft') %></option>
+        </select>
+    </div>
+    <div class="mailpoet_product_selection_filter_row">
+        <select class="mailpoet_select mailpoet_products_categories_and_tags" multiple="multiple">
+          {{#each model.terms}}
+            <option value="{{ id }}" selected="selected">{{ text }}</option>
+          {{/each}}
+        </select>
+    </div>
+</div>
+<div class="mailpoet_product_selection_container">
+</div>
+<div class="mailpoet_product_selection_loading" style="visibility: hidden;">
+  <%= __('Loading posts...') %>
+</div>

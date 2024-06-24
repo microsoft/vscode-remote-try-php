@@ -1,0 +1,47 @@
+= 1.0.8 – THURSDAY, 28th MARCH 2024 =
+* New: Introduced the border width option for the swatch. You can now set a custom border width to your swatches.
+
+= 1.0.7 – WEDNESDAY, 22nd FEBRUARY 2023 =
+* Improvement - Ajax security improved.
+
+= 1.0.6 – WEDNESDAY, 14th DECEMBER 2022 =
+* Improvement - Added support for the taxonomy page.
+* Improvement - Added support to populate swatches on ajax calls.
+* Fixed - Wrong images were appearing on the swatches selection.
+* Fixed - Plugin conflict with WP-Persian plugin.
+* Fixed - Unable to save custom attribute data with the Cyrillic alphabet.
+
+= 1.0.5.1 – TUESDAY, 18th OCTOBER 2022 =
+* Fixed - Wrong image pick when click on swatches.
+
+= 1.0.5 – TUESDAY, 18th OCTOBER 2022 =
+* Fixed - Compatibility issues with WP Sheet Editor – Taxonomy Terms Pro.
+* Fixed - Fatal error with Astra theme.
+* Fixed - Variation price disappears on shop page.
+
+= 1.0.4 – WEDNESDAY, 7th SEPTEMBER 2022 =
+* Improvement - Supports WooCommerce shortcodes.
+* Improvement - Astra's swap mode working on disabling swatches on shop page.
+* Improvement - Increased variation threshold to 200.
+* Fixed - Admin UI breaking on edit product page.
+* Fixed - Settings page UI issue on attribute edit.
+
+= 1.0.3 – WEDNESDAY, 24th AUGUST 2022 =
+* Feature - Disable out of stock terms.
+* Feature - Catalog mode for shop page.
+* Improvement - Admin UI improvements.
+* Improvement - Supports Astra's infinite scroll mode.
+* Fixed - Issue selecting multiple options on shop page.
+* Fixed - Thumbnail dimension on shop page.
+
+= 1.0.2 – TUESDAY, 9th AUGUST 2022 =
+* Feature - Customize variation swatches from the edit product page.
+* Improvement - Updated swatches' spacing.
+* Improvement - Maintain swatches order on frontend as per settings.
+* Improvement - Added RTL support for the settings page.
+
+= 1.0.1 – THURSDAY, 21st JULY 2022 =
+* Improvement - Support for Astra upsells on cart page.
+
+= 1.0.0 – FRIDAY, 15th JULY 2022 =
+* Initial release.

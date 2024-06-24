@@ -1,0 +1,124 @@
+*** Changelog ***
+2024-06-04 - version 1.2.6
+* Add - additional MAM parameters
+* Add - separate pixel base code partner name for Wordpress users
+* Add - page view event server side
+* Add - configure button on plugin manager screen
+* Fix - AJAX add to cart execution
+
+2024-03-21 - version 1.2.5
+* Fix - compatibility error with WooCommerce blocks
+
+2024-01-16 - version 1.2.4
+* Update - event tracking payload and parameters
+
+2023-11-29 - version 1.2.3
+* Update - wordpress version bump update
+* Fix - check woocommerce install on TikTok shop order list functionality
+
+2023-11-06 - version 1.2.2
+* Fix - activation and deactivation
+
+2023-10-23 - version 1.2.1
+* Fix - CDN link for splash page rendering
+
+2023-10-13 - version 1.2.0
+* Add - Event tracking for Submit Form, Contact, and Registration Events
+* Add - Compatibility for general Wordpress users
+
+2023-9-27 - version 1.1.7
+* Update - Product sync improvement to only send any modifications or new products since last sync
+
+2023-8-09 - version 1.1.6
+* Update - always send server to server events for non-plugin pixels
+* Fix - compatibility issue with Elementor plug-in
+
+2023-8-02 - version 1.1.5
+* Fix - TikTok shop order table formatting
+
+2023-7-24 - version 1.1.4
+* Update - migrated to consolidated events API
+* Update - migrated to TBP V2 disconnect API
+* Fix - type error for TikTok shop order table
+
+2023-7-20 - version 1.1.3
+* Add - enabled 3PL for TikTok Shop integration
+
+2023-6-29 - version 1.1.2
+* Add - Javascript pixel event tracking
+* Add - Server to server pixel event tracking optimizations
+
+2023-6-07 - version 1.1.1
+* Add - Declare compatibility with High Performance Order Storage
+
+2023-5-25 - version 1.1.0
+* Add - Enable variable products and variations to sync to TikTok catalog
+* Add - Enable pixel to support variable products and variations
+
+2023-3-14 - version 1.0.16
+* Add - WooCommerce Onboarding task asking users to connect to TikTok
+* Update - Setup improvement to allow connection of existing pixels
+
+2023-1-17 - version 1.0.15
+* Fix - type conversion when outputting pixel data
+
+2023-1-12 - version 1.0.14
+* Update - enhancements to launch page content 
+* Fix - updates activation logic when WooCommerce is not installed
+* Tweak - updates to post-setup page and backend optimizations
+
+2022-12-8 - version 1.0.13
+* Fix - Avoid fatal errors when WooCommerce is not installed
+
+2022-11-29 - version 1.0.12
+* Update - TTCLID enabled for improved pixel attribution
+* Update - Support for up to 10 product images 
+* Tweak - Product sync improvement to support trash, untrash and deleted products
+* Fix - Fix for disconnecting and uninstall logic 
+* Update - Support for Events API debugging 
+
+2022-11-08 - version 1.0.11
+* Update - Product sync improvement for inventory and orders
+* Update - Onboarding improvement to improve catalog syncing functionality
+
+2022-10-20 - version 1.0.10
+* Update - Content ID mapping for pixel and catalog 
+* Update - Onboarding Improvement for address entry
+* Tweak - Improvement to redirect url logic for website URL changes 
+
+2022-09-29 - version 1.0.9
+* Update - Overview page banner update for campaign support 
+* Fix - Update to Woo header value to fix paid upgrade bug
+* Fix - Log version number for action scheduler product syncing
+
+2022-09-16 - version 1.0.8
+* Update - Enable scheduled product sync for better performance 
+* Update - Onboarding improvements for ad account setup
+* Tweak - Update event tracking for launch and post-setup page
+
+2022-08-10 - version 1.0.7
+* Fix - Performance issue related to catalog syncing and signal tracking 
+* Tweak - Remove admin notice for file error
+
+2022-08-04 - version 1.0.6
+* Update - Admin notice for file error fix
+
+2022-07-25 - version 1.0.5
+* Fix - Disconnection on upgrade error
+
+2022-07-18 - version 1.0.4
+* Fix - Catalog syncing issues  
+* Tweak - Show launch page when Ad Blocker is enabled
+* Tweak - Updated signal and event tracking
+
+2022-06-29 - version 1.0.3
+* Tweak - Updated signal and event tracking
+
+2022-06-15 - version 1.0.2
+* Fix - Update Pixel Event instrumentation to fire correctly
+
+2022-05-24 - version 1.0.1
+* Fix - Installation errors
+
+2022-04-15 - version 1.0.0
+* Initial release

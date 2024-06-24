@@ -1,0 +1,89 @@
+.ist-color-palette {
+	background: var( --st-background-primary );
+	border: 1px solid var( --st-border-color );
+	box-sizing: border-box;
+	border-radius: var( --st-border-radius-4 );
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	justify-content: space-evenly;
+
+	&:hover,
+	&:focus,
+	&.ist-color-palette-active {
+		border-color: var( --st-color-accent );
+	}
+}
+
+.ist-color-palette:hover,
+.ist-color-palette:focus {
+	.ist-color-icon {
+		border-color: var( --st-color-accent );
+	}
+}
+
+.ist-color-palette-active .ist-color-icon {
+	background: var( --st-color-accent );
+	border-color: var( --st-color-accent );
+}
+
+.ist-palette-color {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #eeeeee;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.ist-colors-list {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+}
+
+.ist-colors-title {
+	display: flex;
+	align-items: center;
+	font-size: var( --st-font-size-xs );
+	font-weight: var( --st-font-weight-bold );
+	color: var( --st-color-heading );
+	line-height: var( --st-font-line-height-s );
+}
+
+.ist-color-icon {
+	background: var( --st-background-primary );
+	border: 1px solid var( --st-border-color );
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+	padding: 4px;
+}
+
+.ist-color-palette-active {
+	border: 1px solid transparent;
+}
+
+.st-default-style-pallete {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	.ist-color-palette {
+		display: grid;
+		grid-template-columns: 53% 47%;
+	}
+
+	.ist-colors-list {
+		padding-left: 8px;
+	}
+}
+.st-others-style-pallete {
+	display: grid;
+	grid-template-columns: repeat( 2, 1fr );
+	grid-gap: 15px;
+}

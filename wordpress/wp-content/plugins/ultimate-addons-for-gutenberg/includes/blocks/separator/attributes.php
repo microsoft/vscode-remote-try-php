@@ -1,0 +1,61 @@
+<?php
+/**
+ * Block Information & Attributes File.
+ *
+ * @since 2.6.0
+ *
+ * @package uagb
+ */
+
+return array(
+	'separatorAlign'                 => 'center',
+	'separatorAlignTablet'           => 'center',
+	'separatorAlignMobile'           => 'center',
+	'separatorStyle'                 => 'solid',
+	'separatorBorderHeight'          => 3,
+	'separatorBorderHeightMobile'    => 3,
+	'separatorBorderHeightTablet'    => 3,
+	'separatorBorderHeightUnit'      => 'px',
+	'separatorWidth'                 => 100,
+	'separatorWidthTablet'           => 100,
+	'separatorWidthMobile'           => 100,
+	'separatorWidthType'             => '%',
+	'separatorSize'                  => 5,
+	'separatorSizeTablet'            => 5,
+	'separatorSizeMobile'            => 5,
+	'separatorSizeType'              => 'px',
+	'separatorHeight'                => 10,
+	'separatorHeightMobile'          => 10,
+	'separatorHeightTablet'          => 10,
+	'separatorHeightType'            => 'px',
+	'separatorColor'                 => '',
+	'elementType'                    => 'none',
+	'elementPosition'                => 'center',
+	'elementSpacing'                 => 15,
+	'elementSpacingTablet'           => 15,
+	'elementSpacingMobile'           => 15,
+	'elementSpacingUnit'             => 'px',
+	'elementTextLoadGoogleFonts'     => false,
+	'elementTextFontFamily'          => 'Default',
+	'elementTextFontWeight'          => '',
+	'elementTextFontSize'            => '',
+	'elementTextFontSizeType'        => 'px',
+	'elementTextFontSizeTablet'      => '',
+	'elementTextFontSizeMobile'      => '',
+	'elementTextLineHeightType'      => 'em',
+	'elementTextLineHeight'          => 1,
+	'elementTextLineHeightTablet'    => 1,
+	'elementTextLineHeightMobile'    => 1,
+	'elementTextFontStyle'           => 'normal',
+	'elementTextLetterSpacing'       => '',
+	'elementTextLetterSpacingTablet' => '',
+	'elementTextLetterSpacingMobile' => '',
+	'elementTextLetterSpacingType'   => 'px',
+	'elementTextDecoration'          => '',
+	'elementTextTransform'           => '',
+	'elementColor'                   => '',
+	'elementIconWidth'               => '',
+	'elementIconWidthTablet'         => '',
+	'elementIconWidthMobile'         => '',
+	'elementIconWidthType'           => 'px',
+);

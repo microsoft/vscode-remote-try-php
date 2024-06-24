@@ -1,0 +1,703 @@
+# Copyright (C) 2024 Brainstorm Force
+# This file is distributed under the GPL v2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zip AI Assistant 1.1.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zip-ai\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-05-15T10:31:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: zip-ai\n"
+
+#. Plugin Name of the plugin
+msgid "Zip AI Assistant"
+msgstr ""
+
+#. Description of the plugin
+msgid "Library which interacts with SCS and provide multiple useful modules."
+msgstr ""
+
+#. Author of the plugin
+msgid "Brainstorm Force"
+msgstr ""
+
+#. translators: %1$s: HTML link start tag, %2$s: HTML link end tag.
+#: classes/admin-configurations.php:408
+msgid "Thank you for using %1$sZip AI.%2$s"
+msgstr ""
+
+#: classes/helper.php:151
+msgid "The Zip AI Endpoint was not declared"
+msgstr ""
+
+#: classes/helper.php:161
+msgid "The Zip AI Auth Token is not set."
+msgstr ""
+
+#: classes/helper.php:196
+msgid "The Zip AI Middleware is not responding."
+msgstr ""
+
+#: classes/helper.php:206
+msgid "The Zip AI Middleware encountered an error."
+msgstr ""
+
+#: classes/helper.php:225
+msgid "The ZipWP Endpoint was not declared"
+msgstr ""
+
+#: classes/helper.php:235
+msgid "The ZipWP Token is not set."
+msgstr ""
+
+#: classes/helper.php:259
+msgid "The ZipWP API server is not responding."
+msgstr ""
+
+#: classes/helper.php:269
+msgid "The ZipWP API server encountered an error."
+msgstr ""
+
+#: classes/sidebar-configurations.php:181
+msgid "The message array was not supplied"
+msgstr ""
+
+#: classes/sidebar-configurations.php:247
+msgid "Something went wrong"
+msgstr ""
+
+#: classes/sidebar-configurations.php:261
+msgid "Invalid auth token."
+msgstr ""
+
+#: classes/sidebar-configurations.php:262
+msgid "You have no credits left."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1000
+msgid "Get Started Now"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1005
+msgid "Go back to the dashboard"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1035
+msgid "Welcome to the Zip AI Setup Wizard!"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1038
+#: admin/dashboard-app/build/dashboard-app.js:1223
+msgid "Zip AI is your WordPress assistant, accessible right within your backend. Create persuasive content, generate custom code, and get answers to your WordPress queries in seconds. The possibilities are endless!"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1062
+msgid "Craft Compelling Content"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1063
+msgid "With Zip, you can effortlessly create persuasive, engaging copy that resonates with your audience."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1067
+msgid "AI-Powered Block Patterns"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1068
+msgid "Zip can personalize and customize the block patterns and section templates tailored to your website's unique needs."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1072
+msgid "WordPress Wizardry"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1073
+msgid "Got questions? Zip has the answers. Whether it's troubleshooting, or customizing your site, Zip has your back."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1077
+msgid "Personalized Templates"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1078
+msgid "Say goodbye to generic designs and say hello to Zip's personalized page templates, tailored just for you."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: sidebar/build/sidebar-app.js:9
+#: admin/dashboard-app/build/dashboard-app.js:1082
+msgid "Generate Custom Code"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1083
+msgid "No more struggling with complex coding issues. Zip can whip up custom code, functions, and CSS tailored to your needs."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1087
+msgid "Custom Pages with AI"
+msgstr ""
+
+#. translators: %s: Percentage Ascii Code
+#: admin/dashboard-app/build/dashboard-app.js:2
+#: admin/dashboard-app/build/dashboard-app.js:1090
+msgid "With Zip AI by your side, you can create beautiful, 100%s custom web pages without the need for any design or coding skills."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:2
+#: admin/dashboard-app/build/dashboard-app.js:1101
+msgid "From the Team Behind Some Iconic WordPress Products"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:2
+#: admin/dashboard-app/build/dashboard-app.js:58
+msgid "Visit Website"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:2
+#: admin/dashboard-app/build/dashboard-app.js:1249
+msgid "Words Written"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:2
+#: admin/dashboard-app/build/dashboard-app.js:1257
+msgid "Get more Credits"
+msgstr ""
+
+#. translators: %s: number of words
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1272
+msgid "of %s"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1301
+msgid "Enable Zip AI"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1321
+msgid "You can easily enable or disable Zip AI from this section. Simply toggle the switch on or off with a single click."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1341
+msgid "Zip is Authorized"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1348
+msgid "Your website is connected to AI. You can disconnect at any time."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1359
+#: admin/dashboard-app/build/dashboard-app.js:1399
+msgid "Revoke Access"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1401
+msgid "Are you sure you want to disconnect?"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1403
+msgid "You will need to reconnect to use AI features again."
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1407
+msgid "Revoke"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: sidebar/build/sidebar-app.js:1
+#: admin/dashboard-app/build/dashboard-app.js:1414
+msgid "Cancel"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:186
+msgid "Default route fallback"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:3
+#: admin/dashboard-app/build/dashboard-app.js:1148
+msgid "Zip - Your AI Assistant"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Content:"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "You:"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "AI Assistant:"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Use This"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Copy & Close"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Update"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Note: All subsequent messages will be deleted after you update."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:1
+msgid "Click Here"
+msgstr ""
+
+#. translators: %1$d is the current page, %2$d is the total number of pages.
+#: sidebar/build/sidebar-app.js:3
+msgid "%1$d / %2$d"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:3
+msgid "Generating…"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:3
+msgid "How can I help you?"
+msgstr ""
+
+#. Translators: %1$s is the opening link tag, %2$s is the closing link tag.
+#: sidebar/build/sidebar-app.js:5
+msgid "AI Assistant can make mistakes. Want to %1$sdisable it?%2$s"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "AI Assistant can make mistakes."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Write for me"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Clear Chat"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Arabic"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Azerbaijani"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Bengali"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Belarusian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Bulgarian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Croatian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Czech"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Danish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Dutch"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "English"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Estonian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Finnish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Filipino"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "French"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Georgian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "German"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Greek"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Hebrew"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Hindi"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Hungarian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Indonesian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Italian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Japanese"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Kazakh"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Korean"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Latvian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Lithuanian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Macedonian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Malay"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Norwegian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Polish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Portuguese"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Romanian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Russian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Serbian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Slovak"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Slovenian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Spanish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Swahili"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Swedish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Thai"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Turkish"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Ukrainian"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Urdu"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Vietnamese"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Friendly"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Formal"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Casual"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Professional"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Informative"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Playful"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Serious"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Humorous"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Polite"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Emotional"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Fix any grammatical mistakes."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Make it longer."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:5
+msgid "Make it shorter."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Change tone to %s."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+#: sidebar/build/sidebar-app.js:11
+msgid "Rephrase"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Draft with AI"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Write an attractive heading about…"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Write an attractive heading about "
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Write a sub-heading for…"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Write a sub-heading for "
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+#: sidebar/build/sidebar-app.js:11
+msgid "Fix Grammar"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+#: sidebar/build/sidebar-app.js:11
+msgid "Make Longer"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+#: sidebar/build/sidebar-app.js:11
+msgid "Make Shorter"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Tone"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:6
+msgid "Translate"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:7
+msgid "Translate to %s."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:7
+msgid "Paste from clipboard"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:7
+#: sidebar/build/sidebar-app.js:11
+msgid "Get Started with 1000 Free Monthly Credits"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:7
+#: sidebar/build/sidebar-app.js:11
+msgid "The possibilities are endless!"
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: sidebar/build/sidebar-app.js:8
+msgid "Build 10x Faster with %s AI"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:8
+msgid "Build 10x Faster with ZipWP"
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: sidebar/build/sidebar-app.js:9
+msgid "%s offers AI features powered by ZipWP to help you build your website 10 times faster."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "ZipWP offers AI features to help you build your website 10 times faster."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Translate Your Pages"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Write Content for Pages"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Customize Templates"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Craft Product Descriptions"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Engage with Comments"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:9
+msgid "Getting Started…"
+msgstr ""
+
+#. Translators: %1$s is the opening link tag, %2$s is the closing link tag.
+#: sidebar/build/sidebar-app.js:11
+msgid "Get started from %1$shere%2$s."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Something went wrong, please try again."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Get Ready!"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Learn more"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Dismiss"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Hi there! I'm here to assist you."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+msgid "Choose a prompt bellow or write on your own. Ask me about what you need."
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:11
+#: sidebar/build/sidebar-app.js:12
+msgid "AI Assistant"
+msgstr ""
+
+#. translators: %s: lastUsedTone label
+#: sidebar/build/sidebar-app.js:12
+msgid "Change Tone to %s"
+msgstr ""
+
+#: sidebar/build/sidebar-app.js:12
+msgid "Something Else"
+msgstr ""
+
+#: admin/dashboard-app/build/dashboard-app.js:1220
+msgid "Welcome to Zip AI!"
+msgstr ""
