@@ -1,0 +1,23 @@
+<p class="clearfix">
+  <label><%= __("Preselect today's date:") %></label>
+  <span class="group">
+    <label>
+      <input
+        class="mailpoet_radio"
+        type="radio"
+        name="params[is_default_today]"
+        value="1"
+        {{#if params.is_default_today}}checked="checked"{{/if}}
+      /><%= __('Yes') %>
+    </label>
+    <label>
+      <input
+        class="mailpoet_radio"
+        type="radio"
+        name="params[is_default_today]"
+        value=""
+        {{#unless params.is_default_today}}checked="checked"{{/unless}}
+      /><%= __('No') %>
+    </label>
+  </span>
+</p>

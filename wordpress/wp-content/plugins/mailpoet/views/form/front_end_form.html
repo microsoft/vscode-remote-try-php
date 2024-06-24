@@ -1,0 +1,83 @@
+<% block content %>
+  <% if(before_widget) %>
+    <%= before_widget | raw %>
+  <% endif %>
+
+  <% if(title) %>
+    <%= before_title | raw %><%= title | raw %><%= after_title | raw %>
+  <% endif %>
+
+  <div class="
+    mailpoet_form_popup_overlay
+    <% if(animation != '') %>
+      mailpoet_form_overlay_animation_<%= animation %>
+      mailpoet_form_overlay_animation
+    <% endif %>
+  "></div>
+  <div
+    id="<%= form_html_id %>"
+    class="
+      mailpoet_form
+      mailpoet_form_<%= form_type %>
+      mailpoet_form_position_<%= position %>
+      mailpoet_form_animation_<%= animation %>
+    "
+    <% if(is_preview) %>
+      data-is-preview="1"
+      data-editor-url="<%= editor_url %>"
+    <% endif %>
+  >
+
+    <style type="text/css">
+     <%= styles|raw %>
+    </style>
+
+    <form
+      target="_self"
+      method="post"
+      action="<%= admin_url('admin-post.php?action=mailpoet_subscription_form') %>"
+      class="mailpoet_form mailpoet_form_form mailpoet_form_<%= form_type %>"
+      novalidate
+      data-delay="<%= delay %>"
+      data-exit-intent-enabled="<%= enableExitIntent %>"
+      data-font-family="<%= fontFamily %>"
+      data-cookie-expiration-time="<%= cookieFormExpirationTime %>"
+    >
+      <input type="hidden" name="data[form_id]" value="<%= form_id %>" />
+      <input type="hidden" name="token" value="<%= token %>" />
+      <input type="hidden" name="api_version" value="<%= api_version %>" />
+      <input type="hidden" name="endpoint" value="subscribers" />
+      <input type="hidden" name="mailpoet_method" value="subscribe" />
+
+      <%= html | raw %>
+      <div class="mailpoet_message">
+        <p class="mailpoet_validate_success"
+        <% if not(success) %>
+        style="display:none;"
+        <% endif %>
+        ><%= form_success_message %>
+        </p>
+        <p class="mailpoet_validate_error"
+        <% if not(error) %>
+        style="display:none;"
+        <% endif %>
+        ><% if (error) %>
+        <%= __("An error occurred, make sure you have filled all the required fields.") %>
+        <% endif %>
+        </p>
+      </div>
+    </form>
+
+    <% if form_type == 'popup' or form_type == 'fixed_bar' or form_type == 'slide_in' %>
+      <input type="image"
+        class="mailpoet_form_close_icon"
+        alt="<%= __('Close') %>"
+        src='<%= image_url("form_close_icon/" ~ close_button_icon ~ ".svg") %>'
+      />
+    <% endif %>
+  </div>
+
+  <% if(after_widget) %>
+    <%= after_widget | raw %>
+  <% endif %>
+<% endblock %>

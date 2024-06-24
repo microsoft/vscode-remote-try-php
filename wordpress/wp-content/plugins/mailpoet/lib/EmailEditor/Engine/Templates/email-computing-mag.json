@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "styles": {
+    "spacing": {
+      "blockGap": "16px",
+      "padding": {
+        "bottom": "20px",
+        "left": "20px",
+        "right": "20px",
+        "top": "20px"
+      }
+    },
+    "color": {
+      "background": "#008282",
+      "text": "#000000"
+    },
+    "typography": {
+      "fontFamily": "'Tahoma, Verdana, Segoe, sans-serif'"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "'Comic Sans MS', 'Marker Felt-Thin', Arial, sans-serif"
+        }
+      }
+    }
+  }
+}

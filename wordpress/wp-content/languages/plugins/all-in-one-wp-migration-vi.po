@@ -1,0 +1,917 @@
+# Translation of Plugins - All-in-One WP Migration and Backup - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - All-in-One WP Migration and Backup - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-03-22 10:14:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - All-in-One WP Migration and Backup - Stable (latest release)\n"
+
+#: lib/controller/class-ai1wm-main-controller.php:814
+#: lib/controller/class-ai1wm-main-controller.php:1128
+#: lib/view/main/backups.php:31
+msgid "You have %d backup"
+msgid_plural "You have %d backups"
+msgstr[0] "Bạn có %d bản sao lưu"
+
+#: lib/view/updater/error.php:31
+msgid "Error: %s"
+msgstr "Lỗi: %s"
+
+#: lib/model/export/class-ai1wm-export-themes.php:80
+#: lib/model/export/class-ai1wm-export-themes.php:119
+msgid "Archiving %d theme files...<br />%d%% complete"
+msgstr "Lưu trữ %d tệp chủ đề...<br />%d%% hoàn tất"
+
+#: lib/model/export/class-ai1wm-export-enumerate-themes.php:106
+msgid "Done retrieving a list of WordPress theme files."
+msgstr "Hoàn tất việc truy xuất danh sách các tệp chủ đề WordPress."
+
+#: lib/model/export/class-ai1wm-export-enumerate-themes.php:51
+msgid "Retrieving a list of WordPress theme files..."
+msgstr "Lấy danh sách các tệp chủ đề WordPress..."
+
+#: lib/model/import/class-ai1wm-import-options.php:34
+msgid "Preparing options..."
+msgstr "Chuẩn bị các phương án..."
+
+#: lib/model/export/class-ai1wm-export-enumerate-plugins.php:100
+msgid "Done retrieving a list of WordPress plugin files."
+msgstr "Hoàn tất việc truy xuất danh sách các tệp plugin WordPress."
+
+#: lib/model/export/class-ai1wm-export-enumerate-plugins.php:51
+msgid "Retrieving a list of WordPress plugin files..."
+msgstr "Truy xuất danh sách các tệp plugin WordPress..."
+
+#: lib/view/main/contact-support.php:31
+msgid "Contact Support"
+msgstr "Liên hệ hỗ trợ"
+
+#: lib/model/import/class-ai1wm-import-validate.php:48
+msgid "The file type that you have tried to import is not compatible with this plugin. Please ensure that your file is a <strong>.wpress</strong> file that was created with the All-in-One WP migration plugin. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Technical details</a>"
+msgstr "Loại tệp mà bạn đã cố gắng nhập không tương thích với plugin này. Vui lòng đảm bảo rằng tệp của bạn là tệp <strong>.wpress</strong> được tạo bằng plugin di chuyển WP All-in-One. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Chi tiết kỹ thuật</a>"
+
+#: lib/controller/class-ai1wm-export-controller.php:77
+msgid "Unable to export. Error code: %s. %s"
+msgstr "Không thể xuất. Mã lỗi: %s. %s"
+
+#: lib/model/import/class-ai1wm-import-permalinks.php:42
+msgid "Done getting WordPress permalinks settings."
+msgstr "Hoàn tất việc nhận thiết đặt permalinks WordPress."
+
+#: lib/model/import/class-ai1wm-import-permalinks.php:36
+msgid "Getting WordPress permalinks settings..."
+msgstr "Nhận thiết đặt permalinks WordPress..."
+
+#: lib/view/import/avada.php:41
+msgid "» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Chuyên học, xem lại </a> plugin. (mở cửa sổ mới)"
+
+#: lib/view/import/avada.php:40
+msgid "» <a class=\"ai1wm-no-underline\" href=\"https://theme-fusion.com/documentation/avada/installation-maintenance/important-update-information/#clear-caches\" target=\"_blank\">Reset Avada Fusion Builder cache</a>. (opens a new window)<br />"
+msgstr "» <a class=\"ai1wm-no-underline\" href=\"https://theme-fusion.com/documentation/avada/installation-maintenance/important-update-information/#clear-caches\" target=\"_blank\">Reset Avada Fusion Builder cache</a>. (opens a new window)<br />"
+
+#: lib/view/main/translate.php:31
+msgid "Translate"
+msgstr "Phiên dịch"
+
+#: lib/view/import/oxygen.php:31
+msgid "» Permalinks are set to default. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Why?</a> (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» Permalinks are set to default. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Tại sao?</a> (mở cửa sổ mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (mở cửa sổ mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Đánh giá plugin (không bắt buộc)</a>. (mở cửa sổ mới)"
+
+#: lib/view/import/done.php:31
+msgid "» Permalinks are set to default. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Why?</a> (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» Đường dẫn được thiết lập mặc định. <a class=\"ai1wm-no-underline\" href=\"https://help.servmask.com/knowledgebase/permalinks-are-set-to-default/\" target=\"_blank\">Tại sao?</a> (mở cửa sổ mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Đánh giá plugin (không bắt buộc)</a>. (mở cửa sổ mới)"
+
+#: lib/view/import/oxygen.php:39
+msgid "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Save permalinks structure</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Lưu cấu trúc liên kết</a>. (mở cửa sổ mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://oxygenbuilder.com/documentation/other/importing-exporting/#resigning\" target=\"_blank\">Re-sign Oxygen Builder shortcodes</a>. (mở cửa sổ mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Đánh giá plugin (không bắt buộc)</a>. (mở cửa sổ mới)"
+
+#: lib/model/export/class-ai1wm-export-enumerate-media.php:51
+msgid "Retrieving a list of WordPress media files..."
+msgstr "Đang lấy danh sách tập tin trong thư viện WordPress..."
+
+#: lib/model/export/class-ai1wm-export-enumerate-media.php:93
+msgid "Done retrieving a list of WordPress media files."
+msgstr "Hoàn thành lấy danh sách tập tin trong thư viện WordPress."
+
+#: lib/model/export/class-ai1wm-export-media.php:80
+#: lib/model/export/class-ai1wm-export-media.php:119
+msgid "Archiving %d media files...<br />%d%% complete"
+msgstr "Đang lưu trữ %d file media...<br />%d%% hoàn thành"
+
+#: lib/model/export/class-ai1wm-export-content.php:80
+#: lib/model/export/class-ai1wm-export-content.php:119
+msgid "Archiving %d content files...<br />%d%% complete"
+msgstr "Đang lưu trữ %d file  dung...<br />%d%% hoàn thành"
+
+#: lib/model/export/class-ai1wm-export-enumerate-content.php:111
+msgid "Done retrieving a list of WordPress content files."
+msgstr "Hoàn tất lấy danh sách file nội dung của WordPress."
+
+#: lib/model/export/class-ai1wm-export-enumerate-content.php:51
+msgid "Retrieving a list of WordPress content files..."
+msgstr "Đang lấy danh sách file nội dung WordPress..."
+
+#: lib/controller/class-ai1wm-main-controller.php:929
+#: lib/controller/class-ai1wm-main-controller.php:1113
+msgid "I have enough disk space"
+msgstr "Tôi đủ dung lượng trống trên hosting"
+
+#: lib/controller/class-ai1wm-main-controller.php:972
+#: lib/controller/class-ai1wm-main-controller.php:1123
+msgid "There is not enough space available on the disk.<br />Free up %s of disk space."
+msgstr "Không đủ dung lượng trống trên hosting.<br />Hãy xóa bớt %s dung lượng."
+
+#: lib/model/import/class-ai1wm-import-options.php:75
+msgid "Done preparing options."
+msgstr "Chuẩn bị xong các phương án."
+
+#: lib/model/class-ai1wm-compatibility.php:50
+msgid "%s is not the latest version. You must update the plugin before you can use it. "
+msgstr "%s không phải là phiên bản mới nhất. Bạn phải nâng cấp plugin trước khi sử dụng."
+
+#: lib/view/backups/backups-list.php:46 lib/view/backups/index.php:49
+msgid "Refreshing backup list..."
+msgstr "Đang làm mới danh sách sao lưu..."
+
+#: lib/view/import/import-permissions.php:34
+msgid "<h3>Site could not be imported</h3><p>Please make sure that storage directory <strong>%s</strong> has read and write permissions.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a></p>"
+msgstr "<h3>Site không thể nhập</h3><p>Vui lòng kiểm tra thư mục lưu trữ <strong>%s</strong> có quyền đọc và ghi.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Thông tin kĩ thuật về vấn đề này</a></p>"
+
+#: lib/view/export/export-permissions.php:34
+msgid "<h3>Site could not be exported</h3><p>Please make sure that storage directory <strong>%s</strong> has read and write permissions.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a></p>"
+msgstr "<h3>Site không thể xuất ra</h3><p>Vui lòng kiểm tra thư mục lưu trữ <strong>%s</strong> có quyền đọc và ghi.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Thông tin kĩ thuật về vấn đề này</a></p>"
+
+#: lib/view/main/missing-role-capability-notice.php:34
+msgid "All-in-One WP Migration: Your current profile role does not have Export/Import capabilities enabled. <a href=\"https://help.servmask.com/knowledgebase/how-to-add-import-and-export-capabilities-to-wordpress-users/\" target=\"_blank\">Technical details</a>"
+msgstr "All-in-One WP Migration: Tài khoản hiện tại của bạn không có phần quyền thực thi Xuất/Nhập dữ liệu. <a href=\"https://help.servmask.com/knowledgebase/how-to-add-import-and-export-capabilities-to-wordpress-users/\" target=\"_blank\">Thông tin kĩ thuật về vấn đề này</a>"
+
+#: lib/view/backups/backups-permissions.php:34
+msgid "<h3>Site could not be restored</h3><p>Please make sure that storage directory <strong>%s</strong> has read and write permissions.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a></p>"
+msgstr "<h3>Site không thể khôi phục</h3><p>Vui lòng kiểm tra thư mục <strong>%s</strong> có quyền đọc và ghi.</p><p><a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Thông tin kĩ thuật về vấn đề này</a></p>"
+
+#: lib/view/import/button-file.php:31
+msgid "To choose a file please go inside the link and click on the browse button."
+msgstr "Để chọn file vui lòng vào liên kết và nhấp vào nút duyệt."
+
+#: lib/view/import/done.php:38
+msgid "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Save permalinks structure</a>. (opens a new window)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Optionally, review the plugin</a>. (opens a new window)"
+msgstr "» <a class=\"ai1wm-no-underline\" href=\"%s\" target=\"_blank\">Lưu cấu trúc liên kết</a>.</strong> (mở tab mới)<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Ngoài ra, có thể viết đánh giá 5 sao</a>.</strong> (mở tab mới)"
+
+#: lib/controller/class-ai1wm-main-controller.php:926
+#: lib/controller/class-ai1wm-main-controller.php:1109
+msgid "Finish"
+msgstr "Hoàn tất"
+
+#: lib/controller/class-ai1wm-main-controller.php:1122
+msgid "\"Restore\" functionality is available in a <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">paid extension</a>.<br />You could also download the backup and then use \"Import from file\"."
+msgstr "Tính năng \"Khôi phục\" có trong <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">gói mở rộng trả phí</a>.<br />Bạn cũng có thể sử dụng chức năng tải xuống và lựa chọn \"Nhập từ file\"."
+
+#: lib/view/backups/backups-list.php:64
+msgid "Click to set a label for this backup"
+msgstr "Bấm để đặt nhãn cho backup"
+
+#: lib/model/export/class-ai1wm-export-download.php:65
+msgid "<a href=\"%s\" class=\"ai1wm-button-green ai1wm-emphasize ai1wm-button-download\" title=\"%s\" download=\"%s\"><span>Download %s</span><em>Size: %s</em></a>"
+msgstr "<a href=\"%s\" class=\"ai1wm-button-green ai1wm-emphasize ai1wm-button-download\" title=\"%s\" download=\"%s\"><span>Tải %s</span><em>Kích thước: %s</em></a>"
+
+#: lib/controller/class-ai1wm-export-controller.php:92
+msgid "Unable to export: %s"
+msgstr "Không thể xuất: %s"
+
+#: lib/controller/class-ai1wm-import-controller.php:94
+msgid "Unable to import: %s"
+msgstr "Không thể nhập: %s"
+
+#: lib/controller/class-ai1wm-import-controller.php:77
+#: lib/controller/class-ai1wm-import-controller.php:85
+msgid "Unable to import. Error code: %s. %s"
+msgstr "Không thể nhập. Mã lỗi: %s. %s"
+
+#: lib/model/import/class-ai1wm-import-confirm.php:48
+msgid "The import process will overwrite your website including the database, media, plugins, and themes. Are you sure to proceed?"
+msgstr "Việc nhập sẽ đè lên website của bạn bao gồm database, thư viện, plugin và theme. Bạn có chắc chắn tiếp tục không?"
+
+#: lib/model/import/class-ai1wm-import-validate.php:115
+msgid "Please make sure that your file was exported using <strong>All-in-One WP Migration</strong> plugin. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Technical details</a>"
+msgstr "Hãy đảm bảo tệp của bạn được xuất ra sử dụng plugin <strong>All-in-One WP Migration</strong>. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: lib/model/import/class-ai1wm-import-validate.php:92
+msgid "The archive file is corrupted. Follow <a href=\"https://help.servmask.com/knowledgebase/corrupted-archive/\" target=\"_blank\">this article</a> to resolve the problem."
+msgstr "Tệp nén bị hỏng. Làm theo <a href=\"https://help.servmask.com/knowledgebase/corrupted-archive/\" target=\"_blank\">bài viết này</a> để giải quyết vấn đề."
+
+#: lib/model/import/class-ai1wm-import-validate.php:37
+msgid "Your PHP is 32-bit. In order to import your file, please change your PHP version to 64-bit and try again. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Technical details</a>"
+msgstr "Phiên bản PHP hiện tại là 32 bit. Để nhập tệp, hãy thay đổi phiên bản PHP đến 64 bit và thử lại. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: lib/model/import/class-ai1wm-import-confirm.php:54
+msgid "The import process will overwrite your website including the database, media, plugins, and themes. Please ensure that you have a backup of your data before proceeding to the next step."
+msgstr "Quá trình nhập vào sẽ ghi đè lên trang web của bạn bao gồm cả database, media, plugin, và theme. Hãy đảm bảo backup dữ liệu trước khi tiến hành bước tiếp theo."
+
+#: lib/model/class-ai1wm-compatibility.php:52
+msgid "<strong>%s</strong> is not the latest version. You must <a href=\"%s\">update the plugin</a> before you can use it. <br />"
+msgstr "<strong>%s</strong> không phải phiên bản mới nhất. Bạn phải <a href=\"%s\">cập nhật plugin</a> trước khi có thể sử dụng.. <br />"
+
+#: lib/controller/class-ai1wm-main-controller.php:964
+msgid "The file that you are trying to import is over the maximum upload file size limit of <strong>%s</strong>.<br />You can remove this restriction by purchasing our <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">Unlimited Extension</a>."
+msgstr "Tệp bạn đang thử nhập vào vượt quá kích thước tải lên tối đa của <strong>%s</strong>.<br />Bạn cần bỏ điều này bằng cách mua <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">gói mở rộng không giới hạn</a> của chúng tôi."
+
+#: lib/controller/class-ai1wm-main-controller.php:957
+#: lib/model/import/class-ai1wm-import-upload.php:55
+msgid "The file type that you have tried to upload is not compatible with this plugin. Please ensure that your file is a <strong>.wpress</strong> file that was created with the All-in-One WP migration plugin. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Technical details</a>"
+msgstr "Loại tệp bạn đang thử tải lên không tương thích với plugin này. Hãy đảm bảo tệp   là <strong>.wpress</strong> được tạo bởi plugin All-in-One WP Migration. <a href=\"https://help.servmask.com/knowledgebase/invalid-backup-file/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: lib/view/main/backups-htaccess-notice.php:35
+#: lib/view/main/backups-index-html-notice.php:35
+#: lib/view/main/backups-index-php-notice.php:35
+#: lib/view/main/backups-robots-txt-notice.php:35
+#: lib/view/main/backups-webconfig-notice.php:35
+#: lib/view/main/storage-index-html-notice.php:35
+#: lib/view/main/storage-index-php-notice.php:35
+#: lib/view/main/wordpress-htaccess-notice.php:35
+msgid "All-in-One WP Migration is not able to create <strong>%s</strong> file. Try to change permissions of the parent folder or send us an email at <a href=\"mailto:support@servmask.com\">support@servmask.com</a> for assistance."
+msgstr "All in One WP Migration không thể tạo tệp <strong>%s</strong>. Hãy thử đổi permission của thư mục cha hoặc gửi email cho chúng tôi tại <a href=\"mailto:support@servmask.com\">support@servmask.com</a> để được trợ giúp."
+
+#: lib/view/main/backups-path-notice.php:35
+#: lib/view/main/storage-path-notice.php:35
+msgid "All-in-One WP Migration is not able to create <strong>%s</strong> folder. You will need to create this folder and grant it read/write/execute permissions (0777) for the All-in-One WP Migration plugin to function properly."
+msgstr "All in One WP Migration không thể tạo thư mục <strong>%s</strong>. Bạn sẽ cần tạo thư mục này và cấp quyền read/write/execute (0777) để plugin All in One WP Migration làm việc hợp lý."
+
+#: lib/view/main/multisite-notice.php:34
+msgid "WordPress Multisite is supported via our All-in-One WP Migration Multisite Extension. You can get a copy of it here"
+msgstr "Chúng tôi hỗ trợ WordPress Multisite qua tiện ích All in One WP Migration Multisite. Bạn có thể tải nó tại đây."
+
+#: lib/view/import/pro.php:36
+msgid "or"
+msgstr "hoặc"
+
+#: lib/view/import/pro.php:35
+msgid "How-to: Increase maximum upload file size"
+msgstr "Cách: tăng maximum upload file size"
+
+#: lib/model/import/class-ai1wm-import-upload.php:79
+msgid "The file is too large for this server."
+msgstr "Tệp quá lớn cho máy chủ này."
+
+#: lib/controller/class-ai1wm-main-controller.php:948
+msgid "<a href=\"https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/\" target=\"_blank\">How-to: Increase maximum upload file size</a> or "
+msgstr "<a href=\"https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/\" target=\"_blank\">Cách: Ităng maximum upload file size</a> hoặc "
+
+#: lib/controller/class-ai1wm-main-controller.php:943
+msgid "Your file exceeds the maximum upload size for this site: <strong>%s</strong><br />%s%s"
+msgstr "Tệp của bạn đã vượt quá maximum upload size cho trang web này: <strong>%s</strong><br />%s%s"
+
+#: lib/view/import/pro.php:32
+msgid "Maximum upload file size: <strong>%s</strong>."
+msgstr "Kích thước tệp tối đa là: <strong>%s</strong>."
+
+#: lib/model/export/class-ai1wm-export-database.php:77
+#: lib/model/export/class-ai1wm-export-database.php:185
+msgid "Exporting database...<br />%d%% complete<br />%s records saved"
+msgstr "Đang xuất database...<br />%d%% hoàn thành<br />%s bản ghi đã được lưu"
+
+#: lib/controller/class-ai1wm-main-controller.php:1121
+msgid "Restoring a backup is available via Unlimited extension. <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">Get it here</a>"
+msgstr "Khôi phục bản backup có sẵn trong tiện ích trả phí. <a href=\"https://servmask.com/products/unlimited-extension\" target=\"_blank\">Lấy nó ở đây</a>"
+
+#: lib/controller/class-ai1wm-main-controller.php:271
+msgid "All-in-One WP Migration Command"
+msgstr "All-in-One WP Migration Command"
+
+#: lib/view/import/import-buttons.php:39
+msgid "Drag & Drop a backup to import it"
+msgstr "Kéo & Thả bản backup để nhập"
+
+#: lib/controller/class-ai1wm-main-controller.php:802
+#: lib/controller/class-ai1wm-main-controller.php:1093
+#: lib/model/export/class-ai1wm-export-init.php:43
+msgid "Preparing to export..."
+msgstr "Chuẩn bị xuất ra..."
+
+#: lib/view/backups/backups-list.php:82
+msgid "%s ago"
+msgstr "cách đây %s"
+
+#: lib/controller/class-ai1wm-main-controller.php:930
+#: lib/controller/class-ai1wm-main-controller.php:1114
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#: lib/controller/class-ai1wm-main-controller.php:928
+#: lib/controller/class-ai1wm-main-controller.php:1112
+msgid "Proceed"
+msgstr "Tiếp tục"
+
+#: lib/controller/class-ai1wm-main-controller.php:1120
+msgid "Are you sure you want to delete this file?"
+msgstr "Bạn có chắc chắn muốn xóa tệp này?"
+
+#: lib/controller/class-ai1wm-main-controller.php:931
+#: lib/controller/class-ai1wm-main-controller.php:1115
+msgid "Please do not close this browser window or your import will fail"
+msgstr "Đừng đóng cửa sổ trình duyệt nếu không việc nhập vào sẽ bị lỗi"
+
+#: lib/controller/class-ai1wm-main-controller.php:927
+#: lib/controller/class-ai1wm-main-controller.php:1111
+msgid "Stop import"
+msgstr "Ngừng nhập"
+
+#: lib/controller/class-ai1wm-main-controller.php:924
+#: lib/controller/class-ai1wm-main-controller.php:1108
+msgid "Please wait, stopping the import..."
+msgstr "Hãy đợi, đang ngừng nhập..."
+
+#: lib/controller/class-ai1wm-main-controller.php:923
+#: lib/controller/class-ai1wm-main-controller.php:1107
+msgid "Unable to stop the import. Refresh the page and try again"
+msgstr "Không thể dừng nhập. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:920
+#: lib/controller/class-ai1wm-main-controller.php:1105
+msgid "Unable to confirm the import. Refresh the page and try again"
+msgstr "Không thể xác nhận việc nhập. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:919
+#: lib/controller/class-ai1wm-main-controller.php:1104
+msgid "Unable to start the import. Refresh the page and try again"
+msgstr "Không thể bắt đầu nhập. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:916
+#: lib/controller/class-ai1wm-main-controller.php:1101
+msgid "You are about to stop importing your website, are you sure?"
+msgstr "Bạn chuẩn bị ngừng nhập trang web, bạn chắc chắn chứ?"
+
+#: lib/controller/class-ai1wm-main-controller.php:729
+#: lib/controller/class-ai1wm-main-controller.php:813
+#: lib/controller/class-ai1wm-main-controller.php:935
+#: lib/controller/class-ai1wm-main-controller.php:1119
+msgid "Thanks for submitting your request!"
+msgstr "Cảm ơn bạn đã gửi yêu cầu!"
+
+#: functions.php:1522
+msgid "Unable to read file: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể đọc tệp: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: functions.php:1496 functions.php:1580
+msgid "Unable to write to: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể ghi: %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: functions.php:1477
+msgid "Unable to open %s with mode %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể mở %s với chế độ %s. <a href=\"https://help.servmask.com/knowledgebase/invalid-file-permissions/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: lib/controller/class-ai1wm-main-controller.php:728
+#: lib/controller/class-ai1wm-main-controller.php:812
+#: lib/controller/class-ai1wm-main-controller.php:934
+#: lib/controller/class-ai1wm-main-controller.php:1118
+msgid "Thanks for submitting your feedback!"
+msgstr "Cảm ơn bạn đã gửi góp ý!"
+
+#: lib/controller/class-ai1wm-main-controller.php:727
+#: lib/controller/class-ai1wm-main-controller.php:811
+#: lib/controller/class-ai1wm-main-controller.php:933
+#: lib/controller/class-ai1wm-main-controller.php:1117
+msgid "How may we help you?"
+msgstr "Chúng tôi có thể giúp gì?"
+
+#: lib/controller/class-ai1wm-main-controller.php:726
+#: lib/controller/class-ai1wm-main-controller.php:810
+#: lib/controller/class-ai1wm-main-controller.php:932
+#: lib/controller/class-ai1wm-main-controller.php:1116
+msgid "Leave plugin developers any feedback here"
+msgstr "Để lại góp ý cho developer plugin tại đây"
+
+#: lib/controller/class-ai1wm-main-controller.php:809
+#: lib/controller/class-ai1wm-main-controller.php:1100
+msgid "Stop export"
+msgstr "Ngừng xuất"
+
+#: lib/controller/class-ai1wm-main-controller.php:808
+#: lib/controller/class-ai1wm-main-controller.php:925
+#: lib/controller/class-ai1wm-main-controller.php:1099
+#: lib/controller/class-ai1wm-main-controller.php:1110
+msgid "Close"
+msgstr "Đóng"
+
+#: lib/controller/class-ai1wm-main-controller.php:807
+#: lib/controller/class-ai1wm-main-controller.php:1098
+msgid "Please wait, stopping the export..."
+msgstr "Hãy đợi, đang ngừng xuất..."
+
+#: lib/controller/class-ai1wm-main-controller.php:806
+#: lib/controller/class-ai1wm-main-controller.php:1097
+msgid "Unable to stop the export. Refresh the page and try again"
+msgstr "Không thể ngừng xuất. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:805
+#: lib/controller/class-ai1wm-main-controller.php:1096
+msgid "Unable to run the export. Refresh the page and try again"
+msgstr "Không thể tiến hành việc xuất. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:804
+#: lib/controller/class-ai1wm-main-controller.php:1095
+msgid "Unable to start the export. Refresh the page and try again"
+msgstr "Không thể bắt đầu xuất. Tải lại trang và thử lại"
+
+#: lib/controller/class-ai1wm-main-controller.php:801
+#: lib/controller/class-ai1wm-main-controller.php:1092
+msgid "You are about to stop exporting your website, are you sure?"
+msgstr "Bạn chuẩn bị ngừng việc xuất trang web, bạn chắc chứ?"
+
+#: functions.php:1695
+msgid "Unable to authenticate the secret key. <a href=\"https://help.servmask.com/knowledgebase/invalid-secret-key/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể xác minh secret key. <a href=\"https://help.servmask.com/knowledgebase/invalid-secret-key/\" target=\"_blank\">Chi tiết kĩ thuật</a>"
+
+#: lib/controller/class-ai1wm-main-controller.php:1260
+msgid "Your purchase ID is invalid, please <a href=\"mailto:support@servmask.com\">contact us</a>"
+msgstr "Purchase ID của bạn không hợp lệ, hãy <a href=\"mailto:support@servmask.com\">liên hệ chúng tôi</a>"
+
+#: lib/controller/class-ai1wm-main-controller.php:922
+#: lib/controller/class-ai1wm-main-controller.php:1106
+msgid "Unable to prepare blogs on import. Refresh the page and try again"
+msgstr "Không thể chuẩn bị blog để nhập. Hãy tải lại trang và thử lại"
+
+#: functions.php:1561
+msgid "Unable to get current pointer position of %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể xác định điểm hiện tại của %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Thông tin kĩ thuật</a>"
+
+#: functions.php:1544
+msgid "Unable to seek to offset %d on %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể tìm đến offset %d trong %s. <a href=\"https://help.servmask.com/knowledgebase/php-32bit/\" target=\"_blank\">Thông tin kĩ thuật</a>"
+
+#: functions.php:63 functions.php:105
+msgid "Unable to locate archive path. <a href=\"https://help.servmask.com/knowledgebase/invalid-archive-path/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể xác định đường dẫn lưu trữ. <a href=\"https://help.servmask.com/knowledgebase/invalid-archive-path/\" target=\"_blank\">Thông tin kĩ thuật</a>"
+
+#: functions.php:38
+msgid "Unable to locate storage path. <a href=\"https://help.servmask.com/knowledgebase/invalid-storage-path/\" target=\"_blank\">Technical details</a>"
+msgstr "Không thể xác định đường dẫn lưu trữ. <a href=\"https://help.servmask.com/knowledgebase/invalid-storage-path/\" target=\"_blank\">Thông tin kĩ thuật</a>"
+
+#: functions.php:1502
+msgid "Out of disk space. Unable to write to: %s. <a href=\"https://help.servmask.com/knowledgebase/out-of-disk-space/\" target=\"_blank\">Technical details</a>"
+msgstr "Hết dung lượng hosting. Không thể tạo tệp backup: %s. <a href=\"https://help.servmask.com/knowledgebase/out-of-disk-space/\" target=\"_blank\">Chi tiết</a>"
+
+#: lib/model/export/class-ai1wm-export-config.php:180
+msgid "Done preparing configuration file."
+msgstr "Đã chuẩn bị xong tệp cấu hình."
+
+#: lib/model/export/class-ai1wm-export-config.php:36
+msgid "Preparing configuration file..."
+msgstr "Đang chuẩn bị tệp cấu hình ..."
+
+#: lib/model/export/class-ai1wm-export-config-file.php:73
+msgid "Done archiving configuration file."
+msgstr "Đã xong tệp lưu trữ cấu hình."
+
+#: lib/model/export/class-ai1wm-export-config-file.php:61
+#: lib/model/export/class-ai1wm-export-config-file.php:96
+msgid "Archiving configuration file...<br />%d%% complete"
+msgstr "Đang lưu trữ file cấu hình...<br />%d%% hoàn tất"
+
+#: lib/view/common/leave-feedback.php:59
+msgid "I agree that by filling in the contact form with my data, I authorize All-in-One WP Migration to use my <strong>email</strong> to reply to my requests for information. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Privacy policy</a>"
+msgstr "Tôi đồng ý bằng việc nhập thông tin của tôi, tôi cho phép plugin All-in-One WP Migration sử dụng <strong>email</strong> của mình để nhận trả lời các yêu cầu. <a href=\"https://www.iubenda.com/privacy-policy/946881\" target=\"_blank\">Chính sách bảo mật</a>"
+
+#: lib/view/backups/backups-list.php:88
+msgid "2GB+"
+msgstr "2GB+"
+
+#: lib/model/import/class-ai1wm-import-validate.php:82
+#: lib/model/import/class-ai1wm-import-validate.php:139
+msgid "Unpacking archive...<br />%d%% complete"
+msgstr "Đang giải nén lưu trữ...<br />%d%% hoàn thành"
+
+#: lib/model/export/class-ai1wm-export-database-file.php:78
+msgid "Done archiving database."
+msgstr "Đã hoàn tất lưu trữ cơ sở dữ liệu"
+
+#: lib/model/export/class-ai1wm-export-database-file.php:66
+#: lib/model/export/class-ai1wm-export-database-file.php:101
+msgid "Archiving database...<br />%d%% complete"
+msgstr "Đang lưu trữ cơ sở dữ liệu... <br />%d%% hoàn thành"
+
+#: lib/model/import/class-ai1wm-import-validate.php:119
+msgid "Done unpacking archive."
+msgstr "Hoàn thành lưu trữ giải nén."
+
+#: lib/model/import/class-ai1wm-import-database.php:78
+#: lib/model/import/class-ai1wm-import-database.php:1007
+msgid "Restoring database...<br />%d%% complete"
+msgstr "Đang khôi phục cơ sỡ dữ liệu...<br />%d%% hoàn thành"
+
+#: lib/model/export/class-ai1wm-export-compatibility.php:35
+#: lib/model/import/class-ai1wm-import-compatibility.php:35
+msgid "Checking extensions compatibility..."
+msgstr "Đang kiểm tra tính tương thích của tiện ích mở rộng..."
+
+#: lib/model/import/class-ai1wm-import-database.php:987
+msgid "Done restoring database."
+msgstr "Đang hoàn tất khôi phục cơ sở dữ liệu."
+
+#: lib/controller/class-ai1wm-main-controller.php:1370
+msgid "Monthly"
+msgstr "Hàng tháng"
+
+#: lib/controller/class-ai1wm-main-controller.php:1366
+msgid "Weekly"
+msgstr "Hàng tuần"
+
+#: lib/controller/class-ai1wm-main-controller.php:917
+#: lib/controller/class-ai1wm-main-controller.php:1102
+msgid "Preparing to import..."
+msgstr "Chuẩn bị nhập..."
+
+#: lib/model/import/class-ai1wm-import-mu-plugins.php:63
+msgid "Done activating mu-plugins."
+msgstr "Đã kích hoạt mu-plugins"
+
+#: lib/model/import/class-ai1wm-import-mu-plugins.php:35
+msgid "Activating mu-plugins..."
+msgstr "Đang kích hoạt mu-plugins.."
+
+#: lib/view/export/advanced-settings.php:97
+msgid "Do <strong>not</strong> export must-use plugins (files)"
+msgstr "<strong>Không</strong> xuất các plugin phải có (tệp)"
+
+#: lib/model/import/class-ai1wm-import-upload.php:88
+msgid "A PHP extension stopped the file upload."
+msgstr "Một phần mở rộng PHP đã ngừng tải tệp lên."
+
+#: lib/model/import/class-ai1wm-import-upload.php:85
+msgid "Failed to write file to disk."
+msgstr "Ghi tệp vào đĩa không thành công."
+
+#: lib/model/import/class-ai1wm-import-upload.php:82
+msgid "Missing a temporary folder."
+msgstr "Thiếu một thư mục tạm thời."
+
+#: lib/model/import/class-ai1wm-import-upload.php:70
+msgid "Unable to upload the file because %s"
+msgstr "Không thể tải tệp lên vì %s"
+
+#: lib/model/import/class-ai1wm-import-upload.php:42
+msgid "Missing tmp_name in upload file."
+msgstr "Thiếu tmp_name trong tệp tải lên."
+
+#: lib/model/import/class-ai1wm-import-upload.php:38
+msgid "Missing error key in upload file."
+msgstr "Thiếu khoá lỗi trong tệp tải lên."
+
+#: lib/model/import/class-ai1wm-import-upload.php:34
+msgid "Missing upload file."
+msgstr "Thiếu tệp tải lên."
+
+#: lib/view/export/advanced-settings.php:121
+msgid "Do <strong>not</strong> replace email domain (sql)"
+msgstr "<strong>Không</strong> thay thế email tên miền (sql)"
+
+#: lib/model/import/class-ai1wm-import-upload.php:91
+msgid "Unrecognized error %s during upload."
+msgstr "Lỗi chưa biết %s trong khi tải lên."
+
+#: lib/model/import/class-ai1wm-import-blogs.php:150
+msgid "Done preparing blogs."
+msgstr "Đã chuẩn bị xong blog."
+
+#: lib/model/import/class-ai1wm-import-blogs.php:140
+msgid "Unable to import <strong>WordPress Network</strong> into WordPress <strong>Single</strong> site."
+msgstr "Không thể nhập <strong>Mạng WordPress</strong> vào WordPress <strong>Single</strong> trang web."
+
+#: lib/model/import/class-ai1wm-import-blogs.php:137
+msgid "At least <strong>one WordPress</strong> site should be presented in the archive."
+msgstr "Ít nhất <strong> một  WordPress</strong>  trang web phải được trình bày trong kho luu trữ."
+
+#: lib/model/import/class-ai1wm-import-blogs.php:134
+msgid "The archive should contain <strong>Single WordPress</strong> site! Please revisit your export settings."
+msgstr "Tệp lưu trữ phải chứa <strong>Single wordpress</strong> trang web! Vui lòng truy cập lại cài đặt xuất của bạn."
+
+#: lib/model/import/class-ai1wm-import-blogs.php:35
+msgid "Preparing blogs..."
+msgstr "Đang chuẩn bị blog..."
+
+#: lib/model/class-ai1wm-feedback.php:78
+msgid "Something went wrong: %s"
+msgstr "Đả xảy ra sự cố: %s"
+
+#: lib/model/class-ai1wm-feedback.php:61
+msgid "Please accept feedback term conditions."
+msgstr "Vui lòng chấp nhận điều kiện thời hạn phản hồi"
+
+#: lib/model/class-ai1wm-feedback.php:56
+msgid "Please enter comments in the text area."
+msgstr "Vui lòng nhập nhận xét trong vùng văn bản."
+
+#: lib/model/class-ai1wm-feedback.php:46
+msgid "Your email is not valid."
+msgstr "Email của bạn không hợp lệ."
+
+#: lib/model/class-ai1wm-feedback.php:51
+msgid "Feedback type is not valid."
+msgstr "Loại phản hồi không hợp lệ."
+
+#: lib/view/updater/modal.php:55
+msgid "There is an update available. To update, you must enter your"
+msgstr "Có bản cập nhật. Để cập nhật, bạn phải nhập"
+
+#: lib/view/updater/modal.php:48
+msgid "Discard"
+msgstr "Huỷ"
+
+#: lib/view/updater/modal.php:42
+msgid "here"
+msgstr "tại đây"
+
+#: lib/view/updater/modal.php:46
+msgid "Save"
+msgstr "Lưu lại"
+
+#: lib/view/updater/modal.php:41
+msgid "Don't have a Purchase ID? You can find your Purchase ID"
+msgstr "Bạn không có ID mua hàng? Bạn có thể tìm ID mua hàng của mình"
+
+#: lib/view/updater/modal.php:37 lib/view/updater/modal.php:56
+msgid "Purchase ID"
+msgstr "Mã Id mua hàng"
+
+#: lib/view/updater/modal.php:34
+msgid "To update your plugin/extension to the latest version, please fill your Purchase ID below."
+msgstr "Để cập nhật plugin / tiện ích mở rộng của bạn lên phiên bản mới nhất, vui lòng điền ID mua hàng của bạn bên dưới."
+
+#: lib/view/updater/modal.php:33
+msgid "Enter your Purchase ID"
+msgstr "Nhập ID mua hàng của bạn"
+
+#: lib/controller/class-ai1wm-main-controller.php:1259
+#: lib/view/updater/check.php:31
+msgid "Check for updates"
+msgstr "Kiểm tra cập nhật"
+
+#: lib/view/backups/backups-list.php:134 lib/view/backups/backups-list.php:136
+msgid "Delete"
+msgstr "Xóa"
+
+#: lib/view/backups/backups-list.php:36
+msgid "Name"
+msgstr "Tên"
+
+#: lib/view/common/leave-feedback.php:64
+msgid "Cancel"
+msgstr "Hủy"
+
+#: lib/controller/class-ai1wm-main-controller.php:643
+#: lib/controller/class-ai1wm-main-controller.php:644
+msgid "Export"
+msgstr "Xuất"
+
+#: lib/controller/class-ai1wm-main-controller.php:653
+#: lib/controller/class-ai1wm-main-controller.php:654
+msgid "Import"
+msgstr "Nhập"
+
+#. Author of the plugin
+#: all-in-one-wp-migration.php
+msgid "ServMask"
+msgstr "ServMask"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: all-in-one-wp-migration.php
+msgid "https://servmask.com/"
+msgstr "https://servmask.com/"
+
+#. Plugin Name of the plugin
+#: all-in-one-wp-migration.php
+msgid "All-in-One WP Migration"
+msgstr "All-in-One WP Migration"
+
+#: lib/view/import/index.php:37
+msgid "Import Site"
+msgstr "Nhập trang web"
+
+#: lib/view/import/pro.php:39
+msgid "Get unlimited"
+msgstr "Nhận không giới hạn"
+
+#: lib/view/import/import-buttons.php:43
+msgid "Import From"
+msgstr "Nhập từ"
+
+#: lib/view/export/index.php:37
+msgid "Export Site"
+msgstr "Xuất trang web"
+
+#: lib/view/export/help-section.php:51
+msgid "Once the file is successfully downloaded on your computer, you can import it to any of your WordPress sites."
+msgstr "Khi tệp được tải xuống thành công trên máy tính của bạn, bạn có thể nhập tệp đó vào bất kỳ trang web WordPress nào của mình."
+
+#: lib/view/export/help-section.php:47
+msgid "Press \"Export\" button and the site archive file will pop up in your browser."
+msgstr "Nhấn nút \"Xuất\" và tệp lưu trữ trang web sẽ bật lên trong trình duyệt của bạn."
+
+#: lib/view/export/help-section.php:43
+msgid "In the advanced settings section you can configure more precisely the way of exporting."
+msgstr "Trong phần cài đặt nâng cao, bạn có thể định cấu hình chính xác hơn cách xuất."
+
+#: lib/view/export/help-section.php:37
+msgid "Quick hints"
+msgstr "Gợi ý nhanh"
+
+#: lib/view/export/help-section.php:33
+msgid "You can then use the import functionality provided by this plugin to import the zipped file onto any other WordPress sites that you have administrator access to."
+msgstr "Sau đó, bạn có thể sử dụng chức năng nhập được cung cấp bởi plugin này để nhập tệp nén vào bất kỳ trang web WordPress nào khác mà bạn có quyền truy cập quản trị viên."
+
+#: lib/view/export/help-section.php:32
+msgid "This screen allows you to export database, media files, themes and plugins as one zipped file."
+msgstr "Màn hình này cho phép bạn xuất cơ sở dữ liệu, tệp phương tiện, chủ đề và plugin dưới dạng tệp nén."
+
+#: lib/view/export/find-replace.php:38
+msgid "<another-text>"
+msgstr "<another-text>"
+
+#: lib/view/export/find-replace.php:37 lib/view/export/find-replace.php:45
+msgid "Replace with"
+msgstr "Thay bằng"
+
+#: lib/view/export/find-replace.php:36
+msgid "<text>"
+msgstr "<text>"
+
+#: lib/view/export/export-buttons.php:35
+msgid "Export To"
+msgstr "Xuất sang"
+
+#: lib/view/export/button-file.php:31 lib/view/import/button-file.php:32
+msgid "File"
+msgstr "Tập tin"
+
+#: lib/view/export/advanced-settings.php:35
+msgid "Advanced options"
+msgstr "Tuỳ chọn nâng cao"
+
+#: lib/view/common/share-buttons.php:63
+msgid "Tweet"
+msgstr "Tweet"
+
+#: lib/view/common/leave-feedback.php:67
+msgid "Send"
+msgstr "Gửi"
+
+#: lib/view/common/leave-feedback.php:54
+msgid "Leave plugin developers any feedback here.."
+msgstr "Hãy để lại cho nhà phát triển plugin mọi phản hồi tại đây .."
+
+#: lib/view/common/leave-feedback.php:51
+msgid "Enter your email address.."
+msgstr "Nhập địa chỉ email của bạn.."
+
+#: lib/view/common/leave-feedback.php:44
+msgid "I need help with this plugin"
+msgstr "Tôi cần trợ giúp với plugin này"
+
+#: lib/view/common/leave-feedback.php:37
+msgid "I have ideas to improve this plugin"
+msgstr "Tôi có ý tưởng để cải thiện plugin này"
+
+#: lib/view/backups/backups-list.php:99 lib/view/backups/backups-list.php:101
+msgid "Restore"
+msgstr "Khôi phục"
+
+#: lib/view/backups/backups-list.php:38
+msgid "Size"
+msgstr "Kích thước"
+
+#: lib/view/backups/backups-list.php:37
+msgid "Date"
+msgstr "Ngày"
+
+#: lib/model/import/class-ai1wm-import-done.php:363
+#: lib/model/import/class-ai1wm-import-done.php:365
+#: lib/model/import/class-ai1wm-import-done.php:367
+msgid "Your site has been imported successfully!"
+msgstr "Dữ liệu của bạn đã được nhập thành công!"
+
+#: lib/model/import/class-ai1wm-import-content.php:83
+#: lib/model/import/class-ai1wm-import-content.php:206
+msgid "Restoring %d files...<br />%d%% complete"
+msgstr "Đang khôi phục %d tệp ... <br />%d%% hoàn thành"
+
+#: lib/model/export/class-ai1wm-export-download.php:35
+msgid "Renaming exported file..."
+msgstr "Đang đổi tên tệp đã xuất..."
+
+#: lib/model/export/class-ai1wm-export-database.php:159
+msgid "Done exporting database."
+msgstr "Xuất xong cơ sở dữ liệu."
+
+#: lib/model/import/class-ai1wm-import-enumerate.php:50
+msgid "Done retrieving a list of all WordPress files."
+msgstr "Đã hoàn thành việc truy xuất danh sách tất cả các tệp WordPress."
+
+#: lib/model/import/class-ai1wm-import-enumerate.php:35
+msgid "Retrieving a list of all WordPress files..."
+msgstr "Đang truy xuất danh sách tất cả các tệp WordPress..."
+
+#: lib/model/export/class-ai1wm-export-archive.php:42
+msgid "Done creating an empty archive."
+msgstr "Hoàn thành việc tạo một kho lưu trữ trống."
+
+#: lib/model/export/class-ai1wm-export-archive.php:35
+msgid "Creating an empty archive..."
+msgstr "Đang tạo lưu trữ trống..."
+
+#: lib/controller/class-ai1wm-import-controller.php:96
+#: lib/controller/class-ai1wm-import-controller.php:97
+#: lib/controller/class-ai1wm-main-controller.php:918
+#: lib/controller/class-ai1wm-main-controller.php:1103
+msgid "Unable to import"
+msgstr "Không thể nhập"
+
+#: lib/controller/class-ai1wm-export-controller.php:94
+#: lib/controller/class-ai1wm-export-controller.php:95
+#: lib/controller/class-ai1wm-main-controller.php:803
+#: lib/controller/class-ai1wm-main-controller.php:1094
+msgid "Unable to export"
+msgstr "Không thể xuất"
+
+#: lib/view/export/find-replace.php:39
+msgid "in the database"
+msgstr "trong database"
+
+#: lib/view/export/advanced-settings.php:115
+msgid "Do <strong>not</strong> export database (sql)"
+msgstr "<strong>Không</strong> xuất database (sql)"
+
+#: lib/view/export/advanced-settings.php:104
+msgid "Do <strong>not</strong> export plugins (files)"
+msgstr "<strong>Không</strong> xuất plugin (tệp)"
+
+#: lib/view/export/advanced-settings.php:88
+msgid "Do <strong>not</strong> export themes (files)"
+msgstr "<strong>Không</strong> xuất theme (tệp)"
+
+#: lib/view/export/advanced-settings.php:82
+msgid "Do <strong>not</strong> export media library (files)"
+msgstr "<strong>Không</strong> xuất thư viện (tệp)"
+
+#: lib/view/export/advanced-settings.php:76
+msgid "Do <strong>not</strong> export post revisions"
+msgstr "<strong>Không</strong> xuất bản thảo bài viết"
+
+#: lib/view/export/advanced-settings.php:70
+msgid "Do <strong>not</strong> export spam comments"
+msgstr "<strong>Không</strong> xuất bình luận spam"
+
+#: lib/view/export/advanced-settings.php:36
+msgid "(click to expand)"
+msgstr "(bấm để xem thêm)"
+
+#: lib/view/common/sidebar-right.php:39
+msgid "Leave Feedback"
+msgstr "Gửi góp ý"
+
+#: lib/view/backups/index.php:57
+msgid "Create backup"
+msgstr "Tạo backup"
+
+#: lib/view/backups/index.php:52
+msgid "There are no backups available at this time, why not create a new one?"
+msgstr "Không có bản backup nào tại thời điểm này, tại sao không tạo bản backup mới?"
+
+#: lib/view/backups/backups-list.php:107 lib/view/backups/backups-list.php:109
+#: lib/view/backups/backups-list.php:112 lib/view/backups/backups-list.php:114
+#: lib/view/backups/backups-list.php:122
+msgid "Download"
+msgstr "Tải về"
+
+#: lib/view/main/multisite-notice.php:42
+msgid "Get multisite"
+msgstr "Lấy multisite"
+
+#: lib/view/export/find-replace.php:35 lib/view/export/find-replace.php:44
+msgid "Find"
+msgstr "Tìm"
+
+#: lib/view/export/find-replace.php:52
+msgid "Add"
+msgstr "Thêm mới"
+
+#: lib/controller/class-ai1wm-main-controller.php:663
+#: lib/controller/class-ai1wm-main-controller.php:664
+#: lib/view/backups/index.php:37
+msgid "Backups"
+msgstr "Backup"
+
+#. Description of the plugin
+#: all-in-one-wp-migration.php
+msgid "Migration tool for all your blog data. Import or Export your blog content with a single click."
+msgstr "Công cụ di chuyển dữ liệu blog của bạn. Nhập và xuất nội dung blog với vài click đơn giản."
+
+#: lib/model/export/class-ai1wm-export-plugins.php:80
+#: lib/model/export/class-ai1wm-export-plugins.php:119
+msgid "Archiving %d plugin files...<br />%d%% complete"
+msgstr "Đang lưu trữ %d file plugin...<br />%d%% hoàn thành"

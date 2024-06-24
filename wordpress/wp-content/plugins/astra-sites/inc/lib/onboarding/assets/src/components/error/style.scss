@@ -1,0 +1,66 @@
+.ist-error-message-wrap {
+	h2.ist-error-message-title {
+		margin-bottom: 30px;
+	}
+}
+.ist-import-error {
+	p {
+		display: flex;
+		align-items: center;
+		text-align: left;
+		justify-content: flex-start;
+		margin: 0;
+	}
+	.ist-import-error-box {
+		width: 100%;
+		border: 1px solid var( --st-border-color );
+		box-sizing: border-box;
+		border-radius: var( --st-border-radius-4 );
+		justify-content: center;
+		margin: 17px auto 25px;
+		padding: 20px;
+		background: var( --st-background-light );
+	}
+	.ist-import-error-solution {
+		margin-top: 5px;
+		flex-direction: column;
+		align-items: start;
+		gap: 8px;
+		display: block;
+	}
+	.ist-import-error-secondary-wrap {
+		overflow: auto;
+		max-height: 200px;
+		margin-top: 10px;
+	}
+	.ist-import-error-text-heading {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.ist-import-error-text {
+		padding: 10px;
+		border-radius: var( --st-border-radius-4 );
+		background-color: var( --st-background-error-text, #efefef );
+	}
+	pre {
+		margin: 0;
+		text-align: left;
+		max-height: 100px;
+		overflow: auto;
+	}
+	.ist-import-error-box-heading {
+		margin-bottom: 10px;
+	}
+	.ist-import-error-solution-heading {
+		margin: 20px 0 0;
+	}
+	.ist-import-error-box-heading,
+	.ist-import-error-text-heading,
+	.ist-import-error-solution-heading {
+		text-align: left;
+		font-size: var( --st-font-size-xs, 14px );
+		font-weight: var( --st-font-weight-bold, 500 );
+		line-height: var( --st-font-line-height-xs, 20px );
+		color: var( --st-color-heading );
+	}
+}

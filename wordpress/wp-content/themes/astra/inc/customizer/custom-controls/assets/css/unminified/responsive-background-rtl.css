@@ -1,0 +1,317 @@
+.customize-control-ast-responsive-background {
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.customize-control-ast-responsive-background .background-container h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555d66;
+}
+
+.customize-control-ast-responsive-background .background-attachment h4,
+.customize-control-ast-responsive-background .background-color h4,
+.customize-control-ast-responsive-background .background-position h4,
+.customize-control-ast-responsive-background .background-repeat h4,
+.customize-control-ast-responsive-background .background-size h4 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.customize-control-ast-responsive-background .background-color {
+  margin-bottom: 12px;
+}
+
+.customize-control-ast-responsive-background .background-repeat {
+  margin: 15px 0 15px 0;
+}
+
+.customize-control-ast-responsive-background .background-attachment .buttonset,
+.customize-control-ast-responsive-background .background-size .buttonset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customize-control-ast-responsive-background .background-attachment .buttonset .switch-label,
+.customize-control-ast-responsive-background .background-size .buttonset .switch-label {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #555;
+  padding: 2px 4px;
+  margin-left: 15px;
+  text-align: center;
+  flex-grow: 1;
+  transition: background-color 140ms linear;
+}
+
+.customize-control-ast-responsive-background .background-attachment .buttonset .switch-label:last-child,
+.customize-control-ast-responsive-background .background-size .buttonset .switch-label:last-child {
+  margin-left: 0;
+}
+
+.customize-control-ast-responsive-background .background-attachment .buttonset .switch-input:checked + .switch-label,
+.customize-control-ast-responsive-background .background-size .buttonset .switch-input:checked + .switch-label {
+  background-color: #f5f5f5;
+  color: #565e67;
+}
+
+.customize-control-ast-responsive-background .background-attachment .buttonset .switch-input[checked="checked"] + .switch-label,
+.customize-control-ast-responsive-background .background-size .buttonset .switch-input[checked="checked"] + .switch-label {
+  background-color: #f5f5f5;
+  color: #565e67;
+}
+
+.customize-control-ast-responsive-background .ast-bg-img-remove.components-button.is-link {
+  width: 100%;
+  border: 1px dashed #b4b9be;
+  box-sizing: border-box;
+  box-shadow: unset;
+  padding: 9px 0;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.customize-control-ast-responsive-background .ast-bg-img-remove.components-button.is-destructive:hover:not(:disabled) {
+  color: #a02222;
+  box-shadow: unset;
+  border-color: #a02222;
+}
+
+.customize-control-ast-responsive-background .more-settings {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+  float: none;
+  text-decoration: none;
+}
+
+.customize-control-ast-responsive-background .more-settings:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.customize-control-ast-responsive-background .arrow-icon {
+  margin-right: 5px;
+}
+
+.customize-control-ast-responsive-background .background-container {
+  display: none;
+}
+
+.customize-control-ast-responsive-background .background-container.active {
+  display: block;
+}
+
+.customize-control-ast-responsive-background .wp-picker-container {
+  display: block;
+}
+
+.customize-control-ast-responsive-background .wp-picker-container .wp-picker-clear {
+  margin-right: 4px;
+  min-height: 30px;
+}
+
+.customize-control-ast-responsive-background .customize-control-content .astra-color-picker-wrap {
+  width: 100%;
+}
+
+.customize-control-ast-responsive-background .customize-control-content .components-color-picker__saturation-color,
+.customize-control-ast-responsive-background .customize-control-content .components-color-picker__saturation-white {
+  border-radius: unset;
+}
+
+.customize-control-ast-responsive-background .ast-color-btn-clear-wrap {
+  left: 84px;
+}
+
+/**
+ * BG Media Button.
+ */
+/**
+* Gradient field
+*/
+.components-color-picker__inputs-toggle-wrapper .components-color-picker__inputs-toggle {
+  vertical-align: middle;
+  height: 32px;
+}
+
+.astra-popover-tabs .components-button.upload-button.button-add-media {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #555d66;
+  border: 1px dashed #b4b9be;
+  box-sizing: border-box;
+  box-shadow: unset;
+  padding: 9px 0;
+  line-height: 1.6;
+}
+
+.astra-popover-tabs .components-button.upload-button.button-add-media:hover {
+  color: #555d66;
+  box-sizing: border-box;
+  box-shadow: unset;
+  border-color: #0185ba;
+}
+
+.astra-popover-tabs [ID*="-gradient-view"] {
+  padding: 0 15px 15px 15px;
+}
+
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear {
+  flex: unset;
+  box-shadow: unset;
+  width: auto;
+  padding: 0 5px;
+}
+
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:hover {
+  box-shadow: unset;
+}
+
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:active {
+  box-shadow: unset;
+}
+
+.astra-popover-tabs [ID*="-gradient-view"] .components-circular-option-picker__clear:focus {
+  box-shadow: unset;
+}
+
+.astra-popover-tabs #tab-panel-0-image-view > div {
+  text-align: center;
+}
+
+.astra-popover-tabs #tab-panel-0-image-view > div img {
+  width: 200px;
+  margin-bottom: 18px;
+}
+
+.astra-popover-tabs #tab-panel-0-image-view > div .media-position-setting {
+  text-align: right;
+}
+
+.media-position-setting > .components-base-control {
+    margin-bottom: 15px;
+}
+
+.media-position-setting [CLASS*="-Item-LabelWrapper"] {
+    margin-bottom: 5px;
+}
+
+.astra-popover-color .components-circular-option-picker {
+  position: relative;
+  margin-top: 0;
+}
+
+.astra-popover-color .components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .astra-popover-color .components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+    width: 50px;
+  }
+}
+
+.astra-popover-color [ID*="-color-view"] .components-circular-option-picker {
+  width: auto;
+}
+
+.astra-popover-color .ast-color-palette {
+  width: auto;
+  padding: 16px 14px 0px 0px;
+}
+
+.astra-popover-color .ast-color-palette .components-circular-option-picker__option {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.astra-popover-color .ast-color-palette .components-button.is-pressed:focus:not(:disabled) {
+	box-shadow: none;
+	border: none;
+}
+
+.astra-popover-color .components-custom-gradient-picker {
+  margin-top: 0;
+}
+
+.astra-popover-color .components-custom-gradient-picker__gradient-bar {
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+.astra-popover-color .components-custom-gradient-picker__type-picker .components-base-control__label {
+  display: block;
+}
+
+.components-custom-gradient-picker .components-base-control__label {
+  padding-top: 10px;
+  font-size: 12px;
+  display: block;
+  letter-spacing: 0.1px;
+  line-height: 18px;
+}
+
+[ID*="-gradient-view"] .components-toolbar.components-custom-gradient-picker__toolbar .components-button.has-icon {
+  border: none;
+}
+
+.media-position-setting.hide-settings {
+  display: none;
+}
+
+.media-position-setting .astra-popover-tabs [ID*="-gradient-view"] {
+    padding: 0 0 15px 0;
+}
+
+.ast-field-settings-modal .customize-control-content .color-button-wrap {
+  left: 30px;
+  top: 0;
+}
+
+.ast-field-settings-modal .ast-responsive-btns {
+  position: absolute;
+  left: 14px;
+  top: 4px;
+}
+
+.ast-field-settings-modal .customize-control-content .astra-color-picker-wrap {
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.ast-field-settings-modal .customize-control-content .ast-color-btn-reset-wrap {
+  left: 65px;
+  top: 7px;
+}
+
+.ast-field-settings-modal .customize-control-content .ast-color-btn-clear-wrap {
+  left: 91px;
+}
+
+.ast-field-settings-modal .customize-control-ast-responsive-background.customize-control:first-child {
+  margin-top: 28px;
+}
+.customize-control-ast-responsive-background .ast-color-btn-reset-wrap,
+.customize-control-ast-responsive-color .ast-color-btn-reset-wrap {
+  display: inline-block;
+  line-height: 1;
+  top: 4.5px;
+}
+.customize-control-ast-responsive-background .ast-responsive-btns,
+.customize-control-ast-responsive-color .ast-responsive-btns {
+  position: relative;
+  left: -5px;
+  top: 2px;
+}
+.ast-field-settings-modal .customize-control-ast-responsive-background .ast-responsive-btns,
+.ast-field-settings-modal .customize-control-ast-responsive-color .ast-responsive-btns  {
+  left: 8px;
+}

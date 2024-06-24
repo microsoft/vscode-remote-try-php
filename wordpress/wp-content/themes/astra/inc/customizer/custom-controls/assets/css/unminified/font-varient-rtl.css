@@ -1,0 +1,85 @@
+.ast-customizer-font-varient-wrap {
+	margin-top: 12px;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__value-container {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    padding: 2px 5px;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__multi-value {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 2px 2px 2px 2px;
+    min-width: auto;
+    color: #4B5563;
+    background-color: #F5F5F5;
+    border: 1px solid #D1D5DB;
+    border-radius: 2px;
+    padding-right: 5px;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__multi-value .ast-multi-select__multi-value__label {
+    line-height: normal;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__multi-value .ast-multi-select__multi-value__remove {
+    color: #4B5563;
+    padding-left: 0;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__multi-value .ast-multi-select__multi-value__remove:hover {
+    background-color: transparent;
+    color: #4B5563;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__input-container input:focus {
+    box-shadow: none;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__control {
+	position: relative;
+    max-height: 32px;
+    display: inline-flex;
+    width: 100%;
+    align-content: center;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__control:after {
+    content: "\f11c";
+    font-family: dashicons;
+    font-size: 16px;
+    margin-left: 7px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ast-customizer-font-varient-wrap .ast-multi-select__control:before {
+    content:'';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 50px;
+    height: 25px;
+    background: rgb(247,247,247);
+    background: linear-gradient(-90deg, rgba(247,247,247,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#customize-control-astra-settings-ast-headings-font-settings .ast-fields-wrap,
+#customize-control-astra-settings-ast-body-font-settings .ast-fields-wrap {
+    overflow: visible;
+}
+
+/**
+ * Hide normal font weight from font weight dropdown and display only if its set as font weight.
+ */
+.customize-control-ast-font select option[value="normal"], .customize-control-ast-font select[data-value="normal"] option[value="400"] {
+    display: none;
+}
+.customize-control-ast-font select[data-value="normal"] option[value="normal"] {
+    display: block;
+}

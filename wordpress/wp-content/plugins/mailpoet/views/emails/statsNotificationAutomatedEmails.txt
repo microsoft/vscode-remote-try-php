@@ -1,0 +1,19 @@
+<% extends 'emails/statsNotificationLayout.txt' %>
+
+<% block content %>
+
+<%= __('Your monthly stats are in!') %>
+
+<% for newsletter in newsletters %>
+------------------------------------------
+  <%= newsletter.subject %>
+  <%= stats_number_format_i18n(newsletter.clicked) %>% <%= __('clicked') %> (<%= clicked_stats_text(newsletter.clicked) %>)
+  <%= stats_number_format_i18n(newsletter.opened) %>% <%= __('opened') %>
+  <%= stats_number_format_i18n(newsletter.machineOpened) %>% <%= __('machine-opened') %>
+  <%= stats_number_format_i18n(newsletter.unsubscribed) %>% <%= __('unsubscribed') %>
+  <%= stats_number_format_i18n(newsletter.bounced) %>% <%= __('bounced') %>
+  <%= __('View all stats') %>
+    <%= newsletter.linkStats %>
+<% endfor %>
+------------------------------------------
+<% endblock %>

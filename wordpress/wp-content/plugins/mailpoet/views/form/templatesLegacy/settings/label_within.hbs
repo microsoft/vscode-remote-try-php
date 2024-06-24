@@ -1,0 +1,11 @@
+<p class="clearfix">
+  <label><%= __('Display label within input:') %></label>
+  <span class="group">
+    <label>
+      <input class="mailpoet_radio" type="radio" name="params[label_within]" value="1" {{#if params.label_within}}checked="checked"{{/if}} /><%= __('Yes') %>
+    </label>
+    <label>
+      <input class="mailpoet_radio" type="radio" name="params[label_within]" value="" {{#unless params.label_within}}checked="checked"{{/unless}} /><%= __('No') %>
+    </label>
+  </span>
+</p>

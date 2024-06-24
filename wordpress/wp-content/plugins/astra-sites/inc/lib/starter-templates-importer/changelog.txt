@@ -1,0 +1,17 @@
+v1.0.17 - 27-May-2024
+- New: Added filter & action to import classic templates options.
+
+v1.0.16 - 27-May-2024
+- Improvement: Added compatibility for ai buider functions.
+
+v1.0.15 - 24-May-2024
+- Fix: Replacing the images only for current imported posts and pages.
+
+v1.0.14 - 13-May-2024
+- Improvement: Added the updated date after import.
+
+v1.0.9 - 08-May-2024
+- Improvement: Added Source and Seed parameter while creating provisional account in Starter Templates for SureCart.
+
+v1.0.0
+- Initial Commit

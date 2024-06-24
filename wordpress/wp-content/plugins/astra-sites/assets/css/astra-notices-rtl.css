@@ -1,0 +1,31 @@
+#astra-sites-5-start-notice .notice-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#astra-sites-5-start-notice .notice-content {
+    margin-right: 15px;
+}
+
+#astra-sites-5-start-notice .notice-image img {
+    width: 90px;
+}
+
+#astra-sites-5-start-notice .astra-review-notice-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#astra-sites-5-start-notice .astra-review-notice-container .dashicons {
+    font-size: 1.4em;
+    padding-right: 10px;
+}
+
+#astra-sites-5-start-notice .astra-review-notice-container a {
+    padding-right: 5px;
+    text-decoration: none;
+}

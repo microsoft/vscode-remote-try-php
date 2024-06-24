@@ -1,0 +1,102 @@
+<!-- date settings and block templates -->
+<%= partial('form_template_date_years',
+  'form/templatesLegacy/blocks/date_years.hbs',
+  '_settings_date_years'
+) %>
+<%= partial('form_template_date_months',
+  'form/templatesLegacy/blocks/date_months.hbs',
+  '_settings_date_months'
+) %>
+<%= partial('form_template_date_days',
+  'form/templatesLegacy/blocks/date_days.hbs',
+  '_settings_date_days'
+) %>
+<%= partial('form_template_date', 'form/templatesLegacy/blocks/date.hbs') %>
+
+<!-- field settings -->
+<%= partial('form_template_field_settings', 'form/templatesLegacy/settings/field.hbs') %>
+
+<%= partial('field_settings_label',
+  'form/templatesLegacy/settings/label.hbs',
+  '_settings_label'
+) %>
+<%= partial('field_settings_label_within',
+  'form/templatesLegacy/settings/label_within.hbs',
+  '_settings_label_within'
+) %>
+<%= partial('field_settings_required',
+  'form/templatesLegacy/settings/required.hbs',
+  '_settings_required'
+) %>
+<%= partial('field_settings_validate',
+  'form/templatesLegacy/settings/validate.hbs',
+  '_settings_validate'
+) %>
+<%= partial('field_settings_values',
+  'form/templatesLegacy/settings/values.hbs',
+  '_settings_values'
+) %>
+<%= partial('field_settings_date_default',
+  'form/templatesLegacy/settings/date_default.hbs',
+  '_settings_date_default'
+) %>
+<%= partial('field_settings_submit',
+  'form/templatesLegacy/settings/submit.hbs',
+  '_settings_submit'
+) %>
+
+<%= partial('field_settings_values_item',
+'form/templatesLegacy/settings/values_item.hbs') %>
+<%= partial(
+  'field_settings_date_format',
+  'form/templatesLegacy/settings/date_formats.hbs',
+  '_settings_date_format'
+) %>
+<%= partial(
+  'field_settings_date_type',
+  'form/templatesLegacy/settings/date_types.hbs',
+  '_settings_date_type'
+) %>
+<%= partial('field_settings_segment_selection_item',
+  'form/templatesLegacy/settings/segment_selection_item.hbs'
+) %>
+<%= partial('field_settings_segment_selection',
+  'form/templatesLegacy/settings/segment_selection.hbs',
+  '_settings_segment_selection'
+) %>
+
+<!-- custom field: new -->
+<%= partial('form_template_field_form',
+  'form/templatesLegacy/settings/field_form.hbs'
+) %>
+
+<!-- field settings depending on field type -->
+<script id="form_template_field_text" type="text/x-handlebars-template">
+  {{> _settings_required }}
+  {{> _settings_validate }}
+</script>
+
+<script id="form_template_field_textarea" type="text/x-handlebars-template">
+  {{> _settings_required }}
+  {{> _settings_validate }}
+</script>
+
+<script id="form_template_field_radio" type="text/x-handlebars-template">
+  {{> _settings_values }}
+  {{> _settings_required }}
+</script>
+
+<script id="form_template_field_checkbox" type="text/x-handlebars-template">
+  {{> _settings_values }}
+  {{> _settings_required }}
+</script>
+
+<script id="form_template_field_select" type="text/x-handlebars-template">
+  {{> _settings_values }}
+  {{> _settings_required }}
+</script>
+
+<script id="form_template_field_date" type="text/x-handlebars-template">
+  {{> _settings_required }}
+  {{> _settings_date_type }}
+</script>

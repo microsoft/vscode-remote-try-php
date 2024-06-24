@@ -1,0 +1,212 @@
+<% extends 'layout.html' %>
+
+<% block container %>
+
+<div class="block-editor">
+    <div id="mailpoet_form_edit" class="block-editor__container">
+    </div>
+</div>
+
+<script>
+  <% autoescape 'js' %>
+  var mailpoet_form_data = <%= json_encode(form) %>;
+  var mailpoet_form_exports = <%= json_encode(form_exports) %>;
+  var mailpoet_form_segments = <%= json_encode(segments) %>;
+  var mailpoet_custom_fields = <%= json_encode(custom_fields) %>;
+  var mailpoet_date_types = <%= json_encode(date_types) %>;
+  var mailpoet_date_formats = <%= json_encode(date_formats) %>;
+  var mailpoet_month_names = <%= json_encode(month_names) %>;
+  var mailpoet_form_preview_page = <%= json_encode(preview_page_url) %>;
+  var mailpoet_custom_fonts = <%= json_encode(custom_fonts) %>;
+  var mailpoet_translations = <%= json_encode(translations) %>;
+  var mailpoet_all_wp_posts = <%= json_encode(posts) %>;
+  var mailpoet_all_wp_pages = <%= json_encode(pages) %>;
+  var mailpoet_all_wp_categories = <%= json_encode(categories) %>;
+  var mailpoet_all_wp_tags = <%= json_encode(tags) %>;
+  var mailpoet_woocommerce_products = <%= json_encode(products) %>;
+  var mailpoet_woocommerce_categories = <%= json_encode(product_categories) %>;
+  var mailpoet_woocommerce_tags = <%= json_encode(product_tags) %>;
+  var mailpoet_close_icons_url = '<%= image_url("form_close_icon") %>';
+  var mailpoet_tutorial_seen = '<%= editor_tutorial_seen %>';
+  var mailpoet_tutorial_url = '<%= cdn_url('form-editor/tutorial.mp4') %>';
+  var mailpoet_is_administrator = <%= is_administrator ? 'true' : 'false' %>;
+  var mailpoet_form_edit_url = "<%= admin_url('admin.php?page=mailpoet-form-editor&id=') %>";
+  <% endautoescape %>
+</script>
+
+<style id="mailpoet-form-editor-form-styles"></style>
+
+<%= localize({
+  'displayForm': __('Display the form'),
+  'enable': __('Enable'),
+  'addFormName': _x('Add form name', 'A placeholder for form name input'),
+  'back': __('Back'),
+  'form': __('Form'),
+  'formSettings': _x('Settings', 'A settings section heading'),
+  'formSettingsStyles': __('Styles'),
+  'formSettingsColor': __('Color'),
+  'formSettingsStylesBackground': __('Background'),
+  'formSettingsStylesBackgroundImage': __('Background Image'),
+  'formSettingsStylesSelectImage': __('Select Image…'),
+  'formSettingsStylesFontSize': __('Font Size'),
+  'formSettingsStylesFont': __('Font'),
+  'formSettingsStylesFontColorInherit': __('Inherit from theme'),
+  'formSettingsInheritStyleFromTheme': __('Inherit style from theme'),
+  'formSettingsDisplayFullWidth': _x('Display Fullwidth', 'A label for checkbox in form style settings'),
+  'formSettingsBold': _x('Bold', 'A label for checkbox in form style settings'),
+  'formSettingsBorderSize': _x('Border Size', 'A label for checkbox in form style settings'),
+  'formSettingsBorderRadius': _x('Border Radius', 'A label for checkbox in form style settings'),
+  'formSettingsInputPadding': _x('Input Padding', 'A label for form style settings'),
+  'formSettingsFormPadding': _x('Form Padding', 'A label for form style settings'),
+  'formSettingsAlignment': _x('Alignment', 'A label for form style settings'),
+  'formSettingsAlignmentLeft': _x('left', 'An alignment value for form editor'),
+  'formSettingsAlignmentCenter': _x('center', 'An alignment value for form editor'),
+  'formSettingsAlignmentRight': _x('right', 'An alignment value for form editor'),
+  'formSettingsBorder': _x('Border', 'A label for checkbox in form style settings'),
+  'formSettingsApplyToAll': __('Apply styles to all inputs'),
+  'formSettingsWidth': _x('Form width', 'A label for form width settings'),
+  'customFieldSettings': _x('Custom field settings', 'A settings section heading'),
+  'customFieldsFormSettings': _x('Form settings', 'A settings section heading'),
+  'formPlacement': _x('Form Placement', 'A settings section heading'),
+  'formPlacementLabel': _x('Form placement', 'A label for a select box'),
+  'customCss': _x('Custom CSS', 'A settings section heading'),
+  'formSaved': __('Form saved.'),
+  'formSavedAppendix': __('Cookies reset — you will see all your dismissed popup forms again.'),
+  'customFieldSaved': __('Custom field saved.'),
+  'placeFixedBarFormOnPages': _x('Fixed bar', 'This is a text on a widget that leads to settings for form placement - form type is fixed bar'),
+  'placeFixedBarFormOnPagesDescription': __('Display your form in a fixed horizontal bar at the top or bottom of posts or pages.'),
+  'placeSlideInFormOnPages': _x('Slide–in', 'This is a text on a widget that leads to settings for form placement - form type is slide in'),
+  'placeSlideInFormOnPagesDescription': __('Display your form in a slide–in form on top of your page content.'),
+  'placePopupFormOnPages': _x('Pop-up', 'This is a text on a widget that leads to settings for form placement - form type is pop-up, it will be displayed on page in a small modal window'),
+  'placePopupFormOnPagesDescription': __('Display your form in a pop-up window.'),
+  'exitIntentTitle': __('Display on exit-intent'),
+  'exitIntentDescription': __('Show the form immediately if the visitor attempts to leave the site.'),
+  'exitIntentSwitch': __('Exit-intent display'),
+  'placeFormBellowPages': _x('Below pages', 'This is a text on a widget that leads to settings for form placement'),
+  'placeFormBellowPagesDescription': __('This form placement allows you to add this form at the end of all the pages or posts, below the content.'),
+  'placeFormOnAllPages': _x('Display on all pages', 'This is a text on a switch if a form should be displayed bellow all pages'),
+  'placeFormOnAllPosts': _x('Display on all posts/products', 'This is a text on a switch if a form should be displayed bellow all posts'),
+  'placeFormOnHomepage': __('Display on the homepage'),
+  'placeFormOthers': _x('Others (widget)', 'Placement of the form using theme widget'),
+  'formPlacementDelay': _x('Display with a delay of', 'Label on a selection of different times'),
+  'formPlacementPlacementPosition': _x('Position', 'Placement of a fixed bar form, on top of the page or on the bottom'),
+  'formPlacementPlacementPositionTop': _x('top', 'Placement of a fixed bar form, on top of the page or on the bottom'),
+  'formPlacementPlacementPositionBottom': _x('bottom', 'Placement of a fixed bar form, on top of the page or on the bottom'),
+  'formPlacementPlacementPositionLeft': _x('left', 'Placement of a slide in form, on the left or right side of the page'),
+  'formPlacementPlacementPositionRight': _x('right', 'Placement of a slide in  form, on the left or right side of the page'),
+  'formPlacementDelaySeconds': _x('%1s sec', 'times selection should be in the end "30 sec"'),
+  'formPlacementCookieExpiration': _x('Show form every', 'Label on a selection of different times'),
+  'formPlacementCookieExpirationAlways': _x('Always', 'times selection'),
+  'formPlacementCookieExpirationDay': _x('1 day', 'times selection should be in the end "1 day"'),
+  'formPlacementCookieExpirationDays': _x('%1s days', 'times selection should be in the end "7 days"'),
+  'formPlacementSave': _x('Close', 'Text on a button to save and close a form'),
+  'formPlacementOtherLabel': _x('Shortcode & other', 'Label in the form placement section (Other form placements)'),
+  'animationHeader': __('Show animation on display'),
+  'animationNone': _x('No Animation', 'Value in a selectbox with a list of animations'),
+  'addFormWidgetHint': __('You can add this form to a [link]widget area of your theme[/link] (new tab).'),
+  'addFormShortcodeHint': __('Or in any page or post as a block, or with this shortcode if you prefer [shortcode].'),
+  'addFormPhpIframeHint': __('Use [link]PHP[/link] or [link]iFrame[/link].'),
+  'settingsListLabel': __('This form adds the subscribers to these lists'),
+  'settingsAfterSubmit': __('After submit…'),
+  'settingsShowMessage': __('Show message'),
+  'settingsGoToPage': __('Go to Page'),
+  'settingsPleaseSelectList': __('Please select a list'),
+  'fieldsBlocksCategory': __('Fields'),
+  'customFieldsBlocksCategory': __('Custom Fields'),
+  'layoutBlocksCategory': __('Layout'),
+  'customFieldNumberOfLines': __('Number of lines'),
+  'customFieldSaveCTA': _x('Update custom field', 'Text on the save button'),
+  'customFieldDeleteCTA': _x('Delete this custom field', 'Text on the delete button'),
+  'customFieldDeleteConfirm': __('This field will be deleted for all your subscribers. Are you sure?'),
+  'customFieldTypeText': __('Text Input'),
+  'customFieldTypeTextarea': __('Text Area'),
+  'customFieldTypeRadio': __('Radio buttons'),
+  'customFieldTypeCheckbox': __('Checkbox'),
+  'customFieldTypeSelect': _x('Select', 'Form input type'),
+  'selectPage': _x('Select', 'It is a placeholder in the select box - verb'),
+  'displayOnCategories': __('Display on posts with these categories'),
+  'displayOnAllCategoryArchives': __('Display on all post/product category archives'),
+  'displayOnTags': __('Display on posts with these tags'),
+  'displayOnAllTagArchives': __('Display on all post/product tag archives'),
+  'selectSpecificArchiveTags': __('Select specific tags'),
+  'selectSpecificArchiveCategories': __('Select specific categories'),
+  'customFieldTypeDate': __('Date'),
+  'customFieldDateType': __('Type of date'),
+  'customFieldDateFormat': __('Order'),
+  'customFieldDefaultToday': __('Preselect today’s date'),
+  'customFieldDay': __('Day'),
+  'customFieldMonth': __('Month'),
+  'customFieldYear': __('Year'),
+  'customField1Line': _x('1 line', 'Number of rows in textarea'),
+  'customField2Lines': _x('2 lines', 'Number of rows in textarea'),
+  'customField3Lines': _x('3 lines', 'Number of rows in textarea'),
+  'customField4Lines': _x('4 lines', 'Number of rows in textarea'),
+  'customField5Lines': _x('5 lines', 'Number of rows in textarea'),
+  'customFieldValidateFor': __('Validate for'),
+  'customFieldValidateNothing': __('Nothing'),
+  'customFieldValidateNumbersOnly': __('Numbers only'),
+  'customFieldValidateAlphanumerical': __('Alphanumerical'),
+  'customFieldValidatePhoneNumber': __('Phone number, (+,-,#,(,) and spaces allowed)'),
+  'customFieldAddItem': __('Add item'),
+  'blockMandatory': __('Mandatory field'),
+  'blockFirstName': __('First name'),
+  'blockFirstNameDescription': __('Input field used to catch subscribers’ first names.'),
+  'blockLastName': __('Last name'),
+  'blockLastNameDescription': __('Input field used to catch subscribers’ last names.'),
+  'blockSegmentSelect': __('List selection'),
+  'blockLastNameDescription': __('Allow your subscribers to select which list(s) they want to subscribe to.'),
+  'blockSegmentSelectLabel': __('Select list(s):'),
+  'blockSegmentSelectNoLists': __('Please select at least one list'),
+  'blockSegmentSelectListLabel': __('Select the list that you want to add'),
+  'blockEmail': __('Email'),
+  'blockEmailDescription': __('Input field used to catch subscribers’ email addresses.'),
+  'blockSubmit': __('Submit button'),
+  'blockSubmitDescription': __('Button used to submit the form.'),
+  'blockSubmitLabel': _x('Subscribe!', 'a default value for a subscription form button'),
+  'missingObligatoryBlock': __('Email input or submit is missing. Try reloading the form editor.'),
+  'label': _x('Label', 'settings for a label of an input'),
+  'displayLabelWithinInput': __('Display label within input'),
+  'displayLabel': _x('Display label', 'Settings - if label should be displayed'),
+  'blockDivider': _x('Divider / Spacer', 'The name of the block in the editor'),
+  'blockCustomHtml' : __('Custom HTML'),
+  'blockCustomHtmlDescription': __('Display custom text or HTML code in your form.'),
+  'blockCustomHtmlDefault': __('Subscribe to our newsletter and join [mailpoet_subscribers_count] other subscribers.'),
+  'blockCustomHtmlContentLabel': _x('Custom text', 'Textarea label'),
+  'blockCustomHtmlNl2br': __('Automatically add paragraphs'),
+  'blockAddCustomField': __('Create Custom Field'),
+  'blockAddCustomFieldDescription': __('Create a new custom field for your subscribers.'),
+  'blockAddCustomFieldFormHeading': __('New Custom Field.'),
+  'blockCreateButton': _x('Create', 'Label on form submit button.'),
+  'customFieldName': _x('Field name', 'Label for form field for custom input name'),
+  'selectCustomFieldType': _x('Select a field type', 'Label for form field for custom input type'),
+  'customFieldWithNameExists': __('The custom field [name] already exists. Please choose another name.'),
+  'successMessage': __('This is what the success message looks like.'),
+  'errorMessage': __('This is what the error message looks like.'),
+  'formPreview': __('Form Preview'),
+  'formSettingsStylesFontFamily': __('Font Family'),
+  'formFontsDefaultTheme': __('Theme’s default fonts'),
+  'formFontsStandard': _x('Standard fonts', 'Heading in the font selection list: Arial, Times, ...'),
+  'formFontsCustom': _x('Custom fonts', 'Heading in the font selection list for a list of custom fonts'),
+  'blockSpacerHeight': _x('Height', 'Settings in the spacer block'),
+  'blockSpacerEnableDivider': _x('Enable Divider', 'Settings in the spacer block'),
+  'imagePlacementScale': _x('Scale', 'How a background image will be rendered: scale, fit or tile'),
+  'imagePlacementFit': _x('Fit', 'How a background image will be rendered: scale, fit or tile'),
+  'imagePlacementTile': _x('Tile', 'How a background image will be rendered: scale, fit or tile'),
+  'blockDividerStyle': _x('Divider Style', 'Settings in the divider block (solid, dotted, …)'),
+  'blockDividerStyleSolid': _x('Solid', 'Setting in the divider block'),
+  'blockDividerStyleDashed': _x('Dashed', 'Setting in the divider block'),
+  'blockDividerStyleDotted': _x('Dotted', 'Setting in the divider block'),
+  'blockDividerDividerHeight': _x('Divider Height', 'Settings in the divider block'),
+  'blockDividerDividerWidth': _x('Divider Width', 'Settings in the divider block'),
+  'blockDividerBackground': _x('Background', 'Settings in the divider block'),
+  'validationMessageColor': _x('Message Color', 'heading above the settings'),
+  'successValidationColorTitle': _x('Success', 'A label for the success message color'),
+  'errorValidationColorTitle': _x('Error', 'A label for the error message color'),
+  'formPreviewOthersDisclaimer': __('Psssst. We try our best to show you what the widget might look like, but better check the final result on your website.'),
+  'closeButtonHeading': __('Close Button Style'),
+  'tutorialHeading': __('A video tour of the form editor'),
+  'noName': _x('no name', 'fallback for forms without a name in a form list'),
+  'saveFormFirst': __('Please save the form first!'),
+  'addNewTag': __('Add New Tag'),
+}) %>
+<% endblock %>

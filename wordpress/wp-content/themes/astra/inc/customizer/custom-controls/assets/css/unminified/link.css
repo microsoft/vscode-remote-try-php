@@ -1,0 +1,10 @@
+.ast-link-open-in-new-tab-wrapper {
+  margin: 24px 0 0;
+  border-top: 1px dashed var(--ast-customizer-color-7);
+}
+
+.ast-link-label-wrapper {
+  margin: 24px 0;
+  padding-top: 24px;
+  border-top: 1px dashed var(--ast-customizer-color-7);
+}

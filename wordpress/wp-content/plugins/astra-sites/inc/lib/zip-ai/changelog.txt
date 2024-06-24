@@ -1,0 +1,54 @@
+v1.1.6 - 15th May 2024
+- Improvement: Added dropdown menu for common Zip AI Assistant actions in the toolbar.
+- Improvement: Upgraded the `get_credit_server_response` helper function to support data.
+
+v1.1.5 - 25th April 2024
+- Fix: Copy and Regenerate buttons are now visible by default instead of being displayed on hover.
+
+v1.1.4 - 23rd April 2024
+- Replaced "AI Assistant" text with a Sparkles icon for clearer visual representation.
+
+v1.1.3 - 14th March 2024
+- Removed the highlight color for Richtexts.
+- Replaced ZipWP logo with the AI Sparkle icon for all AI-Assistant-related buttons.
+- Improved the AI Assistant sidebar UI on the front end.
+
+v1.1.2 - 27th February 2024
+- Improvement: Added ZipWP API server helper functions to get the current plan.
+
+v1.1.1 - 16th February 2024
+- Improvement: Added middleware parameter handling for the affiliate ID.
+- Improvement: Locally loaded Google Fonts for the AI Assistant sidebar.
+- Fix: Restricted front-end assets for non-admin users.
+
+v1.1.0 - 17th January 2024
+- Feature: Made the AI Assistant sidebar accessible outside the editor.
+- Improvement: Added the 'Force Enabled' function to ensure that modules are enabled.
+
+v1.0.9 - 11th January 2024
+- Improvement: Added middleware parameter handling for the plugin slug.
+
+v1.0.8 - 18th December 2023
+- Fix: Added compatibility with PHP version 7.0 and above.
+
+v1.0.7 - 2nd December 2023
+- Improvement: Updated the middleware request and the Zip AI settings that are saved.
+- Fix: Implemented proper multi-setting updation.
+
+v1.0.6 - 30th November 2023
+- Improvement: Added a filter to disable the entire library from loading.
+
+v1.0.5 - 30th November 2023
+- Improvement: Added a new module structure and removed the admin page from Tools.
+
+v1.0.4 - 30th November 2023
+- Updating `distignore` for composer update compatibility.
+
+v1.0.3 - 11th November 2023
+- Improvement: Added an option to disable Zip Ai Assistant from the sidebar.
+
+v1.0.2 - 9th November 2023
+- Improvement: Better one-click command.
+
+v1.0.1 - 9th November 2023
+- Initial Commit

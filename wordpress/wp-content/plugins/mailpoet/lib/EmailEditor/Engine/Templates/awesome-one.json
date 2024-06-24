@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "styles": {
+    "color": {
+      "background": "#ee00aa"
+    },
+    "typography": {
+      "fontFamily": "'Tahoma, Verdana, Segoe, sans-serif'"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "'Comic Sans MS', 'Marker Felt-Thin', Arial, sans-serif"
+        }
+      }
+    }
+  }
+}

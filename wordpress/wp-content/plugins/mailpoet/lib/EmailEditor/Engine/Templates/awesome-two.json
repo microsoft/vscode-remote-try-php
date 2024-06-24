@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "styles": {
+    "typography": {
+      "fontFamily": "'Comic Sans MS', 'Marker Felt-Thin', Arial, sans-serif"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "'Tahoma, Verdana, Segoe, sans-serif'"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.survey-container {
+	background: var( --st-background-primary );
+	box-shadow: 0px 4px 6px -2px rgba( 0, 0, 0, 0.05 ), 0px 10px 15px -3px rgba( 0, 0, 0, 0.1 );
+	border-radius: var( --st-border-radius-4 );
+	width: 600px;
+	padding: 35px;
+	margin: 0 auto 40px;
+	text-align: left;
+
+	input[type="checkbox"]:checked {
+		&:before {
+			content: url( "data:image/svg+xml;utf8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27><path%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%232563EB%27%2F><%2Fsvg>" );
+		}
+	}
+
+	.required-plugins-form,
+	.install-plugins-form {
+		h5 {
+			margin-bottom: 22px;
+		}
+		p {
+			margin-bottom: 26px;
+		}
+		.third-party-required-plugins-list,
+		.manual-required-plugins-list {
+			list-style: auto;
+			margin: 10px 20px;
+			li {
+				font-size: var( --st-font-size-xs );
+				line-height: var( --st-font-line-height-xl );
+			}
+		}
+	}
+
+	h1 {
+		text-align: left;
+		padding-bottom: 35px;
+	}
+
+	.row-label {
+		margin-bottom: 20px;
+	}
+	.survey-fields-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+		margin-bottom: 20px;
+	}
+	.survey-text-input {
+		background: var( --st-background-primary );
+		border: 1px solid var( --st-border-color );
+		border-radius: var( --st-border-radius-3 );
+		padding: 10px 15px;
+		width: 100%;
+		&::placeholder {
+			color: var( --st-color-placeholder );
+		}
+		&:focus {
+			border-color: var( --st-color-accent );
+		}
+	}
+
+	.survey-select-input {
+		border: 1px solid var( --st-border-color );
+		border-radius: var( --st-border-radius-3 );
+		padding: 10px 15px;
+		width: 100%;
+		color: #2c3338;
+		option:not( :first-of-type ) {
+			color: #2c3338;
+		}
+		&::placeholder {
+			color: var( --st-color-placeholder );
+		}
+		&:focus {
+			border-color: var( --st-color-accent );
+		}
+		&:hover {
+			color: #2c3338;
+		}
+		&.initial {
+			color: var( --st-color-placeholder );
+		}
+	}
+
+	.hidden-section .survey-advanced-section {
+		visibility: hidden;
+	}
+
+	.survey-form-advanced-wrapper {
+		.advanced-options-icons {
+			cursor: pointer;
+			display: flex;
+		}
+		.row-label {
+			display: flex;
+			align-items: center;
+			align-content: center;
+			grid-gap: 10px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			align-content: stretch;
+			grid-gap: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			input {
+				margin: 0;
+				border: 1px solid var( --st-color-body );
+				border-radius: var( --st-border-radius-3 );
+			}
+			&.theme-check {
+				margin-left: 2em;
+			}
+			label {
+				font-size: var( --st-font-size-xs );
+				line-height: var( --st-font-line-height-xs );
+				color: var( --st-color-body );
+			}
+		}
+		svg {
+			cursor: pointer;
+		}
+	}
+	.submit-survey-btn.button-text {
+		padding: 15px 32px;
+		width: 100%;
+		color: var( --st-color-white );
+		background: var( --st-color-accent );
+		border: none;
+		cursor: pointer;
+		margin-top: 3em;
+		align-content: center;
+		grid-gap: 15px;
+		border-radius: var( --st-border-radius-4 );
+		font-weight: var( --st-font-weight-bold );
+		font-size: 15px;
+	}
+	.stc-tooltip-content {
+		min-width: 310px;
+		text-align: left;
+		line-height: 1.4;
+	}
+	.requirement-check-wrap {
+		.current-php-version,
+		.current-file-system-permissions {
+			margin-top: 10px;
+		}
+		button.submit-survey-btn:disabled {
+			background: var( --st-color-light-gray );
+			color: var( --st-color-placeholder );
+			cursor: not-allowed;
+			svg path {
+				fill: var( --st-color-placeholder );
+			}
+		}
+		.requirement-check-list {
+			list-style: auto;
+			margin: 10px 20px;
+			li {
+				font-size: var( --st-font-size-xs );
+				line-height: var( --st-font-line-height-l );
+
+				p {
+					color: var( --st-color-white );
+				}
+			}
+			.requirement-list-item {
+				display: flex;
+				align-content: center;
+				align-items: center;
+				grid-gap: 10px;
+
+				.dashicons-yes {
+					color: var( --st-color-success, #39b54a );
+				}
+				.dashicons-no {
+					color: var( --st-color-error, #d72b3f );
+				}
+			}
+			.stc-tooltip {
+				display: flex;
+				.stc-tooltip-content {
+					min-width: 400px;
+					ul {
+						list-style: auto;
+						margin: 6px 17px;
+					}
+					li {
+						line-height: var( --st-font-line-height-s );
+					}
+				}
+			}
+		}
+	}
+}
+
+.starter-templates-ai-steps p.subscription-agreement-text {
+	display: block;
+	font-size: var( --st-font-size-xs );
+	margin-top: 24px;
+	text-align: center;
+}

@@ -1,37 +1,45 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/php
+// README at: https://github.com/devcontainers/templates/tree/main/src/php-mariadb
 {
+<<<<<<< HEAD
+	"name": "PHP & MariaDB",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+=======
 	"name": "PHP",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/php:1-8.3",
+>>>>>>> 9c4c759e95499bb57be2a35e2e0c55f292036908
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"streetsidesoftware.code-spell-checker"
-			]
-		}
-	},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [8000],
-
-	// Use 'portsAttributes' to set default properties for specific forwarded ports. More info: https://code.visualstudio.com/docs/remote/devcontainerjson-reference.
-	"portsAttributes": {
-		"8000": {
-			"label": "Hello Remote World",
-			"onAutoForward": "notify"
-		}
+    // Configure tool-specific properties.
+"customizations": {
+	// Configure properties specific to VS Code.
+	"vscode": {
+	  "extensions": [
+		"ikappas.composer"
+	  ]
 	}
+  },
+  
+	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
+	"forwardPorts": [
+		8080,
+		3306
+	],
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html; if [ -f composer.json ];then composer install;fi"
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+
+	// Configure tool-specific properties.
+	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"

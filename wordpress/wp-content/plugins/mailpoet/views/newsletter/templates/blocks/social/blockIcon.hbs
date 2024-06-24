@@ -1,0 +1,1 @@
+<a href="{{escapeURL link }}" onClick="return false;"><img src="{{#ifCond image '!=' ''}}{{ image }}{{ else }}{{ imageMissingSrc }}{{/ifCond}}" onerror="if (this.src != '{{ imageMissingSrc }}') this.src = '{{ imageMissingSrc }}';" alt="{{ text }}" style="width: {{ width }}; height: {{ height }};"/></a>

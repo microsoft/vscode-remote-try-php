@@ -1,0 +1,69 @@
+/** Extend component styling */
+.st-search-filter {
+	--stc-suggestion-list-max-width: 740px;
+	--stc-suggestion-list-padding: 10px 20px;
+	--stc-suggestion-list-margin: 0 auto;
+	--stc-suggestion-list-position: absolute;
+	--stc-suggestion-list-border-radius: 0 0 4px 4px;
+}
+
+.st-search-box-wrap {
+	min-height: 63px;
+}
+
+.st-search-filter {
+	margin-top: 20px;
+	margin-bottom: 42px;
+	position: relative;
+	display: inline-block;
+
+	.stc-suggestion-list {
+		border-top: none;
+	}
+}
+
+.stc-search .stc-search-input {
+	width: 670px !important;
+	padding-left: 40px !important;
+	@media only screen and ( max-width: 768px ) {
+		width: 320px !important;
+	}
+}
+
+.st-search-box-fixed .st-search-box {
+	--stc-search-input-box-shadow: none;
+	--stc-search-input-height: 52px;
+	--stc-search-input-border: 1px solid var( --st-border-color );
+	--stc-search-input--focus-border: 1px solid var( --st-border-color );
+
+	position: fixed;
+	top: 14px;
+	left: 112px;
+	max-width: 742px;
+	margin: 0;
+	.stc-search .stc-search-input {
+		width: 670px !important;
+		padding-left: 40px !important;
+	}
+	@media only screen and ( max-width: 768px ) {
+		.stc-search .stc-search-input {
+			width: 320px !important;
+		}
+	}
+
+	@media only screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+		.stc-search .stc-search-input {
+			width: 400px !important;
+		}
+	}
+}
+
+.st-templates-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	--stc-sites-no-results-padding: 45px 30px 40px 0;
+}
+
+.site-list-content {
+	margin-top: 20px;
+}

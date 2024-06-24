@@ -1,0 +1,264 @@
+.astra-sites-welcome .astra-notice-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.astra-sites-welcome .astra-notice-container .notice-welcome-container {
+	background-image: url( "../images/st-banner-background.svg" );
+	justify-content: left;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+}
+
+.astra-sites-welcome .astra-notice-container .notice-welcome-container::after {
+	padding: 2.5%;
+	content: "";
+	display: block;
+}
+
+.astra-sites-welcome .text-section {
+	flex: 0 0 51%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px 40px 40px 0;
+}
+
+.astra-sites-welcome .showcase-section {
+	flex: 0 0 45%;
+	display: flex;
+	align-items: flex-end;
+	margin-top: 40px;
+}
+
+.astra-sites-welcome .showcase-section img {
+	width: 100%;
+}
+
+.astra-sites-welcome h1.text-heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 36px;
+	color: #0f172a;
+	padding: 24px 0px 12px 0px;
+}
+
+.astra-sites-welcome .logo-section {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.astra-sites-welcome .logo-section img {
+	width: 24px;
+}
+.astra-sites-welcome .logo-section h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: right;
+	color: #030712;
+}
+
+.astra-sites-welcome .button-section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.astra-sites-welcome a.text-button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 16px;
+	max-width: fit-content;
+	border-radius: 6px;
+	background: #2271b1;
+	box-shadow: 0px 1px 2px 0px rgba( 0, 0, 0, 0.05 );
+}
+
+.astra-sites-welcome a.scratch-link {
+	color: #475569;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.astra-sites-welcome .notice-content-container .content-section {
+	display: flex;
+	padding: 20px 16px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	flex: 1 0 0;
+	border-radius: 6px;
+}
+
+.astra-sites-welcome .notice-content-container .content-section:hover {
+	border-radius: 6px;
+	background: var( --Colors-base-white, #fff );
+	box-shadow: 0px 8px 22px 0px rgba( 0, 0, 0, 0.08 );
+}
+
+.astra-sites-welcome .notice-content-container {
+	display: flex;
+	padding: 32px 60px;
+	align-items: flex-start;
+	gap: 32px;
+	align-self: stretch;
+}
+
+.astra-sites-welcome .notice-content-container .icon-section {
+	border-radius: 24px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.astra-sites-welcome .notice-content-container .link-section h4 {
+	margin: 0;
+	color: var( --gray-900, #111827 );
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.astra-sites-welcome .notice-content-container .link-section p {
+	margin-bottom: 8px;
+	padding: 0;
+	color: var( --gray-500, #6b7280 );
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin-top: 0px;
+}
+
+.astra-sites-welcome .text-section p {
+	color: var( --Theme-Body, #475569 );
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.astra-sites-welcome .text-section p {
+	margin-bottom: 24px;
+	margin-top: 0;
+}
+
+.astra-sites-welcome.notice.is-dismissible {
+	padding-left: 0;
+}
+
+.astra-sites-welcome.notice {
+	padding: 0;
+	border-right-width: 0;
+	border: none;
+}
+.astra-sites-welcome .notice-dismiss:before {
+	background-image: url( ../images/cross.svg );
+	content: "";
+	position: relative;
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.astra-sites-welcome .notice-dismiss {
+	top: 3px;
+	left: 3px;
+	margin: 0;
+}
+
+.astra-sites-welcome .link-section .link-text {
+	display: flex;
+	text-decoration: none;
+	gap: 8px;
+	border-radius: 4px;
+	color: #5d5e61;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+.astra-sites-welcome .content-section {
+	text-decoration: none;
+}
+
+@media only screen and ( min-width: 1024px ) and ( max-width: 1280px ) {
+	.astra-sites-welcome .notice-content-container .link-section h4 {
+		font-size: 14px;
+	}
+	.astra-sites-welcome .notice-content-container .link-section p {
+		font-size: 12px;
+	}
+	.astra-sites-welcome .link-section .link-text {
+		font-size: 10px;
+	}
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+	.astra-sites-welcome .text-section {
+		flex: 0 0 75.5%;
+		padding-right: 28px;
+		padding-top: 38px;
+		padding-bottom: 38px;
+	}
+	.astra-sites-welcome .showcase-section img {
+		display: none;
+	}
+	.astra-sites-welcome .notice-content-container {
+		display: none;
+	}
+}
+
+@media only screen and ( max-width: 767px ) {
+	.astra-sites-welcome .text-section {
+		flex: 0 0 80.5%;
+		padding: 32px 32px 32px 0;
+	}
+	.astra-sites-welcome .showcase-section img {
+		display: none;
+	}
+	.astra-sites-welcome .notice-content-container {
+		display: none;
+	}
+}
+
+@media only screen and ( max-width: 420px ) {
+	.astra-sites-welcome .text-section {
+		flex: 0 0 86.5%;
+		text-align: center;
+	}
+	.astra-sites-welcome .button-section {
+		justify-content: center;
+		align-items: center;
+	}
+	.astra-sites-welcome .logo-section {
+		justify-content: center;
+	}
+	.astra-sites-welcome h1.text-heading {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.astra-sites-welcome .showcase-section img {
+		display: none;
+	}
+	.astra-sites-welcome .notice-content-container {
+		display: none;
+	}
+}

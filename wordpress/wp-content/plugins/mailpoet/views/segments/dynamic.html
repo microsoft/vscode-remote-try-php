@@ -1,0 +1,36 @@
+<% extends 'layout.html' %>
+
+<% block content %>
+  <div id="dynamic_segments_container"></div>
+
+  <script type="text/javascript">
+    var mailpoet_dynamic_segment_count = <%= dynamic_segment_count %>;
+    var mailpoet_listing_per_page = <%= items_per_page %>;
+    var mailpoet_custom_fields = <%= json_encode(custom_fields) %>;
+    var mailpoet_static_segments_list = <%= json_encode(static_segments_list) %>;
+    var wordpress_editable_roles_list = <%= json_encode(wordpress_editable_roles_list)  %>;
+    var mailpoet_newsletters_list = <%= json_encode(newsletters_list)  %>;
+    var mailpoet_product_attributes = <%= json_encode(product_attributes)  %>;
+    var mailpoet_local_product_attributes = <%= json_encode(local_product_attributes) %>;
+    var mailpoet_product_categories = <%= json_encode(product_categories)  %>;
+    var mailpoet_product_tags = <%= json_encode(product_tags) %>;
+    var mailpoet_products = <%= json_encode(products) %>;
+    var mailpoet_membership_plans = <%= json_encode(membership_plans) %>;
+    var mailpoet_subscription_products = <%= json_encode(subscription_products) %>;
+    var mailpoet_can_use_woocommerce_memberships = <%= json_encode(can_use_woocommerce_memberships)  %>;
+    var mailpoet_can_use_woocommerce_subscriptions = <%= json_encode(can_use_woocommerce_subscriptions)  %>;
+    var mailpoet_woocommerce_currency_symbol = <%= json_encode(woocommerce_currency_symbol)  %>;
+    var mailpoet_woocommerce_countries = <%= json_encode(woocommerce_countries)  %>;
+    var mailpoet_woocommerce_payment_methods = <%= json_encode(woocommerce_payment_methods)  %>;
+    var mailpoet_woocommerce_shipping_methods = <%= json_encode(woocommerce_shipping_methods)  %>;
+    var mailpoet_signup_forms = <%= json_encode(signup_forms) %>;
+    var mailpoet_automations = <%= json_encode(automations) %>;
+  </script>
+
+  <% include 'segments/translations.html' %>
+<% endblock %>
+
+
+<% block after_translations %>
+  <%= do_action('mailpoet_segments_translations_after') %>
+<% endblock %>
