@@ -55,7 +55,7 @@ Some things to try:
 
 1. **Run and Debug:**
    - Open `index.php`
-   - Add a breakpoint (e.g. on line 4).
+   - Add a breakpoint (e.g. on line 9).
    - Press <kbd>F5</kbd> to launch the app in the container.
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
 
