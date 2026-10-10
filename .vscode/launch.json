@@ -5,15 +5,26 @@
             "name": "Launch application",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceFolder}/index.php",
+            "runtimeArgs": [
+                "-dxdebug.mode=debug",
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "0.0.0.0:8000"
+            ],
+            "program": "",
             "cwd": "${workspaceFolder}",
-            "port": 9000
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://0\\.0\\.0\\.0:([0-9]+)\\) started",
+                "uriFormat": "http://localhost:%s",
+                "action": "openExternally"
+            }
         },
         {
             "name": "Listen for XDebug",
             "type": "php",
             "request": "launch",
-            "port": 9000
+            "port": 9003
         },
         {
             "name": "Launch currently open script",
@@ -21,7 +32,7 @@
             "request": "launch",
             "program": "${file}",
             "cwd": "${fileDirname}",
-            "port": 9000
+            "port": 9003
         }
     ]
 }

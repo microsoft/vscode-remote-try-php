@@ -40,6 +40,12 @@ Follow these steps to open this sample in a container using the VS Code Dev Cont
 
 ## Things to try
 
+### Toolchain
+
+This sample uses PHP 8.5 on Debian 13 (Trixie), with Composer and Xdebug supplied by the image.
+Run `php -l index.php` to check the sample, then `php -S 0.0.0.0:8000` to start it.
+The debugger listens on Xdebug 3's default port, `9003`.
+
 Once you have this sample opened, you'll be able to work with it like you would locally.
 
 Some things to try:
@@ -55,11 +61,14 @@ Some things to try:
 
 1. **Run and Debug:**
    - Open `index.php`
-   - Add a breakpoint (e.g. on line 4).
-   - Press <kbd>F5</kbd> to launch the app in the container.
+   - Add a breakpoint on the `echo` statement inside `sayHello`.
+   - Select **Launch application** and press <kbd>F5</kbd> to start PHP's built-in web server on port 8000. The browser opens automatically when the server is ready.
    - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
+   - Continue (<kbd>F5</kbd>) to finish loading the page. The server stays running for subsequent requests; stop debugging to stop the server.
+   - **Launch currently open script** runs the file once in the Debug Console and exits, rather than starting a web server.
 
 1. **Running a server:**
+   - Stop any **Launch application** debug session first so port 8000 is free.
    - From the terminal, run `php -S 0.0.0.0:8000`
    - Click "Open in Browser" in the notification that appears to access the web app on this new port.
       - You can view an organized table of your forwarded ports in the 'Ports' view, which can be accessed with the command **Ports: Focus on Ports View**.
