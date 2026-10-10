@@ -40,6 +40,12 @@ Follow these steps to open this sample in a container using the VS Code Dev Cont
 
 ## Things to try
 
+### Toolchain
+
+This sample uses PHP 8.5 on Debian 13 (Trixie), with Composer and Xdebug supplied by the image.
+Run `php -l index.php` to check the sample, then `php -S 0.0.0.0:8000` to start it.
+The debugger listens on Xdebug 3's default port, `9003`.
+
 Once you have this sample opened, you'll be able to work with it like you would locally.
 
 Some things to try:
